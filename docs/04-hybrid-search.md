@@ -2,6 +2,39 @@
 
 > **Pure vector search has fundamental bottlenecks. The industry consensus for 2025-2026 is hybrid BM25 + vector search with Reciprocal Rank Fusion (RRF).**
 
+<details>
+<summary>🍕 <b>Translate please: What's all this jargon?</b></summary>
+
+<br/>
+
+**Vector search:** Turning text into numbers and finding similar numbers.
+
+You: "I want Italian food"  
+Vector search: "Italian" → [0.2, 0.8, 0.1...] → finds documents with similar numbers
+
+It's smart! It knows "Italian food" is similar to "pasta restaurant." But...
+
+**The problem:** Ask for "Order #12345" and vector search might return orders #54321 and #12344 because the numbers are... similar-ish? It doesn't understand that order numbers need to match EXACTLY.
+
+**BM25:** Old-school keyword search. Just matches words.
+
+You: "Order #12345"  
+BM25: Ctrl+F for "12345" → finds EXACTLY that order
+
+It's dumb! It won't know that "Italian" and "pasta" are related. But it's really good at finding exact things.
+
+**Hybrid search:** Use BOTH. Vector for concepts, BM25 for keywords.
+
+**Reciprocal Rank Fusion (RRF):** A fancy way to combine two ranked lists into one.
+
+Vector says: "Doc A is #1, Doc B is #2"  
+BM25 says: "Doc B is #1, Doc A is #4"  
+RRF: "Let's score them based on BOTH rankings" → Doc B wins
+
+**TL;DR:** Vector search is smart but bad at exact matches. BM25 is dumb but great at exact matches. Use both.
+
+</details>
+
 ---
 
 ## Why Hybrid Search?
@@ -335,6 +368,28 @@ flowchart LR
     
     style C fill:#fff9c4
 ```
+
+<details>
+<summary>🍕 <b>Plain English: What's reranking?</b></summary>
+
+<br/>
+
+**The problem:** Hybrid search is fast but rough. It gives you 100 "maybe relevant" results.
+
+**The solution:** Run a smarter (but slower) model on those 100 to pick the BEST 10.
+
+**Analogy:** You're hiring. HR screens 1,000 resumes and gives you 100 "qualified" candidates. You don't interview all 100—you have your senior team pick the top 10 for final interviews.
+
+- **Hybrid search** = HR screening (fast, catches the obvious stuff)
+- **Reranker** = Senior team review (slower, much more accurate)
+
+**Why not use the reranker for everything?** It's like having your senior team read ALL 1,000 resumes. Too slow, too expensive.
+
+**Cross-encoder vs Bi-encoder:**
+- **Bi-encoder** (what vector search uses): Scores query and document separately, then compares. Fast but less accurate.
+- **Cross-encoder** (reranker): Looks at query AND document together. Slow but much more accurate.
+
+</details>
 
 ### Cross-Encoder Reranking
 

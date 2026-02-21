@@ -2,6 +2,27 @@
 
 > **You can't improve what you don't measure. 70% of RAG systems lack systematic evaluation—don't be one of them.**
 
+<details>
+<summary>🍕 <b>Plain English: Why bother with evaluation?</b></summary>
+
+<br/>
+
+**The uncomfortable truth:** Your RAG system might be wrong 30% of the time and you'd never know.
+
+Users don't complain about every bad answer. They just:
+- Figure it out themselves
+- Ask someone else
+- Lose trust and stop using it
+- Make decisions based on wrong info 😬
+
+**Evaluation means:** Having an automated way to check "is this answer actually good?"
+
+It's like having a food critic who tastes every dish before it leaves the kitchen—not just relying on customers to complain about food poisoning.
+
+**The good news:** Tools like RAGAS and DeepEval can automatically grade your AI's answers. You don't need humans to review everything. The AI checks itself (and it's surprisingly good at catching its own mistakes when asked properly).
+
+</details>
+
 ---
 
 ## First Principles of RAG Evaluation
@@ -50,6 +71,34 @@ flowchart TD
     CR --> D["Retrieved Docs"]
     F --> D
 ```
+
+<details>
+<summary>🍕 <b>Plain English: The RAG Triad explained like a restaurant</b></summary>
+
+<br/>
+
+You asked for "the best pasta dish" and the restaurant gave you something.
+
+**🎯 Answer Relevancy:** "Did they give me pasta?"
+- ✅ High: Spaghetti carbonara (that's pasta!)
+- ❌ Low: Caesar salad (delicious, but not what I asked for)
+
+**📌 Faithfulness:** "Is this actually on the menu?"
+- ✅ High: Recipe follows the menu exactly
+- ❌ Low: Chef invented a new dish and called it "carbonara"
+
+**📚 Context Relevancy:** "Did they check the right menu?"
+- ✅ High: Looked at Italian menu, pasta section
+- ❌ Low: Looked at Chinese menu (wrong context entirely)
+
+**The system can fail at each step:**
+1. Found wrong menu (low context relevancy)
+2. Made up a dish not on the menu (low faithfulness)
+3. Gave you soup when you asked for pasta (low answer relevancy)
+
+**Key insight:** You need ALL THREE to be high. A faithful answer to the wrong question is still useless. A relevant answer that's made up is still wrong.
+
+</details>
 
 ### Metric Definitions
 

@@ -2,6 +2,45 @@
 
 > **The difference between $18K/month and $3K/month is architectural, not incremental. Design for cost from day one.**
 
+<details>
+<summary>🍕 <b>Plain English: Why does RAG cost so much?</b></summary>
+
+<br/>
+
+**You think:** "One question = one API call = a few cents"
+
+**Reality:** "One question = search + read 5 documents + generate answer + maybe retry"
+
+And then multiply that by users:
+
+```
+1 question
+  × 5 documents in context
+  × 2,000 tokens per document  
+  × $0.01 per 1K tokens
+  = $0.10 per question
+
+Now: 1,000 users × 20 questions/day
+  = 20,000 questions/day
+  = $2,000/day
+  = $60,000/month 😱
+```
+
+**It's like a restaurant:** You think you're paying for one meal. But you're also paying for:
+- The menu being printed (embedding)
+- The waiter walking over 5 times (retrieval)
+- The chef tasting the dish (quality check)
+- The dishwashing (cleanup)
+
+**The $18K → $3K story:** Teams optimize by:
+- **Caching:** "What are your hours?" asked 100 times? Answer once, reuse.
+- **Routing:** Simple question → cheap model. Hard question → expensive model.
+- **Batching:** Group requests together instead of one at a time.
+
+The key: These decisions are ARCHITECTURE, not afterthoughts. Build them in from day one.
+
+</details>
+
 ---
 
 ## First Principles of RAG Costs
@@ -81,6 +120,41 @@ flowchart TD
 
 ## Lever 1: Semantic Caching (18-68% Savings)
 
+<details>
+<summary>🍕 <b>Plain English: What's Semantic Caching?</b></summary>
+
+<br/>
+
+**Normal caching:** "If someone asks the EXACT same question, give them the saved answer."
+
+Problem: People don't ask things the exact same way.
+- "What are your hours?"
+- "When are you open?"
+- "What time do you close?"
+
+These are different strings, so normal caching treats them as 3 separate questions. Three API calls. Three charges.
+
+**Semantic caching:** "If someone asks a SIMILAR question, give them the saved answer."
+
+```
+Question: "What are your hours?"
+→ Pay for answer, save it
+
+Question: "When are you open?"  
+→ System: "This is 92% similar to a cached question"
+→ Return cached answer, $0
+
+Question: "What time do you close?"
+→ System: "This is 87% similar to a cached question"  
+→ Return cached answer, $0
+```
+
+**The magic:** Instead of matching exact text, it matches meaning. "Hours" and "open" and "close" all cluster together in the semantic space.
+
+**Savings:** If 50% of your questions are variations of common ones, you just cut your API costs in half.
+
+</details>
+
 ### First Principles
 
 - Many queries are semantically similar
@@ -129,6 +203,37 @@ flowchart LR
 ---
 
 ## Lever 2: Model Routing (30-80% Savings)
+
+<details>
+<summary>🍕 <b>Plain English: What's Model Routing?</b></summary>
+
+<br/>
+
+**The problem:** You're paying for a brain surgeon to put on Band-Aids.
+
+GPT-4 costs ~100x more than GPT-4o-mini. But for "What are your store hours?"—you don't need the expensive model.
+
+**Model routing:** Use the right model for the job.
+
+```
+"What time do you close?"
+    → Simple question → Cheap model (GPT-4o-mini) → $0.0001
+
+"Compare our Q3 performance to competitors and suggest strategies"
+    → Complex analysis → Expensive model (GPT-4) → $0.01
+```
+
+**The math:**
+- Without routing: All queries use GPT-4 → $30 per million tokens
+- With routing: 
+  - 50% simple → $0.15 per million
+  - 35% medium → $2.50 per million
+  - 15% complex → $30 per million
+  - **Average: ~$5 per million** (6x cheaper!)
+
+**It's like:** Using a taxi for airport trips but walking to the corner store. Match the transportation to the trip.
+
+</details>
 
 ### First Principles
 

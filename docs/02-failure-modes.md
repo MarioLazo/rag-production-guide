@@ -2,6 +2,29 @@
 
 > **Production RAG failures cluster into three stages: Retrieval, Generation, and System-level. Understanding these failure modes is the first step to preventing them.**
 
+<details>
+<summary>🍕 <b>TL;DR: Where do RAG systems break?</b></summary>
+
+<br/>
+
+Think of RAG like ordering food through a confusing game of telephone:
+
+**Stage 1: Retrieval (Finding the menu)**
+- Did we find the right menu? (Or did we grab last year's?)
+- Did we find the right PAGE of the menu? (Or just "something about food"?)
+
+**Stage 2: Generation (Placing the order)**
+- Did the AI read what we found? (Or make stuff up?)
+- Did it read ALL of it? (Or just the first and last page?)
+
+**Stage 3: System (The whole restaurant)**
+- Can we tell if the food is actually good?
+- Is the whole system working together?
+
+**Most failures happen in Stage 1.** The AI is actually pretty good at answering questions—if you give it the right information. The problem is finding the right information in the first place.
+
+</details>
+
 ---
 
 ## Overview: The Three Failure Stages
@@ -262,7 +285,7 @@ graph LR
 
 ---
 
-### 3.3 No Systematic Evaluation
+### 3.3 No Evaluation
 
 **What happens:** 70% of RAG systems in production lack any systematic evaluation framework.
 
@@ -321,6 +344,12 @@ evaluate(
 | 5 | Lost-in-the-Middle | Generation | Position-aware testing | Relevance ordering |
 | 6 | Semantic Collapse | System | Similarity distribution | Deduplication |
 | 7 | No Evaluation | System | (Meta-problem) | RAG Triad + CI/CD |
+
+> 🔪 **Want more?** See the **[Seven Silent Killers Deep Dive](02a-seven-silent-killers-deep-dive.md)** for:
+> - Detailed examples across industries (Healthcare, Legal, Finance, E-commerce)
+> - Real-world case studies explaining why AI assistants seem "stupid"
+> - Interactive diagnostic checklist for auditing your RAG system
+> - Code examples for detection and prevention
 
 ---
 

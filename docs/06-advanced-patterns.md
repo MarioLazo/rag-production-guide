@@ -2,6 +2,31 @@
 
 > **Nine patterns that separate production RAG from tutorials, with first principles for when to use each.**
 
+<details>
+<summary>🍕 <b>Plain English: Why do we need "advanced" patterns?</b></summary>
+
+<br/>
+
+**Basic RAG is like a simple Google search:** You type something, it finds matches, done.
+
+But real questions are messy:
+- "Why did our sales drop last quarter?" (needs reasoning, not just finding)
+- "Compare our policy to the competitor's" (needs multiple searches)
+- "What would happen if we changed X?" (needs understanding, not just retrieval)
+
+**Advanced patterns are tools in a toolbox.** You don't use all of them—you pick the right one for your specific problem:
+
+| Your Problem | The Tool |
+|-------------|----------|
+| Search finds wrong docs | HyDE, Contextual Retrieval |
+| Complex questions | RAG Fusion, Agentic RAG |
+| Need to understand relationships | GraphRAG |
+| Some questions easy, some hard | Adaptive RAG |
+
+**Golden rule:** Don't use a chainsaw to cut butter. Start simple, add complexity only when basic RAG measurably fails.
+
+</details>
+
 ---
 
 ## Pattern Selection Framework
@@ -134,6 +159,36 @@ See [Hybrid Search](04-hybrid-search.md) for domain-specific weights.
 
 **The problem it solves:** Query embeddings don't match document embeddings well.
 
+<details>
+<summary>🍕 <b>Plain English: What's HyDE?</b></summary>
+
+<br/>
+
+**The problem:** Your question doesn't *look* like the answer.
+
+- Question: "What causes servers to crash?"
+- Answer in docs: "Server failures typically occur due to memory exhaustion, disk space depletion, or network timeouts..."
+
+The question and answer use totally different words! Vector search struggles because it's looking for things that *look similar*.
+
+**HyDE's clever trick:** Before searching, ask an AI to *imagine* what a good answer might look like. Then search for THAT.
+
+```
+You ask: "What causes servers to crash?"
+    ↓
+AI imagines: "Servers crash due to memory issues, disk problems..."
+    ↓
+Search for docs similar to THAT imaginary answer
+    ↓
+Find REAL docs that look like the imaginary one
+```
+
+**It's like:** Instead of searching for "good Italian restaurant," you describe your ideal meal ("cozy place with handmade pasta and a great wine list") and search for places matching that description.
+
+**Trade-off:** Extra AI call = slower + costs more. Use when vocabulary mismatch is killing you.
+
+</details>
+
 **First principles reasoning:**
 - Queries are short; documents are long
 - Queries ask questions; documents state facts
@@ -191,6 +246,37 @@ def hyde_search(query: str, llm, embedder, index) -> list:
 ## Pattern 4: RAG Fusion
 
 **The problem it solves:** Single query perspective misses relevant documents.
+
+<details>
+<summary>🍕 <b>Plain English: What's RAG Fusion?</b></summary>
+
+<br/>
+
+**The problem:** One search term misses things.
+
+If you search for "remote work policy," you might miss docs titled "work from home guidelines" or "telecommuting rules."
+
+**RAG Fusion's trick:** Search multiple ways, combine the results.
+
+```
+Your question: "What's our remote work policy?"
+    ↓
+AI generates variations:
+  - "work from home guidelines"
+  - "telecommuting rules"  
+  - "distributed work policy"
+  - "remote employee handbook"
+    ↓
+Search ALL of them
+    ↓
+Combine results (docs that appear in multiple searches rank higher)
+```
+
+**It's like:** Instead of asking one friend for restaurant recommendations, you ask five friends with different tastes—then go to the place that multiple friends mentioned.
+
+**Trade-off:** 4-5x more searches = slower. But catches documents that one query would miss.
+
+</details>
 
 **First principles reasoning:**
 - One query captures one angle
@@ -365,6 +451,47 @@ flowchart TD
 
 **The problem it solves:** Static retrieval can't handle queries requiring tools, multiple sources, or dynamic decisions.
 
+<details>
+<summary>🍕 <b>Plain English: What's Agentic RAG?</b></summary>
+
+<br/>
+
+**Basic RAG:** Search → Read → Answer. Same recipe every time.
+
+**Agentic RAG:** The AI decides what to do based on the question.
+
+```
+Question: "How much did we spend on marketing last year?"
+    ↓
+Agent thinks: "This needs database lookup, not document search"
+    ↓
+Agent uses SQL tool, not RAG
+    ↓
+Answer: "$2.4 million"
+
+Question: "What's our refund policy?"
+    ↓
+Agent thinks: "This is in the docs"
+    ↓
+Agent uses RAG
+    ↓
+Answer: "30-day full refund..."
+
+Question: "How does our marketing spend compare to industry average?"
+    ↓
+Agent thinks: "I need OUR data AND external data"
+    ↓
+Agent uses SQL + Web Search + combines results
+    ↓
+Answer: "We spent $2.4M, industry average is $1.8M, so we're 33% above..."
+```
+
+**It's like:** Instead of a single-purpose tool, you have a smart assistant who picks the right tool for each job—sometimes a document search, sometimes a calculator, sometimes both.
+
+**Trade-off:** Most complex, most powerful. But also hardest to debug when it goes wrong.
+
+</details>
+
 **First principles reasoning:**
 - Some queries need calculation, not retrieval
 - Some queries need multiple knowledge sources
@@ -431,6 +558,44 @@ def create_rag_agent():
 ## Pattern 8: GraphRAG
 
 **The problem it solves:** Vector RAG fails on global queries over large document collections.
+
+<details>
+<summary>🍕 <b>Plain English: What's GraphRAG?</b></summary>
+
+<br/>
+
+**The problem:** Normal RAG finds needles. But what if you need to understand the whole haystack?
+
+"What are the main themes across all our customer complaints?"
+
+Normal RAG can't answer this—it finds individual complaints, not patterns across thousands.
+
+**GraphRAG's trick:** Build a map of how everything connects, then zoom out.
+
+```
+Step 1: Read all docs, extract entities
+  - "Customer A complained about billing"
+  - "Customer B complained about billing"
+  - "Customer C complained about shipping"
+  
+Step 2: Build a graph (map of connections)
+  [Billing] ← complained about ← [Customer A, Customer B]
+  [Shipping] ← complained about ← [Customer C]
+  
+Step 3: Find clusters (communities)
+  - Billing cluster: 2,000 complaints
+  - Shipping cluster: 500 complaints
+  - Product quality cluster: 300 complaints
+  
+Step 4: Summarize each cluster
+  "Billing is the top complaint theme (70%), mainly about..."
+```
+
+**It's like:** Instead of reading every book in a library, you build a map of topics and see which sections have the most books. Then you can answer "what are the main topics?" without reading everything.
+
+**Trade-off:** Expensive to build (lots of LLM calls for extraction). Worth it for large collections where you need "big picture" answers.
+
+</details>
 
 **First principles reasoning:**
 - Vector search finds locally similar content

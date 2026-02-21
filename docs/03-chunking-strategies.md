@@ -2,6 +2,28 @@
 
 > **80% of RAG failures trace back to chunking decisions.** This section provides actionable guidance for getting chunking right.
 
+<details>
+<summary>🍕 <b>Hold up—what's "chunking"?</b></summary>
+
+<br/>
+
+**Chunking = cutting documents into bite-sized pieces**
+
+AI can't read a 500-page PDF all at once. So we cut it into smaller pieces called "chunks"—maybe a paragraph each—and store those pieces separately.
+
+When someone asks a question, we find the relevant chunks and give just those to the AI.
+
+**Why it's tricky:** 
+
+Imagine you're cutting a newspaper into pieces for a scrapbook:
+- Cut too small (individual words) → loses meaning: "The" "cat" "sat" "on" "the" "mat"
+- Cut too big (entire pages) → hard to find specific things
+- Cut at wrong spots → "The cat sat on" | "the mat" (split mid-thought!)
+
+**The 80% stat means:** Most RAG failures happen because someone cut their documents wrong. Fix the chunking, fix the RAG.
+
+</details>
+
 ---
 
 ## Why Chunking Matters
@@ -110,6 +132,27 @@ chunks = splitter.split_text(document)
 | Respects document structure | More complex pipeline |
 
 **When to use:** When fixed-size chunking produces poor retrieval metrics despite tuning.
+
+<details>
+<summary>🍕 <b>Plain English: Semantic vs Fixed-Size</b></summary>
+
+<br/>
+
+**Fixed-size chunking:** "Cut every 500 characters, no matter what."
+
+It's like a paper cutter that chops every 3 inches. Fast and predictable, but might cut through the middle of a sentence or split a paragraph about "why our product is great" into two useless halves.
+
+**Semantic chunking:** "Cut at natural breaks—where the topic changes."
+
+It's like a human with scissors who reads the text and cuts between sections. Takes longer, but each piece makes sense on its own.
+
+**The trade-off:**
+- Fixed-size: Fast, cheap, dumb
+- Semantic: Slow, expensive, smart
+
+**Rule of thumb:** Start with fixed-size. Only upgrade to semantic if you're seeing problems and have the time/budget.
+
+</details>
 
 ---
 
