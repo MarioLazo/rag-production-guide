@@ -74,14 +74,16 @@ flowchart LR
 
 ## Reciprocal Rank Fusion (RRF)
 
-RRF combines ranked lists without requiring score normalization:
+RRF combines ranked lists without requiring score normalization.
+
+> **Source:** Cormack, Clarke, and Buettcher, *"Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods"* (SIGIR 2009)
 
 ```
 RRF_score(d) = Σ 1/(k + rank_i(d))
 ```
 
 Where:
-- `k` = 60 (recommended constant)
+- `k` = 60 (recommended constant from original paper)
 - `rank_i(d)` = rank of document d in result list i
 
 ### Why RRF Works
