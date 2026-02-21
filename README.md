@@ -113,7 +113,8 @@ flowchart LR
 > 📚 **Deep Dives:**
 > - [Chunking Strategies](docs/03-chunking-strategies.md)
 > - [Hybrid Search](docs/04-hybrid-search.md)
-> - [Advanced Patterns](docs/05-advanced-patterns.md)
+> - [Mental Models & First Principles](docs/05-mental-models.md)
+> - [Advanced Patterns](docs/06-advanced-patterns.md)
 
 ---
 
@@ -186,7 +187,7 @@ flowchart TD
 | [DeepEval](https://github.com/confident-ai/deepeval) | ~12K | CI/CD integration, 50+ metrics, red-teaming |
 | [AutoRAG](https://github.com/Marker-Inc-Korea/AutoRAG) | ~5K | AutoML-style pipeline optimization |
 
-> 📚 **Deep Dive:** [Evaluation Framework](docs/06-evaluation-framework.md)
+> 📚 **Deep Dive:** [Evaluation Framework](docs/07-evaluation-framework.md)
 
 ---
 
@@ -203,7 +204,7 @@ RAG costs grow **exponentially**, not linearly. A documented case reached **$18K
 
 **Total potential savings: 70-85%** with the full optimization stack.
 
-> 📚 **Deep Dive:** [Cost Engineering](docs/07-cost-engineering.md)
+> 📚 **Deep Dive:** [Cost Engineering](docs/08-cost-engineering.md)
 
 ---
 
