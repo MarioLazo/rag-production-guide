@@ -287,7 +287,7 @@ graph LR
 
 ### 3.3 No Evaluation
 
-**What happens:** 70% of RAG systems in production lack any systematic evaluation framework.
+**What happens:** Most RAG systems in production lack systematic evaluation frameworks (industry surveys consistently show the majority of deployments have no automated quality monitoring).
 
 **Consequences:**
 - Degradation goes unnoticed until users complain

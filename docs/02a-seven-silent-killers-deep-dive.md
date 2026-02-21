@@ -979,7 +979,7 @@ This is the **meta-killer** because it enables all other killers:
 | **4** | Continuous | CI/CD + automated regression | Before deployment |
 | **5** | Adversarial | Red teaming + edge case testing | Proactive discovery |
 
-**Reality: 70% of production RAG systems are at Level 0 or 1.**
+**Reality:** Industry surveys suggest the **majority of production RAG systems operate at Level 0 or 1** — flying blind without systematic quality measurement.
 
 ## Real-World Impact
 
@@ -1099,6 +1099,8 @@ if random.random() < 0.05:  # 5% sampling
 > **"Why doesn't Copilot/ChatGPT/our-RAG find the right content?"**
 
 These case studies explain the common patterns behind AI assistant failures.
+
+> ⚠️ **Note:** These case studies are **composite illustrations** designed for educational purposes. They combine patterns observed across multiple public sources and practitioner experiences. Details including company types, timelines, and financial figures are illustrative estimates based on industry benchmarks. Any resemblance to specific companies is coincidental. For methodology, see [Academic References](../resources/academic-references.md#-estimation-methodology-sources).
 
 ---
 
@@ -1713,6 +1715,27 @@ flowchart TD
 | 5 | Lost-in-Middle | Position affects accuracy | Relevance ordering |
 | 6 | Semantic Collapse | Mean similarity >0.65 | Dedupe + MMR |
 | 7 | No Evaluation | No quality metrics | Implement RAG Triad |
+
+---
+
+## References & Attribution
+
+This deep dive synthesizes concepts and research from multiple sources:
+
+### Academic Research
+- **Lost in the Middle Effect:** Liu et al., *"Lost in the Middle: How Language Models Use Long Contexts"* (TACL 2024) — [arXiv:2307.03172](https://arxiv.org/abs/2307.03172)
+- **RAG Triad Metrics:** Es et al., *"RAGAS: Automated Evaluation of Retrieval Augmented Generation"* (EACL 2024) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
+- **HyDE:** Gao et al., *"Precise Zero-Shot Dense Retrieval without Relevance Labels"* (arXiv 2022) — [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
+
+### Industry Research
+- **Contextual Retrieval:** Anthropic, *"Introducing Contextual Retrieval"* (September 2024) — [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
+- **RAG Failure Rates:** TMLS Insights, Gartner Research, PIMCO 2025 Analysis
+- **Semantic Collapse Thresholds:** Practitioner experience and vector database documentation
+
+### Original Content
+The "Seven Silent Killers" framework, "RAG Smell Test," case study patterns, and all 🍕 layman explanations are original educational content created for this guide.
+
+For complete academic citations, see [Academic References](../resources/academic-references.md).
 
 ---
 

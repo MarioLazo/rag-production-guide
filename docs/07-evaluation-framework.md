@@ -1,6 +1,6 @@
 # 📏 Evaluation Framework
 
-> **You can't improve what you don't measure. 70% of RAG systems lack systematic evaluation—don't be one of them.**
+> **You can't improve what you don't measure. Most RAG systems lack systematic evaluation—don't be one of them.**
 
 <details>
 <summary>🍕 <b>Plain English: Why bother with evaluation?</b></summary>

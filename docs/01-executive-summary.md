@@ -136,7 +136,7 @@ Now when someone searches, the chunk actually contains the relevant keywords. It
 
 ### 2. The Evaluation Gap is the Primary Risk
 
-**70% of RAG systems lack systematic evaluation**, yet the tools are mature, free, and integrate into CI/CD in hours:
+**Most RAG systems lack systematic evaluation** (industry surveys suggest the majority of production deployments have no automated quality monitoring), yet the tools are mature, free, and integrate into CI/CD in hours:
 - RAGAS for reference-free evaluation
 - DeepEval for pytest-like testing
 - Both Apache 2.0 licensed
