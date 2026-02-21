@@ -108,19 +108,90 @@ Follow the [Documentation Index](docs/README.md) for the complete learning path 
 
 </div>
 
-### The Seven Silent Killers
+---
 
-| # | Failure Mode | Stage | Impact |
-|---|-------------|-------|--------|
-| 1 | **Missed Retrieval** | Retrieval | Relevant documents don't surface |
-| 2 | **Context Misalignment** | Retrieval | Retrieved content doesn't match intent |
-| 3 | **Stale Indexes** | Retrieval | Data drift causes outdated responses |
-| 4 | **Hallucination** | Generation | LLM fabricates content not in context |
-| 5 | **Lost-in-the-Middle** | Generation | LLM ignores middle of context window |
-| 6 | **Semantic Collapse** | System | Inter-document similarity > 0.65 causes degradation |
-| 7 | **Compounding Errors** | System | 95% accuracy per layer = 81% end-to-end across 5 layers |
+### 🔪 The Seven Silent Killers
 
-> 📚 **Deep Dive:** [Failure Modes & How to Prevent Them](docs/02-failure-modes.md)
+These failures don't throw errors. They don't show up in logs. They just **quietly deliver wrong answers** while your metrics look fine.
+
+<table>
+<tr>
+<th>#</th>
+<th>Silent Killer</th>
+<th>What Goes Wrong</th>
+<th>Smell Test 👃</th>
+</tr>
+<tr>
+<td>1</td>
+<td><b>🔍 Missed Retrieval</b></td>
+<td>The doc exists but doesn't surface</td>
+<td><i>"I know we have a doc about this..."</i></td>
+</tr>
+<tr>
+<td>2</td>
+<td><b>🎯 Context Misalignment</b></td>
+<td>Retrieved docs are related but don't answer the question</td>
+<td><i>"That's not what I asked"</i></td>
+</tr>
+<tr>
+<td>3</td>
+<td><b>📅 Stale Indexes</b></td>
+<td>Outdated info served as current truth</td>
+<td><i>"That price/policy changed weeks ago"</i></td>
+</tr>
+<tr>
+<td>4</td>
+<td><b>🎭 Hallucination</b></td>
+<td>LLM confidently makes stuff up</td>
+<td><i>"Where did it get THAT from?!"</i></td>
+</tr>
+<tr>
+<td>5</td>
+<td><b>👻 Lost-in-the-Middle</b></td>
+<td>Critical info ignored because of its position</td>
+<td><i>"The answer was RIGHT THERE in the context"</i></td>
+</tr>
+<tr>
+<td>6</td>
+<td><b>🫠 Semantic Collapse</b></td>
+<td>All docs look the same to the system</td>
+<td><i>"Why does it keep returning random results?"</i></td>
+</tr>
+<tr>
+<td>7</td>
+<td><b>🙈 No Evaluation</b></td>
+<td>You can't measure quality, so you don't know it's broken</td>
+<td><i>"It seems to work?" (famous last words)</i></td>
+</tr>
+</table>
+
+<details>
+<summary><b>🍕 ELI5: The Pizza Delivery Analogy</b></summary>
+
+<br/>
+
+Imagine your RAG system is a pizza delivery service:
+
+| Killer | Pizza Analogy | 
+|--------|--------------|
+| **Missed Retrieval** | You ordered pepperoni, they have pepperoni, but the kitchen can't find it so they send you plain cheese |
+| **Context Misalignment** | You asked for "something spicy" and got a pizza with hot sauce packets on the side (technically spicy, not what you meant) |
+| **Stale Indexes** | Menu says $12, but price went up to $15 last month—now you're arguing at checkout |
+| **Hallucination** | You asked about gluten-free options, they confidently say "yes!" (there are none) |
+| **Lost-in-the-Middle** | Your special instructions were "no olives, extra cheese, NO OLIVES"—guess what's on your pizza |
+| **Semantic Collapse** | All pizzas in their system are just labeled "pizza" so they grab whichever one is closest |
+| **No Evaluation** | They never ask "how was your order?" so they think everyone's happy |
+
+</details>
+
+#### ⚡ Quick Links
+
+| I want to... | Go here |
+|-------------|---------|
+| Understand all 7 killers in depth | [🔪 Seven Silent Killers Deep Dive](docs/02a-seven-silent-killers-deep-dive.md) |
+| Run a quick health check | [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) |
+| See real failure case studies | [Deep Dive → Case Studies](docs/02a-seven-silent-killers-deep-dive.md#case-studies-why-ai-assistants-seem-stupid) |
+| Get the full diagnostic checklist | [Deep Dive → Checklist](docs/02a-seven-silent-killers-deep-dive.md#-interactive-diagnostic-checklist) |
 
 ---
 
@@ -195,6 +266,7 @@ Quick-reference guides for common decisions:
 
 | Cheatsheet | Description |
 |------------|-------------|
+| [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) | 5-minute health check—is something off? ⭐ NEW |
 | [🌳 Chunking Decision Tree](cheatsheets/chunking-decision-tree.md) | Visual guide for chunk size selection |
 | [⚖️ Hybrid Search Weights](cheatsheets/hybrid-search-weights.md) | Domain-specific BM25/vector weights |
 | [🚨 Danger Zones Checklist](cheatsheets/danger-zones-checklist.md) | Pre-flight checklist before production |

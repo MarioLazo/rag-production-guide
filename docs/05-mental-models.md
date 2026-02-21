@@ -71,6 +71,35 @@ flowchart LR
     C -->|"Not relevant"| E["❌"]
 ```
 
+<details>
+<summary>🍕 <b>Plain English: The Dating App Problem</b></summary>
+
+<br/>
+
+Imagine a dating app that matches people by profile similarity:
+
+**You:** "I love hiking, hate loud bars, looking for something serious."
+
+**Match A:** "I love hiking, hate loud bars, looking for something serious." 
+→ 99% similar! 
+
+**Match B:** "I love cooking for two, quiet evenings at home, want to build a life together."
+→ 40% similar? Different words!
+
+But Match B might actually be MORE compatible. They want the same THINGS, they just DESCRIBE them differently.
+
+**This is RAG's problem:**
+- High similarity = "these texts use similar words"
+- High relevance = "this text actually answers your question"
+
+Your question: "What causes headaches?"  
+Similar doc: "Headaches are painful."  
+Relevant doc: "Dehydration, stress, and poor sleep are common headache triggers."
+
+The similar doc is about headaches. The relevant doc ANSWERS the question. They're not the same thing!
+
+</details>
+
 **First principle:** Similarity is a proxy for relevance, not relevance itself. The proxy fails when:
 - Query and answer use different vocabulary
 - Similar documents discuss different aspects
@@ -96,6 +125,28 @@ RAG Requirement:        Generate text that is factually grounded in
 
 The Mismatch:           Statistical likelihood ≠ Factual grounding
 ```
+
+<details>
+<summary>🍕 <b>Plain English: The Confident Bullshitter</b></summary>
+
+<br/>
+
+LLMs are like that friend who ALWAYS has an answer, even when they definitely shouldn't.
+
+**You:** "What's the capital of Freedonia?"  
+**That friend:** "Oh, it's obviously Marxburg. Founded in 1847, beautiful architecture."
+
+Freedonia is a fictional country from a Marx Brothers movie. Your friend just made everything up, but they sounded SO confident.
+
+**How LLMs work:** They predict "what word probably comes next." Not "what word is TRUE"—just what word is LIKELY given the pattern.
+
+If you ask about a made-up thing, the LLM thinks: "When people talk about countries, they usually have capitals, and capitals have names, and..."—and just fills in plausible-sounding nonsense.
+
+**RAG is supposed to fix this** by saying "only use THIS information to answer." But the LLM doesn't actually UNDERSTAND that rule—it just sees more text and does its normal "predict likely words" thing.
+
+**The danger:** It has no "I don't know" instinct. Admitting ignorance is not statistically likely in its training data—confident answers are.
+
+</details>
 
 **First principle:** LLMs are trained to produce *plausible* text, not *true* text. RAG attempts to ground plausibility in retrieved facts, but the LLM has no internal mechanism to distinguish "in context" from "in training data."
 

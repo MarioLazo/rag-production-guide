@@ -2,6 +2,29 @@
 
 > **RAG systems fail in production 80% of the time not because the technology is flawed, but because teams treat it as a plug-and-play solution rather than a precision engineering challenge.**
 
+<details>
+<summary>🍕 <b>Wait, what's RAG again?</b></summary>
+
+<br/>
+
+**RAG = Retrieval-Augmented Generation**
+
+Think of ChatGPT as a really smart person who read the entire internet up until 2023. They're brilliant, but:
+- They don't know what happened yesterday
+- They've never read YOUR company's documents
+- They might confidently make stuff up
+
+**RAG is like giving that smart person a search engine and your company's filing cabinet.** Now when you ask a question, they:
+1. **Search** for relevant documents first
+2. **Read** the specific info they found  
+3. **Answer** based on what they just read
+
+That's it. Search → Read → Answer. The "Retrieval" part is the search, the "Generation" part is the answer.
+
+**Why it fails:** Turns out, building a good search system for an AI is really hard. Most of the failures happen in the search step, not the answer step.
+
+</details>
+
 ---
 
 ## The Problem
@@ -90,12 +113,53 @@ Most teams haven't implemented Anthropic's Contextual Retrieval pattern, which a
 - **67% reduction** when combined with reranking
 - **~$1 per million tokens** one-time preprocessing cost
 
+<details>
+<summary>🍕 <b>Plain English: What's Contextual Retrieval?</b></summary>
+
+<br/>
+
+Imagine you have a company wiki, and somewhere in the middle of a 50-page document it says:
+
+> *"Revenue increased 15% year-over-year."*
+
+If someone asks "Did ACME Corp's revenue grow?", the AI might not find that sentence because it doesn't mention "ACME Corp"—it's just floating there without context.
+
+**Contextual Retrieval fixes this** by adding a little intro to each chunk before storing it:
+
+> *"This chunk is from ACME Corp's 2024 Annual Report, specifically the Financial Performance section. Revenue increased 15% year-over-year."*
+
+Now when someone searches, the chunk actually contains the relevant keywords. It's like adding a sticky note to every page saying "this page is about X from document Y."
+
+**Why it's the highest ROI:** It's a one-time preprocessing step that makes EVERYTHING more findable. Do it once, benefit forever.
+
+</details>
+
 ### 2. The Evaluation Gap is the Primary Risk
 
 **70% of RAG systems lack systematic evaluation**, yet the tools are mature, free, and integrate into CI/CD in hours:
 - RAGAS for reference-free evaluation
 - DeepEval for pytest-like testing
 - Both Apache 2.0 licensed
+
+<details>
+<summary>🍕 <b>Plain English: What's the "Evaluation Gap"?</b></summary>
+
+<br/>
+
+Most RAG systems are like restaurants that never check if customers like the food.
+
+The chef (your AI) makes dishes (answers), but:
+- Nobody tastes the food before serving
+- There's no comment card
+- You only find out something's wrong when customers stop coming
+
+**The evaluation gap means:** You deployed an AI that answers questions, but you have no idea if the answers are actually correct. You're flying blind.
+
+**Why it matters:** Your RAG system could be giving wrong answers 40% of the time and you'd never know until someone complains. Or worse, until they make a bad decision based on bad info.
+
+**The good news:** There are free tools (RAGAS, DeepEval) that can automatically check if your answers are correct. Most people just... don't use them.
+
+</details>
 
 ### 3. Cost Optimization is a Design-Time Decision
 
@@ -105,6 +169,27 @@ The difference between **$18K/month** and **$3K/month** is architectural:
 - Right-sized infrastructure
 
 Not incremental tuning after deployment.
+
+<details>
+<summary>🍕 <b>Plain English: Why $18K vs $3K?</b></summary>
+
+<br/>
+
+Every time someone asks your RAG system a question, you're paying:
+- 💰 To turn the question into numbers (embedding)
+- 💰 To search your database
+- 💰 To have the AI write an answer (the expensive part!)
+
+**The $18K approach:** Every question, no matter how simple, goes through the full expensive pipeline. "What time do you close?" costs the same as "Explain quantum physics."
+
+**The $3K approach:**
+- **Caching:** "What time do you close?" was asked 50 times today. Answer it once, reuse the answer.
+- **Model routing:** Simple questions → cheap/fast model. Complex questions → expensive/smart model.
+- **Right-sizing:** Don't use a $0.03/query model when a $0.001/query model works fine.
+
+**Key insight:** This has to be designed in from the start. Bolting it on later is 10x harder.
+
+</details>
 
 ---
 
