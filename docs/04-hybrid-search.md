@@ -464,6 +464,6 @@ def search(query):
 
 <div align="center">
 
-[← Chunking Strategies](03-chunking-strategies.md) | [Next: Advanced Patterns →](05-advanced-patterns.md)
+[← Chunking Strategies](03-chunking-strategies.md) | [Next: Mental Models →](05-mental-models.md)
 
 </div>

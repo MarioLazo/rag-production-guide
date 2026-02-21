@@ -59,9 +59,26 @@ This content is provided "as is" without warranty of any kind, express or implie
 
 ## 📖 About This Guide
 
-This repository distills findings from **30+ authoritative sources** — including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks — combined with **real-world production experience** across healthcare, manufacturing, and enterprise deployments.
+This repository distills findings from **30+ authoritative sources** — including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks — combined with patterns from published case studies and industry benchmarks.
 
 > **The core insight:** The "vector DB + LLM" recipe that dominates blog posts fails in practice. Success requires **modular architecture**, **hybrid retrieval**, **rigorous evaluation**, and **deliberate cost engineering**.
+
+---
+
+## 🎯 How to Use This Guide
+
+### ⚡ Quick Start (30 min)
+1. [Executive Summary](docs/01-executive-summary.md) — Why 80% fail
+2. [Danger Zones Checklist](cheatsheets/danger-zones-checklist.md) — Pre-flight check
+3. One [Case Study](case-studies/) of your choice
+
+### 📖 Core Concepts (2-3 hours)
+1. [Failure Modes](docs/02-failure-modes.md) → [Chunking](docs/03-chunking-strategies.md) → [Hybrid Search](docs/04-hybrid-search.md)
+2. [Evaluation Framework](docs/07-evaluation-framework.md)
+3. [Cost Engineering](docs/08-cost-engineering.md)
+
+### 🧠 Deep Dive (Full day)
+Follow the [Documentation Index](docs/README.md) for the complete learning path with all 8 core documents, platform guides, and case studies.
 
 ### Who This Is For
 
@@ -154,21 +171,21 @@ flowchart LR
 
 ---
 
-## 📋 Case Studies
+## 📋 Illustrative Case Studies
 
-Real-world production experiences with anonymized details. Each case study includes:
-- ✅ Business context and scale
-- ❌ What failed and why
-- ✅ What worked and lessons learned
-- 🔧 Technical architecture patterns
+Composite examples designed to teach RAG patterns with transparent ROI methodology. Each case study includes:
+- 📊 Public benchmark-based estimates (sources cited)
+- ❌ Common failure patterns and root causes
+- ✅ Solution patterns and lessons learned
+- 💰 Back-of-envelope ROI calculation methodology
 
-| Case Study | Industry | Scale | Key Learning |
-|------------|----------|-------|--------------|
-| [Healthcare Document AI](case-studies/01-healthcare-document-ai.md) | Healthcare | 8-12K docs/month | Taxonomy design is a data quality issue |
-| [Technical Support Agent](case-studies/02-medtech-support-agent.md) | Medical Devices | 75-125K cases/year | Decision tree + RAG hybrid outperforms open-ended RAG |
-| [Knowledge Mining Bot](case-studies/03-enterprise-knowledge-bot.md) | Enterprise SaaS | 10K-100K docs | Freshness is a trust issue, not just a data issue |
+| Case Study | Industry Pattern | Key Learning |
+|------------|-----------------|--------------|
+| [Healthcare Document Processing](case-studies/01-healthcare-document-ai.md) | Document Classification | ROI estimation from public benchmarks |
+| [Technical Support AI-Agent](case-studies/02-medtech-support-agent.md) | Field Service / Support | Decision tree + RAG hybrid architecture |
+| [Enterprise Knowledge Mining](case-studies/03-enterprise-knowledge-bot.md) | Enterprise Search | Hybrid search and platform selection |
 
-> 📚 **Framework:** [The 5 Danger Zones](case-studies/README.md#the-5-danger-zones)
+> 📚 **Framework:** [The 5 Danger Zones](case-studies/README.md#the-5-danger-zones-framework)
 
 ---
 

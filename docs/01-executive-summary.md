@@ -55,7 +55,7 @@ mindmap
 - Code examples for evaluation (RAGAS, DeepEval)
 - Platform-specific configurations (AWS, Azure, GCP, Databricks, UiPath)
 
-**Start with:** [Chunking Strategies](03-chunking-strategies.md), [Evaluation Framework](06-evaluation-framework.md)
+**Start with:** [Chunking Strategies](03-chunking-strategies.md), [Evaluation Framework](07-evaluation-framework.md)
 
 ### 🏗️ Solution Architects
 
@@ -65,7 +65,7 @@ mindmap
 - Platform selection criteria
 - Failure mode analysis and mitigation
 
-**Start with:** [Failure Modes](02-failure-modes.md), [Advanced Patterns](05-advanced-patterns.md)
+**Start with:** [Failure Modes](02-failure-modes.md), [Advanced Patterns](06-advanced-patterns.md)
 
 ### 📊 Technical Leaders
 
@@ -75,7 +75,7 @@ mindmap
 - Vendor evaluation criteria
 - Cost optimization strategies
 
-**Start with:** [Cost Engineering](07-cost-engineering.md), [Case Studies](../case-studies/)
+**Start with:** [Cost Engineering](08-cost-engineering.md), [Case Studies](../case-studies/)
 
 ---
 
@@ -117,8 +117,8 @@ Not incremental tuning after deployment.
 | Understand why RAG fails | [Failure Modes](02-failure-modes.md) |
 | Choose chunk sizes | [Chunking Decision Tree](../cheatsheets/chunking-decision-tree.md) |
 | Configure hybrid search | [Hybrid Search](04-hybrid-search.md) |
-| Evaluate your system | [Evaluation Framework](06-evaluation-framework.md) |
-| Optimize costs | [Cost Engineering](07-cost-engineering.md) |
+| Evaluate your system | [Evaluation Framework](07-evaluation-framework.md) |
+| Optimize costs | [Cost Engineering](08-cost-engineering.md) |
 | See real examples | [Case Studies](../case-studies/) |
 | Platform-specific guidance | [Platform Guides](platform-guides/) |
 
