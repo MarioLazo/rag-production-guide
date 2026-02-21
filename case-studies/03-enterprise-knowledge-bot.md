@@ -1,23 +1,34 @@
-# 💼 Case Study: Enterprise Knowledge Mining Bot
+# 💼 Illustrative Case: Enterprise Knowledge Mining
 
-> **L2 Support Knowledge Chatbot for an Enterprise SaaS Company**
-
----
-
-## Context
-
-| Attribute | Details |
-|-----------|---------|
-| **Industry** | Technology / Enterprise SaaS |
-| **Team Size** | 10-20 person L2 customer support team |
-| **Knowledge Sources** | ITSM tickets, technical docs, product guides, internal wikis |
-| **Query Volume** | 150-400 queries/day across the team |
-| **Dataset Scale** | 10K-100K documents/tickets |
-| **Search Platform** | Elasticsearch (managed cloud) |
+> **A composite example demonstrating hybrid search and platform selection patterns**
 
 ---
 
-## The Challenge
+## ⚠️ Important Notice
+
+This case study is a **composite illustration** created for educational purposes. It:
+- Does not represent any specific company or engagement
+- Uses financial estimates derived from **published industry benchmarks** (sources cited below)
+- Demonstrates common patterns from **public vendor documentation** and **search platform comparisons**
+- Is designed to teach platform selection and hybrid search patterns
+
+---
+
+## Illustrative Context
+
+| Attribute | Illustrative Value | Basis |
+|-----------|-------------------|-------|
+| **Industry** | Enterprise SaaS / Technology | Common RAG use case |
+| **Team Size** | 10-20 support agents | Mid-size L2 team |
+| **Knowledge Sources** | ITSM, docs, wikis | Standard enterprise stack |
+| **Query Volume** | 200-400/day | Representative volume |
+| **Dataset Scale** | 10K-100K documents | Mid-range corpus |
+
+**Sources:** Elastic customer stories, Zendesk benchmarks, Forrester research on knowledge management.
+
+---
+
+## The Challenge Pattern
 
 L2 support agents needed to quickly find answers across fragmented knowledge sources to resolve escalated customer issues.
 

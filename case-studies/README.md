@@ -1,29 +1,51 @@
-# 📋 Case Studies
+# 📋 Illustrative Case Studies
 
-> **Real-world production experiences with anonymized details. Learn from actual failures and successes.**
+> **Composite examples designed to teach RAG implementation patterns, with transparent estimation methodology.**
 
 ---
 
-## Overview
+## ⚠️ About These Case Studies
 
-These case studies are drawn from actual enterprise RAG deployments. Details have been anonymized to protect confidential information while preserving the technical lessons.
+### Composite & Illustrative Nature
 
-Each case study includes:
-- ✅ Business context and scale
-- ❌ What failed and root cause analysis
-- ✅ What worked and why
-- 🔧 Technical architecture patterns
-- 📚 Lessons with RAG applicability
+These case studies are **composite illustrations** designed to teach RAG implementation patterns. They are constructed from:
+
+1. **Published industry research** — Benchmarks from AHIMA, AHA, MGMA, Gartner, and analyst firms
+2. **Open-source documentation** — Patterns from Microsoft, AWS, Google published case studies
+3. **Academic literature** — Peer-reviewed research on RAG systems ([see references](../resources/academic-references.md))
+4. **Community knowledge** — Patterns shared in public forums and conferences
+
+### What This Means
+
+| Aspect | Clarification |
+|--------|---------------|
+| **Companies** | No real company is represented; industries are illustrative |
+| **Financial figures** | Calculated from public benchmarks using transparent methodology |
+| **Technical details** | Reflect common architectural patterns from published sources |
+| **Outcomes** | Illustrative of what's possible based on vendor case studies |
+
+### Using These Studies
+
+✅ **Use these to:**
+- Understand common failure patterns and solutions
+- Learn back-of-envelope ROI estimation methodology
+- Identify questions to ask in your own context
+- See how public benchmarks can inform business cases
+
+❌ **Do not use these to:**
+- Guarantee specific outcomes to stakeholders
+- Justify budgets without your own analysis
+- Replace proper due diligence and planning
 
 ---
 
 ## Case Studies
 
-| # | Case Study | Industry | Scale | Key Theme |
-|---|------------|----------|-------|-----------|
-| 1 | [Healthcare Document AI](01-healthcare-document-ai.md) | Healthcare | 8-12K docs/month | Document classification + RAG-adjacent patterns |
-| 2 | [Technical Support Agent](02-medtech-support-agent.md) | Medical Devices | 75-125K cases/year | Decision tree + RAG hybrid |
-| 3 | [Knowledge Mining Bot](03-enterprise-knowledge-bot.md) | Enterprise SaaS | 10K-100K docs | ITSM integration + hybrid search |
+| # | Case Study | Industry | Theme | Key Learning |
+|---|------------|----------|-------|--------------|
+| 1 | [Healthcare Document AI](01-healthcare-document-ai.md) | Healthcare | Document classification | ROI estimation from public benchmarks |
+| 2 | [Technical Support Agent](02-medtech-support-agent.md) | Manufacturing | Decision tree + RAG | Structured orchestration patterns |
+| 3 | [Knowledge Mining Bot](03-enterprise-knowledge-bot.md) | Enterprise SaaS | Hybrid search | Platform selection criteria |
 
 ---
 

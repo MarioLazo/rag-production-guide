@@ -1,25 +1,36 @@
-# 🏥 Case Study: Healthcare Document AI
+# 🏥 Illustrative Case: Healthcare Document Processing
 
-> **Revenue Cycle Correspondence Automation at a Major Regional Health System**
-
----
-
-## Context
-
-| Attribute | Details |
-|-----------|---------|
-| **Industry** | Healthcare |
-| **Organization Scale** | 10-15 hospitals, 150-250 outpatient facilities |
-| **Volume** | 1.5-2 million patient visits annually |
-| **Document Volume** | 8,000-12,000 correspondence files/month |
-| **Document Types** | 50-70 distinct categories |
-| **Cloud Platform** | Azure |
+> **A composite example demonstrating document classification patterns and ROI estimation methodology**
 
 ---
 
-## The Challenge
+## ⚠️ Important Notice
 
-The Revenue Cycle Management (RCM) department processed massive volumes of financial correspondence from banking partners. The manual workflow was a classic "correspondence bottleneck":
+This case study is a **composite illustration** created for educational purposes. It:
+- Does not represent any specific healthcare organization
+- Uses financial estimates derived from **published industry benchmarks** (sources cited below)
+- Demonstrates common patterns observed in **public vendor case studies** and **academic research**
+- Is designed to teach estimation methodology, not guarantee outcomes
+
+---
+
+## Illustrative Context
+
+| Attribute | Illustrative Value | Basis |
+|-----------|-------------------|-------|
+| **Industry** | Healthcare (Revenue Cycle) | Common use case in vendor case studies |
+| **Organization Scale** | Regional health system | Representative of published benchmarks |
+| **Document Volume** | 10,000 docs/month | Mid-range for industry |
+| **Document Types** | 50+ categories | Common in RCM workflows |
+| **Platform** | Cloud-based | Standard modern architecture |
+
+**Sources:** AHIMA (American Health Information Management Association) workflow studies, HFMA (Healthcare Financial Management Association) benchmarks, vendor case studies from ABBYY, Kofax, and Microsoft.
+
+---
+
+## The Challenge Pattern
+
+This illustrative case represents a common pattern in healthcare document processing: the "correspondence bottleneck."
 
 ```mermaid
 flowchart LR
@@ -44,17 +55,127 @@ flowchart LR
 | "Swivel-chair" indexing | Toggling between document and EHR system |
 | Error-prone delivery | Manual repackaging and transfer |
 
-### Business Impact
+### Illustrative Business Impact
 
-| Metric | Estimated Annual Cost |
-|--------|----------------------|
-| Labor costs | $300K-500K |
-| Revenue leakage (missed appeals) | $2-4M |
-| Compliance risk exposure | High (PHI handling) |
-| Staff turnover costs | $200K-300K |
-| **Total Opportunity** | **$3-5M annually** |
+The following estimates are calculated using **published industry benchmarks**. This methodology can be adapted to your specific context.
 
-> **Industry context:** Healthcare denial rates average 15-20%, and the majority of appeals succeed when filed. Each denial letter processed faster enables potential revenue recapture.
+| Metric | Estimate | Calculation Basis |
+|--------|----------|-------------------|
+| Labor costs | $400K-800K | See methodology below |
+| Revenue opportunity | $1-3M | See methodology below |
+| **Illustrative Total** | **$1.5-4M range** | Conservative to optimistic |
+
+---
+
+## 💰 ROI Estimation Methodology
+
+**This section teaches back-of-envelope ROI calculation using public benchmarks.**
+
+### Step 1: Labor Cost Estimation
+
+```
+INPUT ASSUMPTIONS (from public benchmarks):
+─────────────────────────────────────────────────────────────────
+Document processing time:        15-20 minutes per document
+  Source: AHIMA workflow benchmarks
+
+Documents per month:             10,000 (illustrative mid-range)
+  Source: Varies by organization
+
+Clerical hourly wage:            $18-22/hour
+  Source: Bureau of Labor Statistics (BLS), Medical Records Clerks
+
+Fully-loaded multiplier:         1.4× (benefits, overhead)
+  Source: Standard HR practice (BLS employer costs)
+
+CALCULATION:
+─────────────────────────────────────────────────────────────────
+Monthly processing hours:        10,000 docs × 0.3 hours = 3,000 hours
+Fully-loaded hourly rate:        $20 × 1.4 = $28/hour
+Monthly labor cost:              3,000 × $28 = $84,000
+Annual labor cost:               $84,000 × 12 = ~$1,000,000
+
+With 50-70% automation (conservative vendor claims):
+Annual labor savings:            $500,000 - $700,000
+```
+
+### Step 2: Revenue Impact Estimation
+
+```
+INPUT ASSUMPTIONS (from public benchmarks):
+─────────────────────────────────────────────────────────────────
+Industry denial rate:            15-20%
+  Source: American Hospital Association (AHA)
+
+Appeal success rate:             50-65% (when actually filed)
+  Source: MGMA (Medical Group Management Association)
+
+Average claim value:             $5,000-15,000 (varies by case mix)
+  Source: CMS reimbursement data, varies significantly
+
+Current appeal rate:             ~30% of denials (industry estimate)
+  Source: HFMA surveys
+
+CALCULATION (Illustrative):
+─────────────────────────────────────────────────────────────────
+If document automation frees staff time for appeals:
+- Additional denials appealed per month: 50-100
+- Appeal success rate: 55%
+- Average recovery: $8,000
+
+Monthly additional revenue: 75 × 0.55 × $8,000 = $330,000
+Annual revenue impact: $330,000 × 12 = ~$4,000,000 (theoretical max)
+
+REALITY CHECK:
+- Actual capture rate likely 25-50% of theoretical
+- Conservative estimate: $1,000,000 - $2,000,000
+```
+
+### Step 3: Implementation Cost Estimation
+
+```
+TYPICAL RANGES (from vendor pricing, public sources):
+─────────────────────────────────────────────────────────────────
+Cloud AI services (Azure/AWS):   $2,000-10,000/month
+Professional services:           $100,000-300,000 (implementation)
+Internal labor:                  $50,000-150,000 (project team)
+Training & change management:    $20,000-50,000
+
+Year 1 total cost estimate:      $250,000-600,000
+Ongoing annual cost:             $50,000-150,000
+```
+
+### Step 4: ROI Summary
+
+```
+CONSERVATIVE SCENARIO:
+─────────────────────────────────────────────────────────────────
+Year 1 Benefits:    $500,000 (labor) + $500,000 (revenue) = $1,000,000
+Year 1 Costs:       $400,000
+Net Year 1:         $600,000
+ROI:                1.5×
+
+OPTIMISTIC SCENARIO:
+─────────────────────────────────────────────────────────────────
+Year 1 Benefits:    $700,000 (labor) + $2,000,000 (revenue) = $2,700,000
+Year 1 Costs:       $600,000
+Net Year 1:         $2,100,000
+ROI:                3.5×
+
+RECOMMENDATION: Use conservative scenario for business cases.
+```
+
+### Key Benchmark Sources
+
+| Benchmark | Source | Link |
+|-----------|--------|------|
+| HIM processing times | AHIMA | [ahima.org](https://www.ahima.org/) |
+| Denial rates | AHA | [aha.org](https://www.aha.org/) |
+| Appeal success rates | MGMA | [mgma.com](https://www.mgma.com/) |
+| Labor costs | BLS | [bls.gov/oes](https://www.bls.gov/oes/) |
+| Claim values | CMS | [cms.gov](https://www.cms.gov/) |
+
+> **Industry context:** Healthcare denial rates average 15-20% according to AHA, and MGMA data shows the majority of appeals succeed when filed. These public benchmarks inform the estimates above.
 
 ---
 

@@ -1,24 +1,36 @@
-# 🔬 Case Study: Technical Support AI-Agent
+# 🔬 Illustrative Case: Technical Support AI-Agent
 
-> **Intelligent Support Co-Pilot for a Global Medical Device Manufacturer**
-
----
-
-## Context
-
-| Attribute | Details |
-|-----------|---------|
-| **Industry** | Medical Technology / Healthcare Equipment |
-| **Organization Scale** | 15-25 agent regional support center |
-| **Volume** | 75,000-125,000 annual service cases |
-| **Knowledge Base** | Service manuals, troubleshooting guides, historical cases, parts inventory |
-| **Cloud Platform** | AWS |
+> **A composite example demonstrating decision tree + RAG hybrid patterns**
 
 ---
 
-## The Challenge
+## ⚠️ Important Notice
 
-The technical support center handles complex service cases for diagnostic imaging and laboratory equipment deployed in hospitals and clinics. Cases range from remote troubleshooting to dispatching field engineers.
+This case study is a **composite illustration** created for educational purposes. It:
+- Does not represent any specific company or engagement
+- Uses financial estimates derived from **published industry benchmarks** (sources cited below)
+- Demonstrates common patterns from **public vendor case studies** and **field service research**
+- Is designed to teach architectural patterns, not guarantee outcomes
+
+---
+
+## Illustrative Context
+
+| Attribute | Illustrative Value | Basis |
+|-----------|-------------------|-------|
+| **Industry** | Manufacturing / Field Service | Common AI use case |
+| **Team Size** | 15-25 support agents | Mid-size support center |
+| **Annual Cases** | ~100,000 | Representative volume |
+| **Knowledge Sources** | Manuals, case history, parts inventory | Standard support stack |
+| **Platform** | Cloud-based (AWS pattern) | Modern architecture |
+
+**Sources:** HDI (Help Desk Institute) benchmarks, TSIA (Technology Services Industry Association) data, ServiceMax and Salesforce Field Service case studies.
+
+---
+
+## The Challenge Pattern
+
+This illustrative case represents a common pattern in technical support: knowledge fragmentation and expertise gaps.
 
 ```mermaid
 flowchart LR
@@ -43,14 +55,98 @@ flowchart LR
 | Ineffective dispatches | 10-20% of field visits wasted (wrong parts/diagnostics) |
 | Customer impact | Equipment downtime delays patient care |
 
-### Business Impact
+### Illustrative Business Impact
 
-| Metric | Baseline | Target | Annual Value |
-|--------|----------|--------|--------------|
-| Average Handling Time | 20-30 min/case | 15-25 min | $300K-500K savings |
-| First-Call Resolution | 65-75% | 80-90% | Customer satisfaction |
-| Ineffective Dispatches | 10-20% | 5-10% | $400K-700K savings |
-| **Total Opportunity** | | | **$700K-1.2M annually** |
+The following estimates use **published industry benchmarks** from field service research.
+
+| Metric | Industry Benchmark | Improvement Target | Basis |
+|--------|-------------------|-------------------|-------|
+| Average Handling Time | 20-30 min | -20% reduction | HDI benchmarks |
+| First-Call Resolution | 65-75% | +10-15 points | ICMI research |
+| Ineffective Dispatches | 10-20% | -50% reduction | TSIA data |
+
+---
+
+## 💰 ROI Estimation Methodology
+
+**This section teaches back-of-envelope ROI calculation using public benchmarks.**
+
+### Step 1: Average Handling Time (AHT) Savings
+
+```
+INPUT ASSUMPTIONS (from public benchmarks):
+─────────────────────────────────────────────────────────────────
+Industry average AHT:            20-30 minutes per case
+  Source: HDI (Help Desk Institute) benchmarks
+
+AI-assisted AHT improvement:     15-25% reduction
+  Source: Gartner, vendor case studies (Salesforce, ServiceNow)
+
+Annual case volume:              100,000 (illustrative)
+
+Support agent fully-loaded cost: $60,000-80,000/year
+  Source: BLS, Glassdoor for technical support roles
+
+CALCULATION:
+─────────────────────────────────────────────────────────────────
+Current AHT:                     25 minutes
+Improved AHT:                    20 minutes (20% reduction)
+Time saved per case:             5 minutes
+Annual time saved:               100,000 × 5 min = 8,333 hours
+
+FTE equivalent:                  8,333 ÷ 2,000 = ~4 FTEs
+Cost per FTE:                    $70,000
+Annual AHT savings:              4 × $70,000 = $280,000
+```
+
+### Step 2: Field Dispatch Optimization
+
+```
+INPUT ASSUMPTIONS (from public benchmarks):
+─────────────────────────────────────────────────────────────────
+Ineffective dispatch rate:       10-20% (industry varies)
+  Source: TSIA, Aberdeen Group field service research
+
+Cost per field dispatch:         $500-1,500 (travel, labor, parts)
+  Source: Field service industry benchmarks
+
+AI-assisted improvement:         50% reduction in ineffective dispatches
+  Source: ServiceMax, vendor case studies
+
+CALCULATION:
+─────────────────────────────────────────────────────────────────
+Annual dispatches:               20,000 (illustrative)
+Ineffective dispatches (15%):    3,000
+Reduced ineffective (50%):       1,500 avoided
+Cost per dispatch:               $800 (mid-range)
+Annual dispatch savings:         1,500 × $800 = $1,200,000
+```
+
+### Step 3: ROI Summary
+
+```
+CONSERVATIVE SCENARIO:
+─────────────────────────────────────────────────────────────────
+AHT savings:                     $200,000
+Dispatch savings:                $400,000
+Total benefits:                  $600,000
+Year 1 ROI:                      1.5-2×
+
+OPTIMISTIC SCENARIO:
+─────────────────────────────────────────────────────────────────
+AHT savings:                     $400,000
+Dispatch savings:                $1,200,000
+Total benefits:                  $1,600,000
+Year 1 ROI:                      3-4×
+```
+
+### Key Benchmark Sources
+
+| Benchmark | Source | Link |
+|-----------|--------|------|
+| Help desk metrics | HDI | [thinkhdi.com](https://www.thinkhdi.com/) |
+| Field service benchmarks | TSIA | [tsia.com](https://www.tsia.com/) |
+| Labor costs | BLS | [bls.gov/oes](https://www.bls.gov/oes/) |
 
 ---
 

@@ -21,6 +21,42 @@
 
 ---
 
+## ⚠️ Important Disclaimers
+
+### 📚 Educational Content
+This guide is provided for **educational and informational purposes only**. It does not constitute professional advice. Before making significant technology or business decisions, consult with qualified professionals appropriate to your situation.
+
+### 🔬 Curated Knowledge, Not Proprietary Information
+This guide is a **curated synthesis** of:
+- **Peer-reviewed academic research** — Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](resources/academic-references.md))
+- **Open-source frameworks** — Publicly available GitHub repositories from Microsoft, AWS, Google, and the community
+- **Industry benchmarks** — Published statistics from Gartner, PIMCO, AHIMA, AHA, and other research organizations
+- **Community knowledge** — Patterns shared by practitioners in public forums, conferences, and published case studies
+
+**No proprietary or confidential information is included.** All sources are publicly available and cited.
+
+### 🎭 Composite Case Studies
+The case studies in this guide are **composite illustrations** created for educational purposes. They:
+- **Do not represent any specific company** or client engagement
+- **Combine patterns** observed across multiple public sources and industry research
+- **Use modified details** including scale, timelines, and technical specifics
+- **Employ illustrative financial estimates** based on published industry benchmarks
+
+Any resemblance to actual organizations is coincidental.
+
+### 💰 Financial Estimates
+All financial figures (costs, savings, ROI) are **illustrative estimates** based on:
+- Published industry benchmarks (cited in each case study)
+- Back-of-envelope calculation methodology (shown transparently)
+- Conservative ranges rather than point estimates
+
+**Your actual results will vary** based on your specific context, implementation quality, organizational factors, and market conditions. These figures are intended to teach estimation methodology, not to guarantee outcomes.
+
+### 📜 No Warranty
+This content is provided "as is" without warranty of any kind, express or implied. The authors and contributors are not liable for any damages arising from the use of this information.
+
+---
+
 ## 📖 About This Guide
 
 This repository distills findings from **30+ authoritative sources** — including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks — combined with **real-world production experience** across healthcare, manufacturing, and enterprise deployments.
