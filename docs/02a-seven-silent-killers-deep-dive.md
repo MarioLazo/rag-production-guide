@@ -1729,7 +1729,11 @@ This deep dive synthesizes concepts and research from multiple sources:
 
 ### Industry Research
 - **Contextual Retrieval:** Anthropic, *"Introducing Contextual Retrieval"* (September 2024) — [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
-- **RAG Failure Rates:** TMLS Insights, Gartner Research, PIMCO 2025 Analysis
+- **AI/RAG Failure Rates:** 
+  - S&P Global Market Intelligence, *Voice of the Enterprise: AI & ML, Use Cases 2025* (March 2025) — [CIO Dive](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)
+  - RAND Corporation, *The Root Causes of Failure for AI Projects* (2024) — [RAND](https://www.rand.org/pubs/research_reports/RRA2680-1.html)
+  - MIT NANDA, *The GenAI Divide: State of AI in Business 2025* (July 2025) — [Fortune](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)
+  - Gartner GenAI PoC Analysis (July 2024) — [Gartner Newsroom](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025)
 - **Semantic Collapse Thresholds:** Practitioner experience and vector database documentation
 
 ### Original Content

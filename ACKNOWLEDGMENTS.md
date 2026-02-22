@@ -97,8 +97,12 @@ We acknowledge the researchers and authors whose work informed this guide:
 ### Industry Research
 - **Anthropic** — Contextual Retrieval research (September 2024)
 - **DeepMind** — Vector search bottleneck analysis
-- **PIMCO** — 2025 Enterprise AI failure analysis
-- **Gartner** — AI project success rates research
+- **S&P Global Market Intelligence** — Voice of the Enterprise: AI & ML, Use Cases 2025 (March 2025)
+- **RAND Corporation** — The Root Causes of Failure for AI Projects (2024)
+- **MIT NANDA** — The GenAI Divide: State of AI in Business 2025 (July 2025)
+- **Gartner** — AI project success rates and GenAI PoC abandonment research
+- **McKinsey** — State of AI 2025
+- **Stanford HAI** — AI Index Report 2025
 
 ### Thought Leaders
 Special thanks to the practitioners who share their production experiences through blog posts, conference talks, and community discussions. Your willingness to share failures as well as successes helps us all build better systems.
