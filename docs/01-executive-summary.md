@@ -33,10 +33,10 @@ The data is stark:
 
 | Metric | Value | Source |
 |--------|-------|--------|
-| Enterprise RAG project failure rate | **80%** | TMLS Insights 2025 |
-| Projects that never reach production | **40-60%** | Industry analysis |
-| AI projects failed in 2025 | **42%** (2.5× increase from 2024) | PIMCO 2025 |
-| Enterprise AI spending at risk | **$13.8 billion** | PIMCO 2025 |
+| Enterprise RAG project failure rate | **80%** | RAND Corporation 2024 |
+| Projects that never reach production | **48%** fail to reach production | Gartner 2024 |
+| AI projects abandoned in 2025 | **42%** (2.5× increase from 2024) | S&P Global 2025 |
+| GenAI pilots with zero P&L impact | **95%** | MIT NANDA 2025 |
 
 The pattern is consistent: *"A lot of my client conversations start by 'hey, we have this vector db + LLM RAG thing and it's not working.'"* — TMLS Insights
 

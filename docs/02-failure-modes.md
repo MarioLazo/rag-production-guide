@@ -371,8 +371,11 @@ A DEV Community case study showed progression from **58% baseline to 83%** by la
 - *"Lost in the Middle: How Language Models Use Long Contexts"* — TACL 2024
 - *"RAG Isn't Dead, It's Just Rarely Built Right"* — TMLS Insights 2025
 - *"RAGAS: Automated Evaluation of Retrieval Augmented Generation"* — EACL 2024
-- PIMCO 2025 AI Project Analysis
-- Anthropic Contextual Retrieval Research (September 2024)
+- S&P Global Market Intelligence, *Voice of the Enterprise: AI & ML, Use Cases 2025* — March 2025
+- RAND Corporation, *The Root Causes of Failure for AI Projects* — 2024
+- MIT NANDA, *The GenAI Divide: State of AI in Business 2025* — July 2025
+- Gartner GenAI PoC Abandonment Analysis — July 2024
+- Anthropic Contextual Retrieval Research — September 2024
 
 ---
 

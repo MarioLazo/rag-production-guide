@@ -30,7 +30,7 @@ This guide is provided for **educational and informational purposes only**. It d
 This guide is a **curated synthesis** of:
 - **Peer-reviewed academic research** — Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](resources/academic-references.md))
 - **Open-source frameworks** — Publicly available GitHub repositories from Microsoft, AWS, Google, and the community
-- **Industry benchmarks** — Published statistics from Gartner, PIMCO, AHIMA, AHA, and other research organizations
+- **Industry benchmarks** — Published statistics from S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI, AHIMA, AHA, and other research organizations
 - **Community knowledge** — Patterns shared by practitioners in public forums, conferences, and published case studies
 
 **No proprietary or confidential information is included.** All sources are publicly available and cited.
@@ -98,13 +98,13 @@ Follow the [Documentation Index](docs/README.md) for the complete learning path 
 ┌─────────────────────────────────────────────────────────────────┐
 │                    THE STARK REALITY                            │
 ├─────────────────────────────────────────────────────────────────┤
-│  📉 80% of enterprise RAG projects end in failure               │
-│  📉 40-60% never reach production                               │
-│  💰 $13.8 billion in enterprise AI spending at risk             │
-│  📉 42% of AI projects failed in 2025 (2.5× increase from 2024) │
+│  📉 80%+ of AI projects fail (2× the rate of non-AI IT)         │
+│  📉 48% never reach production                                  │
+│  📉 42% of AI projects abandoned in 2025 (↑ from 17% in 2024)   │
+│  📉 95% of GenAI pilots report zero measurable P&L impact       │
 └─────────────────────────────────────────────────────────────────┘
 ```
-*Sources: PIMCO 2025 Analysis, TMLS Insights, Gartner Research*
+*Sources: RAND Corporation 2024, Gartner 2024, S&P Global 2025, MIT NANDA 2025*
 
 </div>
 

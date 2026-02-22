@@ -24,7 +24,7 @@ The repository already has strong attribution infrastructure:
 - "curated synthesis" of peer-reviewed research and open-source frameworks
 - Case studies are "composite illustrations" 
 - Financial figures are "illustrative estimates"
-- Sources cited (PIMCO, TMLS, Gartner)
+- Sources cited (S&P Global, RAND, MIT NANDA, Gartner, McKinsey, Stanford HAI, TMLS)
 ```
 
 ---
@@ -38,8 +38,9 @@ The repository already has strong attribution infrastructure:
 | "80% of RAG projects fail" | README, multiple docs | "TMLS Insights 2025" | ✅ Attributed |
 | "70% lack systematic evaluation" | Deep dive, failure modes | None | ⚠️ **Needs source or "estimated"** |
 | "49-67% retrieval failure reduction" | Exec summary, chunking | "Anthropic September 2024" | ✅ Attributed |
-| "42% of AI projects failed in 2025" | README | "PIMCO 2025" | ✅ Attributed |
-| "$13.8 billion at risk" | README | "PIMCO 2025" | ✅ Attributed |
+| "42% of AI projects abandoned in 2025" | README | S&P Global 2025 | ✅ Attributed |
+| "80%+ AI project failure rate" | README | RAND Corporation 2024 | ✅ Attributed |
+| "95% GenAI pilots zero P&L impact" | README | MIT NANDA 2025 | ✅ Attributed |
 | "$18K/month case" | Cost engineering | Implied case study | ⚠️ **Clarify as "documented case" or estimate** |
 | "Lost in Middle: 10-25% drop" | Deep dive | Research paper cited | ✅ Attributed |
 
@@ -243,9 +244,13 @@ The guide is primarily:
 | HyDE paper | academic-references.md | ✅ |
 | GraphRAG paper | academic-references.md | ✅ |
 | Anthropic Contextual Retrieval | Multiple locations | ✅ |
-| PIMCO statistics | README | ✅ |
+| S&P Global statistics | README, academic-references | ✅ |
+| RAND Corporation | README, academic-references | ✅ |
+| MIT NANDA | README, academic-references | ✅ |
 | TMLS Insights | README | ✅ |
 | Gartner | README, academic-references | ✅ |
+| McKinsey State of AI | README, academic-references | ✅ |
+| Stanford HAI AI Index | README, academic-references | ✅ |
 | Open-source repos | ACKNOWLEDGMENTS.md | ✅ |
 | Microsoft repos | ACKNOWLEDGMENTS.md | ✅ |
 | AWS repos | ACKNOWLEDGMENTS.md | ✅ |
