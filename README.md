@@ -11,55 +11,22 @@
 **80% of enterprise RAG projects fail.** This guide shows you how to be in the 20% that succeed.
 
 [Why RAG Fails](#-why-rag-fails) •
-[Architecture](#-architecture) •
-[Case Studies](#-case-studies) •
+[Architecture](#️-architecture) •
+[Case Studies](#-illustrative-case-studies) •
 [Cheatsheets](#-cheatsheets) •
-[Platform Guides](#-platform-guides) •
-[Contributing](#-contributing)
+[Platform Guides](#️-platform-guides) •
+[Contributing](#-contributing) •
+[Disclaimers](#️-disclaimers)
 
 </div>
 
 ---
 
-## ⚠️ Important Disclaimers
-
-### 📚 Educational Content
-This guide is provided for **educational and informational purposes only**. It does not constitute professional advice. Before making significant technology or business decisions, consult with qualified professionals appropriate to your situation.
-
-### 🔬 Curated Knowledge, Not Proprietary Information
-This guide is a **curated synthesis** of:
-- **Peer-reviewed academic research** — Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](resources/academic-references.md))
-- **Open-source frameworks** — Publicly available GitHub repositories from Microsoft, AWS, Google, and the community
-- **Industry benchmarks** — Published statistics from S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI, AHIMA, AHA, and other research organizations
-- **Community knowledge** — Patterns shared by practitioners in public forums, conferences, and published case studies
-
-**No proprietary or confidential information is included.** All sources are publicly available and cited.
-
-### 🎭 Composite Case Studies
-The case studies in this guide are **composite illustrations** created for educational purposes. They:
-- **Do not represent any specific company** or client engagement
-- **Combine patterns** observed across multiple public sources and industry research
-- **Use modified details** including scale, timelines, and technical specifics
-- **Employ illustrative financial estimates** based on published industry benchmarks
-
-Any resemblance to actual organizations is coincidental.
-
-### 💰 Financial Estimates
-All financial figures (costs, savings, ROI) are **illustrative estimates** based on:
-- Published industry benchmarks (cited in each case study)
-- Back-of-envelope calculation methodology (shown transparently)
-- Conservative ranges rather than point estimates
-
-**Your actual results will vary** based on your specific context, implementation quality, organizational factors, and market conditions. These figures are intended to teach estimation methodology, not to guarantee outcomes.
-
-### 📜 No Warranty
-This content is provided "as is" without warranty of any kind, express or implied. The authors and contributors are not liable for any damages arising from the use of this information.
-
----
-
 ## 📖 About This Guide
 
-This repository distills findings from **30+ authoritative sources** — including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks — combined with patterns from published case studies and industry benchmarks.
+Whether you're an ML engineer debugging retrieval issues, an architect evaluating platforms, or a technical leader building the business case for RAG—this guide meets you where you are.
+
+This repository distills findings from **30+ authoritative sources**—including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks—combined with patterns from published case studies and industry benchmarks.
 
 > **The core insight:** The "vector DB + LLM" recipe that dominates blog posts fails in practice. Success requires **modular architecture**, **hybrid retrieval**, **rigorous evaluation**, and **deliberate cost engineering**.
 
@@ -94,7 +61,7 @@ Follow the [Documentation Index](docs/README.md) for the complete learning path 
 
 <div align="center">
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                    THE STARK REALITY                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -335,17 +302,22 @@ RAG costs grow **exponentially**, not linearly. A documented case reached **$18K
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! This guide improves with diverse production experiences.
+We welcome contributions from the community! This guide improves with diverse production experiences, and we especially value insights from **practitioners in the trenches** and **researchers pushing the boundaries**.
+
+Your personal and lived experience matters—whether you've shipped RAG systems at scale, recovered from spectacular failures, or discovered novel techniques worth sharing.
 
 ### Ways to Contribute
 
-- 🐛 Report errors or outdated information
-- 📝 Add anonymized case studies from your experience
-- 🔧 Improve platform-specific examples
-- 🌐 Translate to other languages
-- 📊 Add diagrams or visualizations
+| Contribution | Description |
+|--------------|-------------|
+| 🐛 **Report Issues** | Found errors or outdated information? Let us know |
+| 📝 **Share Case Studies** | Add anonymized stories from your production experience |
+| 🔧 **Improve Examples** | Enhance platform-specific implementations |
+| 🔬 **Add Research** | Link relevant papers or share experimental findings |
+| 🌐 **Translate** | Help make this guide accessible in other languages |
+| 📊 **Visualize** | Add diagrams, flowcharts, or decision trees |
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
@@ -381,9 +353,60 @@ See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for the complete list.
 
 ---
 
+## ⚠️ Disclaimers
+
+<details>
+<summary><b>📚 Educational Content</b></summary>
+
+This guide is provided for **educational and informational purposes only**. It does not constitute professional advice. Before making significant technology or business decisions, consult with qualified professionals appropriate to your situation.
+</details>
+
+<details>
+<summary><b>🔬 Curated Knowledge, Not Proprietary Information</b></summary>
+
+This guide is a **curated synthesis** of:
+- **Peer-reviewed academic research** — Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](resources/academic-references.md))
+- **Open-source frameworks** — Publicly available GitHub repositories from Microsoft, AWS, Google, and the community
+- **Industry benchmarks** — Published statistics from S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI, AHIMA, AHA, and other research organizations
+- **Community knowledge** — Patterns shared by practitioners in public forums, conferences, and published case studies
+
+**No proprietary or confidential information is included.** All sources are publicly available and cited.
+</details>
+
+<details>
+<summary><b>🎭 Composite Case Studies</b></summary>
+
+The case studies in this guide are **composite illustrations** created for educational purposes. They:
+- **Do not represent any specific company** or client engagement
+- **Combine patterns** observed across multiple public sources and industry research
+- **Use modified details** including scale, timelines, and technical specifics
+- **Employ illustrative financial estimates** based on published industry benchmarks
+
+Any resemblance to actual organizations is coincidental.
+</details>
+
+<details>
+<summary><b>💰 Financial Estimates</b></summary>
+
+All financial figures (costs, savings, ROI) are **illustrative estimates** based on:
+- Published industry benchmarks (cited in each case study)
+- Back-of-envelope calculation methodology (shown transparently)
+- Conservative ranges rather than point estimates
+
+**Your actual results will vary** based on your specific context, implementation quality, organizational factors, and market conditions. These figures are intended to teach estimation methodology, not to guarantee outcomes.
+</details>
+
+<details>
+<summary><b>📜 No Warranty</b></summary>
+
+This content is provided "as is" without warranty of any kind, express or implied. The authors and contributors are not liable for any damages arising from the use of this information.
+</details>
+
+---
+
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License—see the [LICENSE](LICENSE) file for details.
 
 ---
 
