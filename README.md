@@ -8,7 +8,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/MarioLazo/rag-production-guide)](https://github.com/MarioLazo/rag-production-guide/graphs/contributors)
 
-**80% of enterprise RAG projects fail.** This guide shows you how to be in the 20% that succeed.
+**80%+ of AI projects fail — twice the rate of conventional IT projects.** This guide shows you how to beat those odds.
 
 [Why RAG Fails](#-why-rag-fails) •
 [Architecture](#-architecture) •
@@ -229,7 +229,7 @@ flowchart LR
 
 | Component | Recommendation | Why |
 |-----------|---------------|-----|
-| **Chunking** | 400-512 tokens, 10-20% overlap | 80% of failures trace back to chunking decisions |
+| **Chunking** | 400-512 tokens, 10-20% overlap | Most failures trace back to chunking decisions |
 | **Search** | Hybrid BM25 + Vector with RRF | Pure vector search has fundamental bottlenecks |
 | **Reranking** | Cross-encoder on top-20 results | 49-67% retrieval failure reduction |
 | **Context** | Contextual Retrieval preprocessing | Single highest-ROI improvement available |

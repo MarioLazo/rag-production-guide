@@ -159,11 +159,10 @@ The patterns and statistics in these case studies are supported by:
 - **S&P Global Market Intelligence** (2025) — 42% AI project abandonment rate (↑ from 17% in 2024)
 - **RAND Corporation** (2024) — 80%+ AI project failure rate (2× non-AI IT projects)
 - **MIT NANDA** (2025) — 95% of GenAI pilots report zero measurable P&L impact
-- **Gartner Research** (2024) — 30% GenAI PoC abandonment prediction; only 48% reach production
-- **McKinsey State of AI** (2025) — 88% AI usage but only 39% report enterprise EBIT impact
-- **Stanford HAI AI Index** (2025) — $109B US private AI investment; AI incidents rose 56% YoY
-- **TMLS Insights** — RAG implementation patterns
-- **Industry benchmarks** — Healthcare denial rates, support center metrics
+- **Gartner Research** (2024) — 30% GenAI PoC abandonment; only 48% reach production; 8 months avg prototype → production
+- **McKinsey State of AI** (2025) — 88% AI usage but only 39% report enterprise EBIT impact; 51% report negative impacts; high performers 2× more likely to redesign workflows first
+- **Stanford HAI AI Index** (2025) — $109B US private AI investment; 280× inference cost reduction; AI incidents rose 56% YoY
+- **Industry benchmarks** — Healthcare denial rates (AHIMA, AHA), support center metrics (HDI, TSIA)
 
 ---
 

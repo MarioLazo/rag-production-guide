@@ -37,7 +37,7 @@ For comprehensive understanding:
 |---|----------|-------------|--------------|
 | 01 | [Executive Summary](01-executive-summary.md) | Why RAG fails, who this is for, key insights | 10 min |
 | 02 | [Failure Modes](02-failure-modes.md) | The 7 silent killers across 3 failure stages | 15 min |
-| 03 | [Chunking Strategies](03-chunking-strategies.md) | 80% of failures start here; decision framework | 15 min |
+| 03 | [Chunking Strategies](03-chunking-strategies.md) | Most failures start here; decision framework | 15 min |
 | 04 | [Hybrid Search](04-hybrid-search.md) | BM25 + Vector search with RRF fusion | 12 min |
 | 05 | [Mental Models](05-mental-models.md) | First principles thinking for RAG | 15 min |
 | 06 | [Advanced Patterns](06-advanced-patterns.md) | 9 patterns from Contextual Retrieval to GraphRAG | 20 min |
