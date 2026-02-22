@@ -19,7 +19,7 @@
 | Post | Author | Key Insight |
 |------|--------|-------------|
 | [Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval) | Anthropic | 49-67% retrieval improvement technique |
-| [RAG Isn't Dead, It's Just Rarely Built Right](https://towardsdatascience.com/) | TMLS | Why 80% of RAG projects fail |
+| [The Root Causes of Failure for AI Projects](https://www.rand.org/pubs/research_reports/RRA2680-1.html) | RAND Corporation | Why 80%+ of AI projects fail (open access) |
 | [Patterns for Building LLM-based Systems](https://eugeneyan.com/writing/llm-patterns/) | Eugene Yan | Comprehensive patterns overview |
 
 ---

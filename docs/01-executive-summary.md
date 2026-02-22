@@ -1,6 +1,6 @@
 # 📋 Executive Summary
 
-> **RAG systems fail in production 80% of the time not because the technology is flawed, but because teams treat it as a plug-and-play solution rather than a precision engineering challenge.**
+> **80%+ of AI projects fail — twice the rate of conventional IT projects (RAND 2024). RAG systems are no exception. They fail not because the technology is flawed, but because teams treat it as a plug-and-play solution rather than a precision engineering challenge.**
 
 <details>
 <summary>🍕 <b>Wait, what's RAG again?</b></summary>
@@ -33,12 +33,13 @@ The data is stark:
 
 | Metric | Value | Source |
 |--------|-------|--------|
-| Enterprise RAG project failure rate | **80%** | RAND Corporation 2024 |
-| Projects that never reach production | **48%** fail to reach production | Gartner 2024 |
-| AI projects abandoned in 2025 | **42%** (2.5× increase from 2024) | S&P Global 2025 |
+| AI project failure rate | **80%+** (2× non-AI IT projects) | RAND Corporation 2024 |
+| Projects that never reach production | **48%** | Gartner 2024 |
+| AI projects abandoned in 2025 | **42%** (↑ from 17% in 2024) | S&P Global 2025 |
 | GenAI pilots with zero P&L impact | **95%** | MIT NANDA 2025 |
+| Organizations reporting negative AI impacts | **51%** | McKinsey 2025 |
 
-The pattern is consistent: *"A lot of my client conversations start by 'hey, we have this vector db + LLM RAG thing and it's not working.'"* — TMLS Insights
+The pattern is consistent across all major research: deployment ≠ value creation. High performers are **2× more likely to redesign workflows before selecting AI tools** (McKinsey 2025).
 
 ---
 

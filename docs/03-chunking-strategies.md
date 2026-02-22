@@ -1,6 +1,6 @@
 # 📄 Chunking Strategies
 
-> **80% of RAG failures trace back to chunking decisions.** This section provides actionable guidance for getting chunking right.
+> **Most RAG failures can be traced back to chunking decisions.** Poor chunking leads to missed retrieval, context misalignment, and semantic collapse — three of the seven silent killers. This section provides actionable guidance for getting chunking right.
 
 <details>
 <summary>🍕 <b>Hold up—what's "chunking"?</b></summary>

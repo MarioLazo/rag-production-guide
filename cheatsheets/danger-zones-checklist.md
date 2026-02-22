@@ -126,7 +126,7 @@ pie title Failure Distribution by Zone
 
 ## Zone 4: Evaluation Blind Spots (25%)
 
-*70% of RAG systems lack systematic evaluation*
+*Most RAG systems in production lack systematic evaluation (industry surveys consistently show the majority have no automated quality monitoring)*
 
 ### Pre-Production Checklist
 

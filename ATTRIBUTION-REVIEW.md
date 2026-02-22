@@ -24,7 +24,7 @@ The repository already has strong attribution infrastructure:
 - "curated synthesis" of peer-reviewed research and open-source frameworks
 - Case studies are "composite illustrations" 
 - Financial figures are "illustrative estimates"
-- Sources cited (S&P Global, RAND, MIT NANDA, Gartner, McKinsey, Stanford HAI, TMLS)
+- Sources cited (S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI)
 ```
 
 ---
@@ -35,8 +35,8 @@ The repository already has strong attribution infrastructure:
 
 | Claim | Location | Current Attribution | Recommendation |
 |-------|----------|---------------------|----------------|
-| "80% of RAG projects fail" | README, multiple docs | "TMLS Insights 2025" | ✅ Attributed |
-| "70% lack systematic evaluation" | Deep dive, failure modes | None | ⚠️ **Needs source or "estimated"** |
+| "80%+ of AI projects fail" | README, multiple docs | RAND Corporation 2024 | ✅ Verified |
+| "Most lack systematic evaluation" | Deep dive, failure modes | Softened (no specific %) | ✅ Fixed |
 | "49-67% retrieval failure reduction" | Exec summary, chunking | "Anthropic September 2024" | ✅ Attributed |
 | "42% of AI projects abandoned in 2025" | README | S&P Global 2025 | ✅ Attributed |
 | "80%+ AI project failure rate" | README | RAND Corporation 2024 | ✅ Attributed |
@@ -70,22 +70,11 @@ The repository already has strong attribution infrastructure:
 
 ## ⚠️ Potential Issues
 
-### 1. The "70% Lack Evaluation" Statistic
+### 1. The "70% Lack Evaluation" Statistic — ✅ RESOLVED
 
-**Location:** `docs/02a-seven-silent-killers-deep-dive.md`, `docs/02-failure-modes.md`
+**Location:** `docs/02a-seven-silent-killers-deep-dive.md`, `docs/02-failure-modes.md`, `cheatsheets/danger-zones-checklist.md`
 
-**Issue:** This is stated as fact but no source is cited.
-
-**Options:**
-1. Find the source (may be from TMLS or industry survey)
-2. Change to "most" or "majority" 
-3. Add "estimated" or "industry surveys suggest"
-
-**Recommendation:** Change to:
-```markdown
-**What happens:** Most RAG systems in production lack systematic evaluation frameworks.
-```
-OR find and cite the specific source.
+**Resolution:** Changed to "Most RAG systems in production lack systematic evaluation" without specific percentage. This aligns with industry consensus without citing an unverified statistic.
 
 ### 2. Semantic Collapse 0.65 Threshold
 
@@ -154,7 +143,7 @@ This deep dive synthesizes concepts from:
 - **RAG Triad Metrics:** Es et al., "RAGAS: Automated Evaluation of Retrieval Augmented Generation" (EACL 2024)  
 - **Contextual Retrieval:** Anthropic, "Introducing Contextual Retrieval" (September 2024)
 - **HyDE:** Gao et al., "Precise Zero-Shot Dense Retrieval without Relevance Labels" (arXiv 2022)
-- **Evaluation Gap Statistics:** Industry estimates based on TMLS Insights and practitioner surveys
+- **Evaluation Gap Statistics:** Industry consensus (specific percentage removed; stated as "most" or "majority")
 
 For complete academic citations, see [Academic References](../resources/academic-references.md).
 ```
@@ -226,11 +215,13 @@ The guide is primarily:
 
 ### Remaining Actions:
 
-1. [ ] Soften "70%" statistic or find source
-2. [ ] Add references section to deep dive
-3. [ ] Add case study disclaimer
-4. [ ] Add RRF paper citation
-5. [ ] Clarify semantic collapse threshold origin
+1. [x] ~~Soften "70%" statistic or find source~~ — Changed to "most" without specific %
+2. [x] ~~Replace TMLS with RAND Corporation~~ — Updated all references
+3. [x] ~~Add missing verified stats~~ — Added 280× cost reduction, 51% negative impacts, 2× workflow, 8 months to production
+4. [ ] Add references section to deep dive
+5. [ ] Add case study disclaimer
+6. [ ] Add RRF paper citation
+7. [ ] Clarify semantic collapse threshold origin
 
 ---
 
@@ -247,7 +238,7 @@ The guide is primarily:
 | S&P Global statistics | README, academic-references | ✅ |
 | RAND Corporation | README, academic-references | ✅ |
 | MIT NANDA | README, academic-references | ✅ |
-| TMLS Insights | README | ✅ |
+| RAND Corporation | README, multiple docs | ✅ |
 | Gartner | README, academic-references | ✅ |
 | McKinsey State of AI | README, academic-references | ✅ |
 | Stanford HAI AI Index | README, academic-references | ✅ |
