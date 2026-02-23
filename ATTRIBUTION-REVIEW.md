@@ -142,7 +142,7 @@ This deep dive synthesizes concepts from:
 - **Lost in the Middle Effect:** Liu et al., "Lost in the Middle: How Language Models Use Long Contexts" (TACL 2024)
 - **RAG Triad Metrics:** Es et al., "RAGAS: Automated Evaluation of Retrieval Augmented Generation" (EACL 2024)  
 - **Contextual Retrieval:** Anthropic, "Introducing Contextual Retrieval" (September 2024)
-- **HyDE:** Gao et al., "Precise Zero-Shot Dense Retrieval without Relevance Labels" (arXiv 2022)
+- **HyDE:** Gao et al., "Precise Zero-Shot Dense Retrieval without Relevance Labels" (ACL 2023) — [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
 - **Evaluation Gap Statistics:** Industry consensus (specific percentage removed; stated as "most" or "majority")
 
 For complete academic citations, see [Academic References](../resources/academic-references.md).
