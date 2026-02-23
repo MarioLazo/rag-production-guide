@@ -12,6 +12,7 @@
 
 [Why RAG Fails](#-why-rag-fails) •
 [Architecture](#️-architecture) •
+[Feedback & HITL](#-feedback-loops--human-in-the-loop) •
 [Case Studies](#-illustrative-case-studies) •
 [Cheatsheets](#-cheatsheets) •
 [Platform Guides](#️-platform-guides) •
@@ -28,7 +29,7 @@ Whether you're an ML engineer debugging retrieval issues, an architect evaluatin
 
 This repository distills findings from **30+ authoritative sources**—including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks—combined with patterns from published case studies and industry benchmarks.
 
-> **The core insight:** The "vector DB + LLM" recipe that dominates blog posts fails in practice. Success requires **modular architecture**, **hybrid retrieval**, **rigorous evaluation**, and **deliberate cost engineering**.
+> **The core insight:** The "vector DB + LLM" recipe that dominates blog posts fails in practice. Success requires **modular architecture**, **hybrid retrieval**, **rigorous evaluation**, **deliberate cost engineering**, and **closed-loop refinement**.
 
 ---
 
@@ -43,6 +44,7 @@ This repository distills findings from **30+ authoritative sources**—including
 1. [Failure Modes](docs/02-failure-modes.md) → [Chunking](docs/03-chunking-strategies.md) → [Hybrid Search](docs/04-hybrid-search.md)
 2. [Evaluation Framework](docs/07-evaluation-framework.md)
 3. [Cost Engineering](docs/08-cost-engineering.md)
+4. [Feedback Loops](docs/10-feedback-loops-and-refinement.md) → [Human-in-the-Loop](docs/11-human-in-the-loop.md)
 
 ### 🧠 Deep Dive (Full day)
 Follow the [Documentation Index](docs/README.md) for the complete learning path with all 8 core documents, platform guides, and case studies.
@@ -77,7 +79,7 @@ Follow the [Documentation Index](docs/README.md) for the complete learning path 
 
 ---
 
-### 🔍 The Seven Blind Spots
+### 🔍 The Eight Blind Spots
 
 These failures don't throw errors. They don't show up in logs. They just **quietly deliver wrong answers** while your metrics look fine.
 
@@ -126,6 +128,12 @@ These failures don't throw errors. They don't show up in logs. They just **quiet
 </tr>
 <tr>
 <td>7</td>
+<td><b>🔄 No Feedback Loop</b></td>
+<td>System can't learn from its mistakes</td>
+<td><i>"We keep getting the same complaints..."</i></td>
+</tr>
+<tr>
+<td>8</td>
 <td><b>🙈 No Evaluation</b></td>
 <td>You can't measure quality, so you don't know it's broken</td>
 <td><i>"It seems to work?" (famous last words)</i></td>
@@ -147,6 +155,7 @@ Imagine your RAG system is a pizza delivery service:
 | **Hallucination** | You asked about gluten-free options, they confidently say "yes!" (there are none) |
 | **Lost-in-the-Middle** | Your special instructions were "no olives, extra cheese, NO OLIVES"—guess what's on your pizza |
 | **Semantic Collapse** | All pizzas in their system are just labeled "pizza" so they grab whichever one is closest |
+| **No Feedback Loop** | Customers complain every week about burnt crust, but nobody tells the kitchen — same mistake forever |
 | **No Evaluation** | They never ask "how was your order?" so they think everyone's happy |
 
 </details>
@@ -155,7 +164,7 @@ Imagine your RAG system is a pizza delivery service:
 
 | I want to... | Go here |
 |-------------|---------|
-| Understand all 7 blind spots in depth | [🔍 Seven Blind Spots Deep Dive](docs/02a-seven-blind-spots-deep-dive.md) |
+| Understand all 8 blind spots in depth | [🔍 Eight Blind Spots Deep Dive](docs/02a-seven-blind-spots-deep-dive.md) |
 | Run a quick health check | [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) |
 | See real failure case studies | [Deep Dive → Case Studies](docs/02a-seven-blind-spots-deep-dive.md#case-studies-why-ai-assistants-seem-stupid) |
 | Get the full diagnostic checklist | [Deep Dive → Checklist](docs/02a-seven-blind-spots-deep-dive.md#-interactive-diagnostic-checklist) |
@@ -206,6 +215,20 @@ flowchart LR
 > - [Hybrid Search](docs/04-hybrid-search.md)
 > - [Mental Models & First Principles](docs/05-mental-models.md)
 > - [Advanced Patterns](docs/06-advanced-patterns.md)
+
+---
+
+## 🔄 Feedback Loops & Human-in-the-Loop
+
+A RAG system that can't learn from its mistakes is stuck. These three guides cover the full improvement lifecycle:
+
+| Guide | What It Covers |
+|-------|---------------|
+| [Metadata & Knowledge Layers](docs/09-metadata-and-knowledge-layers.md) | Metadata taxonomy, capture strategies, semantic/knowledge layer design, GraphRAG |
+| [Feedback Loops & Refinement](docs/10-feedback-loops-and-refinement.md) | Explicit/implicit feedback, failure categorization, closed-loop improvement, golden dataset expansion |
+| [Human-in-the-Loop & Retraining](docs/11-human-in-the-loop.md) | Confidence-based routing, when to involve humans, retraining triggers, active learning |
+
+> 📊 **Quick Reference:** [Feedback Loop Design Cheatsheet](cheatsheets/feedback-loop-design.md)
 
 ---
 

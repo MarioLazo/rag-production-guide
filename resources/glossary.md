@@ -132,6 +132,21 @@ RAG systems with autonomous agents that decide when, what, and where to retrieve
 ### GraphRAG
 RAG augmented with knowledge graphs for better handling of entity relationships and global queries.
 
+### Knowledge Layer (Semantic Layer)
+A structured representation of entities, relationships, and concepts built on top of raw documents. Transforms a pile of text into a connected knowledge base that supports relationship queries and multi-hop reasoning.
+
+### Metadata Enrichment
+The process of automatically extracting and attaching descriptive information (topics, entities, domain, authority level, timestamps) to documents and chunks. Enables filtering, boosting, and smarter retrieval.
+
+### Feedback Loop
+A system that captures signals about RAG quality (explicit user feedback, implicit behavioral signals) and uses them to systematically improve retrieval, generation, and evaluation over time.
+
+### Active Learning
+A strategy for selecting which AI outputs to route to human reviewers for maximum learning value. Instead of random sampling, active learning prioritizes uncertain, novel, or high-risk cases.
+
+### Retraining Trigger
+A measurable condition (e.g., human override rate >20%, evaluation metrics declining, new topic cluster emerging) that signals when the RAG system needs adjustment — from prompt refinement to embedding fine-tuning.
+
 ---
 
 ## Infrastructure Terminology
@@ -183,6 +198,7 @@ Processing multiple requests together for cost savings. Typically 50% cheaper th
 | ANN | Approximate Nearest Neighbor |
 | HNSW | Hierarchical Navigable Small World |
 | HITL | Human-in-the-Loop |
+| NER | Named Entity Recognition |
 | FCR | First-Call Resolution |
 | AHT | Average Handling Time |
 | ROI | Return on Investment |

@@ -550,6 +550,62 @@ flowchart LR
 
 ---
 
+## Evaluating Human-in-the-Loop Effectiveness
+
+If your RAG system includes [human-in-the-loop routing](11-human-in-the-loop.md), you need to evaluate the HITL system itself — not just the AI.
+
+<details>
+<summary>🍕 <b>Plain English: Evaluating the "safety net"</b></summary>
+
+<br/>
+
+Your HITL system is like the head chef who taste-tests pizzas before they leave the kitchen. You need to evaluate the head chef too:
+- Are they catching the bad pizzas? (routing accuracy)
+- Are they letting good pizzas through without unnecessary delays? (efficiency)
+- Are the pizzas getting better over time because of their feedback? (improvement rate)
+- Do different head chefs agree on what's "good"? (consistency)
+
+If your head chef rejects 50% of pizzas, either the pizza-making robot is terrible (fix the system) or the head chef is too picky (fix the routing thresholds).
+
+</details>
+
+### HITL Metrics
+
+| Metric | What It Measures | Target | Warning Sign |
+|--------|-----------------|--------|-------------|
+| **Override rate** | % of AI responses humans reject or edit | 10-20% | >30% = system needs fixes; <5% = routing too conservative |
+| **Routing precision** | % of routed items that actually needed review | >60% | <40% = wasting human time on good responses |
+| **Reviewer agreement** | Do different reviewers make the same decision? | >80% | <70% = annotation guidelines need improvement |
+| **Feedback incorporation lag** | Time from human correction to system improvement | <2 weeks | >1 month = feedback loop is broken |
+| **Automation rate trend** | % of queries handled without humans, over time | Increasing | Flat = not learning from feedback |
+
+### Measuring HITL ROI
+
+```python
+def compute_hitl_roi(metrics: dict) -> dict:
+    """Assess whether human review is paying for itself."""
+    # Cost side
+    reviews_per_month = metrics["monthly_reviews"]
+    cost_per_review = metrics["cost_per_review"]  # Fully loaded
+    monthly_hitl_cost = reviews_per_month * cost_per_review
+
+    # Value side
+    errors_caught = metrics["overrides_per_month"]
+    cost_per_uncaught_error = metrics["estimated_error_cost"]  # Lost trust, rework, etc.
+    monthly_value = errors_caught * cost_per_uncaught_error
+
+    return {
+        "monthly_cost": monthly_hitl_cost,
+        "monthly_value": monthly_value,
+        "roi_ratio": monthly_value / monthly_hitl_cost if monthly_hitl_cost > 0 else 0,
+        "net_value": monthly_value - monthly_hitl_cost,
+    }
+```
+
+> 📚 **Deep Dive:** [Human-in-the-Loop & Retraining](11-human-in-the-loop.md) for the complete HITL routing architecture, confidence scoring, active learning, and retraining triggers.
+
+---
+
 ## Summary: Evaluation Checklist
 
 Before going to production:
@@ -563,6 +619,8 @@ Before going to production:
 - [ ] CI/CD integration working
 - [ ] Regression detection enabled
 - [ ] Production sampling planned
+- [ ] Feedback loop capturing explicit and implicit signals ([details](10-feedback-loops-and-refinement.md))
+- [ ] HITL metrics tracked if human review is in place ([details](11-human-in-the-loop.md))
 
 ---
 

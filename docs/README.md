@@ -24,7 +24,7 @@ For a solid foundation:
 
 ### 🧠 Deep Dive (Full day)
 For comprehensive understanding:
-1. All core docs (01-08) in order
+1. All core docs (01-11) in order
 2. All case studies
 3. Relevant platform guide
 4. Cheatsheets for reference
@@ -43,6 +43,9 @@ For comprehensive understanding:
 | 06 | [Advanced Patterns](06-advanced-patterns.md) | 9 patterns from Contextual Retrieval to GraphRAG | 20 min |
 | 07 | [Evaluation Framework](07-evaluation-framework.md) | RAG Triad, RAGAS, DeepEval, CI/CD integration | 15 min |
 | 08 | [Cost Engineering](08-cost-engineering.md) | From $18K/month to sustainable production | 12 min |
+| 09 | [Metadata & Knowledge Layers](09-metadata-and-knowledge-layers.md) | Metadata taxonomy, semantic layer, GraphRAG | 15 min |
+| 10 | [Feedback Loops & Refinement](10-feedback-loops-and-refinement.md) | Closed-loop improvement, active learning | 15 min |
+| 11 | [Human-in-the-Loop](11-human-in-the-loop.md) | HITL routing, retraining triggers, when to involve humans | 15 min |
 
 ---
 
@@ -79,12 +82,17 @@ flowchart LR
     E --> F[06 Advanced Patterns]
     F --> G[07 Evaluation]
     G --> H[08 Cost Engineering]
-    
-    H --> I[Platform Guides]
-    
+    H --> I[09 Metadata & Knowledge]
+    I --> J[10 Feedback Loops]
+    J --> K[11 Human-in-the-Loop]
+
+    K --> L[Platform Guides]
+
     style A fill:#e3f2fd
     style G fill:#c8e6c9
     style H fill:#fff9c4
+    style J fill:#e8f5e9
+    style K fill:#e8f5e9
 ```
 
 ---

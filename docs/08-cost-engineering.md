@@ -621,6 +621,6 @@ Before any deployment, ask:
 
 <div align="center">
 
-[← Evaluation Framework](07-evaluation-framework.md) | [Platform Guides →](platform-guides/)
+[← Evaluation Framework](07-evaluation-framework.md) | [Next: Metadata & Knowledge Layers →](09-metadata-and-knowledge-layers.md)
 
 </div>

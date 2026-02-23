@@ -285,7 +285,38 @@ graph LR
 
 ---
 
-### 3.3 No Evaluation
+### 3.3 No Feedback Loop
+
+**What happens:** The system has no mechanism to learn from its mistakes. Users encounter bad answers, but that signal never flows back to improve the system.
+
+<details>
+<summary>🍕 <b>Pizza analogy</b></summary>
+
+<br/>
+
+A pizza shop that never reads its reviews, never asks "how was your order?", and never trains its chefs on customer complaints. Every mistake gets repeated forever. Meanwhile, the shop across the street improves every week because they listen.
+
+</details>
+
+**Consequences:**
+- Same failures repeat indefinitely
+- No data to prioritize improvements
+- Human review (if any) generates no lasting value
+- System quality stagnates while users lose trust
+
+**Detection:** If you can't answer "what were the top 5 failure patterns last month?" — you don't have a feedback loop.
+
+**Mitigation:**
+- Capture explicit feedback (thumbs up/down, corrections)
+- Detect implicit signals (reformulation, abandonment)
+- Categorize failures by pipeline stage (retrieval, generation, freshness)
+- Route confirmed corrections into the golden evaluation dataset
+
+> 📚 **Deep Dive:** [Feedback Loops & Refinement](10-feedback-loops-and-refinement.md) and [Human-in-the-Loop](11-human-in-the-loop.md)
+
+---
+
+### 3.4 No Evaluation
 
 **What happens:** Most RAG systems in production lack systematic evaluation frameworks (industry surveys consistently show the majority of deployments have no automated quality monitoring).
 
@@ -333,7 +364,7 @@ evaluate(
 
 ---
 
-## The Seven Blind Spots: Summary
+## The Eight Blind Spots: Summary
 
 | # | Blind Spot | Stage | Detection | Quick Win |
 |---|--------|-------|-----------|-----------|
@@ -343,7 +374,8 @@ evaluate(
 | 4 | Hallucination | Generation | Faithfulness metric | Grounding prompts |
 | 5 | Lost-in-the-Middle | Generation | Position-aware testing | Relevance ordering |
 | 6 | Semantic Collapse | System | Similarity distribution | Deduplication |
-| 7 | No Evaluation | System | (Meta-problem) | RAG Triad + CI/CD |
+| 7 | No Feedback Loop | System | "Top 5 failures last month?" | Feedback capture + categorization |
+| 8 | No Evaluation | System | (Meta-problem) | RAG Triad + CI/CD |
 
 > 🔍 **Want more?** See the **[Seven Blind Spots Deep Dive](02a-seven-blind-spots-deep-dive.md)** for:
 > - Detailed examples across industries (Healthcare, Legal, Finance, E-commerce)

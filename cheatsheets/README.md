@@ -14,6 +14,7 @@
 | [🚨 Danger Zones Checklist](danger-zones-checklist.md) | Pre-flight checklist before production | Before deployment |
 | [📏 Evaluation Metrics](evaluation-metrics.md) | RAG Triad + extended metrics reference | Setting up evaluation |
 | [💰 Cost Optimization](cost-optimization.md) | Lever-by-lever savings guide | Reducing production costs |
+| [🔄 Feedback Loop Design](feedback-loop-design.md) | Feedback capture, HITL routing, retraining triggers | Building improvement loops |
 
 ---
 
@@ -32,7 +33,8 @@
 ### In Production
 4. **Monitor with [Evaluation Metrics](evaluation-metrics.md)** — Track the right metrics
 5. **Optimize using [Cost Optimization](cost-optimization.md)** — Reduce spend systematically
-6. **Monthly audits with [RAG Smell Test](rag-smell-test.md)** — Catch drift and degradation
+6. **Improve with [Feedback Loop Design](feedback-loop-design.md)** — Capture signals, close the loop
+7. **Monthly audits with [RAG Smell Test](rag-smell-test.md)** — Catch drift and degradation
 
 ---
 
@@ -44,6 +46,7 @@
 | Hybrid search theory | [Hybrid Search](../docs/04-hybrid-search.md) |
 | Full evaluation guide | [Evaluation Framework](../docs/07-evaluation-framework.md) |
 | Cost engineering details | [Cost Engineering](../docs/08-cost-engineering.md) |
+| Feedback & HITL deep dives | [Feedback Loops](../docs/10-feedback-loops-and-refinement.md), [HITL](../docs/11-human-in-the-loop.md) |
 
 ---
 
