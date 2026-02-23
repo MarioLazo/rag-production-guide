@@ -77,14 +77,14 @@ Follow the [Documentation Index](docs/README.md) for the complete learning path 
 
 ---
 
-### 🔪 The Seven Silent Killers
+### 🔍 The Seven Blind Spots
 
 These failures don't throw errors. They don't show up in logs. They just **quietly deliver wrong answers** while your metrics look fine.
 
 <table>
 <tr>
 <th>#</th>
-<th>Silent Killer</th>
+<th>Blind Spot</th>
 <th>What Goes Wrong</th>
 <th>Smell Test 👃</th>
 </tr>
@@ -139,7 +139,7 @@ These failures don't throw errors. They don't show up in logs. They just **quiet
 
 Imagine your RAG system is a pizza delivery service:
 
-| Killer | Pizza Analogy | 
+| Blind Spot | Pizza Analogy |
 |--------|--------------|
 | **Missed Retrieval** | You ordered pepperoni, they have pepperoni, but the kitchen can't find it so they send you plain cheese |
 | **Context Misalignment** | You asked for "something spicy" and got a pizza with hot sauce packets on the side (technically spicy, not what you meant) |
@@ -155,10 +155,10 @@ Imagine your RAG system is a pizza delivery service:
 
 | I want to... | Go here |
 |-------------|---------|
-| Understand all 7 killers in depth | [🔪 Seven Silent Killers Deep Dive](docs/02a-seven-silent-killers-deep-dive.md) |
+| Understand all 7 blind spots in depth | [🔍 Seven Blind Spots Deep Dive](docs/02a-seven-blind-spots-deep-dive.md) |
 | Run a quick health check | [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) |
-| See real failure case studies | [Deep Dive → Case Studies](docs/02a-seven-silent-killers-deep-dive.md#case-studies-why-ai-assistants-seem-stupid) |
-| Get the full diagnostic checklist | [Deep Dive → Checklist](docs/02a-seven-silent-killers-deep-dive.md#-interactive-diagnostic-checklist) |
+| See real failure case studies | [Deep Dive → Case Studies](docs/02a-seven-blind-spots-deep-dive.md#case-studies-why-ai-assistants-seem-stupid) |
+| Get the full diagnostic checklist | [Deep Dive → Checklist](docs/02a-seven-blind-spots-deep-dive.md#-interactive-diagnostic-checklist) |
 
 ---
 

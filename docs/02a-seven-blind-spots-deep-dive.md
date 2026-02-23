@@ -1,4 +1,4 @@
-# 🔪 The Seven Silent Killers: A Deep Dive
+# 🔍 The Seven Blind Spots: A Deep Dive
 
 > **Why your RAG system seems "stupid" and how to fix it. A practical guide with real failure scenarios, diagnostic tools, and battle-tested solutions.**
 
@@ -9,7 +9,7 @@
 
 **Your RAG system doesn't crash. It doesn't throw errors. It just gives wrong answers—confidently.**
 
-That's why these problems are "silent killers." The system keeps running, looking fine in the logs, while users get frustrated and lose trust.
+That's why these problems are "blind spots." The system keeps running, looking fine in the logs, while users get frustrated and lose trust.
 
 **Quick mental model (pizza delivery analogy):**
 
@@ -23,7 +23,7 @@ That's why these problems are "silent killers." The system keeps running, lookin
 | **Semantic Collapse** | All pizzas labeled "pizza" | Can't distinguish documents |
 | **No Evaluation** | Never ask "how was it?" | No way to measure quality |
 
-**This guide:** Deep analysis of each killer + real case studies + diagnostic checklist.
+**This guide:** Deep analysis of each blind spot + real case studies + diagnostic checklist.
 
 For the quick version, see the [RAG Smell Test](../cheatsheets/rag-smell-test.md) (5 minutes).
 
@@ -31,9 +31,9 @@ For the quick version, see the [RAG Smell Test](../cheatsheets/rag-smell-test.md
 
 ---
 
-## Why "Silent"?
+## Why "Blind Spots"?
 
-These killers are silent because:
+These are blind spots because:
 - ❌ They don't throw errors
 - ❌ They don't show up in logs  
 - ❌ They don't trigger alerts
@@ -51,10 +51,10 @@ Your users notice. Your metrics (if you have them) might show a dip. But the sys
 4. [Hallucination](#4-hallucination---confident-fabrication)
 5. [Lost-in-the-Middle](#5-lost-in-the-middle---the-attention-blindspot)
 6. [Semantic Collapse](#6-semantic-collapse---when-everything-looks-the-same)
-7. [No Evaluation](#7-no-evaluation---the-meta-killer)
+7. [No Evaluation](#7-no-evaluation---the-meta-blind-spot)
 8. [Case Studies: Why AI Assistants Seem "Stupid"](#case-studies-why-ai-assistants-seem-stupid)
 9. [Interactive Diagnostic Checklist](#-interactive-diagnostic-checklist)
-10. [Quick Reference: Killer Interactions](#killer-interactions-the-cascade-effect)
+10. [Quick Reference: How Blind Spots Interact](#blind-spot-interactions-the-cascade-effect)
 
 ---
 
@@ -72,7 +72,7 @@ RAG: "Our remote work policy allows employees to work from home..."
     → Never retrieved because query said "another country" not "international"
 ```
 
-## Why This Kills Silently
+## Why This Goes Unnoticed
 
 - No error is thrown — retrieval "succeeded" (it returned *something*)
 - Similarity scores look fine (0.75+ on irrelevant docs)
@@ -192,7 +192,7 @@ RAG: "Benefits enrollment is open from Nov 1-15 each year..."
 → Grace period policy exists in a different section
 ```
 
-## Why This Kills Silently
+## Why This Goes Unnoticed
 
 - Retrieval metrics look great (high similarity!)
 - The response sounds relevant (it's about benefits!)
@@ -315,7 +315,7 @@ RAG: "The Pro plan is $29/month..."
 💀 But the vector index still has the old pricing page embedded
 ```
 
-## Why This Kills Silently
+## Why This Goes Unnoticed
 
 - The retrieval works perfectly (found the pricing doc!)
 - The generation is faithful (accurately quoted the doc!)
@@ -343,7 +343,7 @@ RAG: "The Pro plan is $29/month..."
 | **Support** | Old troubleshooting (bug fixed) | Wasted user time | 4 months |
 | **Legal** | Old contract template | Bad contracts signed | Until lawsuit |
 
-## The Silent Staleness Pattern
+## The Hidden Staleness Pattern
 
 ```mermaid
 flowchart TD
@@ -483,7 +483,7 @@ RAG: "Our product is certified for ISO 9001, SOC 2, and HIPAA compliance."
 💀 LLM filled in "reasonable" certifications from its training data
 ```
 
-## Why This Kills Silently
+## Why This Goes Unnoticed
 
 - Response is fluent and confident
 - Most of the answer might be correct
@@ -639,7 +639,7 @@ Attention:   HIGH       Medium       LOW                  Medium         HIGH
 💀 Doc3 has the answer but sits in the attention blindspot
 ```
 
-## Why This Kills Silently
+## Why This Goes Unnoticed
 
 - All relevant documents ARE retrieved ✓
 - The answer IS in the context ✓  
@@ -783,7 +783,7 @@ Your embedding space (collapsed):
 💀 Query lands in cluster, retrieval picks arbitrarily
 ```
 
-## Why This Kills Silently
+## Why This Goes Unnoticed
 
 - Retrieval returns results (not empty!)
 - Similarity scores are high (looks successful!)
@@ -940,7 +940,7 @@ def mmr_retrieval(query_embedding, doc_embeddings, doc_ids, k=5, lambda_param=0.
 
 ---
 
-# 7. No Evaluation — The Meta-Killer
+# 7. No Evaluation — The Meta-Blind Spot
 
 ## What's Happening
 
@@ -959,9 +959,9 @@ Week 16: "Why is our AI so bad??"
 💀 Problems invisible for 15 weeks
 ```
 
-## Why This Kills Silently
+## Why This Goes Unnoticed
 
-This is the **meta-killer** because it enables all other killers:
+This is the **meta-blind spot** because it enables all other blind spots:
 - Can't detect missed retrieval → No recall metric
 - Can't detect misalignment → No precision metric
 - Can't detect staleness → No freshness monitoring
@@ -1119,7 +1119,7 @@ These case studies explain the common patterns behind AI assistant failures.
 **Root Cause Analysis:**
 
 ```
-                    [Silent Killer: Stale Indexes]
+                    [Blind Spot: Stale Indexes]
                               ↓
 Policy updated in CMS → Webhook to indexer (FAILED SILENTLY)
                               ↓
@@ -1127,7 +1127,7 @@ Policy updated in CMS → Webhook to indexer (FAILED SILENTLY)
                               ↓
                     Customers got wrong information
                               ↓
-                    [Silent Killer: No Evaluation]
+                    [Blind Spot: No Evaluation]
                               ↓
                     No freshness monitoring to catch this
 ```
@@ -1160,7 +1160,7 @@ Policy updated in CMS → Webhook to indexer (FAILED SILENTLY)
 **Root Cause Analysis:**
 
 ```
-                    [Silent Killer: Missed Retrieval]
+                    [Blind Spot: Missed Retrieval]
                               ↓
 Query: "SSO with Google" 
               ↓
@@ -1200,7 +1200,7 @@ Generic SSO overview returned instead
 **Root Cause Analysis:**
 
 ```
-                    [Silent Killer: Lost-in-the-Middle]
+                    [Blind Spot: Lost-in-the-Middle]
                               ↓
 8 chunks retrieved, all scored 0.75-0.85 similarity
                               ↓
@@ -1240,7 +1240,7 @@ Response synthesized from surrounding context
 **Root Cause Analysis:**
 
 ```
-                    [Silent Killer: Hallucination]
+                    [Blind Spot: Hallucination]
                               ↓
 Context 1: "Drug X may cause dizziness, nausea..."
 Context 2: "Blood thinners can interact with many medications..."
@@ -1282,7 +1282,7 @@ Response: "Drug X may increase bleeding risk with blood thinners"
 **Root Cause Analysis:**
 
 ```
-                    [Silent Killer: Semantic Collapse]
+                    [Blind Spot: Semantic Collapse]
                               ↓
 Documentation style very consistent:
   - "Creating a new project: Click Settings > Projects > New..."
@@ -1323,7 +1323,7 @@ Retrieval returns semi-random selection from cluster
 **Root Cause Analysis:**
 
 ```
-                    [Silent Killer: Context Misalignment]
+                    [Blind Spot: Context Misalignment]
                               ↓
 Query intent: Troubleshooting / Reversal / Help
 Retrieved docs intent: Instructional / How-to
@@ -1352,7 +1352,7 @@ User frustrated, escalated to human
 
 # 📋 Interactive Diagnostic Checklist
 
-Use this checklist to audit your RAG system for the Seven Silent Killers.
+Use this checklist to audit your RAG system for the Seven Blind Spots.
 
 ---
 
@@ -1635,9 +1635,9 @@ Before starting, gather:
 
 ### Scoring
 
-For each killer, rate the severity:
+For each blind spot, rate the severity:
 
-| Killer | Evidence Found | Severity (1-5) | Priority |
+| Blind Spot | Evidence Found | Severity (1-5) | Priority |
 |--------|----------------|----------------|----------|
 | 1. Missed Retrieval | | | |
 | 2. Context Misalignment | | | |
@@ -1677,9 +1677,9 @@ For each killer, rate the severity:
 
 ---
 
-## Killer Interactions: The Cascade Effect
+## Blind Spot Interactions: The Cascade Effect
 
-The Silent Killers don't operate in isolation. They interact and compound:
+The blind spots don't operate in isolation. They interact and compound:
 
 ```mermaid
 flowchart TD
@@ -1700,13 +1700,13 @@ flowchart TD
     style SK4 fill:#ffd93d
 ```
 
-**Key Insight:** Fixing #7 (No Evaluation) has the highest leverage because it helps you detect ALL other killers.
+**Key Insight:** Fixing #7 (No Evaluation) has the highest leverage because it helps you detect ALL other blind spots.
 
 ---
 
 ## Quick Reference Card
 
-| # | Killer | 1-Line Detection | 1-Line Fix |
+| # | Blind Spot | 1-Line Detection | 1-Line Fix |
 |---|--------|------------------|------------|
 | 1 | Missed Retrieval | BM25 finds docs vector misses | Add hybrid search |
 | 2 | Context Misalignment | High similarity, wrong answer | Add reranking |
@@ -1737,7 +1737,7 @@ This deep dive synthesizes concepts and research from multiple sources:
 - **Semantic Collapse Thresholds:** Practitioner experience and vector database documentation
 
 ### Original Content
-The "Seven Silent Killers" framework, "RAG Smell Test," case study patterns, and all 🍕 layman explanations are original educational content created for this guide.
+The "Seven Blind Spots" framework, "RAG Smell Test," case study patterns, and all 🍕 layman explanations are original educational content created for this guide.
 
 For complete academic citations, see [Academic References](../resources/academic-references.md).
 

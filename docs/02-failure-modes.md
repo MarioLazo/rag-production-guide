@@ -333,9 +333,9 @@ evaluate(
 
 ---
 
-## The Seven Silent Killers: Summary
+## The Seven Blind Spots: Summary
 
-| # | Killer | Stage | Detection | Quick Win |
+| # | Blind Spot | Stage | Detection | Quick Win |
 |---|--------|-------|-----------|-----------|
 | 1 | Missed Retrieval | Retrieval | Context recall metric | Hybrid search |
 | 2 | Context Misalignment | Retrieval | Context precision metric | Query routing |
@@ -345,7 +345,7 @@ evaluate(
 | 6 | Semantic Collapse | System | Similarity distribution | Deduplication |
 | 7 | No Evaluation | System | (Meta-problem) | RAG Triad + CI/CD |
 
-> 🔪 **Want more?** See the **[Seven Silent Killers Deep Dive](02a-seven-silent-killers-deep-dive.md)** for:
+> 🔍 **Want more?** See the **[Seven Blind Spots Deep Dive](02a-seven-blind-spots-deep-dive.md)** for:
 > - Detailed examples across industries (Healthcare, Legal, Finance, E-commerce)
 > - Real-world case studies explaining why AI assistants seem "stupid"
 > - Interactive diagnostic checklist for auditing your RAG system
