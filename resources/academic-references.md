@@ -25,7 +25,7 @@ This guide synthesizes publicly available academic research, industry benchmarks
 | **Dense Passage Retrieval for Open-Domain Question Answering** | EMNLP | 2020 | Dense retrieval outperforming BM25 for QA tasks | [arXiv:2004.04906](https://arxiv.org/abs/2004.04906) |
 | **Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks** | EMNLP | 2019 | Efficient sentence embeddings for semantic similarity | [arXiv:1908.10084](https://arxiv.org/abs/1908.10084) |
 | **ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction** | SIGIR | 2020 | Late interaction for efficient neural retrieval | [arXiv:2004.12832](https://arxiv.org/abs/2004.12832) |
-| **Hypothetical Document Embeddings (HyDE)** | arXiv | 2022 | Generate hypothetical answers to improve query-document alignment | [arXiv:2212.10496](https://arxiv.org/abs/2212.10496) |
+| **Hypothetical Document Embeddings (HyDE)** | ACL | 2023 | Generate hypothetical answers to improve query-document alignment | [arXiv:2212.10496](https://arxiv.org/abs/2212.10496) |
 
 ### Evaluation & Quality
 
