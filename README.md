@@ -47,7 +47,7 @@ This repository distills findings from **30+ authoritative sources**—including
 4. [Feedback Loops](docs/10-feedback-loops-and-refinement.md) → [Human-in-the-Loop](docs/11-human-in-the-loop.md)
 
 ### 🧠 Deep Dive (Full day)
-Follow the [Documentation Index](docs/README.md) for the complete learning path with all 8 core documents, platform guides, and case studies.
+Follow the [Documentation Index](docs/README.md) for the complete learning path with all 11 core documents, platform guides, and case studies.
 
 ### Who This Is For
 
