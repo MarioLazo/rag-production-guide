@@ -61,7 +61,7 @@ The repository already has strong attribution infrastructure:
 
 | Pattern | Origin | Status |
 |---------|--------|--------|
-| "Seven Silent Killers" naming | **Original to this guide** | ✅ OK - original synthesis |
+| "Seven Blind Spots" naming | **Original to this guide** | ✅ OK - original synthesis |
 | "RAG Smell Test" | **Original to this guide** | ✅ OK - original content |
 | Pizza delivery analogy | **Original to this guide** | ✅ OK - original content |
 | "The Confident Bullshitter" analogy | **Original to this guide** | ✅ OK - original content |
@@ -72,7 +72,7 @@ The repository already has strong attribution infrastructure:
 
 ### 1. The "70% Lack Evaluation" Statistic — ✅ RESOLVED
 
-**Location:** `docs/02a-seven-silent-killers-deep-dive.md`, `docs/02-failure-modes.md`, `cheatsheets/danger-zones-checklist.md`
+**Location:** `docs/02a-seven-blind-spots-deep-dive.md`, `docs/02-failure-modes.md`, `cheatsheets/danger-zones-checklist.md`
 
 **Resolution:** Changed to "Most RAG systems in production lack systematic evaluation" without specific percentage. This aligns with industry consensus without citing an unverified statistic.
 
@@ -95,7 +95,7 @@ The repository already has strong attribution infrastructure:
 
 ### 3. Case Study Financial Figures
 
-**Location:** `docs/02a-seven-silent-killers-deep-dive.md` (case studies)
+**Location:** `docs/02a-seven-blind-spots-deep-dive.md` (case studies)
 
 **Issue:** Case studies mention specific costs like "$2M in bad advice claims" and "$500K revenue loss"
 
@@ -114,7 +114,7 @@ The repository already has strong attribution infrastructure:
 
 The following are **original contributions** of this guide:
 
-1. **"Seven Silent Killers" Framework** - Original naming and categorization
+1. **"Seven Blind Spots" Framework** - Original naming and categorization
 2. **Pizza Delivery Analogy** - Original explanatory metaphor
 3. **RAG Smell Test** - Original diagnostic tool
 4. **Dating App Problem** analogy - Original explanation
@@ -130,7 +130,7 @@ These are transformative, educational syntheses that don't require attribution b
 
 ### 1. Add References Section to Deep Dive
 
-Add at the end of `docs/02a-seven-silent-killers-deep-dive.md`:
+Add at the end of `docs/02a-seven-blind-spots-deep-dive.md`:
 
 ```markdown
 ---
