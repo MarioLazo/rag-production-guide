@@ -41,7 +41,8 @@ The data is stark:
 
 The pattern is consistent across all major research: deployment ≠ value creation. High performers are **2× more likely to redesign workflows before selecting AI tools** (McKinsey 2025).
 
----
+<br>
+<br>
 
 ## Why This Guide Exists
 
@@ -68,7 +69,8 @@ mindmap
       Right-sized infra
 ```
 
----
+<br>
+<br>
 
 ## Who This Guide Is For
 
@@ -101,7 +103,8 @@ mindmap
 
 **Start with:** [Cost Engineering](08-cost-engineering.md), [Case Studies](../case-studies/)
 
----
+<br>
+<br>
 
 ## The Three Insights That Matter Most
 
@@ -192,7 +195,8 @@ Every time someone asks your RAG system a question, you're paying:
 
 </details>
 
----
+<br>
+<br>
 
 ## How to Use This Guide
 
@@ -224,7 +228,8 @@ flowchart LR
     style F fill:#fff9c4
 ```
 
----
+<br>
+<br>
 
 ## Key Statistics Reference
 
@@ -239,7 +244,8 @@ flowchart LR
 | Evaluation threshold | **85-90%** | Recommended benchmark accuracy |
 | Cost optimization | **70-85%** | Potential savings with full optimization stack |
 
----
+<br>
+<br>
 
 ## Next Steps
 
@@ -247,7 +253,8 @@ flowchart LR
 2. **Identify quick wins**: Contextual Retrieval and evaluation are low-effort, high-impact
 3. **Build incrementally**: Start with hybrid search, add complexity only when metrics justify it
 
----
+<br>
+<br>
 
 <div align="center">
 

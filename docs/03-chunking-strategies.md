@@ -47,7 +47,8 @@ flowchart LR
 
 That's a **60% improvement** from chunking alone.
 
----
+<br>
+<br>
 
 ## Chunking Decision Tree
 
@@ -80,7 +81,8 @@ flowchart TD
     style A fill:#e3f2fd
 ```
 
----
+<br>
+<br>
 
 ## Chunking Strategies Compared
 
@@ -107,7 +109,8 @@ chunks = splitter.split_text(document)
 
 **When to use:** Starting point for any project. Graduate to semantic chunking only when metrics justify complexity.
 
----
+<br>
+<br>
 
 ### 2. Semantic Chunking
 
@@ -154,7 +157,8 @@ It's like a human with scissors who reads the text and cuts between sections. Ta
 
 </details>
 
----
+<br>
+<br>
 
 ### 3. Document-Aware Chunking
 
@@ -183,7 +187,8 @@ chunks = splitter.split_text(markdown_doc)
 
 **When to use:** Technical documentation, wikis, markdown content with clear structure.
 
----
+<br>
+<br>
 
 ### 4. Agentic Chunking (Advanced)
 
@@ -211,7 +216,8 @@ def agentic_chunk(document: str, llm) -> list[str]:
 
 **When to use:** High-value documents where quality justifies cost (legal, medical, financial).
 
----
+<br>
+<br>
 
 ## Recommended Settings by Use Case
 
@@ -223,7 +229,8 @@ def agentic_chunk(document: str, llm) -> list[str]:
 | **Legal/Medical** | Variable | N/A | Agentic |
 | **Code repositories** | By function/class | 0% | AST-based |
 
----
+<br>
+<br>
 
 ## Contextual Retrieval: The Game Changer
 
@@ -282,7 +289,8 @@ def add_context(chunk: str, full_document: str, llm) -> str:
 3. **Cache results**: Context only needs to be generated once per chunk
 4. **Keep context concise**: 50-100 tokens is sufficient
 
----
+<br>
+<br>
 
 ## Anti-Patterns to Avoid
 
@@ -301,7 +309,8 @@ splitter = RecursiveCharacterTextSplitter(
 
 **Why it fails:** Relevant information often spans chunk boundaries.
 
----
+<br>
+<br>
 
 ### ❌ Anti-Pattern 2: One Size Fits All
 
@@ -322,7 +331,8 @@ def chunk_document(doc):
 
 **Why it fails:** Different document types have different optimal chunking strategies.
 
----
+<br>
+<br>
 
 ### ❌ Anti-Pattern 3: Chunks Too Large
 
@@ -336,7 +346,8 @@ splitter = RecursiveCharacterTextSplitter(chunk_size=512)
 
 **Why it fails:** Large chunks dilute embedding specificity, reducing retrieval precision.
 
----
+<br>
+<br>
 
 ### ❌ Anti-Pattern 4: Chunks Too Small
 
@@ -350,7 +361,8 @@ splitter = RecursiveCharacterTextSplitter(chunk_size=256)
 
 **Why it fails:** Small chunks lose surrounding context necessary for understanding.
 
----
+<br>
+<br>
 
 ## Platform-Specific Chunking
 
@@ -395,7 +407,8 @@ corpus_config = {
 }
 ```
 
----
+<br>
+<br>
 
 ## Measuring Chunking Quality
 
@@ -426,7 +439,8 @@ def analyze_chunks(chunks):
 # High variance suggests inconsistent chunking
 ```
 
----
+<br>
+<br>
 
 ## Quick Reference
 
@@ -439,7 +453,8 @@ def analyze_chunks(chunks):
 | Retrieval accuracy <80% | Add Contextual Retrieval |
 | High-value documents | Consider agentic chunking |
 
----
+<br>
+<br>
 
 ## References
 
@@ -448,7 +463,8 @@ def analyze_chunks(chunks):
 - LangChain Text Splitters Documentation
 - LlamaIndex Node Parser Documentation
 
----
+<br>
+<br>
 
 <div align="center">
 

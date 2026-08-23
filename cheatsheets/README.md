@@ -16,7 +16,8 @@
 | [💰 Cost Optimization](cost-optimization.md) | Lever-by-lever savings guide | Reducing production costs |
 | [🔄 Feedback Loop Design](feedback-loop-design.md) | Feedback capture, HITL routing, retraining triggers | Building improvement loops |
 
----
+<br>
+<br>
 
 ## How to Use These Cheatsheets
 
@@ -36,7 +37,8 @@
 6. **Improve with [Feedback Loop Design](feedback-loop-design.md)**: Capture signals, close the loop
 7. **Monthly audits with [RAG Smell Test](rag-smell-test.md)**: Catch drift and degradation
 
----
+<br>
+<br>
 
 ## Related Documentation
 
@@ -48,7 +50,8 @@
 | Cost engineering details | [Cost Engineering](../docs/08-cost-engineering.md) |
 | Feedback & HITL deep dives | [Feedback Loops](../docs/10-feedback-loops-and-refinement.md), [HITL](../docs/11-human-in-the-loop.md) |
 
----
+<br>
+<br>
 
 <div align="center">
 

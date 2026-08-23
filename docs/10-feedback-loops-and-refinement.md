@@ -67,7 +67,8 @@ Better answers → More user trust → More usage → More feedback data
 → Better root cause analysis → Targeted fixes → Better answers → ...
 ```
 
----
+<br>
+<br>
 
 ## Two Types of Feedback
 
@@ -158,7 +159,8 @@ def detect_implicit_signals(session: Session) -> list:
     return signals
 ```
 
----
+<br>
+<br>
 
 ## The Refinement Pipeline: From Feedback to Fixes
 
@@ -285,7 +287,8 @@ def verify_fix(fix_description: str, affected_queries: list, eval_metrics: dict)
     }
 ```
 
----
+<br>
+<br>
 
 ## Closed-Loop Improvement Patterns
 
@@ -403,7 +406,8 @@ def analyze_generation_failures(feedback_store) -> dict:
     }
 ```
 
----
+<br>
+<br>
 
 ## Measuring Feedback Loop Effectiveness
 
@@ -431,7 +435,8 @@ def analyze_generation_failures(feedback_store) -> dict:
 
 **Most production RAG systems are at Level 0 or 1.** Getting to Level 3 is a significant competitive advantage.
 
----
+<br>
+<br>
 
 ## Implementation Checklist
 
@@ -448,7 +453,8 @@ Before considering your feedback loop production-ready:
 - [ ] Monthly feedback review meeting with the team
 - [ ] Dashboard tracking feedback loop metrics
 
----
+<br>
+<br>
 
 ## References
 
@@ -460,7 +466,8 @@ Before considering your feedback loop production-ready:
 - **Anthropic** (2024), *Contextual Retrieval*, [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
 - **Databricks** (2024), *GenAI Cookbook: Evaluation-Driven Development*, [GitHub](https://github.com/databricks/genai-cookbook)
 
----
+<br>
+<br>
 
 <div align="center">
 

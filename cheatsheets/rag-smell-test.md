@@ -14,7 +14,8 @@
 **Time required:** 5-10 minutes  
 **Tools needed:** Access to your RAG system, basic query ability
 
----
+<br>
+<br>
 
 ## The Smell Tests
 
@@ -50,7 +51,8 @@ Your system turned words into numbers (embeddings). But "refund" and "get money 
 
 </details>
 
----
+<br>
+<br>
 
 ### 🎯 Test #2: The Intent Flip
 
@@ -81,7 +83,8 @@ Your system sees "password" in both queries and thinks "close enough!" It's like
 
 </details>
 
----
+<br>
+<br>
 
 ### 📅 Test #3: The Time Machine
 
@@ -110,7 +113,8 @@ Your system memorized the old answer and nobody told it things changed. It's lik
 
 </details>
 
----
+<br>
+<br>
 
 ### 🎭 Test #4: The Impossible Question
 
@@ -139,7 +143,8 @@ LLMs are people-pleasers. They'd rather give you a confident wrong answer than a
 
 </details>
 
----
+<br>
+<br>
 
 ### 🔄 Test #5: The Consistency Check
 
@@ -168,7 +173,8 @@ If all your documents look the same to the system (high similarity), it's basica
 
 </details>
 
----
+<br>
+<br>
 
 ### 📍 Test #6: The Needle Mover
 
@@ -199,7 +205,8 @@ LLMs are like students skimming a long reading assignment, they pay attention to
 
 </details>
 
----
+<br>
+<br>
 
 ### 📊 Test #7: The Metrics Check
 
@@ -230,7 +237,8 @@ This is like running a restaurant but never checking reviews, never tasting the 
 
 </details>
 
----
+<br>
+<br>
 
 ## 🩺 Diagnosis
 
@@ -243,7 +251,8 @@ This is like running a restaurant but never checking reviews, never tasting the 
 | **3-4** | Systemic issues. Review architecture. | High |
 | **5+** | Critical. Stop and reassess fundamentals. | 🔥 Urgent |
 
----
+<br>
+<br>
 
 ## ⚡ Quick Fix Reference
 
@@ -257,7 +266,8 @@ This is like running a restaurant but never checking reviews, never tasting the 
 | Position blindness | Relevance ordering | Reduce context size |
 | No metrics | Add RAG Triad | Full eval pipeline |
 
----
+<br>
+<br>
 
 ## 🧪 Advanced Smell Tests
 
@@ -291,7 +301,8 @@ vs.
 Specific should get better answers than vague.
 ```
 
----
+<br>
+<br>
 
 ## 📋 Smell Test Scorecard
 
@@ -317,7 +328,8 @@ Action Items:
 3. _____________________
 ```
 
----
+<br>
+<br>
 
 ## 🔗 Related Resources
 
@@ -325,7 +337,8 @@ Action Items:
 - [📐 Evaluation Metrics](evaluation-metrics.md), How to measure properly
 - [🚨 Danger Zones Checklist](danger-zones-checklist.md), Pre-flight checks
 
----
+<br>
+<br>
 
 <div align="center">
 

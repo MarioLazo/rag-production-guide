@@ -13,7 +13,8 @@ Most RAG failures stem from **pattern matching without understanding**:
 
 First principles thinking asks: **What is fundamentally true, and what can we build from there?**
 
----
+<br>
+<br>
 
 ## The RAG First Principles
 
@@ -50,7 +51,8 @@ First principles thinking asks: **What is fundamentally true, and what can we bu
 - Is the lost information ever needed?
 - Can I preserve it differently?
 
----
+<br>
+<br>
 
 ### Principle 2: Relevance ≠ Similarity
 
@@ -110,7 +112,8 @@ The similar doc is about headaches. The relevant doc ANSWERS the question. They'
 - When does my similarity proxy break down?
 - How can I add relevance signals beyond similarity?
 
----
+<br>
+<br>
 
 ### Principle 3: The Generation Doesn't Know What It Doesn't Know
 
@@ -155,7 +158,8 @@ If you ask about a made-up thing, the LLM thinks: "When people talk about countr
 - What happens when context is insufficient?
 - How do I make grounding explicit?
 
----
+<br>
+<br>
 
 ### Principle 4: Evaluation is the Only Source of Truth
 
@@ -184,7 +188,8 @@ flowchart TD
 - What does "working" mean, precisely?
 - How do I measure it without fooling myself?
 
----
+<br>
+<br>
 
 ## Mental Models by Problem Domain
 
@@ -209,7 +214,8 @@ Document Signal
 
 **Key insight:** There's no "correct" chunk size, only chunk sizes appropriate for your signal and your sampling requirements.
 
----
+<br>
+<br>
 
 ### Mental Model 2: Retrieval as Needle-in-Haystack with Noisy Magnets
 
@@ -238,7 +244,8 @@ flowchart TD
 - Reach deeper needles: Query expansion, multiple queries
 - Accept you can't find everything: Design for graceful failure
 
----
+<br>
+<br>
 
 ### Mental Model 3: Context as Cognitive Bandwidth
 
@@ -268,7 +275,8 @@ flowchart TD
 - Relevance is mandatory: Irrelevant context actively hurts
 - Summarization preserves bandwidth: Compress low-priority info
 
----
+<br>
+<br>
 
 ### Mental Model 4: Evaluation as Scientific Method
 
@@ -296,7 +304,8 @@ flowchart LR
 
 **Anti-pattern:** "I tried larger chunks and it seemed better" (no measurement, no control, no falsifiability)
 
----
+<br>
+<br>
 
 ### Mental Model 5: Cost as Constraint, Not Afterthought
 
@@ -323,7 +332,8 @@ flowchart LR
 - Measure cost per query as a first-class metric
 - Set cost budgets before scaling
 
----
+<br>
+<br>
 
 ## First Principles Decision Framework
 
@@ -388,7 +398,8 @@ Before implementing any change:
 - Set the target improvement
 - Plan the A/B test or evaluation
 
----
+<br>
+<br>
 
 ## Applying First Principles: Case Examples
 
@@ -404,7 +415,8 @@ Before implementing any change:
 5. **Targeted fix:** Address the specific root cause
 6. **Verify improvement:** Did the metric actually improve?
 
----
+<br>
+<br>
 
 ### Case: "Our RAG is too slow"
 
@@ -417,7 +429,8 @@ Before implementing any change:
 4. **Targeted optimization:** Focus on the bottleneck, not everything
 5. **Trade-off analysis:** What quality am I willing to sacrifice for speed?
 
----
+<br>
+<br>
 
 ### Case: "Our RAG costs too much"
 
@@ -430,7 +443,8 @@ Before implementing any change:
 4. **Design for efficiency:** Caching, routing, batching as architecture
 5. **Measure cost per value:** Cost per successful resolution, not per query
 
----
+<br>
+<br>
 
 ## The Meta-Model: Think in Systems
 
@@ -457,7 +471,8 @@ flowchart TD
 - Better generation may expose retrieval weaknesses
 - Always evaluate end-to-end, not component-by-component
 
----
+<br>
+<br>
 
 ## Summary: The First Principles Checklist
 
@@ -472,7 +487,8 @@ Before making any RAG decision, ask:
 - [ ] What are my real constraints (latency, cost, accuracy)?
 - [ ] Am I reasoning from first principles or copying patterns?
 
----
+<br>
+<br>
 
 <div align="center">
 

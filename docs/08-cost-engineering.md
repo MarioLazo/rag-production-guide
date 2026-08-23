@@ -85,7 +85,8 @@ Monthly Cost = (Queries × Tokens/Query × $/Token)
 - Unoptimized Azure deployment: **$18K/month**
 - After optimization: **~$3K/month** (83% reduction)
 
----
+<br>
+<br>
 
 ## Cost Optimization Levers
 
@@ -116,7 +117,8 @@ flowchart TD
     G --> Result
 ```
 
----
+<br>
+<br>
 
 ## Lever 1: Semantic Caching (18-68% Savings)
 
@@ -200,7 +202,8 @@ flowchart LR
 | Internal search (varied) | 20-35% | 18-30% |
 | Research (unique) | 10-20% | 8-18% |
 
----
+<br>
+<br>
 
 ## Lever 2: Model Routing (30-80% Savings)
 
@@ -309,7 +312,8 @@ response = bedrock.invoke_model(
 # Automatically selects cheapest model that meets quality threshold
 ```
 
----
+<br>
+<br>
 
 ## Lever 3: Prompt Optimization (Up to 35% Savings)
 
@@ -397,7 +401,8 @@ compressed = compressor.compress_prompt(
 # Achieves 2-10x compression with minimal quality loss
 ```
 
----
+<br>
+<br>
 
 ## Lever 4: Batch Inference (50% Savings)
 
@@ -460,7 +465,8 @@ batch = client.batches.create(
 # 50% discount on input/output tokens
 ```
 
----
+<br>
+<br>
 
 ## Lever 5: Vector Storage Optimization
 
@@ -503,7 +509,8 @@ index = pinecone.create_index(
 )
 ```
 
----
+<br>
+<br>
 
 ## Cost Monitoring Dashboard
 
@@ -542,7 +549,8 @@ FROM rag_queries
 GROUP BY complexity_tier;
 ```
 
----
+<br>
+<br>
 
 ## Complete Optimization Stack
 
@@ -570,7 +578,8 @@ After vector optimization:   $3,000   (-14%)
 Final: $3,000/month (83% total reduction)
 ```
 
----
+<br>
+<br>
 
 ## Platform-Specific Tips
 
@@ -596,7 +605,8 @@ Final: $3,000/month (83% total reduction)
 - MLflow for experiment tracking (included)
 - Unity Catalog for governance (included)
 
----
+<br>
+<br>
 
 ## First Principles Cost Review
 
@@ -617,7 +627,8 @@ Before any deployment, ask:
 5. **What's the cost monitoring plan?**
    - How will you detect cost anomalies?
 
----
+<br>
+<br>
 
 <div align="center">
 

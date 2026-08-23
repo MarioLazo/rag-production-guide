@@ -12,7 +12,8 @@ This case study is a **composite illustration** created for educational purposes
 - Demonstrates common patterns from **public vendor documentation** and **search platform comparisons**
 - Is designed to teach platform selection and hybrid search patterns
 
----
+<br>
+<br>
 
 ## Illustrative Context
 
@@ -26,7 +27,8 @@ This case study is a **composite illustration** created for educational purposes
 
 **Sources:** Elastic customer stories, Zendesk benchmarks, Forrester research on knowledge management.
 
----
+<br>
+<br>
 
 ## The Challenge Pattern
 
@@ -66,7 +68,8 @@ flowchart TD
 | Query intent mismatch | Search returns related but unhelpful results |
 | No institutional memory | Senior agent knowledge not captured |
 
----
+<br>
+<br>
 
 ## Solution Architecture
 
@@ -107,7 +110,8 @@ flowchart TD
 | **Source-aware chunking** | Different strategies for tickets vs. docs vs. wikis |
 | **Built-in analytics** | Search usage patterns reveal knowledge gaps |
 
----
+<br>
+<br>
 
 ## What Failed
 
@@ -150,7 +154,8 @@ def chunk_by_source(document):
         return hierarchical_chunker(document.content)
 ```
 
----
+<br>
+<br>
 
 ### Failure 2: Stale Data Erosion of Trust
 
@@ -172,7 +177,8 @@ def chunk_by_source(document):
 - Visible "Last updated: [timestamp]" on all results
 - Freshness boost in ranking (newer content ranked higher)
 
----
+<br>
+<br>
 
 ### Failure 3: Query Intent Mismatch
 
@@ -203,7 +209,8 @@ def classify_and_search(query: str):
         return hybrid_search(query, bm25_weight=0.5, vector_weight=0.5)
 ```
 
----
+<br>
+<br>
 
 ## What Worked
 
@@ -221,7 +228,8 @@ def classify_and_search(query: str):
 
 **Why it worked:** For this scale (10K-100K documents), Elasticsearch's hybrid capabilities were sufficient, and the operational simplicity (single search engine) reduced complexity.
 
----
+<br>
+<br>
 
 ### Success 2: Analytics-Driven Knowledge Gap Detection
 
@@ -252,7 +260,8 @@ flowchart LR
 
 **Why it worked:** Analytics surfaced system weaknesses faster than curated test sets. The feedback loop drove continuous improvement.
 
----
+<br>
+<br>
 
 ### Success 3: Citation and Source Transparency
 
@@ -264,7 +273,8 @@ Every response included:
 
 **Why it worked:** Transparency built trust. Agents could verify answers and report issues with specific sources.
 
----
+<br>
+<br>
 
 ## Lessons Learned
 
@@ -276,7 +286,8 @@ Every response included:
 | **Analytics reveal what evaluation misses** | Search analytics surfaced patterns static datasets couldn't capture. | Invest in analytics and usage monitoring from day one. |
 | **Hybrid search needs dynamic weighting** | Static fusion produces mediocre results. Different queries need different blends. | Implement dynamic weighting based on query characteristics. |
 
----
+<br>
+<br>
 
 ## Platform Selection Rationale
 
@@ -290,7 +301,8 @@ Every response included:
 
 **Decision:** Elasticsearch selected for hybrid search maturity, ITSM integration, and built-in analytics.
 
----
+<br>
+<br>
 
 ## Technical Specifications
 
@@ -306,7 +318,8 @@ Every response included:
 | Frontend | React chat interface |
 | Analytics | Elasticsearch dashboards |
 
----
+<br>
+<br>
 
 ## Key Metrics
 
@@ -318,7 +331,8 @@ Every response included:
 | Ticket resolution time | Baseline | -18% | Significant |
 | Knowledge gap detection | Manual | Automated | Continuous |
 
----
+<br>
+<br>
 
 ## References
 
@@ -327,7 +341,8 @@ Every response included:
 - ITSM Integration Best Practices
 - Search Analytics and Observability Patterns
 
----
+<br>
+<br>
 
 <div align="center">
 

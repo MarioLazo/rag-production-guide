@@ -25,7 +25,8 @@
 | Copy/paste from response | Answer was useful | Clipboard event (with consent) |
 | Same query from many users | Knowledge gap or common need | Aggregate query clustering |
 
----
+<br>
+<br>
 
 ## Failure Categorization: Where Did It Break?
 
@@ -45,7 +46,8 @@ Negative Feedback
     └── Fix: Add missing documents
 ```
 
----
+<br>
+<br>
 
 ## HITL Routing: When to Involve Humans
 
@@ -68,7 +70,8 @@ Negative Feedback
 | Response consistency | 30% | Do multiple generations agree? |
 | Hedging language absence | 10% | No "I'm not sure" phrases |
 
----
+<br>
+<br>
 
 ## Retraining Triggers: When to Act
 
@@ -81,7 +84,8 @@ Negative Feedback
 | Knowledge base grew >30% | Document count | Rebuild indexes, check for semantic collapse |
 | User trust declining | Usage dropping, escalations rising | Full system audit (this is a lagging indicator) |
 
----
+<br>
+<br>
 
 ## Retraining Actions: Lightest Fix First
 
@@ -99,7 +103,8 @@ Effort Scale (try in order):
 7. FULL PIPELINE REBUILD      [Weeks]   → Nuclear option, only when fundamentals wrong
 ```
 
----
+<br>
+<br>
 
 ## Active Learning: Pick the Right Reviews
 
@@ -113,7 +118,8 @@ Don't randomly sample, pick interactions where human feedback teaches the most:
 | Disagreement between retrieval methods | System is confused |
 | First occurrence of new query pattern | Early signal of emerging need |
 
----
+<br>
+<br>
 
 ## Key Metrics Dashboard
 
@@ -136,7 +142,8 @@ Don't randomly sample, pick interactions where human feedback teaches the most:
 | Reviewer consistency | >80% agreement | <70% (guidelines need work) |
 | Automation rate trend | Increasing monthly | Flat or declining |
 
----
+<br>
+<br>
 
 ## Feedback Loop Maturity Model
 
@@ -151,7 +158,8 @@ Don't randomly sample, pick interactions where human feedback teaches the most:
 
 **Most teams are at Level 0-1. Getting to Level 3 is a significant competitive advantage.**
 
----
+<br>
+<br>
 
 ## Quick Implementation Checklist
 
@@ -166,7 +174,8 @@ Don't randomly sample, pick interactions where human feedback teaches the most:
 - [ ] Retraining triggers monitored
 - [ ] Automation rate trending upward
 
----
+<br>
+<br>
 
 ## Related Documentation
 
@@ -177,7 +186,8 @@ Don't randomly sample, pick interactions where human feedback teaches the most:
 | Metadata for feedback enrichment | [Metadata & Knowledge Layers](../docs/09-metadata-and-knowledge-layers.md) |
 | Evaluation metrics baseline | [Evaluation Framework](../docs/07-evaluation-framework.md) |
 
----
+<br>
+<br>
 
 <div align="center">
 

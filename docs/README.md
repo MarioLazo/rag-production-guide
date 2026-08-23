@@ -29,7 +29,8 @@ For comprehensive understanding:
 3. Relevant platform guide
 4. Cheatsheets for reference
 
----
+<br>
+<br>
 
 ## 📑 Core Documents
 
@@ -47,7 +48,8 @@ For comprehensive understanding:
 | 10 | [Feedback Loops & Refinement](10-feedback-loops-and-refinement.md) | Capturing signals and closing the improvement loop | 15 min |
 | 11 | [Human-in-the-Loop](11-human-in-the-loop.md) | Routing, confidence scoring, and retraining triggers | 15 min |
 
----
+<br>
+<br>
 
 ## ☁️ Platform Guides
 
@@ -59,7 +61,8 @@ For comprehensive understanding:
 | ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white) | [Databricks](platform-guides/databricks-mosaic.md) | Lakehouse RAG, MLflow, Vector Search |
 | ![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=flat&logo=uipath&logoColor=white) | [UiPath](platform-guides/uipath-automation.md) | Automation + RAG integration |
 
----
+<br>
+<br>
 
 ## 🔗 Related Sections
 
@@ -69,7 +72,8 @@ For comprehensive understanding:
 | [Cheatsheets](../cheatsheets/) | Quick reference guides |
 | [Resources](../resources/) | Academic references, vendor repos, glossary |
 
----
+<br>
+<br>
 
 ## 📊 Document Dependencies
 
@@ -90,7 +94,8 @@ flowchart LR
     style H fill:#fff9c4
 ```
 
----
+<br>
+<br>
 
 <div align="center">
 

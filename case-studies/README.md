@@ -37,7 +37,8 @@ These case studies are **composite illustrations** designed to teach RAG impleme
 - Justify budgets without your own analysis
 - Replace proper due diligence and planning
 
----
+<br>
+<br>
 
 ## Case Studies
 
@@ -47,7 +48,8 @@ These case studies are **composite illustrations** designed to teach RAG impleme
 | 2 | [Technical Support Agent](02-medtech-support-agent.md) | Manufacturing | Decision tree + RAG | Structured orchestration patterns |
 | 3 | [Knowledge Mining Bot](03-enterprise-knowledge-bot.md) | Enterprise SaaS | Hybrid search | Platform selection criteria |
 
----
+<br>
+<br>
 
 ## The 5 Danger Zones Framework
 
@@ -102,7 +104,8 @@ flowchart TD
 
 > **Key Insight:** Zone 2 (Data Quality) is responsible for the majority of production failures. Investing in data quality upfront has the highest ROI.
 
----
+<br>
+<br>
 
 ## Cross-Cutting Lessons
 
@@ -119,7 +122,8 @@ flowchart TD
 | **Freshness is a trust issue** | Users abandon systems with outdated answers | Sync frequency based on user expectations |
 | **Structure before generation** | Decision tree + RAG hybrid outperforms open-ended RAG | Consider structured orchestration for workflows |
 
----
+<br>
+<br>
 
 ## Using These Case Studies
 
@@ -141,7 +145,8 @@ Focus on the business impact and lessons learned. Pay attention to:
 - Risk mitigation strategies
 - Adoption and change management
 
----
+<br>
+<br>
 
 ## Contributing Case Studies
 
@@ -150,7 +155,8 @@ We welcome anonymized case studies from your production experience. See [CONTRIB
 - Anonymization requirements
 - Formatting standards
 
----
+<br>
+<br>
 
 ## Academic & Industry References
 
@@ -164,7 +170,8 @@ The patterns and statistics in these case studies are supported by:
 - **Stanford HAI AI Index** (2025), $109B US private AI investment; 280× inference cost reduction; AI incidents rose 56% YoY
 - **Industry benchmarks**: Healthcare denial rates (AHIMA, AHA), support center metrics (HDI, TSIA)
 
----
+<br>
+<br>
 
 <div align="center">
 

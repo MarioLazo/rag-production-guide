@@ -30,7 +30,8 @@ This repository distills findings from **30+ authoritative sources**, including 
 
 > **The core insight:** The "vector DB + LLM" recipe that dominates blog posts fails in practice. Success requires **modular architecture**, **hybrid retrieval**, **rigorous evaluation**, and **deliberate cost engineering**.
 
----
+<br>
+<br>
 
 ## 🎯 How to Use This Guide
 
@@ -55,7 +56,8 @@ Follow the [Documentation Index](docs/README.md) for the complete learning path 
 | 🏗️ **Solution Architects** | Architecture decisions, platform comparisons, integration patterns |
 | 📊 **Technical Leaders** | ROI frameworks, risk assessment, vendor evaluation criteria |
 
----
+<br>
+<br>
 
 ## 🚨 Why RAG Fails
 
@@ -75,7 +77,8 @@ Follow the [Documentation Index](docs/README.md) for the complete learning path 
 
 </div>
 
----
+<br>
+<br>
 
 ### 🔍 The Blind Spots
 
@@ -167,7 +170,8 @@ Imagine your RAG system is a pizza delivery service:
 | See real failure case studies | [Deep Dive → Case Studies](docs/02a-seven-blind-spots-deep-dive.md#case-studies-why-ai-assistants-seem-stupid) |
 | Get the full diagnostic checklist | [Deep Dive → Checklist](docs/02a-seven-blind-spots-deep-dive.md#-interactive-diagnostic-checklist) |
 
----
+<br>
+<br>
 
 ## 🏗️ Architecture
 
@@ -214,7 +218,8 @@ flowchart LR
 > - [Mental Models & First Principles](docs/05-mental-models.md)
 > - [Advanced Patterns](docs/06-advanced-patterns.md)
 
----
+<br>
+<br>
 
 ## 📋 Illustrative Case Studies
 
@@ -232,7 +237,8 @@ Composite examples designed to teach RAG patterns with transparent ROI methodolo
 
 > 📚 **Framework:** [The 5 Danger Zones](case-studies/README.md#the-5-danger-zones-framework)
 
----
+<br>
+<br>
 
 ## 📊 Cheatsheets
 
@@ -247,7 +253,8 @@ Quick-reference guides for common decisions:
 | [📏 Evaluation Metrics](cheatsheets/evaluation-metrics.md) | RAG Triad + extended metrics |
 | [💰 Cost Optimization](cheatsheets/cost-optimization.md) | From $18K/month to sustainable |
 
----
+<br>
+<br>
 
 ## ☁️ Platform Guides
 
@@ -261,7 +268,8 @@ Practical implementation guidance for major platforms:
 | ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white) | [Databricks](docs/platform-guides/databricks-mosaic.md) | Mosaic AI, Vector Search, MLflow |
 | ![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=flat&logo=uipath&logoColor=white) | [UiPath](docs/platform-guides/uipath-automation.md) | AI Center, Document Understanding, Orchestrator |
 
----
+<br>
+<br>
 
 ## 📈 Evaluation Framework
 
@@ -288,7 +296,8 @@ flowchart TD
 
 > 📚 **Deep Dive:** [Evaluation Framework](docs/07-evaluation-framework.md)
 
----
+<br>
+<br>
 
 ## 💰 Cost Engineering
 
@@ -305,7 +314,8 @@ RAG costs grow **exponentially**, not linearly. A documented case reached **$18K
 
 > 📚 **Deep Dive:** [Cost Engineering](docs/08-cost-engineering.md)
 
----
+<br>
+<br>
 
 ## 🤝 Contributing
 
@@ -326,7 +336,8 @@ Your personal and lived experience matters, whether you've shipped RAG systems a
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
----
+<br>
+<br>
 
 ## 🙏 Acknowledgments
 
@@ -349,7 +360,8 @@ This guide stands on the shoulders of giants. We're deeply grateful to:
 
 See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for the complete list.
 
----
+<br>
+<br>
 
 ## 📚 Resources
 
@@ -358,7 +370,8 @@ See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for the complete list.
 - [Further Reading](resources/further-reading.md)
 - [Glossary](resources/glossary.md)
 
----
+<br>
+<br>
 
 ## ⚠️ Disclaimers
 
@@ -409,13 +422,15 @@ All financial figures (costs, savings, ROI) are **illustrative estimates** based
 This content is provided "as is" without warranty of any kind, express or implied. The authors and contributors are not liable for any damages arising from the use of this information.
 </details>
 
----
+<br>
+<br>
 
 ## 📜 License
 
 This project is licensed under the MIT License, see the [LICENSE](LICENSE) file for details.
 
----
+<br>
+<br>
 
 <div align="center">
 

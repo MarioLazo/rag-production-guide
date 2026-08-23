@@ -134,7 +134,8 @@ def classify_route(confidence: float, query: str) -> str:
         return "auto_approve"
 ```
 
----
+<br>
+<br>
 
 ## HITL Routing Architecture
 
@@ -219,7 +220,8 @@ The reviewer experience matters. Poorly designed review interfaces lead to revie
 3. Require a brief reason for rejections, this becomes training data
 4. Track reviewer agreement rates (inter-annotator agreement)
 
----
+<br>
+<br>
 
 ## When to Retrain: The Trigger Framework
 
@@ -333,7 +335,8 @@ def recommend_retraining_action(diagnostics: dict) -> dict:
     }
 ```
 
----
+<br>
+<br>
 
 ## Active Learning: Making Human Time Count
 
@@ -413,7 +416,8 @@ Human reviewers need clear, consistent guidelines. Without them, you get noisy l
 | Calibrate regularly | Monthly alignment sessions prevent reviewer drift |
 | Separate "factually wrong" from "stylistically bad" | These require different fixes |
 
----
+<br>
+<br>
 
 ## HITL Across Platforms
 
@@ -427,7 +431,8 @@ Different platforms offer different HITL capabilities. Here's where each shines:
 | **Databricks** | MLflow model registry, human evaluation tracking, notebook-based review | Data science teams, model experimentation |
 | **Custom (recommended for mature teams)** | Full control over UI, routing logic, and data capture | Teams with specific domain requirements |
 
----
+<br>
+<br>
 
 ## Measuring HITL Effectiveness
 
@@ -469,7 +474,8 @@ The right answer is almost never "just keep reviewing forever at the same rate."
 
 </details>
 
----
+<br>
+<br>
 
 ## Implementation Checklist
 
@@ -487,7 +493,8 @@ Before going to production with HITL:
 - [ ] Automation rate tracked and trending upward
 - [ ] Monthly review of HITL metrics with the team
 
----
+<br>
+<br>
 
 ## References
 
@@ -500,7 +507,8 @@ Before going to production with HITL:
 - **Microsoft** (2024), *Azure AI Studio: Human Review Workflows*, [learn.microsoft.com](https://learn.microsoft.com/en-us/azure/ai-studio/)
 - **AWS** (2024), *Step Functions for ML Workflows*, [aws.amazon.com](https://aws.amazon.com/step-functions/)
 
----
+<br>
+<br>
 
 <div align="center">
 

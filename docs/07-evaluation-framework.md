@@ -52,7 +52,8 @@ flowchart TD
 | Did the response answer the question? | Relevance | Accurate but off-topic → useless |
 | Is the response correct? | Correctness | Ultimate goal |
 
----
+<br>
+<br>
 
 ## The RAG Triad: Minimum Viable Evaluation
 
@@ -115,7 +116,8 @@ The RAG Triad can be computed **without ground truth answers**:
 - Enables evaluation at scale
 - No manual labeling required for most metrics
 
----
+<br>
+<br>
 
 ## Extended Metrics
 
@@ -147,7 +149,8 @@ The RAG Triad can be computed **without ground truth answers**:
 | **PII Leakage** | Personal data exposure |
 | **Jailbreak Resistance** | Prompt injection safety |
 
----
+<br>
+<br>
 
 ## Implementation with RAGAS
 
@@ -222,7 +225,8 @@ testset = generator.generate_with_langchain_docs(
 )
 ```
 
----
+<br>
+<br>
 
 ## Implementation with DeepEval
 
@@ -299,7 +303,8 @@ red_teamer = RedTeamer(
 results = red_teamer.attack()
 ```
 
----
+<br>
+<br>
 
 ## Building a Golden Dataset
 
@@ -359,7 +364,8 @@ test_case = {
 | Production validation | 100 | 200+ |
 | Comprehensive testing | 200 | 500+ |
 
----
+<br>
+<br>
 
 ## CI/CD Integration
 
@@ -439,7 +445,8 @@ if __name__ == "__main__":
     sys.exit(0 if success else 1)
 ```
 
----
+<br>
+<br>
 
 ## Evaluation Anti-Patterns
 
@@ -505,7 +512,8 @@ evaluator = OpenAI("gpt-4-turbo")  # Different model
 # Or: Use specialized evaluation models
 ```
 
----
+<br>
+<br>
 
 ## Evaluation Metrics by Use Case
 
@@ -517,7 +525,8 @@ evaluator = OpenAI("gpt-4-turbo")  # Different model
 | **Research Assistant** | Context Precision, Answer Relevancy | 0.80, 0.85 |
 | **E-commerce** | Answer Relevancy, Response Time | 0.75, <2s |
 
----
+<br>
+<br>
 
 ## Continuous Evaluation Strategy
 
@@ -548,7 +557,8 @@ flowchart LR
     G -->|"Issues found"| A
 ```
 
----
+<br>
+<br>
 
 ## Evaluating Human-in-the-Loop Effectiveness
 
@@ -604,7 +614,8 @@ def compute_hitl_roi(metrics: dict) -> dict:
 
 > 📚 **Deep Dive:** [Human-in-the-Loop & Retraining](11-human-in-the-loop.md) for the complete HITL routing architecture, confidence scoring, active learning, and retraining triggers.
 
----
+<br>
+<br>
 
 ## Summary: Evaluation Checklist
 
@@ -622,7 +633,8 @@ Before going to production:
 - [ ] Feedback loop capturing explicit and implicit signals ([details](10-feedback-loops-and-refinement.md))
 - [ ] HITL metrics tracked if human review is in place ([details](11-human-in-the-loop.md))
 
----
+<br>
+<br>
 
 <div align="center">
 

@@ -14,7 +14,8 @@
 | [📖 Glossary](glossary.md) | RAG terminology explained |
 | [📚 Further Reading](further-reading.md) | Learning paths and additional resources |
 
----
+<br>
+<br>
 
 ## What's in Each Resource
 
@@ -49,7 +50,8 @@
 - Video resources and communities
 - Books and newsletters
 
----
+<br>
+<br>
 
 <div align="center">
 

@@ -62,7 +62,8 @@ Thresholds set, alerts routed to someone who will act on them. Agents degrade qu
 
 **Automatable:** yes.
 
----
+<br>
+<br>
 
 ## Automated vs. manual
 
@@ -83,7 +84,8 @@ Seven of the ten can be enforced in CI. Three require human judgment.
 
 The point of automating seven is to make the three human gates worth people's attention. A review meeting that spends its time checking whether logging exists is a review meeting that won't think hard about the Production Gate Question.
 
----
+<br>
+<br>
 
 ## Wiring it into CI/CD
 
@@ -97,7 +99,8 @@ Make the gate structural rather than cultural:
 
 The failure mode to avoid: a checklist that lives in a wiki, gets filled out from memory after the fact, and becomes a compliance artifact instead of a control.
 
----
+<br>
+<br>
 
 ## Waivers
 
@@ -113,6 +116,7 @@ Expires:         <date, not "TBD">
 
 A waiver with no expiry is a permanent gap wearing a temporary label.
 
----
+<br>
+<br>
 
 *Part of [Agentic CoE](../README.md). Licensed [CC BY 4.0](../LICENSE), reuse freely, including commercially, **with attribution**.*

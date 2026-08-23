@@ -40,7 +40,8 @@ flowchart TD
     style Q5 fill:#fff9c4
 ```
 
----
+<br>
+<br>
 
 ## Quick Reference Table
 
@@ -55,7 +56,8 @@ flowchart TD
 | **Code files** | AST-based | By function | 0% | Syntax-aware splitting |
 | **Chat logs** | Turn-based | By turn | Context | Conversation flow |
 
----
+<br>
+<br>
 
 ## Size Guidelines
 
@@ -80,7 +82,8 @@ flowchart TD
 └─────────────────────────────────────────────────────────────────┘
 ```
 
----
+<br>
+<br>
 
 ## Anti-Patterns to Avoid
 
@@ -92,7 +95,8 @@ flowchart TD
 | Chunks < 128 tokens | Increase to preserve context |
 | Hardcode without measuring | Iterate based on retrieval metrics |
 
----
+<br>
+<br>
 
 ## Contextual Retrieval Checklist
 
@@ -106,7 +110,8 @@ Add Contextual Retrieval when:
 **Implementation cost:** ~$1 per million tokens (one-time)  
 **Expected improvement:** 49-67% retrieval failure reduction
 
----
+<br>
+<br>
 
 ## Platform-Specific Notes
 
@@ -128,7 +133,8 @@ Automatic chunking with configurable size
 Set chunk_size=500 as baseline
 ```
 
----
+<br>
+<br>
 
 <div align="center">
 

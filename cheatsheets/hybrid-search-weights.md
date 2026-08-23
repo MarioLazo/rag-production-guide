@@ -18,7 +18,8 @@
 | **Research/Academic** | 25% | 75% | Concepts over exact terms | "neural network optimization", "climate impact" |
 | **Creative/Marketing** | 20% | 80% | Semantic similarity most important | "engaging content ideas", "brand voice" |
 
----
+<br>
+<br>
 
 ## Visual Guide
 
@@ -38,7 +39,8 @@ BM25-Heavy ←──────────────────────
 └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
 ```
 
----
+<br>
+<br>
 
 ## Query-Based Dynamic Weighting
 
@@ -54,7 +56,8 @@ Instead of fixed weights, adjust based on query characteristics:
 | < 4 words | +15% BM25 | Short lookup query |
 | Contains technical jargon | +10% BM25 | Domain-specific terms |
 
----
+<br>
+<br>
 
 ## Implementation Examples
 
@@ -137,7 +140,8 @@ results = search_client.search(
 )
 ```
 
----
+<br>
+<br>
 
 ## Common Mistakes
 
@@ -149,7 +153,8 @@ results = search_client.search(
 | Over-optimizing on test set | Validate on diverse queries |
 | Not logging weights used | Log for analysis and tuning |
 
----
+<br>
+<br>
 
 ## Quick Decision Guide
 
@@ -167,7 +172,8 @@ Is it domain-specific (legal, financial, healthcare)?
   → No: 50% BM25, 50% Vector
 ```
 
----
+<br>
+<br>
 
 <div align="center">
 

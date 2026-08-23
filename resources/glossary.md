@@ -21,7 +21,8 @@ A database optimized for storing and searching embeddings. Enables finding seman
 ### Knowledge Base
 The collection of documents, data, or information that a RAG system retrieves from. Can include PDFs, databases, wikis, APIs, etc.
 
----
+<br>
+<br>
 
 ## Retrieval Terminology
 
@@ -50,7 +51,8 @@ The number of documents retrieved from the knowledge base. Common values: 5-20. 
 ### Query Expansion
 Generating multiple variations of a query to improve retrieval recall. Related: RAG Fusion, HyDE.
 
----
+<br>
+<br>
 
 ## Chunking Terminology
 
@@ -69,7 +71,8 @@ Splitting documents based on meaning/topic changes rather than fixed sizes.
 ### Contextual Retrieval
 Anthropic's technique of prepending document context to each chunk before embedding. Improves retrieval by 49-67%.
 
----
+<br>
+<br>
 
 ## Generation Terminology
 
@@ -91,7 +94,8 @@ The degree to which a response is supported by the retrieved context. A key RAG 
 ### Lost-in-the-Middle
 The phenomenon where LLMs pay more attention to information at the beginning and end of context, ignoring the middle.
 
----
+<br>
+<br>
 
 ## Evaluation Terminology
 
@@ -113,7 +117,8 @@ An open-source framework for RAG evaluation. Reference-free metrics using LLM-as
 ### DeepEval
 A testing framework for LLM applications with pytest-style syntax and CI/CD integration.
 
----
+<br>
+<br>
 
 ## Architecture Terminology
 
@@ -147,7 +152,8 @@ A strategy for selecting which AI outputs to route to human reviewers for maximu
 ### Retraining Trigger
 A measurable condition (e.g., human override rate >20%, evaluation metrics declining, new topic cluster emerging) that signals when the RAG system needs adjustment, from prompt refinement to embedding fine-tuning.
 
----
+<br>
+<br>
 
 ## Infrastructure Terminology
 
@@ -169,7 +175,8 @@ A popular ANN algorithm used in most vector databases. Provides fast, accurate a
 ### Quantization
 Reducing vector precision (e.g., float32 → int8) to save storage and improve speed with minimal accuracy loss.
 
----
+<br>
+<br>
 
 ## Cost Terminology
 
@@ -185,7 +192,8 @@ Directing queries to different models based on complexity. Simple queries → ch
 ### Batch Inference
 Processing multiple requests together for cost savings. Typically 50% cheaper than real-time.
 
----
+<br>
+<br>
 
 ## Abbreviations Quick Reference
 
@@ -204,7 +212,8 @@ Processing multiple requests together for cost savings. Typically 50% cheaper th
 | ROI | Return on Investment |
 | CI/CD | Continuous Integration/Continuous Deployment |
 
----
+<br>
+<br>
 
 <div align="center">
 

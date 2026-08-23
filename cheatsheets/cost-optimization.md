@@ -33,7 +33,8 @@ RAG costs grow **exponentially**, not linearly:
 └─────────────────────────────────────────────────────────────────┘
 ```
 
----
+<br>
+<br>
 
 ## Cost Levers Summary
 
@@ -48,7 +49,8 @@ RAG costs grow **exponentially**, not linearly:
 
 **Combined stack savings: 70-85%**
 
----
+<br>
+<br>
 
 ## Lever 1: Semantic Caching (18-68% savings)
 
@@ -103,7 +105,8 @@ def query_rag(question: str) -> str:
     return response
 ```
 
----
+<br>
+<br>
 
 ## Lever 2: Model Routing (30-80% savings)
 
@@ -158,7 +161,8 @@ def classify_complexity(query: str, context_length: int) -> str:
         return "moderate"  # Use mid-tier model
 ```
 
----
+<br>
+<br>
 
 ## Lever 3: Prompt Optimization (Up to 35% savings)
 
@@ -198,7 +202,8 @@ Context:
 Question: What is the return policy?"
 ```
 
----
+<br>
+<br>
 
 ## Lever 4: Batch Inference (50% savings)
 
@@ -234,7 +239,8 @@ response = bedrock.create_model_invocation_job(
 )
 ```
 
----
+<br>
+<br>
 
 ## Lever 5: Vector Storage Optimization
 
@@ -281,7 +287,8 @@ lsh = MinHashLSH(threshold=0.9, num_perm=128)
 # Deduplicate similar documents before embedding
 ```
 
----
+<br>
+<br>
 
 ## Cost Monitoring Dashboard
 
@@ -294,7 +301,8 @@ Track these metrics:
 | Model mix | Queries per model tier | <50% on cheap tier |
 | Token efficiency | Tokens used / Tokens needed | >1.5x (optimize prompts) |
 
----
+<br>
+<br>
 
 ## Quick Wins Checklist
 
@@ -316,7 +324,8 @@ Track these metrics:
 - [ ] Fine-tune smaller model for common queries
 - [ ] Re-architect for cost efficiency
 
----
+<br>
+<br>
 
 ## Platform-Specific Tips
 
@@ -335,7 +344,8 @@ Track these metrics:
 - Enable caching for Gemini
 - Consider Gemini Flash for cost-sensitive workloads
 
----
+<br>
+<br>
 
 <div align="center">
 

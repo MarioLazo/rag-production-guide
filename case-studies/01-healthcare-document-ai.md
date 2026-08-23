@@ -12,7 +12,8 @@ This case study is a **composite illustration** created for educational purposes
 - Demonstrates common patterns observed in **public vendor case studies** and **academic research**
 - Is designed to teach estimation methodology, not guarantee outcomes
 
----
+<br>
+<br>
 
 ## Illustrative Context
 
@@ -26,7 +27,8 @@ This case study is a **composite illustration** created for educational purposes
 
 **Sources:** AHIMA (American Health Information Management Association) workflow studies, HFMA (Healthcare Financial Management Association) benchmarks, vendor case studies from ABBYY, Kofax, and Microsoft.
 
----
+<br>
+<br>
 
 ## The Challenge Pattern
 
@@ -65,7 +67,8 @@ The following estimates are calculated using **published industry benchmarks**. 
 | Revenue opportunity | $1-3M | See methodology below |
 | **Illustrative Total** | **$1.5-4M range** | Conservative to optimistic |
 
----
+<br>
+<br>
 
 ## 💰 ROI Estimation Methodology
 
@@ -177,7 +180,8 @@ RECOMMENDATION: Use conservative scenario for business cases.
 
 > **Industry context:** Healthcare denial rates average 15-20% according to AHA, and MGMA data shows the majority of appeals succeed when filed. These public benchmarks inform the estimates above.
 
----
+<br>
+<br>
 
 ## Solution Architecture
 
@@ -215,7 +219,8 @@ While primarily a document intelligence pipeline, this system incorporates RAG-a
 | **Augmented Generation** | LLM augments extraction when Document Intelligence confidence is low |
 | **Context Management** | 50-70 document types require careful context selection for LLM disambiguation |
 
----
+<br>
+<br>
 
 ## What Failed
 
@@ -245,7 +250,8 @@ flowchart LR
     style E fill:#ef9a9a
 ```
 
----
+<br>
+<br>
 
 ### Failure 2: Image Quality Degradation
 
@@ -260,7 +266,8 @@ flowchart LR
 
 **Danger Zone:** Zone 2 (Data Quality) + Zone 4 (Evaluation)
 
----
+<br>
+<br>
 
 ### Failure 3: Patient Matching Failures
 
@@ -275,7 +282,8 @@ flowchart LR
 
 **Danger Zone:** Zone 2 (Data Quality) + Zone 3 (Prompt Engineering) + Zone 5 (Governance)
 
----
+<br>
+<br>
 
 ## What Worked
 
@@ -291,7 +299,8 @@ The three-phase approach was critical:
 
 **Why it worked:** Starting narrow allowed rapid iteration without being overwhelmed. Avoided "Pilot Purgatory" where teams try to solve everything at once.
 
----
+<br>
+<br>
 
 ### Success 2: Confidence-Based HITL Routing
 
@@ -315,7 +324,8 @@ flowchart TD
 - Only exceptions surfaced to humans
 - Dramatically reduced user resistance
 
----
+<br>
+<br>
 
 ### Success 3: Cloud-Native Architecture
 
@@ -328,7 +338,8 @@ Building within the health system's existing cloud tenant eliminated procurement
 | Familiar monitoring | Ops team already trained |
 | **Time saved** | **8-12 weeks** |
 
----
+<br>
+<br>
 
 ### Success 4: Revenue Recapture Framing
 
@@ -341,7 +352,8 @@ Building within the health system's existing cloud tenant eliminated procurement
 
 **Why it worked:** Staff freed from classification could pursue denial appeals, directly contributing to revenue rather than being "replaced."
 
----
+<br>
+<br>
 
 ## Lessons Learned
 
@@ -354,7 +366,8 @@ Building within the health system's existing cloud tenant eliminated procurement
 | **Integration latency is the hidden killer** | EHR API rate limits and timeouts not discovered until production load testing | RAG systems depending on external APIs must design for latency, rate limits, graceful degradation |
 | **Frame AI as augmentation** | Positioning as tool that frees staff for high-value work (appeals) was critical for adoption | RAG adoption depends on positioning: augments human expertise rather than replacing judgment |
 
----
+<br>
+<br>
 
 ## Technical Specifications
 
@@ -368,7 +381,8 @@ Building within the health system's existing cloud tenant eliminated procurement
 | Storage | Azure Blob Storage |
 | Content Management | Enterprise ECM (existing) |
 
----
+<br>
+<br>
 
 ## Key Metrics
 
@@ -379,7 +393,8 @@ Building within the health system's existing cloud tenant eliminated procurement
 | Appeal filing rate | Baseline | +40% | More staff capacity |
 | Document processing time | 2-4 hours | 15-30 min | 4-8x faster |
 
----
+<br>
+<br>
 
 ## References
 
@@ -388,7 +403,8 @@ Building within the health system's existing cloud tenant eliminated procurement
 - Healthcare Revenue Cycle Management Industry Benchmarks
 - HIPAA Compliance Guidelines for AI Systems
 
----
+<br>
+<br>
 
 <div align="center">
 

@@ -53,7 +53,8 @@ Score each dimension 0–3. Score honestly; the tool's only value is as a forcin
 
 **The governance threshold:** "We'll loop in Compliance once we prove value" is the single most reliable predictor of a stalled program. By the time Compliance is engaged, the model has often already been trained on data it shouldn't have touched. **Score 0 on T if no compliance, legal, or risk stakeholder is named in the charter.**
 
----
+<br>
+<br>
 
 ## Reading the scores
 
@@ -70,7 +71,8 @@ Don't average them. Averaging hides exactly what the tool is designed to expose,
 
 **A zero anywhere is a stop, not a discount.** The purpose is to make the blocker visible early, when fixing it is cheap.
 
----
+<br>
+<br>
 
 ## Running it as a portfolio
 
@@ -84,6 +86,7 @@ Two things to watch for:
 
 **Rescore quarterly.** X and T both move as capability and regulation change. A use case that scored 1 on eXecutability last quarter may be a 3 now because a data platform landed. The portfolio should be re-ranked, not re-litigated.
 
----
+<br>
+<br>
 
 *Part of [Agentic CoE](../README.md). Licensed [CC BY 4.0](../LICENSE), reuse freely, including commercially, **with attribution**.*

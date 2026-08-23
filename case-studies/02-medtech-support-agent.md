@@ -12,7 +12,8 @@ This case study is a **composite illustration** created for educational purposes
 - Demonstrates common patterns from **public vendor case studies** and **field service research**
 - Is designed to teach architectural patterns, not guarantee outcomes
 
----
+<br>
+<br>
 
 ## Illustrative Context
 
@@ -26,7 +27,8 @@ This case study is a **composite illustration** created for educational purposes
 
 **Sources:** HDI (Help Desk Institute) benchmarks, TSIA (Technology Services Industry Association) data, ServiceMax and Salesforce Field Service case studies.
 
----
+<br>
+<br>
 
 ## The Challenge Pattern
 
@@ -65,7 +67,8 @@ The following estimates use **published industry benchmarks** from field service
 | First-Call Resolution | 65-75% | +10-15 points | ICMI research |
 | Ineffective Dispatches | 10-20% | -50% reduction | TSIA data |
 
----
+<br>
+<br>
 
 ## 💰 ROI Estimation Methodology
 
@@ -148,7 +151,8 @@ Year 1 ROI:                      3-4×
 | Field service benchmarks | TSIA | [tsia.com](https://www.tsia.com/) |
 | Labor costs | BLS | [bls.gov/oes](https://www.bls.gov/oes/) |
 
----
+<br>
+<br>
 
 ## Solution Architecture
 
@@ -216,7 +220,8 @@ stateDiagram-v2
     Feedback --> [*]
 ```
 
----
+<br>
+<br>
 
 ## What Failed
 
@@ -252,7 +257,8 @@ flowchart LR
 - Key decision points preserved explicitly
 - Hierarchical context compression
 
----
+<br>
+<br>
 
 ### Failure 2: Tribal Knowledge Gap
 
@@ -272,7 +278,8 @@ flowchart LR
 - Jargon dictionary for abbreviation expansion
 - SME interview sessions to capture tacit knowledge
 
----
+<br>
+<br>
 
 ### Failure 3: ERP Integration Latency
 
@@ -292,7 +299,8 @@ flowchart LR
 - Staleness indicator in UI ("Inventory as of [timestamp]")
 - Graceful fallback to "check inventory manually" with direct link
 
----
+<br>
+<br>
 
 ## What Worked
 
@@ -311,7 +319,8 @@ flowchart LR
 - RAG invoked at specific points with focused queries
 - Easier to evaluate and improve individual steps
 
----
+<br>
+<br>
 
 ### Success 2: Human-in-the-Loop Feedback Loop
 
@@ -339,7 +348,8 @@ flowchart LR
 - Agents felt ownership ("the system learns from me")
 - Clear escalation path for knowledge gaps
 
----
+<br>
+<br>
 
 ### Success 3: Embedded Overlay UX
 
@@ -354,7 +364,8 @@ Rather than a separate application, the AI-Agent was embedded as an overlay on t
 
 **Why it worked:** UX integration mattered more than model improvements for adoption. The champion program (training power users first) created internal advocates.
 
----
+<br>
+<br>
 
 ## Lessons Learned
 
@@ -367,7 +378,8 @@ Rather than a separate application, the AI-Agent was embedded as an overlay on t
 | **Evaluation must cover complexity distribution** | Testing only simple cases missed degradation on complex multi-step scenarios | Evaluation must include representative samples across query complexity, especially edge cases. |
 | **Adoption is a UX problem** | Embedded overlay and champion program were more impactful than model improvements | RAG success depends as much on UX and change management as retrieval accuracy. |
 
----
+<br>
+<br>
 
 ## Technical Specifications
 
@@ -385,7 +397,8 @@ Rather than a separate application, the AI-Agent was embedded as an overlay on t
 | ERP Integration | Lambda connector with Redis cache |
 | Frontend | React overlay on legacy platform |
 
----
+<br>
+<br>
 
 ## Key Metrics
 
@@ -397,7 +410,8 @@ Rather than a separate application, the AI-Agent was embedded as an overlay on t
 | Agent Satisfaction | Baseline | +35 NPS | Significant |
 | Time to Competency (new agents) | 6 months | 3 months | -50% |
 
----
+<br>
+<br>
 
 ## References
 
@@ -406,7 +420,8 @@ Rather than a separate application, the AI-Agent was embedded as an overlay on t
 - AWS Step Functions Best Practices
 - Field Service Management Industry Benchmarks
 
----
+<br>
+<br>
 
 <div align="center">
 

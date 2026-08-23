@@ -42,7 +42,8 @@ These are blind spots because:
 
 Your users notice. Your metrics (if you have them) might show a dip. But the system keeps running, confidently wrong.
 
----
+<br>
+<br>
 
 ## Table of Contents
 
@@ -58,7 +59,8 @@ Your users notice. Your metrics (if you have them) might show a dip. But the sys
 10. [Interactive Diagnostic Checklist](#-interactive-diagnostic-checklist)
 11. [Quick Reference: How Blind Spots Interact](#blind-spot-interactions-the-cascade-effect)
 
----
+<br>
+<br>
 
 # 1. Insufficient or Inconsistent Sources: The Foundation Problem
 
@@ -113,7 +115,8 @@ Source B: "Dental implants are not covered under the standard plan."
 | **Metadata-based filtering** | Tag documents with version, region, effective date |
 | **Authoritative source ranking** | When sources conflict, prefer the most authoritative |
 
----
+<br>
+<br>
 
 # 2. Missed Retrieval: The Needle in the Haystack Problem
 
@@ -232,7 +235,8 @@ def missed_retrieval_diagnostic(query, retrieved_docs, all_docs):
    → Doesn't scale, band-aid fix
 ```
 
----
+<br>
+<br>
 
 # 3. Context Misalignment: Right Ballpark, Wrong Answer
 
@@ -367,7 +371,8 @@ def route_query(query, intent):
 - **Multi-stage retrieval**: Coarse → Fine → Rerank
 - **User feedback loop**: Learn from "this didn't help" signals
 
----
+<br>
+<br>
 
 # 4. Stale Indexes: The Time Traveler Problem
 
@@ -534,7 +539,8 @@ flowchart LR
     P3 -->|on success| Cache[Invalidate Cache]
 ```
 
----
+<br>
+<br>
 
 # 5. Context Utilization Failure: The Attention Blindspot
 
@@ -671,7 +677,8 @@ def sandwich_ordering(query, retrieved_docs, scores):
 | **Map-reduce** | Summarize each chunk, then summarize summaries |
 | **Attention steering** | Fine-tune to attend uniformly |
 
----
+<br>
+<br>
 
 # 6. Hallucination: Confident Fabrication
 
@@ -834,7 +841,8 @@ QUESTION: {query}
 | **Constrained decoding** | Only allow tokens that appear in context |
 | **Multi-model consensus** | Multiple LLMs must agree |
 
----
+<br>
+<br>
 
 # 7. Answer Irrelevance: Correct but Off-Topic
 
@@ -880,7 +888,8 @@ RAG: "To reset your password, go to Settings > Security > Reset Password.
 | **Answer relevancy evaluation** | Score responses against query scope |
 | **Response filtering** | Post-process to remove sentences not addressing the query |
 
----
+<br>
+<br>
 
 # 8. Answer Incompleteness: Partial Answers
 
@@ -925,7 +934,8 @@ RAG: "The Standard plan costs $29/month while Premium is $99/month.
 | **Completeness scoring** | Evaluate whether all query facets are addressed |
 | **Structured output** | For multi-part questions, use structured format matching query parts |
 
----
+<br>
+<br>
 
 # Appendix: Semantic Collapse: When Everything Looks the Same
 
@@ -1106,7 +1116,8 @@ def mmr_retrieval(query_embedding, doc_embeddings, doc_ids, k=5, lambda_param=0.
 | **Contrastive learning** | Train on similar vs different doc pairs |
 | **Hybrid representations** | Combine dense + sparse for differentiation |
 
----
+<br>
+<br>
 
 # Appendix: No Evaluation: The Meta-Blind Spot
 
@@ -1262,7 +1273,8 @@ if random.random() < 0.05:  # 5% sampling
 | Escalation rate | Transferred to human | > 20% |
 | Query-over-query repeat | Same user, same question | > 10% |
 
----
+<br>
+<br>
 
 # Case Studies: Why AI Assistants Seem "Stupid"
 
@@ -1272,7 +1284,8 @@ These case studies explain the common patterns behind AI assistant failures.
 
 > ⚠️ **Note:** These case studies are **composite illustrations** designed for educational purposes. They combine patterns observed across multiple public sources and practitioner experiences. Details including company types, timelines, and financial figures are illustrative estimates based on industry benchmarks. Any resemblance to specific companies is coincidental. For methodology, see [Academic References](../resources/academic-references.md#-estimation-methodology-sources).
 
----
+<br>
+<br>
 
 ## Case Study 1: The Invisible Update
 
@@ -1313,7 +1326,8 @@ Policy updated in CMS → Webhook to indexer (FAILED SILENTLY)
 3. Alert if any doc is >7 days old without refresh check
 4. Webhook failure alerting added
 
----
+<br>
+<br>
 
 ## Case Study 2: The Vocabulary Gap
 
@@ -1353,7 +1367,8 @@ Generic SSO overview returned instead
 2. Created synonym mapping: SSO → SAML, single sign-on, federated auth
 3. Enhanced doc titles with multiple terminology variations
 
----
+<br>
+<br>
 
 ## Case Study 3: The Middle Child
 
@@ -1393,7 +1408,8 @@ Response synthesized from surrounding context
 2. Reduce from 8 chunks to 4 (more focused context)
 3. Add explicit markers: `[MOST RELEVANT TO QUERY:]`
 
----
+<br>
+<br>
 
 ## Case Study 4: The Confident Fabricator
 
@@ -1435,7 +1451,8 @@ Response: "Drug X may increase bleeding risk with blood thinners"
 3. Added claim verification layer (NLI model)
 4. Response now includes: "I found information about [X] and [Y] separately, but I don't have specific information about their interaction together. Please consult a healthcare provider."
 
----
+<br>
+<br>
 
 ## Case Study 5: The Collapse Zone
 
@@ -1477,7 +1494,8 @@ Retrieval returns semi-random selection from cluster
 3. Added metadata filtering: user could specify context area
 4. Restructured docs to have more unique phrasing per feature
 
----
+<br>
+<br>
 
 ## Case Study 6: The Misdirect
 
@@ -1518,13 +1536,15 @@ User frustrated, escalated to human
 2. Routed troubleshooting queries to FAQ/support docs
 3. Added reranker that considers query structure, not just keywords
 
----
+<br>
+<br>
 
 # 📋 Interactive Diagnostic Checklist
 
 Use this checklist to audit your RAG system for the Blind Spots.
 
----
+<br>
+<br>
 
 ## Pre-Audit Setup
 
@@ -1537,7 +1557,8 @@ Before starting, gather:
 □ User feedback data (if available)
 ```
 
----
+<br>
+<br>
 
 ## 1. Insufficient or Inconsistent Sources Audit
 
@@ -1576,7 +1597,8 @@ Before starting, gather:
 □ Failed queries cluster around the same topic area
 ```
 
----
+<br>
+<br>
 
 ## 2. Missed Retrieval Audit
 
@@ -1611,7 +1633,8 @@ Before starting, gather:
 □ Domain-specific terminology causes misses
 ```
 
----
+<br>
+<br>
 
 ## 3. Context Misalignment Audit
 
@@ -1643,7 +1666,8 @@ Before starting, gather:
 □ High similarity scores, low user ratings
 ```
 
----
+<br>
+<br>
 
 ## 4. Stale Indexes Audit
 
@@ -1680,7 +1704,8 @@ Before starting, gather:
 □ Last successful full reindex: >30 days ago
 ```
 
----
+<br>
+<br>
 
 ## 5. Context Utilization Failure Audit
 
@@ -1715,7 +1740,8 @@ Before starting, gather:
 □ Accuracy varies based on doc position
 ```
 
----
+<br>
+<br>
 
 ## 6. Hallucination Audit
 
@@ -1754,7 +1780,8 @@ Before starting, gather:
 □ Consistent details that were never provided
 ```
 
----
+<br>
+<br>
 
 ## 7. Answer Irrelevance Audit
 
@@ -1795,7 +1822,8 @@ Before starting, gather:
 □ Responses include unsolicited warnings, caveats, or background info
 ```
 
----
+<br>
+<br>
 
 ## 8. Answer Incompleteness Audit
 
@@ -1834,7 +1862,8 @@ Before starting, gather:
 □ High answer accuracy but users still need multiple turns to get full info
 ```
 
----
+<br>
+<br>
 
 ## 7. Answer Irrelevance Audit
 
@@ -1875,7 +1904,8 @@ Before starting, gather:
 □ Responses include unsolicited warnings, caveats, or background info
 ```
 
----
+<br>
+<br>
 
 ## 8. Answer Incompleteness Audit
 
@@ -1914,7 +1944,8 @@ Before starting, gather:
 □ High answer accuracy but users still need multiple turns to get full info
 ```
 
----
+<br>
+<br>
 
 ## Semantic Collapse Audit (relates to Blind Spot #2: Missed Retrieval)
 
@@ -1952,7 +1983,8 @@ Before starting, gather:
 □ Template-heavy documents
 ```
 
----
+<br>
+<br>
 
 ## Evaluation Gaps Audit
 
@@ -1998,7 +2030,8 @@ Before starting, gather:
 □ Can't A/B test improvements
 ```
 
----
+<br>
+<br>
 
 ## Audit Summary
 
@@ -2045,7 +2078,8 @@ For each blind spot, rate the severity:
 3. **Monitoring:** Always implement evaluation (#7) early
 4. **Systematic:** Work through remaining issues
 
----
+<br>
+<br>
 
 ## Blind Spot Interactions: The Cascade Effect
 
@@ -2067,7 +2101,8 @@ flowchart TD
 
 **Key Insight:** Blind spot #1 (Insufficient Sources) is the most fundamental, no downstream fix can compensate for missing or contradictory source data. Hallucination (#6) is the most common downstream consequence of upstream failures.
 
----
+<br>
+<br>
 
 ## Quick Reference Card
 
@@ -2082,7 +2117,8 @@ flowchart TD
 | 7 | Answer Irrelevance | Correct response, doesn't address query | Focused prompting |
 | 8 | Answer Incompleteness | Multi-part question, partial answer | Query decomposition |
 
----
+<br>
+<br>
 
 ## References & Attribution
 
@@ -2107,7 +2143,8 @@ The "Blind Spots" framework, "RAG Smell Test," case study patterns, and all 🍕
 
 For complete academic citations, see [Academic References](../resources/academic-references.md).
 
----
+<br>
+<br>
 
 <div align="center">
 

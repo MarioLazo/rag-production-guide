@@ -80,7 +80,8 @@ Copy this into your agent registry, one per agent.
 - **Dependencies:**          <agents or systems that break if this is removed>
 ```
 
----
+<br>
+<br>
 
 ## Field notes
 
@@ -96,7 +97,8 @@ Copy this into your agent registry, one per agent.
 
 **A card that can't be completed is a finding.** Empty fields aren't an admin problem, each one is a design gap that will surface later at a worse time. Treat the blanks as the output of the exercise.
 
----
+<br>
+<br>
 
 ## Using it in an inventory
 
@@ -109,6 +111,7 @@ Once every agent has a card, questions that were previously unanswerable become 
 
 That inventory is the foundation the rest of the CoE is built on. Most organizations discover their first real governance problems just by filling these out for agents that are *already* in production.
 
----
+<br>
+<br>
 
 *Part of [Agentic CoE](../README.md). Licensed [CC BY 4.0](../LICENSE), reuse freely, including commercially, **with attribution**.*

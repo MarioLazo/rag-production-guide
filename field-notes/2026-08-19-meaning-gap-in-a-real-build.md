@@ -138,7 +138,8 @@ Checklist](../tools/pre-flight-checklist.md) exists to force before
 something reaches production, not "does the model sound confident," but
 "can a machine independently confirm the specific claim it's making."
 
----
+<br>
+<br>
 
 ## How this shaped my thinking
 
@@ -166,7 +167,8 @@ previously only stated in the abstract:
    caught took to find by accident. The instinct to skip it under time
    pressure is exactly backwards from what the actual cost-benefit says.
 
----
+<br>
+<br>
 
 *Part of the [Agentic CoE](../README.md) field notes. Full build history:
 [`STEPS.md`](https://github.com/MarioLazo/llm-zoomcamp/blob/main/cohorts/2026/project-aria/STEPS.md).

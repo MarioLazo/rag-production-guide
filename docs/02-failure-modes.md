@@ -67,7 +67,8 @@ flowchart TD
     style Stage3 fill:#ffccbc
 ```
 
----
+<br>
+<br>
 
 ## Stage 0: Source Failures
 
@@ -84,7 +85,8 @@ flowchart TD
 
 **Detection:** Audit a sample of failed queries to determine whether the answer exists in your sources at all.
 
----
+<br>
+<br>
 
 ## Stage 1: Retrieval Failures
 
@@ -109,7 +111,8 @@ from ragas.metrics import context_recall
 
 **Industry benchmark:** Context recall should be >85% for production systems.
 
----
+<br>
+<br>
 
 ### 1.2 Context Misalignment
 
@@ -136,7 +139,8 @@ from ragas.metrics import context_precision
 # Measures whether retrieved context is actually relevant to the question
 ```
 
----
+<br>
+<br>
 
 ### 1.3 Stale Indexes
 
@@ -161,7 +165,8 @@ flowchart LR
     E --> F[Invalidate Cache]
 ```
 
----
+<br>
+<br>
 
 ## Stage 2: Generation Failures
 
@@ -196,7 +201,8 @@ metric = FaithfulnessMetric(threshold=0.7)
 # Measures whether claims in response are supported by context
 ```
 
----
+<br>
+<br>
 
 ### 2.2 Context Utilization Failure
 
@@ -221,7 +227,8 @@ graph LR
 | Multiple retrievals | Break into smaller context windows |
 | Structured prompting | Use clear section markers |
 
----
+<br>
+<br>
 
 ### 2.3 Parametric Knowledge Override
 
@@ -240,7 +247,8 @@ Response: "The fiscal year typically ends on December 31st."
 - Include citations in responses to anchor to sources
 - Use smaller, instruction-tuned models that follow directions better
 
----
+<br>
+<br>
 
 ### 2.4 Answer Irrelevance
 
@@ -252,7 +260,8 @@ Response: "The fiscal year typically ends on December 31st."
 | Over-generation | LLM adds unsolicited information | Focused system prompts |
 | Weak query grounding | Response drifts from query scope | Answer relevancy evaluation |
 
----
+<br>
+<br>
 
 ### 2.5 Answer Incompleteness
 
@@ -264,7 +273,8 @@ Response: "The fiscal year typically ends on December 31st."
 | Multi-part queries | LLM addresses only the first facet | Query decomposition |
 | Context overload | Too much context, model skips aspects | Structured output prompting |
 
----
+<br>
+<br>
 
 ## Stage 3: System-Level Failures
 
@@ -296,7 +306,8 @@ graph LR
 - Each additional layer must justify its error contribution
 - End-to-end evaluation is essential, not just component metrics
 
----
+<br>
+<br>
 
 ### Cross-Cutting Concern: Evaluation
 
@@ -344,7 +355,8 @@ evaluate(
 )
 ```
 
----
+<br>
+<br>
 
 ## The Blind Spots: Summary
 
@@ -365,7 +377,8 @@ evaluate(
 > - Interactive diagnostic checklist for auditing your RAG system
 > - Code examples for detection and prevention
 
----
+<br>
+<br>
 
 ## The Single Biggest Improvement
 
@@ -378,7 +391,8 @@ A DEV Community case study showed progression from **58% baseline to 83%** by la
 
 **Lesson:** Invest in pre-retrieval intelligence before optimizing retrieval itself.
 
----
+<br>
+<br>
 
 ## References
 
@@ -394,7 +408,8 @@ A DEV Community case study showed progression from **58% baseline to 83%** by la
 - **McKinsey** (2025), *State of AI 2025*, [McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
 - **Anthropic** (2024), Contextual Retrieval Research, [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
 
----
+<br>
+<br>
 
 <div align="center">
 

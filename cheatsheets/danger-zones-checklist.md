@@ -17,7 +17,8 @@ pie title Failure Distribution by Zone
     "Zone 1: Strategy" : 8
 ```
 
----
+<br>
+<br>
 
 ## Zone 1: Strategy Failures (8%)
 
@@ -50,7 +51,8 @@ pie title Failure Distribution by Zone
 - "The API should handle it"
 - "Integration is straightforward"
 
----
+<br>
+<br>
 
 ## Zone 2: Data Quality Crisis (35%)
 
@@ -89,7 +91,8 @@ pie title Failure Distribution by Zone
 - "Nightly batch sync is fine"
 - "The taxonomy worked for humans"
 
----
+<br>
+<br>
 
 ## Zone 3: Prompt/Context Engineering (20%)
 
@@ -122,7 +125,8 @@ pie title Failure Distribution by Zone
 - "The prompt worked in testing"
 - "Multi-turn will work the same"
 
----
+<br>
+<br>
 
 ## Zone 4: Evaluation Blind Spots (25%)
 
@@ -162,7 +166,8 @@ pie title Failure Distribution by Zone
 - "Manual testing is sufficient"
 - "The team reviewed the outputs"
 
----
+<br>
+<br>
 
 ## Zone 5: Governance Catastrophe (12%)
 
@@ -200,7 +205,8 @@ pie title Failure Distribution by Zone
 - "Users will report issues"
 - "Compliance is someone else's problem"
 
----
+<br>
+<br>
 
 ## Severity Assessment
 
@@ -214,7 +220,8 @@ For each zone, rate your risk:
 | **Evaluation** | Automated CI/CD | Manual testing | No framework |
 | **Governance** | Complete audit trail | Partial logging | No governance |
 
----
+<br>
+<br>
 
 ## Go/No-Go Decision
 
@@ -236,7 +243,8 @@ For each zone, rate your risk:
 - No fallback strategies
 - Critical integrations untested
 
----
+<br>
+<br>
 
 ## Quick Remediation Priorities
 
@@ -248,7 +256,8 @@ If you're not ready, fix in this order:
 4. **Audit logging** (Zone 5): You'll need it for debugging
 5. **Context management** (Zone 3): Multi-turn will break
 
----
+<br>
+<br>
 
 <div align="center">
 

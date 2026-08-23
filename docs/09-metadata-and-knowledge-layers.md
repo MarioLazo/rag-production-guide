@@ -42,7 +42,8 @@ Retrieval Quality = Search Relevance × Metadata Precision
 
 Even perfect semantic search degrades if it can't distinguish a draft from a final version, an internal memo from an official policy, or a document from 2019 from one updated last week.
 
----
+<br>
+<br>
 
 ## Metadata Taxonomy: What to Capture
 
@@ -126,7 +127,8 @@ This metadata tracks what happened after retrieval, critical for feedback loops 
 | `latency_ms` | End-to-end response time | `1240` |
 | `token_count` | Tokens consumed | `{prompt: 3200, completion: 450}` |
 
----
+<br>
+<br>
 
 ## Metadata-Driven Retrieval Patterns
 
@@ -218,7 +220,8 @@ def version_aware_search(query: str, results: list) -> list:
     return list(latest_by_source.values())
 ```
 
----
+<br>
+<br>
 
 ## Building a Semantic / Knowledge Layer
 
@@ -370,7 +373,8 @@ A knowledge layer is not "set and forget." It requires ongoing maintenance, just
 
 **Cost consideration:** Entity extraction via LLM calls adds ingestion cost. Budget approximately 1-3 LLM calls per document for extraction. For a 10,000-document corpus, this is a one-time cost of ~$50-150 depending on document size and model choice, with incremental costs for new documents.
 
----
+<br>
+<br>
 
 ## Metadata Storage: Where to Put It
 
@@ -409,7 +413,8 @@ Graph Database  → Entity relationships + concept hierarchies (Knowledge Layer)
 Logging Store   → Retrieval + generation metadata (Layer 3-4)
 ```
 
----
+<br>
+<br>
 
 ## Common Metadata Mistakes
 
@@ -422,7 +427,8 @@ Logging Store   → Retrieval + generation metadata (Layer 3-4)
 | Over-engineering the taxonomy | 200 categories nobody maintains | Start with 10-15 categories, expand based on actual query patterns |
 | Ignoring generation metadata | Can't debug why answers go wrong | Log which chunks were used and how the model scored confidence |
 
----
+<br>
+<br>
 
 ## Implementation Checklist
 
@@ -439,7 +445,8 @@ Before going to production:
 - [ ] Knowledge layer evaluated for need (do your queries require relationship traversal?)
 - [ ] Metadata maintenance schedule established
 
----
+<br>
+<br>
 
 ## References
 
@@ -451,7 +458,8 @@ Before going to production:
 - **Anthropic** (2024), *Contextual Retrieval*, [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
 - **Microsoft** (2024), *GraphRAG: Unlocking LLM discovery on narrative private datasets*, [microsoft.com](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-datasets/)
 
----
+<br>
+<br>
 
 <div align="center">
 

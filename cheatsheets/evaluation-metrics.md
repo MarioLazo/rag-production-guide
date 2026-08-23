@@ -28,7 +28,8 @@ flowchart TD
 | **Faithfulness** | Is the response grounded in retrieved context? | No | ≥ 0.85 |
 | **Context Relevancy** | Is the retrieved context relevant to the question? | No | ≥ 0.75 |
 
----
+<br>
+<br>
 
 ## Extended Metrics
 
@@ -50,7 +51,8 @@ flowchart TD
 | **Semantic Similarity** | How close to ideal answer? | Reference-based eval |
 | **Toxicity/Safety** | Does response contain harmful content? | User-facing systems |
 
----
+<br>
+<br>
 
 ## Quick Implementation
 
@@ -121,7 +123,8 @@ metrics = [
 evaluate(test_cases=[test_case], metrics=metrics)
 ```
 
----
+<br>
+<br>
 
 ## Metric Selection Guide
 
@@ -141,7 +144,8 @@ flowchart TD
     H -->|"No"| J["+ Hit Rate"]
 ```
 
----
+<br>
+<br>
 
 ## Thresholds by Use Case
 
@@ -153,7 +157,8 @@ flowchart TD
 | **Research/Academic** | ≥ 0.80 | ≥ 0.90 | ≥ 0.80 |
 | **E-commerce** | ≥ 0.75 | ≥ 0.80 | ≥ 0.70 |
 
----
+<br>
+<br>
 
 ## Golden Dataset Guidelines
 
@@ -177,7 +182,8 @@ Query Complexity:
 └── Edge cases (10%)  - Adversarial, ambiguous
 ```
 
----
+<br>
+<br>
 
 ## CI/CD Integration
 
@@ -234,7 +240,8 @@ check_thresholds("results.json", {
 })
 ```
 
----
+<br>
+<br>
 
 ## Operational Metrics (Production)
 
@@ -249,7 +256,8 @@ Don't forget non-ML metrics:
 | **Error rate** | < 1% | Reliability |
 | **User satisfaction** | Track trend | Real-world quality |
 
----
+<br>
+<br>
 
 ## Tool Comparison
 
@@ -262,7 +270,8 @@ Don't forget non-ML metrics:
 | Pipeline optimization | ❌ | ❌ | ✅ AutoML-style |
 | License | Apache 2.0 | Apache 2.0 | Apache 2.0 |
 
----
+<br>
+<br>
 
 <div align="center">
 

@@ -47,7 +47,8 @@ flowchart TD
 
 **First principle:** Add complexity only when simpler approaches fail. Each pattern has costs (latency, compute, maintenance). Justify the cost with measured improvement.
 
----
+<br>
+<br>
 
 ## Pattern 1: Contextual Retrieval
 
@@ -109,7 +110,8 @@ def add_contextual_prefix(chunk: str, full_document: str, llm) -> str:
 
 **Verdict:** Highest ROI pattern. Implement before trying complex alternatives.
 
----
+<br>
+<br>
 
 ## Pattern 2: Hybrid Search with RRF
 
@@ -153,7 +155,8 @@ Where k = 60 (standard constant)
 
 See [Hybrid Search](04-hybrid-search.md) for domain-specific weights.
 
----
+<br>
+<br>
 
 ## Pattern 3: HyDE (Hypothetical Document Embeddings)
 
@@ -241,7 +244,8 @@ def hyde_search(query: str, llm, embedder, index) -> list:
 | +1 LLM call per query | Better semantic alignment |
 | +100-500ms latency | Improved recall for conceptual queries |
 
----
+<br>
+<br>
 
 ## Pattern 4: RAG Fusion
 
@@ -337,7 +341,8 @@ def rag_fusion(query: str, llm, retriever, n_queries: int = 4) -> list:
 | Low recall with single query | Latency-critical applications |
 | Diverse vocabulary in corpus | Small, homogeneous corpus |
 
----
+<br>
+<br>
 
 ## Pattern 5: Adaptive RAG
 
@@ -394,7 +399,8 @@ def adaptive_rag(query: str, classifier, llm, retriever) -> str:
 | "Why" requiring reasoning | Complex |
 | Multi-step instructions | Complex |
 
----
+<br>
+<br>
 
 ## Pattern 6: Self-RAG
 
@@ -445,7 +451,8 @@ flowchart TD
 - 81% on fact-checking (vs 71% baseline)
 - Requires fine-tuning with reflection tokens
 
----
+<br>
+<br>
 
 ## Pattern 7: Agentic RAG
 
@@ -553,7 +560,8 @@ def create_rag_agent():
 | Dynamic tool selection required | Predictable query patterns |
 | Complex reasoning chains | Latency-critical (agents are slow) |
 
----
+<br>
+<br>
 
 ## Pattern 8: GraphRAG
 
@@ -647,7 +655,8 @@ flowchart TD
 | Graph storage and maintenance | Entity relationship reasoning |
 | Complex pipeline | Multi-hop query support |
 
----
+<br>
+<br>
 
 ## Pattern 9: CRAG (Corrective RAG)
 
@@ -704,7 +713,8 @@ def corrective_rag(query: str, retriever, evaluator, web_search, llm) -> str:
         return generate(query, web_docs, llm)
 ```
 
----
+<br>
+<br>
 
 ## Pattern Selection Matrix
 
@@ -720,7 +730,8 @@ def corrective_rag(query: str, retriever, evaluator, web_search, llm) -> str:
 | **GraphRAG** | High | Very High | Global understanding |
 | **CRAG** | Medium | Medium | Unreliable retrieval |
 
----
+<br>
+<br>
 
 ## First Principles Pattern Selection
 
@@ -742,7 +753,8 @@ Ask these questions in order:
 5. **What's the simplest pattern that addresses the failure?**
    - Start simple, add complexity only if needed
 
----
+<br>
+<br>
 
 <div align="center">
 

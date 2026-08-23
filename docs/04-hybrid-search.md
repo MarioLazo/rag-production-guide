@@ -70,7 +70,8 @@ flowchart LR
     style RRF fill:#e8f5e9
 ```
 
----
+<br>
+<br>
 
 ## Reciprocal Rank Fusion (RRF)
 
@@ -129,7 +130,8 @@ fused = reciprocal_rank_fusion([bm25_results, vector_results])
 # Returns: [("doc_a", 0.032), ("doc_c", 0.032), ("doc_b", 0.031), ...]
 ```
 
----
+<br>
+<br>
 
 ## Domain-Specific Weighting
 
@@ -173,7 +175,8 @@ def weighted_hybrid_search(
     return get_documents(fused[:top_k])
 ```
 
----
+<br>
+<br>
 
 ## Dynamic Alpha Tuning
 
@@ -229,7 +232,8 @@ def classify_query_intent(query: str) -> str:
         return "mixed"  # Use α = 0.5
 ```
 
----
+<br>
+<br>
 
 ## Platform Implementations
 
@@ -356,7 +360,8 @@ query = {
 }
 ```
 
----
+<br>
+<br>
 
 ## Adding Reranking
 
@@ -433,7 +438,8 @@ def cohere_rerank(query: str, documents: list[str], top_k: int = 10):
     return [documents[r.index] for r in response.results]
 ```
 
----
+<br>
+<br>
 
 ## Performance Benchmarks
 
@@ -454,7 +460,8 @@ Typical production latencies at 100K documents:
 4. **Cache embeddings**: Don't re-embed repeated queries
 5. **Quantization**: Use int8 vectors for 4x storage savings
 
----
+<br>
+<br>
 
 ## Anti-Patterns
 
@@ -495,7 +502,8 @@ def search(query):
     return hybrid_search(query, alpha=alpha)
 ```
 
----
+<br>
+<br>
 
 ## Quick Reference
 
@@ -507,7 +515,8 @@ def search(query):
 | Adding reranking | Top-20 candidates, cross-encoder |
 | Performance issues | Parallel retrieval, limit candidates |
 
----
+<br>
+<br>
 
 ## References
 
@@ -517,7 +526,8 @@ def search(query):
 - Azure AI Search Hybrid Query Guide
 - OpenSearch Neural Search Plugin
 
----
+<br>
+<br>
 
 <div align="center">
 
