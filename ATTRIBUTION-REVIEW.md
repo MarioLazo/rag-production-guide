@@ -149,7 +149,7 @@ This deep dive synthesizes concepts from:
 - **HyDE:** Gao et al., "Precise Zero-Shot Dense Retrieval without Relevance Labels" (ACL 2023): [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
 - **Evaluation Gap Statistics:** Industry consensus (specific percentage removed; stated as "most" or "majority")
 
-For complete academic citations, see [Academic References](../resources/academic-references.md).
+For complete academic citations, see [Academic References](resources/academic-references.md).
 ```
 
 ### 2. Soften Unverified Statistics

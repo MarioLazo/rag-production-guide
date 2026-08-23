@@ -5,7 +5,7 @@
 ### A Practitioner's Handbook for Building RAG Systems That Actually Work
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](../CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/MarioLazo/rag-production-guide)](https://github.com/MarioLazo/rag-production-guide/graphs/contributors)
 
 **80%+ of AI projects fail: twice the rate of conventional IT projects.** This guide shows you how to beat those odds.
@@ -36,17 +36,17 @@ This repository distills findings from **30+ authoritative sources**, including 
 ## 🎯 How to Use This Guide
 
 ### ⚡ Quick Start (30 min)
-1. [Executive Summary](docs/01-executive-summary.md), Why 80% fail
-2. [Danger Zones Checklist](cheatsheets/danger-zones-checklist.md), Pre-flight check
+1. [Executive Summary](01-executive-summary.md), Why 80% fail
+2. [Danger Zones Checklist](../cheatsheets/danger-zones-checklist.md), Pre-flight check
 3. One [Case Study](case-studies/) of your choice
 
 ### 📖 Core Concepts (2-3 hours)
-1. [Failure Modes](docs/02-failure-modes.md) → [Chunking](docs/03-chunking-strategies.md) → [Hybrid Search](docs/04-hybrid-search.md)
-2. [Evaluation Framework](docs/07-evaluation-framework.md)
-3. [Cost Engineering](docs/08-cost-engineering.md)
+1. [Failure Modes](02-failure-modes.md) → [Chunking](03-chunking-strategies.md) → [Hybrid Search](04-hybrid-search.md)
+2. [Evaluation Framework](07-evaluation-framework.md)
+3. [Cost Engineering](08-cost-engineering.md)
 
 ### 🧠 Deep Dive (Full day)
-Follow the [Documentation Index](docs/README.md) for the complete learning path with all 8 core documents, platform guides, and case studies.
+Follow the [Documentation Index](README.md) for the complete learning path with all 8 core documents, platform guides, and case studies.
 
 ### Who This Is For
 
@@ -165,10 +165,10 @@ Imagine your RAG system is a pizza delivery service:
 
 | I want to... | Go here |
 |-------------|---------|
-| Understand the blind spots in depth | [🔍 Blind Spots Deep Dive](docs/02a-seven-blind-spots-deep-dive.md) |
-| Run a quick health check | [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) |
-| See real failure case studies | [Deep Dive → Case Studies](docs/02a-seven-blind-spots-deep-dive.md#case-studies-why-ai-assistants-seem-stupid) |
-| Get the full diagnostic checklist | [Deep Dive → Checklist](docs/02a-seven-blind-spots-deep-dive.md#-interactive-diagnostic-checklist) |
+| Understand the blind spots in depth | [🔍 Blind Spots Deep Dive](02a-seven-blind-spots-deep-dive.md) |
+| Run a quick health check | [👃 RAG Smell Test](../cheatsheets/rag-smell-test.md) |
+| See real failure case studies | [Deep Dive → Case Studies](02a-seven-blind-spots-deep-dive.md#case-studies-why-ai-assistants-seem-stupid) |
+| Get the full diagnostic checklist | [Deep Dive → Checklist](02a-seven-blind-spots-deep-dive.md#-interactive-diagnostic-checklist) |
 
 <br>
 <br>
@@ -213,10 +213,10 @@ flowchart LR
 | **Context** | Contextual Retrieval preprocessing | Single highest-ROI improvement available |
 
 > 📚 **Deep Dives:**
-> - [Chunking Strategies](docs/03-chunking-strategies.md)
-> - [Hybrid Search](docs/04-hybrid-search.md)
-> - [Mental Models & First Principles](docs/05-mental-models.md)
-> - [Advanced Patterns](docs/06-advanced-patterns.md)
+> - [Chunking Strategies](03-chunking-strategies.md)
+> - [Hybrid Search](04-hybrid-search.md)
+> - [Mental Models & First Principles](05-mental-models.md)
+> - [Advanced Patterns](06-advanced-patterns.md)
 
 <br>
 <br>
@@ -231,11 +231,11 @@ Composite examples designed to teach RAG patterns with transparent ROI methodolo
 
 | Case Study | Industry Pattern | Key Learning |
 |------------|-----------------|--------------|
-| [Healthcare Document Processing](case-studies/01-healthcare-document-ai.md) | Document Classification | ROI estimation from public benchmarks |
-| [Technical Support AI-Agent](case-studies/02-medtech-support-agent.md) | Field Service / Support | Decision tree + RAG hybrid architecture |
-| [Enterprise Knowledge Mining](case-studies/03-enterprise-knowledge-bot.md) | Enterprise Search | Hybrid search and platform selection |
+| [Healthcare Document Processing](../case-studies/01-healthcare-document-ai.md) | Document Classification | ROI estimation from public benchmarks |
+| [Technical Support AI-Agent](../case-studies/02-medtech-support-agent.md) | Field Service / Support | Decision tree + RAG hybrid architecture |
+| [Enterprise Knowledge Mining](../case-studies/03-enterprise-knowledge-bot.md) | Enterprise Search | Hybrid search and platform selection |
 
-> 📚 **Framework:** [The 5 Danger Zones](case-studies/README.md#the-5-danger-zones-framework)
+> 📚 **Framework:** [The 5 Danger Zones](../case-studies/README.md#the-5-danger-zones-framework)
 
 <br>
 <br>
@@ -246,12 +246,12 @@ Quick-reference guides for common decisions:
 
 | Cheatsheet | Description |
 |------------|-------------|
-| [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) | 5-minute health check, is something off? ⭐ NEW |
-| [🌳 Chunking Decision Tree](cheatsheets/chunking-decision-tree.md) | Visual guide for chunk size selection |
-| [⚖️ Hybrid Search Weights](cheatsheets/hybrid-search-weights.md) | Domain-specific BM25/vector weights |
-| [🚨 Danger Zones Checklist](cheatsheets/danger-zones-checklist.md) | Pre-flight checklist before production |
-| [📏 Evaluation Metrics](cheatsheets/evaluation-metrics.md) | RAG Triad + extended metrics |
-| [💰 Cost Optimization](cheatsheets/cost-optimization.md) | From $18K/month to sustainable |
+| [👃 RAG Smell Test](../cheatsheets/rag-smell-test.md) | 5-minute health check, is something off? ⭐ NEW |
+| [🌳 Chunking Decision Tree](../cheatsheets/chunking-decision-tree.md) | Visual guide for chunk size selection |
+| [⚖️ Hybrid Search Weights](../cheatsheets/hybrid-search-weights.md) | Domain-specific BM25/vector weights |
+| [🚨 Danger Zones Checklist](../cheatsheets/danger-zones-checklist.md) | Pre-flight checklist before production |
+| [📏 Evaluation Metrics](../cheatsheets/evaluation-metrics.md) | RAG Triad + extended metrics |
+| [💰 Cost Optimization](../cheatsheets/cost-optimization.md) | From $18K/month to sustainable |
 
 <br>
 <br>
@@ -262,11 +262,11 @@ Practical implementation guidance for major platforms:
 
 | Platform | Guide | Key Services |
 |----------|-------|--------------|
-| ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white) | [AWS Bedrock](docs/platform-guides/aws-bedrock.md) | Bedrock, Kendra, OpenSearch, S3 Vectors |
-| ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white) | [Azure AI](docs/platform-guides/azure-ai-search.md) | AI Search, OpenAI Service, Document Intelligence |
-| ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=google-cloud&logoColor=white) | [Google Vertex AI](docs/platform-guides/gcp-vertex-ai.md) | Vertex AI Search, Gemini, Document AI |
-| ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white) | [Databricks](docs/platform-guides/databricks-mosaic.md) | Mosaic AI, Vector Search, MLflow |
-| ![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=flat&logo=uipath&logoColor=white) | [UiPath](docs/platform-guides/uipath-automation.md) | AI Center, Document Understanding, Orchestrator |
+| ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white) | [AWS Bedrock](platform-guides/aws-bedrock.md) | Bedrock, Kendra, OpenSearch, S3 Vectors |
+| ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white) | [Azure AI](platform-guides/azure-ai-search.md) | AI Search, OpenAI Service, Document Intelligence |
+| ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=google-cloud&logoColor=white) | [Google Vertex AI](platform-guides/gcp-vertex-ai.md) | Vertex AI Search, Gemini, Document AI |
+| ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white) | [Databricks](platform-guides/databricks-mosaic.md) | Mosaic AI, Vector Search, MLflow |
+| ![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=flat&logo=uipath&logoColor=white) | [UiPath](platform-guides/uipath-automation.md) | AI Center, Document Understanding, Orchestrator |
 
 <br>
 <br>
@@ -294,7 +294,7 @@ flowchart TD
 | [DeepEval](https://github.com/confident-ai/deepeval) | ~12K | CI/CD integration, 50+ metrics, red-teaming |
 | [AutoRAG](https://github.com/Marker-Inc-Korea/AutoRAG) | ~5K | AutoML-style pipeline optimization |
 
-> 📚 **Deep Dive:** [Evaluation Framework](docs/07-evaluation-framework.md)
+> 📚 **Deep Dive:** [Evaluation Framework](07-evaluation-framework.md)
 
 <br>
 <br>
@@ -312,7 +312,7 @@ RAG costs grow **exponentially**, not linearly. A documented case reached **$18K
 
 **Total potential savings: 70-85%** with the full optimization stack.
 
-> 📚 **Deep Dive:** [Cost Engineering](docs/08-cost-engineering.md)
+> 📚 **Deep Dive:** [Cost Engineering](08-cost-engineering.md)
 
 <br>
 <br>
@@ -334,7 +334,7 @@ Your personal and lived experience matters, whether you've shipped RAG systems a
 | 🌐 **Translate** | Help make this guide accessible in other languages |
 | 📊 **Visualize** | Add diagrams, flowcharts, or decision trees |
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for detailed guidelines.
 
 <br>
 <br>
@@ -358,17 +358,17 @@ This guide stands on the shoulders of giants. We're deeply grateful to:
 - **NVIDIA**: GPU-accelerated RAG blueprints
 - **IBM**: Granite community cookbooks
 
-See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for the complete list.
+See [ACKNOWLEDGMENTS.md](../ACKNOWLEDGMENTS.md) for the complete list.
 
 <br>
 <br>
 
 ## 📚 Resources
 
-- [Official Vendor Repositories](resources/official-vendor-repos.md)
-- [Community Projects](resources/community-repos.md)
-- [Further Reading](resources/further-reading.md)
-- [Glossary](resources/glossary.md)
+- [Official Vendor Repositories](../resources/official-vendor-repos.md)
+- [Community Projects](../resources/community-repos.md)
+- [Further Reading](../resources/further-reading.md)
+- [Glossary](../resources/glossary.md)
 
 <br>
 <br>
@@ -385,7 +385,7 @@ This guide is provided for **educational and informational purposes only**. It d
 <summary><b>🔬 Curated Knowledge, Not Proprietary Information</b></summary>
 
 This guide is a **curated synthesis** of:
-- **Peer-reviewed academic research**: Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](resources/academic-references.md))
+- **Peer-reviewed academic research**: Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](../resources/academic-references.md))
 - **Open-source frameworks**: Publicly available GitHub repositories from Microsoft, AWS, Google, and the community
 - **Industry benchmarks**: Published statistics from S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI, AHIMA, AHA, and other research organizations
 - **Community knowledge**: Patterns shared by practitioners in public forums, conferences, and published case studies
