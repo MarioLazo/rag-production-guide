@@ -63,17 +63,39 @@ Nine frameworks, each with one job, sequenced by where they apply. Tools above m
 |---|---|---|
 | **Select** | Which use cases deserve funding? | **BXT** — Business value × eXecutability × Trust |
 | **Diagnose** | Are we solving the right problem? | **The Meaning Gap** — Run × Reason |
-| **Classify** | What are we actually building? | **Four Modes** → **Agent Patterns** → **Risk Tiers** |
+| **Classify** | What are we actually building? | **Application Modes** → **Agent Patterns** → **Risk Tiers** |
 | **Build** | How does it get assembled? | **The Seven-Layer Stack** |
 | **Ship** | Is it ready? | **Production Gate Question** → **Pre-Flight Checklist** → **Agent Card** |
 | **Operate** | Is it still working? | **The Three Drifts** |
 | **Scale** | Where are we as an organization? | **Agent Factory Maturity Model** |
+
+<sub><b>On the name.</b> This was called "Four Modes" until 2026-08-20, when it turned
+out two different frameworks were sharing that name. <b>Application Modes</b> classifies
+what the <i>AI</i> does: automating a task, augmenting a decision, generating an artifact,
+orchestrating other agents. Its companion, <b>Five Modes</b>, classifies what the
+<i>human</i> does as capability increases: Doing, Directing, Delegating, Designing,
+Defining. Use both. One tells you what you are building; the other tells you what your job
+is while it runs.</sub>
 
 Two of these carry most of the weight:
 
 **The Meaning Gap** — the distance between what a system optimizes and what the organization actually needs. Assessed on two axes: *Run* (can it execute reliably?) and *Reason* (is it reasoning about the right problem?). Most organizations measure only Run. The dangerous quadrant is **Precise but Wrong** — high operational confidence in a system solving the wrong problem. *Presented at the Toronto Machine Learning Summit.*
 
 **The Production Gate Question** — *"If this agent gives the right answer to the wrong question, how would you know?"* Not rhetorical. It needs a specific operational answer before architecture work begins. The most dangerous response is a confident, fast one from a team that has never considered it.
+
+---
+
+## The courses
+
+The CoE material answers *how does an organisation industrialise this*. Two
+companion courses answer *how does a practitioner build one that survives*.
+
+| | |
+|---|---|
+| **[From Vibe Coding to Agent Engineering](https://github.com/MarioLazo/vibe-coding-to-agent-engineering)** | Part 1, free. For people who have never measured an agent. Opens on an RCT where developers predicted they would be 24% faster, believed afterwards they had been 20% faster, and were measured **19% slower** |
+| **[Agent Reliability Engineering](https://github.com/MarioLazo/agent-reliability)** | Part 2. **The 3pm Test.** Everything after it works. Six notebooks that run offline and deterministically in about ten seconds, with no API key and no dependencies |
+
+Same bias as this repository: **how things fail, and how you would know.**
 
 ---
 

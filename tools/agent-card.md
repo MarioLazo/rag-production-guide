@@ -36,12 +36,20 @@ Copy this into your agent registry, one per agent.
 - **What it explicitly does NOT do:** <the boundary, stated>
 
 ## Classification
-- **Mode:**                  DOING | DECIDING | DESIGNING | DIRECTING
+- **Application mode:**      DOING | DECIDING | DESIGNING | DIRECTING
+                             <what the AI does. see note below>
 - **Pattern:**               <retrieval | classification | generation | reasoning |
                               transactional | orchestration | research>
 - **Risk tier:**             1 (read-only) | 2 (internal write) | 3 (external/regulated) |
                               4 (irreversible or financial)
 - **Autonomy level:**        <1–5; see Seniority Ladder>
+
+> **On "Application mode".** This field was labelled `Mode` until 2026-08-20.
+> The values are unchanged; only the name was ambiguous. **Application Modes**
+> classifies what the *AI* does. Its companion, **Five Modes** (Doing,
+> Directing, Delegating, Designing, Defining), classifies what the *human*
+> does while it runs. An Agent Card documents the system, so it carries the
+> first. Accountability lives with the second.
 
 ## Data
 - **Reads from:**            <systems, and the classification of the data>
