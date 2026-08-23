@@ -12,7 +12,8 @@ Use this meta prompt when you want to:
 - Build thought leadership through open-source contributions
 - Curate and synthesize knowledge from multiple sources
 
----
+<br>
+<br>
 
 ## 🔍 Pre-Creation Risk Analysis
 
@@ -58,7 +59,8 @@ Questions to resolve before publishing:
 
 **Safe positioning:** "Curated synthesis of publicly available research, open-source frameworks, and industry benchmarks."
 
----
+<br>
+<br>
 
 ## 📝 Repository Structure Template
 
@@ -89,7 +91,8 @@ your-knowledge-repo/
     └── open-source-repos.md           # GitHub links
 ```
 
----
+<br>
+<br>
 
 ## 📜 Disclaimer Templates
 
@@ -156,7 +159,8 @@ purposes. It:
 - Is designed to teach [methodology/patterns/concepts], not guarantee outcomes
 ```
 
----
+<br>
+<br>
 
 ## 💰 ROI Methodology Template
 
@@ -204,7 +208,8 @@ All estimates use ranges rather than point values because:
 **Recommendation:** Use the conservative end for business cases.
 ```
 
----
+<br>
+<br>
 
 ## 📚 Academic References Template
 
@@ -232,7 +237,8 @@ All estimates use ranges rather than point values because:
 | [repo-name](URL) | [Org] | [License] | [Purpose] |
 ```
 
----
+<br>
+<br>
 
 ## ✅ Pre-Publication Checklist
 
@@ -263,7 +269,8 @@ All estimates use ranges rather than point values because:
 - [ ] Industry sources linked
 - [ ] Contributors acknowledged
 
----
+<br>
+<br>
 
 ## 🎨 Positioning Language
 
@@ -285,7 +292,8 @@ All estimates use ranges rather than point values because:
 ❌ "Proven methodology that delivers..."
 ❌ "Guaranteed to produce..."
 
----
+<br>
+<br>
 
 ## 📋 Example: Transforming Experience into Safe Content
 
@@ -311,7 +319,8 @@ All estimates use ranges rather than point values because:
 | Claim | "We achieved" | "Research suggests" |
 | Guarantee | Implied | "Results vary" caveat |
 
----
+<br>
+<br>
 
 ## 🔄 Continuous Improvement
 
@@ -323,7 +332,8 @@ After publishing:
 4. **Credit contributors**: Acknowledge community input
 5. **Version updates**: Note when benchmarks are refreshed
 
----
+<br>
+<br>
 
 ## 📖 License Recommendations
 
@@ -333,7 +343,8 @@ After publishing:
 | Documentation only | **CC BY 4.0** | Designed for creative content |
 | Mixed | **MIT** | Covers both cleanly |
 
----
+<br>
+<br>
 
 ## 🚀 Quick Start
 
@@ -344,6 +355,7 @@ After publishing:
 5. **Verify with checklist** before publishing
 6. **Add to AGENTS.md** for future reference
 
----
+<br>
+<br>
 
 *This meta prompt was developed while creating the [RAG Production Guide](https://github.com/MarioLazo/rag-production-guide) repository.*

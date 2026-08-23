@@ -26,9 +26,6 @@ That is not a model problem. It is an **operating model** problem, and it is
 the one nobody assigns an owner.
 
 <br>
-
----
-
 <br>
 
 ## Six years of asking one question
@@ -54,9 +51,6 @@ than how to build them. **Failure modes transfer. Success stories mostly do
 not.**
 
 <br>
-
----
-
 <br>
 
 ## The tools
@@ -102,9 +96,6 @@ Tools are published when they are finished and field-tested. **Never as
 placeholders.**
 
 <br>
-
----
-
 <br>
 
 ## The spine
@@ -173,9 +164,6 @@ responsibility does not.**
 </details>
 
 <br>
-
----
-
 <br>
 
 ## The factory metaphor, and why it earns its keep
@@ -199,9 +187,6 @@ becomes a unit-economics answer: cost per unit, quality threshold, and a
 trajectory.
 
 <br>
-
----
-
 <br>
 
 ## The courses
@@ -234,9 +219,6 @@ no API key and no dependencies.
 Same bias as this repository: *how things fail, and how you would know.*
 
 <br>
-
----
-
 <br>
 
 ## Read this before trusting anything here
@@ -264,9 +246,6 @@ confidence score. *Trust them accordingly.*
 than the whole subject. Old links redirect.</sub>
 
 <br>
-
----
-
 <br>
 
 ## Who this is for
@@ -279,9 +258,6 @@ programs, not just approve them.
 **Practitioners** with production scar tissue who want to compare notes.
 
 <br>
-
----
-
 <br>
 
 ## Reference
@@ -297,9 +273,6 @@ Where domain expertise is critical and governance is not optional, the hard
 part is knowing what has already been built and what is actually usable.
 
 <br>
-
----
-
 <br>
 
 ## Stay with it
@@ -314,9 +287,6 @@ evaluation and governance, and people building community around this. Open an
 issue or reach out.
 
 <br>
-
----
-
 <br>
 
 <sub>By [Mario Lazo](https://github.com/MarioLazo). Co-author of *AI Data Privacy and Protection* (Technics Publications, 2024).

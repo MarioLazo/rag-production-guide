@@ -31,7 +31,8 @@ We extend our heartfelt thanks to the maintainers and contributors of these exce
 | [**Athina AI RAG Cookbooks**](https://github.com/athina-ai/rag-cookbooks) | Athina AI | The most complete taxonomy of RAG patterns we've found: Naive → Advanced → Agentic with built-in evaluation. |
 | [**IBM Granite Cookbooks**](https://github.com/ibm-granite-community/granite-snack-cookbook) | IBM Granite Community | Modular recipes with Docling parsing, Granite RAG 3.0 LoRA, and multimodal RAG patterns. |
 
----
+<br>
+<br>
 
 ## 🏢 Official Vendor Repositories
 
@@ -82,7 +83,8 @@ We acknowledge and thank the engineering teams at these organizations for open-s
 |------------|-------------|
 | [UiPath Community Resources](https://github.com/UiPath) | AI Center and Document Understanding integration patterns |
 
----
+<br>
+<br>
 
 ## 📚 Research & Publications
 
@@ -107,7 +109,8 @@ We acknowledge the researchers and authors whose work informed this guide:
 ### Thought Leaders
 Special thanks to the practitioners who share their production experiences through blog posts, conference talks, and community discussions. Your willingness to share failures as well as successes helps us all build better systems.
 
----
+<br>
+<br>
 
 ## 🤝 Contributors
 
@@ -119,7 +122,8 @@ Thank you to everyone who has contributed to this guide:
 
 Want to see your name here? Check out [CONTRIBUTING.md](CONTRIBUTING.md) to get started!
 
----
+<br>
+<br>
 
 ## 💝 A Personal Note
 
@@ -127,7 +131,8 @@ To everyone who has open-sourced their work, written documentation, answered que
 
 The AI/ML community's culture of openness and knowledge sharing is what makes rapid progress possible. This guide is our attempt to pay it forward.
 
----
+<br>
+<br>
 
 <div align="center">
 

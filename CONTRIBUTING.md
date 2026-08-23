@@ -22,7 +22,8 @@ This project adheres to a simple code of conduct:
 - **Be inclusive**: Welcome contributors of all experience levels
 - **Be honest**: Share real experiences, including failures
 
----
+<br>
+<br>
 
 ## 🎯 Ways to Contribute
 
@@ -52,7 +53,8 @@ This project adheres to a simple code of conduct:
 - Review pull requests
 - Share the guide with your network
 
----
+<br>
+<br>
 
 ## 🚀 Getting Started
 
@@ -92,7 +94,8 @@ This project adheres to a simple code of conduct:
    ```
    Then open a PR on GitHub.
 
----
+<br>
+<br>
 
 ## 📐 Contribution Guidelines
 
@@ -191,7 +194,8 @@ Cheatsheets should be scannable and actionable:
 - Provide specific numbers/thresholds
 - Link to detailed docs for context
 
----
+<br>
+<br>
 
 ## ✍️ Style Guide
 
@@ -243,7 +247,8 @@ For academic papers:
 *Paper Title* (Conference Year): Brief description
 ```
 
----
+<br>
+<br>
 
 ## 🏆 Recognition
 
@@ -262,7 +267,8 @@ Regular contributors who demonstrate:
 
 May be invited to become maintainers with write access.
 
----
+<br>
+<br>
 
 ## ❓ Questions?
 
@@ -270,7 +276,8 @@ May be invited to become maintainers with write access.
 - **Bug reports**: Open a GitHub Issue
 - **Private matters**: Contact the maintainers directly
 
----
+<br>
+<br>
 
 <div align="center">
 

@@ -27,7 +27,8 @@ The repository already has strong attribution infrastructure:
 - Sources cited (S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI)
 ```
 
----
+<br>
+<br>
 
 ## 🔍 Claims That Need Verification/Attribution
 
@@ -66,7 +67,8 @@ The repository already has strong attribution infrastructure:
 | Pizza delivery analogy | **Original to this guide** | ✅ OK - original content |
 | "The Confident Bullshitter" analogy | **Original to this guide** | ✅ OK - original content |
 
----
+<br>
+<br>
 
 ## ⚠️ Potential Issues
 
@@ -108,7 +110,8 @@ The repository already has strong attribution infrastructure:
 > not specific company data.
 ```
 
----
+<br>
+<br>
 
 ## ✅ Original Content (No Attribution Needed)
 
@@ -124,7 +127,8 @@ The following are **original contributions** of this guide:
 
 These are transformative, educational syntheses that don't require attribution beyond the underlying concepts they explain.
 
----
+<br>
+<br>
 
 ## 📝 Recommended Changes
 
@@ -192,7 +196,8 @@ When inter-document similarity exceeds ~0.65 (a threshold commonly observed
 in practice to cause retrieval degradation)...
 ```
 
----
+<br>
+<br>
 
 ## 🏆 Overall Assessment
 
@@ -223,7 +228,8 @@ The guide is primarily:
 6. [ ] Add RRF paper citation
 7. [ ] Clarify semantic collapse threshold origin
 
----
+<br>
+<br>
 
 ## 📚 Full Attribution Checklist
 
