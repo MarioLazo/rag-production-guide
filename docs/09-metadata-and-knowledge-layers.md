@@ -7,7 +7,7 @@
 
 <br/>
 
-Imagine you walk into a pizza shop and every box is plain white — no labels, no dates, no markings. You don't know which box has pepperoni, which one was made today, and which one has been sitting there since last Tuesday.
+Imagine you walk into a pizza shop and every box is plain white, no labels, no dates, no markings. You don't know which box has pepperoni, which one was made today, and which one has been sitting there since last Tuesday.
 
 **That's your RAG system without metadata.**
 
@@ -25,7 +25,7 @@ Now imagine every box has a label: "Pepperoni, made 2 hours ago, for dine-in, ce
 
 ## Why Metadata Is a Force Multiplier
 
-Most teams treat metadata as an afterthought — something to "add later." This is a mistake. Metadata captured at ingestion time is cheap. Metadata reconstructed after the fact is expensive, unreliable, and often impossible.
+Most teams treat metadata as an afterthought, something to "add later." This is a mistake. Metadata captured at ingestion time is cheap. Metadata reconstructed after the fact is expensive, unreliable, and often impossible.
 
 | Without Metadata | With Metadata |
 |-----------------|---------------|
@@ -67,7 +67,7 @@ This is the "birth certificate" for every document. Capture it automatically whe
 
 <br/>
 
-This is the basic info printed on every pizza box: what's inside, when it was made, who made it, and whether it's for dine-in or delivery. You'd never ship a pizza without this — don't ship documents without it either.
+This is the basic info printed on every pizza box: what's inside, when it was made, who made it, and whether it's for dine-in or delivery. You'd never ship a pizza without this, don't ship documents without it either.
 
 </details>
 
@@ -115,7 +115,7 @@ This metadata is generated during retrieval and helps downstream components make
 
 ### Layer 4: Generation Metadata (Capture at Response Time)
 
-This metadata tracks what happened after retrieval — critical for feedback loops and debugging.
+This metadata tracks what happened after retrieval, critical for feedback loops and debugging.
 
 | Field | Description | Example |
 |-------|-------------|---------|
@@ -132,7 +132,7 @@ This metadata tracks what happened after retrieval — critical for feedback loo
 
 ### Pattern 1: Freshness-Weighted Search
 
-Don't just find relevant documents — find *current* relevant documents.
+Don't just find relevant documents, find *current* relevant documents.
 
 ```python
 def freshness_weighted_search(query: str, vector_db, decay_rate: float = 0.1):
@@ -152,7 +152,7 @@ def freshness_weighted_search(query: str, vector_db, decay_rate: float = 0.1):
 
 <br/>
 
-If two pizzas score equally on "what the customer wants," but one was made 5 minutes ago and the other is from yesterday — you serve the fresh one. That's freshness-weighted search.
+If two pizzas score equally on "what the customer wants," but one was made 5 minutes ago and the other is from yesterday, you serve the fresh one. That's freshness-weighted search.
 
 Decay rate controls how aggressively you penalize staleness. A news site might have a fast decay (yesterday's news is old). A legal firm might have a slow decay (a 2-year-old contract is still valid).
 
@@ -224,14 +224,14 @@ def version_aware_search(query: str, results: list) -> list:
 
 ### What Is a Knowledge Layer?
 
-A knowledge layer sits between your raw documents and your retrieval system. It structures information into entities, relationships, and concepts — transforming a document pile into a connected knowledge base.
+A knowledge layer sits between your raw documents and your retrieval system. It structures information into entities, relationships, and concepts, transforming a document pile into a connected knowledge base.
 
 <details>
 <summary>🍕 <b>Pizza analogy: The difference between a pantry and a recipe book</b></summary>
 
 <br/>
 
-Your raw documents are like a pantry full of ingredients — flour, sauce, cheese, pepperoni. They're all there, but you have to figure out what goes together.
+Your raw documents are like a pantry full of ingredients, flour, sauce, cheese, pepperoni. They're all there, but you have to figure out what goes together.
 
 A **knowledge layer** is like adding a recipe book on top. Now you know:
 - Mozzarella **goes with** tomato sauce (relationship)
@@ -358,14 +358,14 @@ def graph_enhanced_retrieval(query: str, vector_db, knowledge_graph) -> list:
 
 ### Knowledge Layer Maintenance
 
-A knowledge layer is not "set and forget." It requires ongoing maintenance — just like the documents it's built from.
+A knowledge layer is not "set and forget." It requires ongoing maintenance, just like the documents it's built from.
 
 | Maintenance Task | Frequency | Automated? |
 |-----------------|-----------|------------|
 | Entity extraction on new documents | Every ingestion | Yes |
-| Relationship validation | Weekly | Partially — flag conflicts for human review |
-| Stale entity detection | Weekly | Yes — cross-reference with source doc timestamps |
-| Taxonomy updates | Monthly | No — requires domain expert input |
+| Relationship validation | Weekly | Partially, flag conflicts for human review |
+| Stale entity detection | Weekly | Yes, cross-reference with source doc timestamps |
+| Taxonomy updates | Monthly | No, requires domain expert input |
 | Full graph rebuild | Quarterly | Yes, but schedule during off-peak |
 
 **Cost consideration:** Entity extraction via LLM calls adds ingestion cost. Budget approximately 1-3 LLM calls per document for extraction. For a 10,000-document corpus, this is a one-time cost of ~$50-150 depending on document size and model choice, with incremental costs for new documents.
@@ -444,12 +444,12 @@ Before going to production:
 ## References
 
 ### Academic Research
-- Gao et al., *"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"* — NeurIPS 2020 — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
-- Edge et al., *"From Local to Global: A Graph RAG Approach to Query-Focused Summarization"* — Microsoft Research 2024 — [arXiv:2404.16130](https://arxiv.org/abs/2404.16130)
+- Gao et al., *"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"*, NeurIPS 2020, [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
+- Edge et al., *"From Local to Global: A Graph RAG Approach to Query-Focused Summarization"*, Microsoft Research 2024, [arXiv:2404.16130](https://arxiv.org/abs/2404.16130)
 
 ### Industry
-- **Anthropic** (2024), *Contextual Retrieval* — [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
-- **Microsoft** (2024), *GraphRAG: Unlocking LLM discovery on narrative private datasets* — [microsoft.com](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-datasets/)
+- **Anthropic** (2024), *Contextual Retrieval*, [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
+- **Microsoft** (2024), *GraphRAG: Unlocking LLM discovery on narrative private datasets*, [microsoft.com](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-datasets/)
 
 ---
 

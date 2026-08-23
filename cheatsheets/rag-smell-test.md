@@ -75,7 +75,7 @@ Query B: "Why was my expense report rejected?"
 
 <br/>
 
-Your system sees "password" in both queries and thinks "close enough!" It's like asking a librarian for a mystery novel vs. asking why your last mystery novel was damaged—they'd point you to completely different places, but a robot might just say "mystery section!"
+Your system sees "password" in both queries and thinks "close enough!" It's like asking a librarian for a mystery novel vs. asking why your last mystery novel was damaged, they'd point you to completely different places, but a robot might just say "mystery section!"
 
 **Quick fix:** Add query intent classification before retrieval.
 
@@ -133,7 +133,7 @@ Your system memorized the old answer and nobody told it things changed. It's lik
 
 <br/>
 
-LLMs are people-pleasers. They'd rather give you a confident wrong answer than admit they don't know. It's like asking your friend who's never been to Paris for restaurant recommendations—some people will just make something up rather than say "I have no idea."
+LLMs are people-pleasers. They'd rather give you a confident wrong answer than admit they don't know. It's like asking your friend who's never been to Paris for restaurant recommendations, some people will just make something up rather than say "I have no idea."
 
 **Quick fix:** Add explicit grounding prompts: "Only use information from the provided context. If not found, say so."
 
@@ -162,7 +162,7 @@ Run this 5 times (clear context between each):
 
 <br/>
 
-If all your documents look the same to the system (high similarity), it's basically picking randomly from a bucket of "close enough" matches. It's like if every book in the library had the same call number—the librarian would just grab whichever one is closest to their hand.
+If all your documents look the same to the system (high similarity), it's basically picking randomly from a bucket of "close enough" matches. It's like if every book in the library had the same call number, the librarian would just grab whichever one is closest to their hand.
 
 **Quick fix:** Run similarity analysis. Deduplicate near-identical docs. Use MMR for diverse retrieval.
 
@@ -193,7 +193,7 @@ Note: Which doc number contains the actual answer?
 
 <br/>
 
-LLMs are like students skimming a long reading assignment—they pay attention to the intro and conclusion but zone out in the middle. Your critical info might be sitting in paragraph 5 of 10, totally ignored.
+LLMs are like students skimming a long reading assignment, they pay attention to the intro and conclusion but zone out in the middle. Your critical info might be sitting in paragraph 5 of 10, totally ignored.
 
 **Quick fix:** Sort retrieved docs by relevance (most relevant first). Use fewer, more targeted chunks.
 
@@ -321,9 +321,9 @@ Action Items:
 
 ## 🔗 Related Resources
 
-- [🔍 Blind Spots Deep Dive](../docs/02a-seven-blind-spots-deep-dive.md) — Full explanation with case studies
-- [📐 Evaluation Metrics](evaluation-metrics.md) — How to measure properly
-- [🚨 Danger Zones Checklist](danger-zones-checklist.md) — Pre-flight checks
+- [🔍 Blind Spots Deep Dive](../docs/02a-seven-blind-spots-deep-dive.md), Full explanation with case studies
+- [📐 Evaluation Metrics](evaluation-metrics.md), How to measure properly
+- [🚨 Danger Zones Checklist](danger-zones-checklist.md), Pre-flight checks
 
 ---
 

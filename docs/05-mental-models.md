@@ -138,13 +138,13 @@ LLMs are like that friend who ALWAYS has an answer, even when they definitely sh
 
 Freedonia is a fictional country from a Marx Brothers movie. Your friend just made everything up, but they sounded SO confident.
 
-**How LLMs work:** They predict "what word probably comes next." Not "what word is TRUE"—just what word is LIKELY given the pattern.
+**How LLMs work:** They predict "what word probably comes next." Not "what word is TRUE", just what word is LIKELY given the pattern.
 
-If you ask about a made-up thing, the LLM thinks: "When people talk about countries, they usually have capitals, and capitals have names, and..."—and just fills in plausible-sounding nonsense.
+If you ask about a made-up thing, the LLM thinks: "When people talk about countries, they usually have capitals, and capitals have names, and...", and just fills in plausible-sounding nonsense.
 
-**RAG is supposed to fix this** by saying "only use THIS information to answer." But the LLM doesn't actually UNDERSTAND that rule—it just sees more text and does its normal "predict likely words" thing.
+**RAG is supposed to fix this** by saying "only use THIS information to answer." But the LLM doesn't actually UNDERSTAND that rule, it just sees more text and does its normal "predict likely words" thing.
 
-**The danger:** It has no "I don't know" instinct. Admitting ignorance is not statistically likely in its training data—confident answers are.
+**The danger:** It has no "I don't know" instinct. Admitting ignorance is not statistically likely in its training data, confident answers are.
 
 </details>
 
@@ -207,7 +207,7 @@ Document Signal
 - Analytical queries need low-frequency preservation → larger chunks
 - Mixed queries need hybrid approaches
 
-**Key insight:** There's no "correct" chunk size—only chunk sizes appropriate for your signal and your sampling requirements.
+**Key insight:** There's no "correct" chunk size, only chunk sizes appropriate for your signal and your sampling requirements.
 
 ---
 
@@ -242,7 +242,7 @@ flowchart TD
 
 ### Mental Model 3: Context as Cognitive Bandwidth
 
-**The model:** The LLM's context window is like working memory—limited cognitive bandwidth. Everything you put in competes for attention.
+**The model:** The LLM's context window is like working memory, limited cognitive bandwidth. Everything you put in competes for attention.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐

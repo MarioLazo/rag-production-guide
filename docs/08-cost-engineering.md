@@ -211,7 +211,7 @@ flowchart LR
 
 **The problem:** You're paying for a brain surgeon to put on Band-Aids.
 
-GPT-4 costs ~100x more than GPT-4o-mini. But for "What are your store hours?"—you don't need the expensive model.
+GPT-4 costs ~100x more than GPT-4o-mini. But for "What are your store hours?", you don't need the expensive model.
 
 **Model routing:** Use the right model for the job.
 

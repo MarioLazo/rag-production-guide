@@ -37,15 +37,15 @@ Before creating content, categorize your sources:
 
 Before publishing, verify:
 
-- [ ] **No identifiable client details** — No combination of factors points to a real company
-- [ ] **Composite framing** — Explicitly stated as illustrative/composite examples
-- [ ] **Public sources cited** — Every claim traceable to published source
-- [ ] **Math shown transparently** — Teaching methodology, not claiming specific outcomes
-- [ ] **Ranges used** — Never point estimates for financials
-- [ ] **Disclaimers visible** — At top of README and key documents
-- [ ] **No guarantees** — "Results will vary" language included
-- [ ] **Employment agreement checked** — No conflicts with current/past employers
-- [ ] **NDA compliance verified** — No protected information included
+- [ ] **No identifiable client details**: No combination of factors points to a real company
+- [ ] **Composite framing**: Explicitly stated as illustrative/composite examples
+- [ ] **Public sources cited**: Every claim traceable to published source
+- [ ] **Math shown transparently**, Teaching methodology, not claiming specific outcomes
+- [ ] **Ranges used**: Never point estimates for financials
+- [ ] **Disclaimers visible**: At top of README and key documents
+- [ ] **No guarantees**, "Results will vary" language included
+- [ ] **Employment agreement checked**: No conflicts with current/past employers
+- [ ] **NDA compliance verified**: No protected information included
 
 ### Step 3: Employer/Client Alignment
 
@@ -106,11 +106,11 @@ professionals appropriate to your situation.
 
 ### 🔬 Curated Knowledge, Not Proprietary Information
 This guide is a **curated synthesis** of:
-- **Peer-reviewed academic research** — Published papers from [venues] 
+- **Peer-reviewed academic research**: Published papers from [venues] 
   ([see references](resources/academic-references.md))
-- **Open-source frameworks** — Publicly available GitHub repositories
-- **Industry benchmarks** — Published statistics from [organizations]
-- **Community knowledge** — Patterns shared in public forums and conferences
+- **Open-source frameworks**: Publicly available GitHub repositories
+- **Industry benchmarks**: Published statistics from [organizations]
+- **Community knowledge**: Patterns shared in public forums and conferences
 
 **No proprietary or confidential information is included.** 
 All sources are publicly available and cited.
@@ -196,10 +196,10 @@ RESULT:
 ### Why We Use Ranges
 
 All estimates use ranges rather than point values because:
-1. **Organizational variance** — Every implementation differs
-2. **Data quality variance** — Outcomes depend on input quality
-3. **Adoption variance** — Human factors affect results
-4. **Market variance** — Costs and values change over time
+1. **Organizational variance**: Every implementation differs
+2. **Data quality variance**: Outcomes depend on input quality
+3. **Adoption variance**: Human factors affect results
+4. **Market variance**: Costs and values change over time
 
 **Recommendation:** Use the conservative end for business cases.
 ```
@@ -317,11 +317,11 @@ All estimates use ranges rather than point values because:
 
 After publishing:
 
-1. **Monitor feedback** — Update if sources become outdated
-2. **Add citations** — When new research supports your content
-3. **Refine disclaimers** — If edge cases emerge
-4. **Credit contributors** — Acknowledge community input
-5. **Version updates** — Note when benchmarks are refreshed
+1. **Monitor feedback**: Update if sources become outdated
+2. **Add citations**: When new research supports your content
+3. **Refine disclaimers**: If edge cases emerge
+4. **Credit contributors**: Acknowledge community input
+5. **Version updates**: Note when benchmarks are refreshed
 
 ---
 

@@ -1,15 +1,15 @@
 # 📄 Chunking Strategies
 
-> **Most RAG failures can be traced back to chunking decisions.** Poor chunking leads to missed retrieval and context misalignment — core blind spots that cascade into downstream failures. This section provides actionable guidance for getting chunking right.
+> **Most RAG failures can be traced back to chunking decisions.** Poor chunking leads to missed retrieval and context misalignment, core blind spots that cascade into downstream failures. This section provides actionable guidance for getting chunking right.
 
 <details>
-<summary>🍕 <b>Hold up—what's "chunking"?</b></summary>
+<summary>🍕 <b>Hold up, what's "chunking"?</b></summary>
 
 <br/>
 
 **Chunking = cutting documents into bite-sized pieces**
 
-AI can't read a 500-page PDF all at once. So we cut it into smaller pieces called "chunks"—maybe a paragraph each—and store those pieces separately.
+AI can't read a 500-page PDF all at once. So we cut it into smaller pieces called "chunks", maybe a paragraph each, and store those pieces separately.
 
 When someone asks a question, we find the relevant chunks and give just those to the AI.
 
@@ -142,7 +142,7 @@ chunks = splitter.split_text(document)
 
 It's like a paper cutter that chops every 3 inches. Fast and predictable, but might cut through the middle of a sentence or split a paragraph about "why our product is great" into two useless halves.
 
-**Semantic chunking:** "Cut at natural breaks—where the topic changes."
+**Semantic chunking:** "Cut at natural breaks, where the topic changes."
 
 It's like a human with scissors who reads the text and cuts between sections. Takes longer, but each piece makes sense on its own.
 
@@ -277,10 +277,10 @@ def add_context(chunk: str, full_document: str, llm) -> str:
 
 ### Implementation Tips
 
-1. **Use prompt caching** — The full document is repeated for each chunk
-2. **Batch processing** — Process chunks in parallel
-3. **Cache results** — Context only needs to be generated once per chunk
-4. **Keep context concise** — 50-100 tokens is sufficient
+1. **Use prompt caching**: The full document is repeated for each chunk
+2. **Batch processing**: Process chunks in parallel
+3. **Cache results**: Context only needs to be generated once per chunk
+4. **Keep context concise**: 50-100 tokens is sufficient
 
 ---
 

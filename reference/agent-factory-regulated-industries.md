@@ -1,4 +1,4 @@
-# 🏭 Agent Factory Reference — Regulated Industries Edition
+# 🏭 Agent Factory Reference: Regulated Industries Edition
 
 **Healthcare · Finance · Supply Chain & Distribution**
 
@@ -12,15 +12,15 @@ A practical directory of tools, frameworks, datasets, and standards for building
 
 <!-- 
 💡 PLAIN ENGLISH: This is a starting point, not a complete manual.
-Think of it like a well-organized toolbox — we've gathered the tools that 
+Think of it like a well-organized toolbox, we've gathered the tools that 
 actually work, but you still need to know how to use them for your specific job.
 -->
 
-This reference started as a simple list. It grew into what I wish had existed when I was in front of hospital CIOs and bank risk committees trying to explain why most AI pilots fail — not because the technology is bad, but because nobody had a map.
+This reference started as a simple list. It grew into what I wish had existed when I was in front of hospital CIOs and bank risk committees trying to explain why most AI pilots fail, not because the technology is bad, but because nobody had a map.
 
 If it saves one team from rebuilding what already exists, or helps one practitioner find the right ontology before spending six months on the wrong one, it was worth the effort.
 
-**— Mario Lazo**
+**, Mario Lazo**
 
 ---
 
@@ -30,26 +30,26 @@ If it saves one team from rebuilding what already exists, or helps one practitio
 
 <!-- 
 💡 PLAIN ENGLISH: An "Agent Factory" is a system for building and running 
-AI assistants that can take actions on your behalf — like automating 
+AI assistants that can take actions on your behalf, like automating 
 paperwork, analyzing data, or answering questions from your systems.
 -->
 
 **What is an "Agent Factory"?**
-An Agent Factory is a structured approach to building AI systems that can take actions — reading documents, querying databases, making recommendations, or automating workflows. Unlike simple chatbots that just answer questions, these agents interact with your real systems.
+An Agent Factory is a structured approach to building AI systems that can take actions, reading documents, querying databases, making recommendations, or automating workflows. Unlike simple chatbots that just answer questions, these agents interact with your real systems.
 
 **Why does this require expertise?**
 Building agents for regulated industries (healthcare, finance, supply chain) isn't like building a demo. In these environments:
 
-- **A wrong answer can cause real harm** — misdiagnosed patients, bad investment advice, supply chain failures
-- **Regulations have teeth** — HIPAA violations can cost millions, SEC infractions can end careers
-- **Trust is everything** — one bad AI decision can destroy years of institutional credibility
+- **A wrong answer can cause real harm**: misdiagnosed patients, bad investment advice, supply chain failures
+- **Regulations have teeth**: HIPAA violations can cost millions, SEC infractions can end careers
+- **Trust is everything**: one bad AI decision can destroy years of institutional credibility
 
 **What you'll need beyond this reference:**
 
 | What | Why |
 |------|-----|
 | **Domain expertise** | Someone who deeply understands healthcare workflows, financial regulations, or supply chain operations |
-| **Compliance knowledge** | A person (or team) who knows your specific regulatory obligations — not generic AI ethics, but actual legal requirements |
+| **Compliance knowledge** | A person (or team) who knows your specific regulatory obligations, not generic AI ethics, but actual legal requirements |
 | **Technical implementation skills** | Engineers who can build, test, deploy, and monitor production systems |
 | **Organizational buy-in** | Stakeholders who understand that AI adoption is a process, not a one-time installation |
 
@@ -81,7 +81,7 @@ Building agents for regulated industries (healthcare, finance, supply chain) isn
 
 ### Not Legal or Compliance Advice
 
-This is a reference document — a collection of links and descriptions. It is not a product recommendation, legal opinion, or compliance certification. Nothing here substitutes for:
+This is a reference document, a collection of links and descriptions. It is not a product recommendation, legal opinion, or compliance certification. Nothing here substitutes for:
 
 - Your organization's legal counsel
 - Your compliance team's evaluation
@@ -98,7 +98,7 @@ I will review and update this list **at minimum every two months**. But the AI s
 - Better tools appear weekly
 - Companies get acquired or shut down
 
-**If something is outdated, wrong, or missing — open a PR or file an issue.** That's the whole point.
+**If something is outdated, wrong, or missing: open a PR or file an issue.** That's the whole point.
 
 ### Data Use Agreements Matter
 
@@ -117,27 +117,27 @@ HIPAA, SOC 2, FDA SaMD, SEC/FINRA, EU AI Act, and other frameworks impose obliga
 
 ---
 
-## 🤝 Community Curation — Help Each Other
+## 🤝 Community Curation: Help Each Other
 
 This guide works best as a **community effort**. The AI landscape is too broad and too fast for any one person to maintain well.
 
-**If you're actively building in healthcare AI, finance AI, or supply chain AI — your contributions matter.**
+**If you're actively building in healthcare AI, finance AI, or supply chain AI: your contributions matter.**
 
 ### How to Contribute
 
 | Action | When to Use |
 |--------|-------------|
 | **File an issue** | Flag outdated links, broken repos, incorrect descriptions, or resources that should be removed |
-| **Open a pull request** | Add a repo, paper, dataset, MCP server, or ontology — follow the format in this guide |
+| **Open a pull request** | Add a repo, paper, dataset, MCP server, or ontology, follow the format in this guide |
 | **Join GitHub Discussions** | Suggest new sections, debate architecture choices, share what's working in production |
-| **Write a comment** | If you've used something listed here, share your experience — what worked, what didn't |
+| **Write a comment** | If you've used something listed here, share your experience, what worked, what didn't |
 
 ### What Makes a Good Contribution
 
 **Include:**
 - Resources with demonstrated production use OR strong research backing
-- Active maintenance (check the last commit date — repos abandoned >18 months are lower priority)
-- Relevance to **regulated environments** — tools that don't address compliance, auditability, or domain specificity are lower priority
+- Active maintenance (check the last commit date, repos abandoned >18 months are lower priority)
+- Relevance to **regulated environments**, tools that don't address compliance, auditability, or domain specificity are lower priority
 - Plain-language descriptions a practitioner can read in 60 seconds and understand
 
 **Avoid:**
@@ -240,7 +240,7 @@ This guide focuses on AI agents for regulated industries. These complementary re
 ### Search Tips
 
 - Use `Ctrl+F` / `Cmd+F` to search for specific tools or terms
-- Keywords are written in plain English — search for what you need, not acronyms
+- Keywords are written in plain English, search for what you need, not acronyms
 - Each entry includes a one-line description of what it does
 
 ### Reading Time
@@ -260,7 +260,7 @@ frameworks let you build and run AI agents that can do different tasks.
 They handle the plumbing so you can focus on what the agent actually does.
 -->
 
-The **foundational layer** of any Agent Factory — frameworks that coordinate agents, manage memory, route tools, and handle orchestration logic.
+The **foundational layer** of any Agent Factory, frameworks that coordinate agents, manage memory, route tools, and handle orchestration logic.
 
 > **In simple terms:** These tools help you build AI assistants that can remember conversations, use other software tools, and work together with other AI assistants to complete complex tasks.
 
@@ -281,7 +281,7 @@ The **foundational layer** of any Agent Factory — frameworks that coordinate a
 
 ### Choosing for Regulated Industries
 
-**Healthcare**: LangGraph + Haystack gives auditability and traceable reasoning chains — critical for clinical decision support where you must show *why* an agent made a recommendation.
+**Healthcare**: LangGraph + Haystack gives auditability and traceable reasoning chains, critical for clinical decision support where you must show *why* an agent made a recommendation.
 
 **Finance**: AutoGen or Semantic Kernel integrates well with enterprise Microsoft infrastructure; code execution sandboxing supports quantitative analysis while staying isolated from production systems.
 
@@ -291,30 +291,30 @@ The **foundational layer** of any Agent Factory — frameworks that coordinate a
 
 ---
 
-## 2 · 💰 Finance — Core Repos
+## 2 · 💰 Finance: Core Repos
 
 <!-- 
 💡 PLAIN ENGLISH: These are specialized AI tools built specifically for 
-financial work — analyzing market data, reading SEC filings, understanding 
+financial work, analyzing market data, reading SEC filings, understanding 
 financial news, and helping with investment research. They understand 
 financial language and concepts better than general-purpose AI.
 -->
 
-> **In simple terms:** Tools that help AI understand money, markets, and financial documents — like having an analyst who can read millions of pages instantly.
+> **In simple terms:** Tools that help AI understand money, markets, and financial documents, like having an analyst who can read millions of pages instantly.
 
 ---
 
 **[FinGPT](https://github.com/AI4Finance-Foundation/FinGPT)**
 > _Open-source financial LLMs with continuous fine-tuning pipelines_
 
-The standout feature isn't the models themselves — it's the **continuous update mechanism**. Financial markets are relentlessly current; a model trained six months ago on earnings calls is already stale. FinGPT solves this with automated pipelines that ingest market news, SEC filings, and social sentiment to fine-tune lightweight models (LLaMA, Falcon) on an ongoing basis. Most relevant for **sentiment analysis agents** and **market intelligence tools**.
+The standout feature isn't the models themselves, it's the **continuous update mechanism**. Financial markets are relentlessly current; a model trained six months ago on earnings calls is already stale. FinGPT solves this with automated pipelines that ingest market news, SEC filings, and social sentiment to fine-tune lightweight models (LLaMA, Falcon) on an ongoing basis. Most relevant for **sentiment analysis agents** and **market intelligence tools**.
 
 ---
 
 **[FinNLP](https://github.com/AI4Finance-Foundation/FinNLP)**
 > _NLP data pipelines and benchmarks for financial text_
 
-The data layer that feeds FinGPT and similar models. Standardized connectors for financial news APIs, SEC EDGAR, Reddit/social sentiment, and earnings call transcripts — all formatted for LLM consumption. Includes NLP benchmarks for financial tasks: NER for companies and people, sentiment classification, and QA over financial documents. Saves weeks of ETL work when building **document intelligence agents**.
+The data layer that feeds FinGPT and similar models. Standardized connectors for financial news APIs, SEC EDGAR, Reddit/social sentiment, and earnings call transcripts, all formatted for LLM consumption. Includes NLP benchmarks for financial tasks: NER for companies and people, sentiment classification, and QA over financial documents. Saves weeks of ETL work when building **document intelligence agents**.
 
 ---
 
@@ -349,14 +349,14 @@ Middleware between raw financial data and conversational AI. Agent SDK with buil
 **[Qlib (Microsoft)](https://github.com/microsoft/qlib)**
 > _Enterprise quantitative investment AI platform from Microsoft Research_
 
-Microsoft Research's production-grade quant platform — the most enterprise-ready option on this list. Covers the entire quant workflow: data handling, feature engineering, model training, backtesting, portfolio optimization, and live trading integration. Modular architecture allows replacing individual components. Best for **quantitative research teams** at institutional investors.
+Microsoft Research's production-grade quant platform, the most enterprise-ready option on this list. Covers the entire quant workflow: data handling, feature engineering, model training, backtesting, portfolio optimization, and live trading integration. Modular architecture allows replacing individual components. Best for **quantitative research teams** at institutional investors.
 
 ---
 
 **[FinRL-DeepSeek](https://github.com/AI4Finance-Foundation/FinRL-DeepSeek)**
 > _FinRL enhanced with DeepSeek reasoning models_
 
-Integrates FinRL's RL infrastructure with DeepSeek's chain-of-thought reasoning. More interpretable trading rationales — a significant advantage in regulated environments where you need to **explain why an AI system recommended a trade**. Directly addresses core compliance challenges in AI-assisted trading.
+Integrates FinRL's RL infrastructure with DeepSeek's chain-of-thought reasoning. More interpretable trading rationales, a significant advantage in regulated environments where you need to **explain why an AI system recommended a trade**. Directly addresses core compliance challenges in AI-assisted trading.
 
 ---
 
@@ -384,7 +384,7 @@ Focused on open, reproducible research in financial AI. Valuable for teams wanti
 **[FinanceBench](https://github.com/patronus-ai/financebench)**
 > _QA benchmark for financial reasoning over real documents_
 
-Tests LLM performance on questions from actual 10-K and 10-Q filings — numerical reasoning, document understanding, financial logic. Use it to **validate models before finance deployments**.
+Tests LLM performance on questions from actual 10-K and 10-Q filings, numerical reasoning, document understanding, financial logic. Use it to **validate models before finance deployments**.
 
 ---
 
@@ -395,18 +395,18 @@ Aggregates 100+ financial data sources. Useful as both a **reference data layer*
 
 ---
 
-**[500 AI Agents Projects — Finance Section](https://github.com/ashishpatel26/500-AI-Agents-Projects)**
+**[500 AI Agents Projects: Finance Section](https://github.com/ashishpatel26/500-AI-Agents-Projects)**
 > _Curated use cases with working implementations_
 
 Concrete, runnable examples for: fraud detection, risk assessment, customer support, compliance monitoring, and more. Best as an **idea catalog** when scoping new agent capabilities.
 
 ---
 
-## 3 · 🏥 Healthcare — Core Repos
+## 3 · 🏥 Healthcare: Core Repos
 
 <!-- 
 💡 PLAIN ENGLISH: These are AI tools designed for medical and clinical 
-settings — reading patient records, understanding medical terminology, 
+settings, reading patient records, understanding medical terminology, 
 helping with diagnoses, and automating paperwork. They're built to 
 understand healthcare-specific language and workflows.
 
@@ -415,26 +415,26 @@ can directly impact patient safety. These tools require careful
 evaluation and proper clinical oversight before any use.
 -->
 
-> **In simple terms:** AI tools that understand medical language and healthcare workflows — like having a medical librarian and administrator who never sleeps.
+> **In simple terms:** AI tools that understand medical language and healthcare workflows, like having a medical librarian and administrator who never sleeps.
 
 ---
 
 **[Awesome AI Agents for Healthcare](https://github.com/AgenticHealthAI/Awesome-AI-Agents-for-Healthcare)**
-> _The definitive curated list of agentic AI in clinical settings — updated weekly_
+> _The definitive curated list of agentic AI in clinical settings, updated weekly_
 
-The healthcare equivalent of AI4Finance Foundation — continuously updated catalog covering clinical decision support agents, EHR-interacting systems, multi-agent diagnostic frameworks, surgical AI, mental health agents, and practical tooling (MCP servers, FHIR tools, prior auth agents, clinical trial automation). Start here when scoping any healthcare AI project.
+The healthcare equivalent of AI4Finance Foundation, continuously updated catalog covering clinical decision support agents, EHR-interacting systems, multi-agent diagnostic frameworks, surgical AI, mental health agents, and practical tooling (MCP servers, FHIR tools, prior auth agents, clinical trial automation). Start here when scoping any healthcare AI project.
 
 ---
 
 **[Awesome AI Agents in Medicine (AIM-Research-Lab)](https://github.com/AIM-Research-Lab/Awesome-AI-Agents-Medicine)**
 > _Systematic taxonomy and survey of medical LLM agent systems_
 
-Backed by a formal peer-reviewed survey (TechRxiv, 2025), provides a structured **taxonomy of medical agent architectures**: single-agent, multi-agent, tool-augmented, RAG-augmented, multimodal. More academically rigorous — valuable for justifying architectural choices to clinical or regulatory stakeholders.
+Backed by a formal peer-reviewed survey (TechRxiv, 2025), provides a structured **taxonomy of medical agent architectures**: single-agent, multi-agent, tool-augmented, RAG-augmented, multimodal. More academically rigorous, valuable for justifying architectural choices to clinical or regulatory stakeholders.
 
 ---
 
 **[MedLLMsPracticalGuide](https://github.com/AI-in-Health/MedLLMsPracticalGuide)**
-> _Nature Reviews Bioengineering — complete guide to medical LLM applications_
+> _Nature Reviews Bioengineering, complete guide to medical LLM applications_
 
 Accompanies a comprehensive review published in Nature Reviews Bioengineering. Covers model architectures (BioBERT, ClinicalBERT, BioGPT, MedPaLM), training approaches, evaluation benchmarks, and deployment considerations. Essential for **selecting a foundation model** for healthcare.
 
@@ -443,7 +443,7 @@ Accompanies a comprehensive review published in Nature Reviews Bioengineering. C
 **[Awesome Healthcare Foundation Models](https://github.com/Jianing-Qiu/Awesome-Healthcare-Foundation-Models)**
 > _Curated large AI models across every clinical modality_
 
-Organized by modality: language models for clinical text, vision models for medical imaging, audio models for clinical conversations, multimodal models combining them. When your agent needs to process something other than text — an X-ray, ECG signal, pathology slide — this is where to find the relevant pre-trained model.
+Organized by modality: language models for clinical text, vision models for medical imaging, audio models for clinical conversations, multimodal models combining them. When your agent needs to process something other than text, an X-ray, ECG signal, pathology slide, this is where to find the relevant pre-trained model.
 
 ---
 
@@ -457,14 +457,14 @@ Multi-modal model hub covering imaging, NLP, bioinformatics, with evaluation ben
 **[HealthFlow](https://github.com/yhzhu99/HealthFlow)**
 > _Self-evolving AI agent with meta-planning for healthcare research_
 
-An agent that learns from its own task history and evolves planning strategies over time. Particularly relevant for **healthcare research automation** — literature review, hypothesis generation, data analysis orchestration. Important: self-modification requires audit trails in clinical settings.
+An agent that learns from its own task history and evolves planning strategies over time. Particularly relevant for **healthcare research automation**, literature review, hypothesis generation, data analysis orchestration. Important: self-modification requires audit trails in clinical settings.
 
 ---
 
 **[AgentClinic](https://agentclinic.github.io)**
 > _Multimodal benchmark for AI agents in simulated clinical environments_
 
-The most rigorous **evaluation framework** for clinical AI agents in open source. Grounded in USMLE Step 2/3 cases and NEJM case challenges. Also measures how cognitive biases affect diagnostic accuracy — directly relevant to FDA AI/ML bias evaluation guidance.
+The most rigorous **evaluation framework** for clinical AI agents in open source. Grounded in USMLE Step 2/3 cases and NEJM case challenges. Also measures how cognitive biases affect diagnostic accuracy, directly relevant to FDA AI/ML bias evaluation guidance.
 
 ---
 
@@ -506,15 +506,15 @@ Multi-specialist clinical agents running in parallel (cardiologist, pulmonologis
 ## 4 · 📦 Supply Chain, Warehouse & Distribution
 
 <!-- 
-💡 PLAIN ENGLISH: These tools help AI manage the flow of goods — from 
+💡 PLAIN ENGLISH: These tools help AI manage the flow of goods, from 
 predicting what products you'll need, to figuring out the best shipping 
 routes, to managing warehouse inventory. Think of it as AI that helps 
 get the right stuff to the right place at the right time.
 -->
 
-> **In simple terms:** AI tools for moving and managing physical goods — like having a logistics coordinator who can see the entire supply chain at once.
+> **In simple terms:** AI tools for moving and managing physical goods, like having a logistics coordinator who can see the entire supply chain at once.
 
-> **Why this section exists**: Supply chain and logistics is one of the fastest-growing domains for AI agent deployment. Real-time data (IoT, WMS, logistics APIs), hard optimization problems (routing, inventory, scheduling), and high-stakes decisions (disruptions propagate fast) make it a natural fit for agentic AI. Unlike healthcare and finance, supply chain has fewer regulatory constraints — which means faster deployment cycles but also less structured best-practice guidance.
+> **Why this section exists**: Supply chain and logistics is one of the fastest-growing domains for AI agent deployment. Real-time data (IoT, WMS, logistics APIs), hard optimization problems (routing, inventory, scheduling), and high-stakes decisions (disruptions propagate fast) make it a natural fit for agentic AI. Unlike healthcare and finance, supply chain has fewer regulatory constraints, which means faster deployment cycles but also less structured best-practice guidance.
 
 ---
 
@@ -532,11 +532,11 @@ A complete multi-agent implementation for **warehouse resource allocation and ou
 **[Intelligent Supply Chain Management (Microsoft Azure)](https://github.com/MSUSAzureAccelerators/Intelligent-Supply-Chain-Management)**
 > _Azure ML + Ray Cluster + PowerApps supply chain optimization accelerator_
 
-Microsoft's Azure accelerator for supply chain AI — leverages deep learning forecasting, distributed computing via Ray Cluster, and simulation environments to model inventory optimization. Integrates with PowerApps for business user interaction. Best for teams in the Azure ecosystem building **enterprise-grade demand forecasting and inventory simulation** systems. Includes infrastructure-as-code for deployment at scale.
+Microsoft's Azure accelerator for supply chain AI, leverages deep learning forecasting, distributed computing via Ray Cluster, and simulation environments to model inventory optimization. Integrates with PowerApps for business user interaction. Best for teams in the Azure ecosystem building **enterprise-grade demand forecasting and inventory simulation** systems. Includes infrastructure-as-code for deployment at scale.
 
 ---
 
-**[frePPLe — Open Source Supply Chain Planning](https://github.com/frePPLe/frepple)**
+**[frePPLe: Open Source Supply Chain Planning](https://github.com/frePPLe/frepple)**
 > _Production-ready open-source supply chain planning platform_
 
 A full-featured supply chain planning system implementing time series forecasting, production scheduling, and inventory optimization using theory of constraints, pull-based planning, and lean manufacturing best practices. Unlike most research repos, frePPLe is **actually used in production** by manufacturers and distributors. Available as Docker container, Ubuntu package, or from source. Strong foundation for building **planning agents** on top of a robust optimization engine.
@@ -560,14 +560,14 @@ Rigorous comparison of deep learning architectures (GRU, CNN+LSTM, Transformers)
 **[SupplyChain-AI (RAG + LLM)](https://github.com/VaishnaviThakre/SupplyChain-AI)**
 > _RAG-powered LLM chatbot for supply chain Q&A_
 
-An AI-powered conversational interface combining LLMs, RAG architecture, and predictive analytics. Useful reference for teams building **natural language interfaces** over supply chain data — allowing planners to query inventory status, forecasts, and supplier data in plain English.
+An AI-powered conversational interface combining LLMs, RAG architecture, and predictive analytics. Useful reference for teams building **natural language interfaces** over supply chain data, allowing planners to query inventory status, forecasts, and supplier data in plain English.
 
 ---
 
 **[InvAgent (arXiv 2024)](https://arxiv.org/abs/2407.11966)**
 > _LLM agents for zero-shot inventory management_
 
-Research implementation of dialogue-driven LLM agents for inventory management tasks: demand forecasting, safety-stock calculation, and replenishment ordering — all via natural language without task-specific fine-tuning. Demonstrates that general-purpose LLM agents can handle inventory management through zero-shot learning, with implications for **rapid deployment across diverse product categories** without custom training per SKU.
+Research implementation of dialogue-driven LLM agents for inventory management tasks: demand forecasting, safety-stock calculation, and replenishment ordering, all via natural language without task-specific fine-tuning. Demonstrates that general-purpose LLM agents can handle inventory management through zero-shot learning, with implications for **rapid deployment across diverse product categories** without custom training per SKU.
 
 ---
 
@@ -588,10 +588,10 @@ Research implementation of dialogue-driven LLM agents for inventory management t
 
 ### 4.3 Supply Chain Standards & Ontologies
 
-- **GS1 Standards** (gs1.org) — Global supply chain language: barcodes, RFID, EDI, product data. If your agents identify products, locations, or shipments across trading partners, GS1 is the standard.
-- **SCOR Model** — APICS/ASCM framework for supply chain process standardization; defines Plan, Source, Make, Deliver, Return, Enable processes and their KPIs.
-- **UN/CEFACT** — UN trade and logistics standards; EDI message formats for cross-border trade.
-- **Open Supply Hub** (opensupplyhub.org) — Open database of supply chain facility data with standardized identifiers.
+- **GS1 Standards** (gs1.org), Global supply chain language: barcodes, RFID, EDI, product data. If your agents identify products, locations, or shipments across trading partners, GS1 is the standard.
+- **SCOR Model**: APICS/ASCM framework for supply chain process standardization; defines Plan, Source, Make, Deliver, Return, Enable processes and their KPIs.
+- **UN/CEFACT**: UN trade and logistics standards; EDI message formats for cross-border trade.
+- **Open Supply Hub** (opensupplyhub.org), Open database of supply chain facility data with standardized identifiers.
 
 ---
 
@@ -607,7 +607,7 @@ Research implementation of dialogue-driven LLM agents for inventory management t
 
 ---
 
-## 5 · 🔌 MCP Servers — Finance
+## 5 · 🔌 MCP Servers: Finance
 
 <!-- 
 💡 PLAIN ENGLISH: MCP servers are like "power adapters" that let AI agents 
@@ -616,16 +616,16 @@ things up, it can actually look up real SEC filings, pull live stock
 prices, or read actual bank statements through these connections.
 -->
 
-> **In simple terms:** These are the cables that connect AI agents to real financial data — so they're working with facts, not guesses.
+> **In simple terms:** These are the cables that connect AI agents to real financial data, so they're working with facts, not guesses.
 
-MCP (Model Context Protocol) servers are the **tool layer** of your agent stack — exposing structured, auditable APIs that agents use to query data, execute actions, and interact with external systems.
+MCP (Model Context Protocol) servers are the **tool layer** of your agent stack, exposing structured, auditable APIs that agents use to query data, execute actions, and interact with external systems.
 
 ---
 
 **[SEC EDGAR MCP](https://github.com/stefanoamorelli/sec-edgar-mcp)**
 > _Direct AI access to SEC filings with exact numeric precision_
 
-Real-time access to the full SEC EDGAR database: 10-K/10-Q filings, 8-K events, insider trading (Form 3/4/5), XBRL-parsed financial statements. Responses include source URLs for verification — critical for compliance audits. Exact numeric precision design prevents rounding errors in quantitative workflows.
+Real-time access to the full SEC EDGAR database: 10-K/10-Q filings, 8-K events, insider trading (Form 3/4/5), XBRL-parsed financial statements. Responses include source URLs for verification, critical for compliance audits. Exact numeric precision design prevents rounding errors in quantitative workflows.
 
 ```json
 {
@@ -659,8 +659,8 @@ Real-time access to the full SEC EDGAR database: 10-K/10-Q filings, 8-K events, 
 
 ---
 
-**[Financial MCP Suite — 8 Specialized Servers](https://github.com/luisrincon23/sec-mcp)**
-> _Institutional-grade financial research platform — 8 MCP servers in one_
+**[Financial MCP Suite: 8 Specialized Servers](https://github.com/luisrincon23/sec-mcp)**
+> _Institutional-grade financial research platform, 8 MCP servers in one_
 
 Eight servers replicating institutional research capabilities: SEC scraping, news sentiment, analyst ratings, institutional holdings, alternative data, industry assumptions, economic data, and research administration. Best for **comprehensive equity research agents** needing all data types integrated.
 
@@ -676,30 +676,30 @@ Covers quotes, financials, earnings calendar, analyst estimates, insider trades,
 **[Bloomberg MCP (blpapi-mcp)](https://github.com/djsamseng/blpapi-mcp)**
 > _AI agent access to Bloomberg Terminal data_
 
-For organizations with Bloomberg Terminal access, bridges Bloomberg's professional data to AI agents. Bloomberg has built enterprise middleware on top of MCP for SSO, audit trails, rate limiting, and compliance — a preview of where institutional finance AI infrastructure is heading.
+For organizations with Bloomberg Terminal access, bridges Bloomberg's professional data to AI agents. Bloomberg has built enterprise middleware on top of MCP for SSO, audit trails, rate limiting, and compliance, a preview of where institutional finance AI infrastructure is heading.
 
 ---
 
 **[Financial Datasets MCP](https://github.com/financial-datasets/mcp-server)**
 > _Stock market API integration for AI agents_
 
-Clean, simple MCP interface for stock market data — prices, fundamentals, financials. Good starting point for teams building **internal analytics agents**.
+Clean, simple MCP interface for stock market data, prices, fundamentals, financials. Good starting point for teams building **internal analytics agents**.
 
 ---
 
-## 6 · 🔌 MCP Servers — Healthcare
+## 6 · 🔌 MCP Servers: Healthcare
 
 <!-- 
 💡 PLAIN ENGLISH: These connections let AI agents read and write to 
 electronic health record (EHR) systems like Epic or Cerner. They use 
-FHIR — a standard way for health systems to share data — so the AI 
+FHIR, a standard way for health systems to share data, so the AI 
 can actually look up real patient information (with proper authorization).
 
 ⚠️ CRITICAL: Healthcare data is protected by law. Any connection to 
 patient data requires proper security, access controls, and compliance review.
 -->
 
-> **In simple terms:** Cables that connect AI to hospital record systems — allowing the AI to look up real patient data (when authorized) instead of making things up.
+> **In simple terms:** Cables that connect AI to hospital record systems, allowing the AI to look up real patient data (when authorized) instead of making things up.
 
 ---
 
@@ -713,14 +713,14 @@ Most enterprise-ready FHIR MCP server available. Supports OAuth 2.0 for Epic, Ce
 **[FHIR MCP Server (The Momentum)](https://github.com/the-momentum/fhir-mcp-server)**
 > _Developer-first FHIR MCP with automatic LOINC validation and semantic search_
 
-Key differentiator: **automatic LOINC code validation** — prevents AI from hallucinating lab codes, a genuine patient safety concern. RAG-ready with vector embeddings. Works with Medplum, HAPI FHIR, Azure Health Data Services, and Epic.
+Key differentiator: **automatic LOINC code validation**, prevents AI from hallucinating lab codes, a genuine patient safety concern. RAG-ready with vector embeddings. Works with Medplum, HAPI FHIR, Azure Health Data Services, and Epic.
 
 ---
 
 **[AWS HealthLake MCP Server](https://awslabs.github.io/mcp/servers/healthlake-mcp-server)**
-> _AI access to AWS HealthLake FHIR — with read-only safety mode_
+> _AI access to AWS HealthLake FHIR, with read-only safety mode_
 
-Official AWS Labs server. 11 FHIR tools, advanced search, and critical **read-only mode** for compliance — lock agents to read-only until explicit human approval for write operations. 235 tests, 96% coverage. Best for organizations already on AWS.
+Official AWS Labs server. 11 FHIR tools, advanced search, and critical **read-only mode** for compliance, lock agents to read-only until explicit human approval for write operations. 235 tests, 96% coverage. Best for organizations already on AWS.
 
 ---
 
@@ -734,14 +734,14 @@ Connects to GCP Healthcare API with Firebase auth, plus PubMed, ClinicalTrials.g
 **[Medplum MCP](https://github.com/rkirkendall/medplum-mcp)**
 > _33 FHIR utility tools via Medplum's open-source EHR_
 
-Ideal for teams **building EHR-adjacent applications** (clinical trial management, specialty clinic workflows, digital health apps). Medplum's sandbox is freely accessible — excellent for development and testing.
+Ideal for teams **building EHR-adjacent applications** (clinical trial management, specialty clinic workflows, digital health apps). Medplum's sandbox is freely accessible, excellent for development and testing.
 
 ---
 
 **[Enhanced FHIR MCP with Data Quality Assessment](https://github.com/jcafazzo/fhir-mcp)**
 > _FHIR tools with built-in data quality validation_
 
-Adds **data quality assessment** before agent action — validates completeness, consistency, and conformance. Essential for organizations migrating between EHR systems or working with multiple institutional data sources.
+Adds **data quality assessment** before agent action, validates completeness, consistency, and conformance. Essential for organizations migrating between EHR systems or working with multiple institutional data sources.
 
 ---
 
@@ -753,17 +753,17 @@ clear definitions. It tells the AI "when we say 'bond' in finance, we
 mean THIS specific thing." Without this, AI might confuse a bail bond 
 with a savings bond with James Bond.
 
-A "knowledge graph" is like a giant connected map of facts — "Company A 
+A "knowledge graph" is like a giant connected map of facts, "Company A 
 bought Company B, which makes Product C, which competes with Product D."
 -->
 
-> **In simple terms:** These are the dictionaries and relationship maps that help AI understand domain-specific language — so it knows what words actually mean in your industry.
+> **In simple terms:** These are the dictionaries and relationship maps that help AI understand domain-specific language, so it knows what words actually mean in your industry.
 
-Ontologies are the **semantic foundation** of domain-aware agents. Without them, agents hallucinate terminology, misclassify entities, and make unreliable connections. This is the layer most teams skip — and then wonder why their agents make embarrassing domain errors.
+Ontologies are the **semantic foundation** of domain-aware agents. Without them, agents hallucinate terminology, misclassify entities, and make unreliable connections. This is the layer most teams skip, and then wonder why their agents make embarrassing domain errors.
 
 ### 7.1 Finance Ontologies
 
-**[FIBO — Financial Industry Business Ontology](https://github.com/edmcouncil/fibo)**
+**[FIBO: Financial Industry Business Ontology](https://github.com/edmcouncil/fibo)**
 > _Standard ontology for financial contracts, instruments, and entities_
 
 Developed post-2008 crisis when it became clear firms were using the same terms with incompatible meanings. Standardized by OMG; covers business entities, contracts, securities, derivatives, market data, regulatory reporting. Published in OWL/RDF for direct use in knowledge graphs. Mandatory for agents supporting **regulatory reporting** (Basel III, MiFID II, Dodd-Frank).
@@ -782,9 +782,9 @@ Defines algorithmic representations of financial contracts so cash flows and ris
 
 ### 7.2 Healthcare Ontologies & Terminology
 
-**[UMLS — Unified Medical Language System](https://www.nlm.nih.gov/research/umls/)**
-The backbone of clinical NLP. Maps concepts across 200+ medical vocabularies — 3M+ unique concepts, 15M+ concept names. Free with registration.
-- GitHub tool: [UMLS to Graph](https://github.com/blpercha/umls-to-graph) — converts UMLS to Neo4j
+**[UMLS: Unified Medical Language System](https://www.nlm.nih.gov/research/umls/)**
+The backbone of clinical NLP. Maps concepts across 200+ medical vocabularies, 3M+ unique concepts, 15M+ concept names. Free with registration.
+- GitHub tool: [UMLS to Graph](https://github.com/blpercha/umls-to-graph), converts UMLS to Neo4j
 
 **[SNOMED CT](https://www.snomed.org/)**
 350,000+ clinical concepts in a rich hierarchical ontology. Designed for clinical documentation and decision support. Any agent reasoning about clinical concepts needs SNOMED CT grounding.
@@ -800,7 +800,7 @@ Standard drug naming system. Prevents dangerous errors like treating "metoprolol
 Universal codes for lab tests and clinical measurements. Essential for any agent processing lab results or clinical observations.
 
 **[BioPortal](https://bioportal.bioontology.org/)**
-Repository of 1,000+ biomedical ontologies — Gene Ontology, ChEBI, HPO, NCI Thesaurus, MeSH. Essential for research-oriented AI in genomics, drug discovery, or precision medicine.
+Repository of 1,000+ biomedical ontologies, Gene Ontology, ChEBI, HPO, NCI Thesaurus, MeSH. Essential for research-oriented AI in genomics, drug discovery, or precision medicine.
 
 **[Awesome Healthcare Knowledge Bases](https://github.com/lujiaying/Awesome-HealthCare-KnowledgeBase)**
 Comprehensive catalog including Hetionet, DrugBank, SPOKE, and Monarch Initiative. Start here for drug repurposing reasoning or gene-disease association lookups.
@@ -813,20 +813,20 @@ Comprehensive catalog including Hetionet, DrugBank, SPOKE, and Monarch Initiativ
 
 | Dataset | Access | Description | Compliance Note |
 |---------|--------|-------------|-----------------|
-| **MIMIC-IV** | [physionet.org](https://physionet.org/content/mimiciv/) | De-identified ICU EHR data (2008-2019): vitals, labs, meds, notes, diagnoses. 40K+ patients. | ⚠️ Requires DUA. Do NOT send to cloud LLM APIs — local models only. |
+| **MIMIC-IV** | [physionet.org](https://physionet.org/content/mimiciv/) | De-identified ICU EHR data (2008-2019): vitals, labs, meds, notes, diagnoses. 40K+ patients. | ⚠️ Requires DUA. Do NOT send to cloud LLM APIs, local models only. |
 | **MIMIC-CXR** | [physionet.org](https://physionet.org/content/mimic-cxr/) | 227,835 chest X-rays with de-identified radiology reports. | ⚠️ Same DUA. |
 | **eICU Collaborative Research DB** | [physionet.org](https://physionet.org/content/eicu-crd/) | Multi-center ICU data from 200K+ stays. | Credentialed access required. |
 | **MIMIC Code Repository** | [github.com/MIT-LCP/mimic-code](https://github.com/MIT-LCP/mimic-code) | SQL/Python code for MIMIC analysis; BigQuery and AWS available. | Open-source; data requires DUA. |
 | **PhysioNet** | [physionet.org](https://physionet.org/) | ECG, EEG, waveform, vital sign datasets. | Varies by dataset. |
 | **CheXpert (Stanford)** | [stanfordmlgroup.github.io](https://stanfordmlgroup.github.io/competitions/chexpert) | 224,316 chest X-rays with uncertainty labels. | Registration required. |
-| **FAERS** | [fda.gov](https://www.fda.gov/drugs/drug-approvals-and-databases/fda-adverse-event-reporting-system-faers) | FDA adverse drug event reports — pharmacovigilance database. | Publicly available. |
+| **FAERS** | [fda.gov](https://www.fda.gov/drugs/drug-approvals-and-databases/fda-adverse-event-reporting-system-faers) | FDA adverse drug event reports, pharmacovigilance database. | Publicly available. |
 | **ClinicalTrials.gov** | [clinicaltrials.gov](https://clinicaltrials.gov/) | 500K+ clinical trial records via API. | Publicly available. |
 
 ### 8.2 Finance
 
 | Dataset | Access | Description |
 |---------|--------|-------------|
-| **SEC EDGAR Full-Text** | [efts.sec.gov](https://efts.sec.gov/) | All SEC filings since 1993 — 10-K, 10-Q, 8-K, proxy statements. Free, public. |
+| **SEC EDGAR Full-Text** | [efts.sec.gov](https://efts.sec.gov/) | All SEC filings since 1993, 10-K, 10-Q, 8-K, proxy statements. Free, public. |
 | **FRED (St. Louis Fed)** | [fred.stlouisfed.org](https://fred.stlouisfed.org/) | 800K+ economic time series: GDP, inflation, employment, rates. Free API. |
 | **Alpha Vantage** | [alphavantage.co](https://www.alphavantage.co/) | Stock quotes, indicators, fundamentals. Free tier with rate limits. |
 | **OpenBB** | [github.com/OpenBB-finance/OpenBBTerminal](https://github.com/OpenBB-finance/OpenBBTerminal) | Aggregates 100+ financial data sources. Open-source. |
@@ -853,12 +853,12 @@ Comprehensive catalog including Hetionet, DrugBank, SPOKE, and Monarch Initiativ
 
 | Paper | Venue | Why It Matters |
 |-------|-------|---------------|
-| **"Large Language Models Encode Clinical Knowledge"** — Singhal et al. (MedPaLM) | *Nature* 2023 | First to demonstrate expert-level USMLE performance; set the benchmark for clinical LLM capability claims. |
+| **"Large Language Models Encode Clinical Knowledge"**: Singhal et al. (MedPaLM) | *Nature* 2023 | First to demonstrate expert-level USMLE performance; set the benchmark for clinical LLM capability claims. |
 | **"Towards Expert-Level Medical QA with LLMs"** (MedPaLM 2) | arXiv 2023 | Showed LLMs approaching physician-level performance; defines the evaluation standard. |
 | **"LLM-based Agentic Systems in Medicine and Healthcare"** | *Nature Machine Intelligence* 2024 | Formal framework for understanding agentic AI in clinical settings; introduced the field's core taxonomy. |
 | **"MDAgents: Adaptive Collaboration of LLMs for Medical Decision-Making"** | *NeurIPS Oral* 2024 | Demonstrates dynamic multi-agent collaboration outperforms static ensembles in clinical reasoning. |
-| **"AgentClinic: A Multimodal Agent Benchmark"** — Schmidgall et al. | arXiv 2024 | First open benchmark for evaluating clinical AI agents in interactive environments; now the standard. |
-| **"EHRAgent: Code Empowers LLMs for Tabular EHR Reasoning"** | arXiv 2024 | Shows code generation agents outperform direct LLM reasoning on structured EHR data — practically important for revenue cycle agents. |
+| **"AgentClinic: A Multimodal Agent Benchmark"**: Schmidgall et al. | arXiv 2024 | First open benchmark for evaluating clinical AI agents in interactive environments; now the standard. |
+| **"EHRAgent: Code Empowers LLMs for Tabular EHR Reasoning"** | arXiv 2024 | Shows code generation agents outperform direct LLM reasoning on structured EHR data, practically important for revenue cycle agents. |
 | **"Polaris: Safety-focused LLM Constellation for Healthcare"** | 2024 | Addresses multi-agent safety architecture in healthcare; foundational for safe clinical agent design. |
 | **Application of LLMs in Medicine** (MedLLMsPracticalGuide) | *Nature Reviews Bioengineering* 2024 | The most comprehensive practitioner survey of medical LLM deployment; referenced by regulators. |
 
@@ -866,8 +866,8 @@ Comprehensive catalog including Hetionet, DrugBank, SPOKE, and Monarch Initiativ
 
 | Paper | Venue | Why It Matters |
 |-------|-------|---------------|
-| **"FinGPT: Open-Source Financial LLMs"** — Yang et al. | arXiv 2023 | Introduced continuous fine-tuning for financial LLMs; most cited paper in open-source finance AI. |
-| **"FinBERT: Financial Language Representation"** — Yang et al. | 2020 | Foundational paper for financial NLP; established fine-tuning on financial text as standard practice. |
+| **"FinGPT: Open-Source Financial LLMs"**: Yang et al. | arXiv 2023 | Introduced continuous fine-tuning for financial LLMs; most cited paper in open-source finance AI. |
+| **"FinBERT: Financial Language Representation"**: Yang et al. | 2020 | Foundational paper for financial NLP; established fine-tuning on financial text as standard practice. |
 | **"PIXIU: LLM Benchmark for Finance"** | arXiv 2023 | Created the most comprehensive finance LLM benchmark; now the standard for finance AI model evaluation. |
 | **"A Survey of LLMs for Finance (FinLLMs)"** | arXiv 2024 | Comprehensive overview; essential for teams evaluating the landscape. |
 | **"FinAgent: Multimodal Foundation Agent for Financial Trading"** | arXiv 2024 | Demonstrates multimodal agents (text + charts + news) outperforming single-modality in trading contexts. |
@@ -878,40 +878,40 @@ Comprehensive catalog including Hetionet, DrugBank, SPOKE, and Monarch Initiativ
 
 | Paper | Venue | Why It Matters |
 |-------|-------|---------------|
-| **"Agentic LLMs in the Supply Chain: Towards Autonomous Multi-Agent Consensus-Seeking"** — Jannelli, Schoepf, Brintrup et al. | *IJPR* 2025 (arXiv 2411.10184) | Open-sourced code; LLM agents reduce bullwhip effect better than traditional restocking policies. The most cited agentic SCM paper. |
-| **"How Generative AI Improves Supply Chain Management"** — Menache, Simchi-Levi et al. | *Harvard Business Review* 2025 | High-impact practitioner publication; widely referenced by enterprise teams and executives. |
+| **"Agentic LLMs in the Supply Chain: Towards Autonomous Multi-Agent Consensus-Seeking"**: Jannelli, Schoepf, Brintrup et al. | *IJPR* 2025 (arXiv 2411.10184) | Open-sourced code; LLM agents reduce bullwhip effect better than traditional restocking policies. The most cited agentic SCM paper. |
+| **"How Generative AI Improves Supply Chain Management"**: Menache, Simchi-Levi et al. | *Harvard Business Review* 2025 | High-impact practitioner publication; widely referenced by enterprise teams and executives. |
 | **"LLMs in Supply Chain Management: Opportunities and a Case Study"** | *ScienceDirect* 2025 | Integration case study of LLMs with decentralized agent-based SCM systems; practical architecture guidance. |
 | **"The Potential of LLMs in Supply Chain Management"** | arXiv 2501.15411, 2025 | Comprehensive review with integration of IoT, blockchain, and robotics. |
 | **"Automating Supply Chain Disruption Monitoring via Agentic AI"** | arXiv 2601.09680, 2026 | Multi-agent disruption monitoring with graph-based propagation; state of the art in supply chain risk AI. |
 | **"Leveraging LLM-Based Agents for Intelligent Supply Chain Planning"** (SCPA) | arXiv 2509.03811, 2025 | JD.com case study at 10M+ SKUs; most practical production reference for large-scale supply chain AI. |
-| **"Will Bots Take Over the Supply Chain?"** — Xu, Mak, Brintrup | *IJPE* 2021 | Foundational review of agent-based supply chain automation from earlier generations; establishes what works and what doesn't. |
-| **"InvAgent: LLM Agents for Inventory Management"** — Quan & Liu | 2024 | Introduced zero-shot inventory management via LLM agents; showed generalization without task-specific training per SKU. |
+| **"Will Bots Take Over the Supply Chain?"**: Xu, Mak, Brintrup | *IJPE* 2021 | Foundational review of agent-based supply chain automation from earlier generations; establishes what works and what doesn't. |
+| **"InvAgent: LLM Agents for Inventory Management"**: Quan & Liu | 2024 | Introduced zero-shot inventory management via LLM agents; showed generalization without task-specific training per SKU. |
 
 ---
 
 ### 9.2 Key Regulatory Frameworks
 
 #### Healthcare
-- **FDA AI/ML-Based SaMD** — [fda.gov](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
-- **ONC TEFCA** — National FHIR interoperability framework
-- **HL7 FHIR R4** — [hl7.org/fhir/R4](https://hl7.org/fhir/R4/) — the EHR interoperability standard
-- **HIPAA Security Rule Technical Safeguards** — Required reading for any AI accessing PHI
-- **CDS Hooks Standard** — How CDS integrates with EHR workflows
-- **EU AI Act — High-Risk AI** — Healthcare AI falls in the high-risk category
+- **FDA AI/ML-Based SaMD**: [fda.gov](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
+- **ONC TEFCA**: National FHIR interoperability framework
+- **HL7 FHIR R4**: [hl7.org/fhir/R4](https://hl7.org/fhir/R4/), the EHR interoperability standard
+- **HIPAA Security Rule Technical Safeguards**: Required reading for any AI accessing PHI
+- **CDS Hooks Standard**: How CDS integrates with EHR workflows
+- **EU AI Act: High-Risk AI**: Healthcare AI falls in the high-risk category
 
 #### Finance
-- **SR 11-7 — Model Risk Management** — OCC/Fed guidance; applies to every ML/AI model in banking
-- **SEC AI Guidance** — [sec.gov/ai](https://www.sec.gov/ai)
-- **FINRA Regulatory Notice 24-09** — AI in broker-dealer supervision
-- **Basel Committee on Banking Supervision — AI in Finance**
-- **CFPB Guidance on AI** — Automated decision-making and fair lending
-- **EU AI Act — Finance** — Algorithmic trading and credit scoring as high-risk AI
+- **SR 11-7: Model Risk Management**: OCC/Fed guidance; applies to every ML/AI model in banking
+- **SEC AI Guidance**: [sec.gov/ai](https://www.sec.gov/ai)
+- **FINRA Regulatory Notice 24-09**: AI in broker-dealer supervision
+- **Basel Committee on Banking Supervision: AI in Finance**
+- **CFPB Guidance on AI**: Automated decision-making and fair lending
+- **EU AI Act: Finance**: Algorithmic trading and credit scoring as high-risk AI
 
 #### Cross-Industry
-- **NIST AI RMF** — [nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf) — gold standard for AI governance
-- **ISO/IEC 42001** — AI management system standard
-- **OWASP LLM Top 10** — Security vulnerabilities for LLM-based systems
-- **MITRE ATLAS** — Adversarial threat landscape for AI systems
+- **NIST AI RMF**: [nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf), gold standard for AI governance
+- **ISO/IEC 42001**: AI management system standard
+- **OWASP LLM Top 10**: Security vulnerabilities for LLM-based systems
+- **MITRE ATLAS**: Adversarial threat landscape for AI systems
 
 ---
 
@@ -919,7 +919,7 @@ Comprehensive catalog including Hetionet, DrugBank, SPOKE, and Monarch Initiativ
 
 | Organization | Domain | What They Do |
 |-------------|--------|--------------|
-| **AMIA** (amia.org) | Healthcare | American Medical Informatics Association — professional home for clinical informatics; annual symposium is the top clinical AI conference |
+| **AMIA** (amia.org) | Healthcare | American Medical Informatics Association, professional home for clinical informatics; annual symposium is the top clinical AI conference |
 | **HIMSS** (himss.org) | Healthcare | Health IT industry body; publishes Digital Health reports |
 | **HL7 International** (hl7.org) | Healthcare | Develops and maintains FHIR and interoperability standards |
 | **IEEE EMBS** (embs.org) | Healthcare | IEEE Engineering in Medicine and Biology Society; publishes J-BHI |
@@ -956,12 +956,12 @@ Comprehensive catalog including Hetionet, DrugBank, SPOKE, and Monarch Initiativ
 building AI for healthcare, finance, or supply chain. Breaking them 
 can result in massive fines, lawsuits, or even criminal charges. 
 
-This section isn't optional reading — it's the "don't go to jail" section.
+This section isn't optional reading, it's the "don't go to jail" section.
 -->
 
 > **In simple terms:** The legal rules for AI in regulated industries. Read this before you build anything, or find someone who has.
 
-> This section maps the specific regulations your Agent Factory must navigate in healthcare, finance, and supply chain. Each entry covers what it is, who it applies to, key requirements for AI systems, and concrete actions for your agent builds. The AI regulatory landscape is moving fast — check effective dates carefully.
+> This section maps the specific regulations your Agent Factory must navigate in healthcare, finance, and supply chain. Each entry covers what it is, who it applies to, key requirements for AI systems, and concrete actions for your agent builds. The AI regulatory landscape is moving fast, check effective dates carefully.
 
 ---
 
@@ -974,7 +974,7 @@ This section isn't optional reading — it's the "don't go to jail" section.
 **Status:** Proposed rule published Jan 6, 2025; compliance timeline TBD
 **Applies to:** Covered entities (hospitals, clinics, health plans) and Business Associates (AI vendors, third parties processing ePHI)
 
-**What Changed**: The 2025 update **eliminates the distinction between "required" and "addressable" safeguards — all controls are now mandatory.**
+**What Changed**: The 2025 update **eliminates the distinction between "required" and "addressable" safeguards: all controls are now mandatory.**
 
 | Requirement | Specific Mandate |
 |---|---|
@@ -995,12 +995,12 @@ This section isn't optional reading — it's the "don't go to jail" section.
 
 ---
 
-#### FDA AI/ML Medical Device Guidance — Total Product Life Cycle (TPLC)
+#### FDA AI/ML Medical Device Guidance: Total Product Life Cycle (TPLC)
 **Authority:** U.S. Food and Drug Administration
 **Status:** Draft guidance issued Jan 7, 2025; phased review ongoing
 **Applies to:** AI-enabled Software as a Medical Device (SaMD), diagnostic AI, clinical NLP tools, predictive analytics for patient care
 
-**Core Framework**: FDA requires AI governance across the **entire device lifespan** — design, training, deployment, and postmarket monitoring — not just at the point of approval.
+**Core Framework**: FDA requires AI governance across the **entire device lifespan**, design, training, deployment, and postmarket monitoring, not just at the point of approval.
 
 | Phase | Requirement |
 |---|---|
@@ -1039,10 +1039,10 @@ This section isn't optional reading — it's the "don't go to jail" section.
 
 ---
 
-#### EU AI Act — Financial Services
+#### EU AI Act: Financial Services
 **Authority:** European Union
 **Status:** In force Aug 2024; high-risk obligations effective **Aug 2, 2026**
-**Applies to:** Any AI system used for credit scoring, underwriting, pricing, fraud detection, or automated financial decisions — including non-EU companies if EU consumers are impacted
+**Applies to:** Any AI system used for credit scoring, underwriting, pricing, fraud detection, or automated financial decisions, including non-EU companies if EU consumers are impacted
 
 | AI Use Case | Risk Tier | Oversight Level |
 |---|---|---|
@@ -1069,7 +1069,7 @@ This section isn't optional reading — it's the "don't go to jail" section.
 
 ---
 
-#### OSFI Guideline E-23 — Model Risk Management (Canada)
+#### OSFI Guideline E-23: Model Risk Management (Canada)
 **Authority:** Office of the Superintendent of Financial Institutions (Canada)
 **Status:** Final guideline released Sept 2025; **effective May 1, 2027**
 **Applies to:** All federally regulated financial institutions (FRFIs) in Canada, including scaled fintechs
@@ -1098,12 +1098,12 @@ This section isn't optional reading — it's the "don't go to jail" section.
 #### NIST AI Risk Management Framework (AI RMF)
 **Authority:** U.S. National Institute of Standards and Technology
 **Status:** Voluntary; widely referenced baseline globally
-**Applies to:** All sectors — particularly useful as a foundational governance scaffold for fintech and any enterprise AI program
+**Applies to:** All sectors, particularly useful as a foundational governance scaffold for fintech and any enterprise AI program
 
 | Function | Purpose |
 |---|---|
 | **Govern** | Establish policies, roles, accountability structures, and culture of AI risk awareness |
-| **Map** | Identify AI risks in context — business, technical, and societal impacts |
+| **Map** | Identify AI risks in context, business, technical, and societal impacts |
 | **Measure** | Quantify and test risks: bias, accuracy, drift, explainability |
 | **Manage** | Prioritize and treat risks; document decisions and residual risk |
 
@@ -1118,7 +1118,7 @@ This section isn't optional reading — it's the "don't go to jail" section.
 **Status:** Released **Feb 18, 2026**
 **Applies to:** Financial services organizations deploying AI in consumer-facing and operational contexts
 
-Focuses on responsible AI deployment, consumer protection, and systemic risk awareness. Two new resources released to guide financial institutions on AI governance alignment. Signals that federal financial regulators are moving toward more prescriptive AI guidance — watch for follow-on publications.
+Focuses on responsible AI deployment, consumer protection, and systemic risk awareness. Two new resources released to guide financial institutions on AI governance alignment. Signals that federal financial regulators are moving toward more prescriptive AI guidance, watch for follow-on publications.
 
 ---
 
@@ -1126,10 +1126,10 @@ Focuses on responsible AI deployment, consumer protection, and systemic risk awa
 
 ---
 
-#### EU AI Act — Supply Chain Applications
+#### EU AI Act: Supply Chain Applications
 **Authority:** European Union
 **Status:** GPAI obligations active Aug 2025; high-risk obligations effective **Aug 2, 2026**
-**Applies to:** Supply chain AI for procurement, logistics, quality control, supplier selection, demand forecasting — especially tools from third-party AI vendors
+**Applies to:** Supply chain AI for procurement, logistics, quality control, supplier selection, demand forecasting, especially tools from third-party AI vendors
 
 | AI Use Case | Risk Level | Requirement |
 |---|---|---|
@@ -1154,7 +1154,7 @@ Focuses on responsible AI deployment, consumer protection, and systemic risk awa
 
 ---
 
-#### 2026 NDAA — AI Supply Chain & Security (U.S. Defense)
+#### 2026 NDAA: AI Supply Chain & Security (U.S. Defense)
 **Authority:** U.S. Congress (National Defense Authorization Act)
 **Status:** Effective 2026; primarily targets defense/government supply chains
 **Applies to:** Companies supplying AI to U.S. defense and intelligence agencies
@@ -1170,7 +1170,7 @@ Focuses on responsible AI deployment, consumer protection, and systemic risk awa
 
 ---
 
-#### CCPA / CPRA — Supply Chain Data
+#### CCPA / CPRA: Supply Chain Data
 **Authority:** California Privacy Protection Agency (CPPA)
 **Status:** Audit and risk assessment obligations rolling out 2025–2028
 **Applies to:** Organizations processing California consumer data through supply chain services, vendors, or contractors
@@ -1195,7 +1195,7 @@ Focuses on responsible AI deployment, consumer protection, and systemic risk awa
 **Status:** CSF 2.0 released Feb 2024; continuously updated
 **Applies to:** All critical infrastructure sectors including healthcare, finance, and supply chain
 
-> Supply chain attacks doubled in 2025, averaging approximately 26 incidents per month — making this framework operationally critical, not just a compliance checkbox.
+> Supply chain attacks doubled in 2025, averaging approximately 26 incidents per month, making this framework operationally critical, not just a compliance checkbox.
 
 | Control | Purpose |
 |---|---|
@@ -1226,7 +1226,7 @@ Focuses on responsible AI deployment, consumer protection, and systemic risk awa
 | **CCPA / CPRA** | Supply Chain, Finance | California/U.S. | 2025–2028 | Data mapping, vendor contracts, risk assessments |
 | **CISA / NIST CSF 2.0** | All sectors | U.S. | Active | SBOM, zero trust, third-party risk, incident response |
 
-> **Compliance is not a one-time checklist.** Regulations listed here with "proposed" or "draft" status will finalize. Regulations with future effective dates are already shaping what enterprise buyers require of AI vendors today. Build your Agent Factory to these standards now — retrofitting compliance into production systems is significantly more expensive than designing for it from the start.
+> **Compliance is not a one-time checklist.** Regulations listed here with "proposed" or "draft" status will finalize. Regulations with future effective dates are already shaping what enterprise buyers require of AI vendors today. Build your Agent Factory to these standards now, retrofitting compliance into production systems is significantly more expensive than designing for it from the start.
 
 ---
 
@@ -1297,8 +1297,8 @@ Focuses on responsible AI deployment, consumer protection, and systemic risk awa
 
 | Date | What Changed | Contributor |
 |------|-------------|-------------|
-| Feb 2026 | Initial release — Finance, Healthcare, Supply Chain, MCP servers, Ontologies, Papers, Associations | Mario Lazo |
-| Feb 2026 | Added Section 10: Full regulatory reference guide — HIPAA 2025, FDA TPLC, State AI Laws, EU AI Act, OSFI E-23, NIST AI RMF, U.S. Treasury, 2026 NDAA, CCPA/CPRA, CISA CSF 2.0 | Mario Lazo |
+| Feb 2026 | Initial release, Finance, Healthcare, Supply Chain, MCP servers, Ontologies, Papers, Associations | Mario Lazo |
+| Feb 2026 | Added Section 10: Full regulatory reference guide, HIPAA 2025, FDA TPLC, State AI Laws, EU AI Act, OSFI E-23, NIST AI RMF, U.S. Treasury, 2026 NDAA, CCPA/CPRA, CISA CSF 2.0 | Mario Lazo |
 | Feb 2026 | Reorganized structure for searchability; added Companion References section; expanded disclaimer and community contribution guidelines | Mario Lazo |
 
 _Next scheduled review: **April 2026**_
@@ -1322,18 +1322,18 @@ _Next scheduled review: **April 2026**_
 
 This reference intentionally excludes:
 
-- **Vaporware** — Tools that exist only in press releases
-- **Abandoned projects** — Repos with no commits in 18+ months (unless historically significant)
-- **Demo-only tools** — Things that work in notebooks but break in production
-- **Paywall-only resources** — Unless the value is exceptional and clearly stated
-- **Generic AI tools** — Covered by companion references above
+- **Vaporware**: Tools that exist only in press releases
+- **Abandoned projects**: Repos with no commits in 18+ months (unless historically significant)
+- **Demo-only tools**: Things that work in notebooks but break in production
+- **Paywall-only resources**: Unless the value is exceptional and clearly stated
+- **Generic AI tools**: Covered by companion references above
 
 What stays in this document:
 
-- **Used in production** — By the curator or verified by trusted practitioners
-- **Strong research backing** — Published, peer-reviewed, cited
-- **Actively maintained** — Recent commits, responsive maintainers
-- **Relevant to regulated industries** — Addresses compliance, auditability, or domain-specific challenges
+- **Used in production**: By the curator or verified by trusted practitioners
+- **Strong research backing**: Published, peer-reviewed, cited
+- **Actively maintained**: Recent commits, responsive maintainers
+- **Relevant to regulated industries**: Addresses compliance, auditability, or domain-specific challenges
 
 **If something doesn't meet these standards, it doesn't belong here.**
 
@@ -1353,18 +1353,18 @@ the more valuable it becomes for everyone.
 |--------|--------------|
 | **Star the repo** | Signals value to others evaluating the resource |
 | **Share internally** | Gets more eyes on it, more feedback, more contributions |
-| **File issues when things are outdated** | Keeps the guide accurate — your 5-minute issue saves others hours |
-| **Contribute what you learn** | If you found a great tool or pattern, share it — that's how this grows |
+| **File issues when things are outdated** | Keeps the guide accurate, your 5-minute issue saves others hours |
+| **Contribute what you learn** | If you found a great tool or pattern, share it, that's how this grows |
 
 ### For Community Contributors
 
 **High-impact contributions we need:**
 
-1. **Real-world case studies** — "We used X for Y, here's what worked and what didn't"
-2. **Vendor comparisons** — Objective side-by-side evaluations (not marketing)
-3. **Compliance mappings** — "Here's how Tool X addresses HIPAA requirement Y"
-4. **Integration guides** — "Here's how to connect Framework A to System B"
-5. **Failure stories** — What *didn't* work is often more valuable than what did
+1. **Real-world case studies**: "We used X for Y, here's what worked and what didn't"
+2. **Vendor comparisons**: Objective side-by-side evaluations (not marketing)
+3. **Compliance mappings**: "Here's how Tool X addresses HIPAA requirement Y"
+4. **Integration guides**: "Here's how to connect Framework A to System B"
+5. **Failure stories**: What *didn't* work is often more valuable than what did
 
 **Contribution quality bar:**
 
@@ -1374,10 +1374,10 @@ the more valuable it becomes for everyone.
 
 ### For Educators and Consultants
 
-- **Fork freely** — Customize for your specific audience or client base
-- **Attribute openly** — CC BY 4.0 means you can use this commercially with attribution
-- **Contribute back** — If you improve it, share those improvements upstream
-- **Teach from it** — Use sections as teaching materials for AI governance courses
+- **Fork freely**: Customize for your specific audience or client base
+- **Attribute openly**: CC BY 4.0 means you can use this commercially with attribution
+- **Contribute back**: If you improve it, share those improvements upstream
+- **Teach from it**: Use sections as teaching materials for AI governance courses
 
 ### Making This Guide Better: Priority Areas
 
@@ -1431,6 +1431,6 @@ For academic papers:
 
 _Last updated: February 2026_
 _Maintained by: Mario Lazo_
-_License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — Share with attribution_
+_License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), Share with attribution_
 
 > _"83% of enterprise AI pilots fail. Most of them fail for the same reasons. This guide is an attempt to make that number smaller."_

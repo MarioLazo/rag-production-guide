@@ -1,6 +1,6 @@
 # 📏 Evaluation Framework
 
-> **You can't improve what you don't measure. Most RAG systems lack systematic evaluation—don't be one of them.**
+> **You can't improve what you don't measure. Most RAG systems lack systematic evaluation, don't be one of them.**
 
 <details>
 <summary>🍕 <b>Plain English: Why bother with evaluation?</b></summary>
@@ -17,7 +17,7 @@ Users don't complain about every bad answer. They just:
 
 **Evaluation means:** Having an automated way to check "is this answer actually good?"
 
-It's like having a food critic who tastes every dish before it leaves the kitchen—not just relying on customers to complain about food poisoning.
+It's like having a food critic who tastes every dish before it leaves the kitchen, not just relying on customers to complain about food poisoning.
 
 **The good news:** Tools like RAGAS and DeepEval can automatically grade your AI's answers. You don't need humans to review everything. The AI checks itself (and it's surprisingly good at catching its own mistakes when asked properly).
 
@@ -552,7 +552,7 @@ flowchart LR
 
 ## Evaluating Human-in-the-Loop Effectiveness
 
-If your RAG system includes [human-in-the-loop routing](11-human-in-the-loop.md), you need to evaluate the HITL system itself — not just the AI.
+If your RAG system includes [human-in-the-loop routing](11-human-in-the-loop.md), you need to evaluate the HITL system itself, not just the AI.
 
 <details>
 <summary>🍕 <b>Plain English: Evaluating the "safety net"</b></summary>

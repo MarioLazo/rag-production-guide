@@ -1,6 +1,6 @@
 # 🌟 Community Repositories
 
-> **Open-source RAG projects from the community — with gratitude for their contributions**
+> **Open-source RAG projects from the community: with gratitude for their contributions**
 
 ---
 
@@ -94,19 +94,19 @@ The RAG ecosystem thrives because of the generosity of open-source contributors.
 ## How to Choose
 
 ### For Getting Started
-1. **Chroma** — Simplest to set up, great for learning
-2. **LangChain** — Most flexible, extensive documentation
-3. **RAGAS** — Start evaluating from day one
+1. **Chroma**: Simplest to set up, great for learning
+2. **LangChain**: Most flexible, extensive documentation
+3. **RAGAS**: Start evaluating from day one
 
 ### For Production
-1. **RAGFlow** — Full-featured, production-ready
-2. **Qdrant** or **Weaviate** — Scalable vector search
-3. **DeepEval** — CI/CD integration for testing
+1. **RAGFlow**: Full-featured, production-ready
+2. **Qdrant** or **Weaviate**: Scalable vector search
+3. **DeepEval**: CI/CD integration for testing
 
 ### For Advanced Use Cases
-1. **LangGraph** — Multi-agent orchestration
-2. **GraphRAG** — Complex reasoning over documents
-3. **Unstructured** — Complex document parsing
+1. **LangGraph**: Multi-agent orchestration
+2. **GraphRAG**: Complex reasoning over documents
+3. **Unstructured**: Complex document parsing
 
 ---
 

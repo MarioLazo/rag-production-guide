@@ -24,7 +24,7 @@ Think of RAG like ordering food through a confusing game of telephone:
 **Stage 3: System (The whole restaurant)**
 - Is the whole system working together?
 
-**Most failures originate in Stage 0 or 1.** The AI is actually pretty good at answering questions—if the right information exists and is found.
+**Most failures originate in Stage 0 or 1.** The AI is actually pretty good at answering questions, if the right information exists and is found.
 
 </details>
 
@@ -200,7 +200,7 @@ metric = FaithfulnessMetric(threshold=0.7)
 
 ### 2.2 Context Utilization Failure
 
-**What happens:** Critical information is present in the context but gets ignored by the LLM — for example, due to position bias (the "lost-in-the-middle" effect), context overload, or failure to synthesize across passages.
+**What happens:** Critical information is present in the context but gets ignored by the LLM, for example, due to position bias (the "lost-in-the-middle" effect), context overload, or failure to synthesize across passages.
 
 ```mermaid
 graph LR
@@ -383,16 +383,16 @@ A DEV Community case study showed progression from **58% baseline to 83%** by la
 ## References
 
 ### Academic Research
-- Liu et al., *"Lost in the Middle: How Language Models Use Long Contexts"* — TACL 2024 — [arXiv:2307.03172](https://arxiv.org/abs/2307.03172)
-- Es et al., *"RAGAS: Automated Evaluation of Retrieval Augmented Generation"* — EACL 2024 — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
+- Liu et al., *"Lost in the Middle: How Language Models Use Long Contexts"*, TACL 2024, [arXiv:2307.03172](https://arxiv.org/abs/2307.03172)
+- Es et al., *"RAGAS: Automated Evaluation of Retrieval Augmented Generation"*, EACL 2024, [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
 
 ### Industry Research (All Verified)
-- **RAND Corporation** (2024), *The Root Causes of Failure for AI Projects* — [Open Access](https://www.rand.org/pubs/research_reports/RRA2680-1.html)
-- **S&P Global Market Intelligence** (2025), *Voice of the Enterprise: AI & ML, Use Cases 2025* — [CIO Dive](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)
-- **MIT NANDA** (2025), *The GenAI Divide: State of AI in Business 2025* — [PDF](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
-- **Gartner** (2024), GenAI PoC Abandonment Analysis — [Gartner Newsroom](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025)
-- **McKinsey** (2025), *State of AI 2025* — [McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
-- **Anthropic** (2024), Contextual Retrieval Research — [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
+- **RAND Corporation** (2024), *The Root Causes of Failure for AI Projects*, [Open Access](https://www.rand.org/pubs/research_reports/RRA2680-1.html)
+- **S&P Global Market Intelligence** (2025), *Voice of the Enterprise: AI & ML, Use Cases 2025*, [CIO Dive](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)
+- **MIT NANDA** (2025), *The GenAI Divide: State of AI in Business 2025*, [PDF](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
+- **Gartner** (2024), GenAI PoC Abandonment Analysis, [Gartner Newsroom](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025)
+- **McKinsey** (2025), *State of AI 2025*, [McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+- **Anthropic** (2024), Contextual Retrieval Research, [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
 
 ---
 

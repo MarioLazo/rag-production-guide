@@ -14,7 +14,7 @@ But real questions are messy:
 - "Compare our policy to the competitor's" (needs multiple searches)
 - "What would happen if we changed X?" (needs understanding, not just retrieval)
 
-**Advanced patterns are tools in a toolbox.** You don't use all of them—you pick the right one for your specific problem:
+**Advanced patterns are tools in a toolbox.** You don't use all of them, you pick the right one for your specific problem:
 
 | Your Problem | The Tool |
 |-------------|----------|
@@ -272,7 +272,7 @@ Search ALL of them
 Combine results (docs that appear in multiple searches rank higher)
 ```
 
-**It's like:** Instead of asking one friend for restaurant recommendations, you ask five friends with different tastes—then go to the place that multiple friends mentioned.
+**It's like:** Instead of asking one friend for restaurant recommendations, you ask five friends with different tastes, then go to the place that multiple friends mentioned.
 
 **Trade-off:** 4-5x more searches = slower. But catches documents that one query would miss.
 
@@ -486,7 +486,7 @@ Agent uses SQL + Web Search + combines results
 Answer: "We spent $2.4M, industry average is $1.8M, so we're 33% above..."
 ```
 
-**It's like:** Instead of a single-purpose tool, you have a smart assistant who picks the right tool for each job—sometimes a document search, sometimes a calculator, sometimes both.
+**It's like:** Instead of a single-purpose tool, you have a smart assistant who picks the right tool for each job, sometimes a document search, sometimes a calculator, sometimes both.
 
 **Trade-off:** Most complex, most powerful. But also hardest to debug when it goes wrong.
 
@@ -568,7 +568,7 @@ def create_rag_agent():
 
 "What are the main themes across all our customer complaints?"
 
-Normal RAG can't answer this—it finds individual complaints, not patterns across thousands.
+Normal RAG can't answer this, it finds individual complaints, not patterns across thousands.
 
 **GraphRAG's trick:** Build a map of how everything connects, then zoom out.
 

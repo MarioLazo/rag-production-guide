@@ -21,20 +21,20 @@
 ## How to Use These Cheatsheets
 
 ### Quick Health Check
-0. **Run the [RAG Smell Test](rag-smell-test.md)** — 5-minute diagnostic for your RAG system
+0. **Run the [RAG Smell Test](rag-smell-test.md)**: 5-minute diagnostic for your RAG system
 
 ### During Development
-1. **Start with [Chunking Decision Tree](chunking-decision-tree.md)** — Make informed chunk size decisions
-2. **Reference [Hybrid Search Weights](hybrid-search-weights.md)** — Configure retrieval for your domain
+1. **Start with [Chunking Decision Tree](chunking-decision-tree.md)**: Make informed chunk size decisions
+2. **Reference [Hybrid Search Weights](hybrid-search-weights.md)**: Configure retrieval for your domain
 
 ### Before Deployment
-3. **Run through [Danger Zones Checklist](danger-zones-checklist.md)** — Catch common issues early
+3. **Run through [Danger Zones Checklist](danger-zones-checklist.md)**: Catch common issues early
 
 ### In Production
-4. **Monitor with [Evaluation Metrics](evaluation-metrics.md)** — Track the right metrics
-5. **Optimize using [Cost Optimization](cost-optimization.md)** — Reduce spend systematically
-6. **Improve with [Feedback Loop Design](feedback-loop-design.md)** — Capture signals, close the loop
-7. **Monthly audits with [RAG Smell Test](rag-smell-test.md)** — Catch drift and degradation
+4. **Monitor with [Evaluation Metrics](evaluation-metrics.md)**: Track the right metrics
+5. **Optimize using [Cost Optimization](cost-optimization.md)**: Reduce spend systematically
+6. **Improve with [Feedback Loop Design](feedback-loop-design.md)**: Capture signals, close the loop
+7. **Monthly audits with [RAG Smell Test](rag-smell-test.md)**: Catch drift and degradation
 
 ---
 

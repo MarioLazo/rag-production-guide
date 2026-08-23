@@ -380,7 +380,7 @@ flowchart LR
 
 **The solution:** Run a smarter (but slower) model on those 100 to pick the BEST 10.
 
-**Analogy:** You're hiring. HR screens 1,000 resumes and gives you 100 "qualified" candidates. You don't interview all 100—you have your senior team pick the top 10 for final interviews.
+**Analogy:** You're hiring. HR screens 1,000 resumes and gives you 100 "qualified" candidates. You don't interview all 100, you have your senior team pick the top 10 for final interviews.
 
 - **Hybrid search** = HR screening (fast, catches the obvious stuff)
 - **Reranker** = Senior team review (slower, much more accurate)
@@ -448,11 +448,11 @@ Typical production latencies at 100K documents:
 
 ### Optimization Tips
 
-1. **Limit reranking candidates** — Rerank top-20, not top-100
-2. **Use approximate kNN** — HNSW is faster than exact
-3. **Parallel retrieval** — Run BM25 and vector in parallel
-4. **Cache embeddings** — Don't re-embed repeated queries
-5. **Quantization** — Use int8 vectors for 4x storage savings
+1. **Limit reranking candidates**: Rerank top-20, not top-100
+2. **Use approximate kNN**: HNSW is faster than exact
+3. **Parallel retrieval**: Run BM25 and vector in parallel
+4. **Cache embeddings**: Don't re-embed repeated queries
+5. **Quantization**: Use int8 vectors for 4x storage savings
 
 ---
 
@@ -511,7 +511,7 @@ def search(query):
 
 ## References
 
-- *"Dynamic Alpha Tuning for Hybrid Search"* — arXiv 2025
+- *"Dynamic Alpha Tuning for Hybrid Search"*, arXiv 2025
 - DeepMind Vector Search Analysis
 - Elasticsearch RRF Documentation
 - Azure AI Search Hybrid Query Guide

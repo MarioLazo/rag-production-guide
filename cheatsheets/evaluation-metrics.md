@@ -1,6 +1,6 @@
 # 📏 Evaluation Metrics Quick Reference
 
-> **The RAG Triad and beyond — metrics every RAG system should track**
+> **The RAG Triad and beyond: metrics every RAG system should track**
 
 ---
 

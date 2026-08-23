@@ -249,7 +249,7 @@ flowchart LR
 
 ### Failure 2: Image Quality Degradation
 
-**What happened:** Production documents had inconsistent quality—low resolution, skewed, multi-page with relevant content scattered. The model trained on clean samples performed poorly.
+**What happened:** Production documents had inconsistent quality, low resolution, skewed, multi-page with relevant content scattered. The model trained on clean samples performed poorly.
 
 **Business impact:** Field extraction accuracy dropped from 90%+ (training) to 70-75% (production). Automation rate fell from projected 70-90% to 50-60%.
 
@@ -339,7 +339,7 @@ Building within the health system's existing cloud tenant eliminated procurement
 | "Save $500K in labor" | Skepticism, job threat concerns |
 | "Recapture $2-4M in revenue" | Executive sponsorship, staff buy-in |
 
-**Why it worked:** Staff freed from classification could pursue denial appeals—directly contributing to revenue rather than being "replaced."
+**Why it worked:** Staff freed from classification could pursue denial appeals, directly contributing to revenue rather than being "replaced."
 
 ---
 

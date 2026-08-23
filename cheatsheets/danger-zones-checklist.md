@@ -54,7 +54,7 @@ pie title Failure Distribution by Zone
 
 ## Zone 2: Data Quality Crisis (35%)
 
-*The dominant failure zone — most RAG failures trace here*
+*The dominant failure zone, most RAG failures trace here*
 
 ### Pre-Production Checklist
 
@@ -242,11 +242,11 @@ For each zone, rate your risk:
 
 If you're not ready, fix in this order:
 
-1. **Evaluation framework** (Zone 4) — You can't improve what you don't measure
-2. **Data quality pipeline** (Zone 2) — Garbage in, garbage out
-3. **Fallback strategies** (Zone 1) — Graceful degradation
-4. **Audit logging** (Zone 5) — You'll need it for debugging
-5. **Context management** (Zone 3) — Multi-turn will break
+1. **Evaluation framework** (Zone 4): You can't improve what you don't measure
+2. **Data quality pipeline** (Zone 2), Garbage in, garbage out
+3. **Fallback strategies** (Zone 1): Graceful degradation
+4. **Audit logging** (Zone 5): You'll need it for debugging
+5. **Context management** (Zone 3): Multi-turn will break
 
 ---
 

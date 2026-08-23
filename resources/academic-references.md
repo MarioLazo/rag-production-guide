@@ -52,7 +52,7 @@ This guide synthesizes publicly available academic research, industry benchmarks
 | Source | Publication | Key Finding | Access |
 |--------|-------------|-------------|--------|
 | **S&P Global Market Intelligence** | Voice of the Enterprise: AI & ML, Use Cases 2025 (March 2025) | 42% of companies abandoned most AI initiatives in 2025, up from 17% in 2024 (~2.5× increase); average org scrapped 46% of AI PoCs before production | [CIO Dive](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/), [TelecomReseller](https://telecomreseller.com/2025/03/13/sp-global-2/) |
-| **RAND Corporation** | The Root Causes of Failure for AI Projects (2024) | 80%+ of AI projects fail — twice the failure rate of non-AI IT projects; root causes: leadership misalignment, poor data, technology obsession | [Open Access PDF](https://www.rand.org/pubs/research_reports/RRA2680-1.html) |
+| **RAND Corporation** | The Root Causes of Failure for AI Projects (2024) | 80%+ of AI projects fail, twice the failure rate of non-AI IT projects; root causes: leadership misalignment, poor data, technology obsession | [Open Access PDF](https://www.rand.org/pubs/research_reports/RRA2680-1.html) |
 | **MIT NANDA** | The GenAI Divide: State of AI in Business 2025 (July 2025) | Despite $30–40B in enterprise GenAI investment, 95% of organizations report zero measurable P&L impact; only 5% of custom enterprise AI tools reach production. *Note: Futuriom published a methodology critique; finding aligns with RAND and S&P Global.* | [PDF](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf), [Fortune](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/) |
 | **Gartner** | GenAI PoC Abandonment Prediction (July 2024) | At least 30% of GenAI projects will be abandoned after proof of concept by end of 2025; only 48% of AI projects make it to production; average time prototype → production: **8 months** | [Gartner Newsroom](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025) |
 | **Gartner** | AI Maturity & Adoption Patterns (2025) | Only 9% of organizations are AI-mature; high-maturity orgs keep AI projects operational 3+ years (45%) vs. low-maturity (20%); 49% cite difficulty demonstrating business value as top barrier | [Gartner Newsroom](https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years) |
@@ -149,10 +149,10 @@ Range: 50-80% depending on document complexity
 ### Why We Use Ranges
 
 All estimates use ranges rather than point values because:
-1. **Organizational variance** — Every implementation differs
-2. **Data quality variance** — Outcomes depend on input quality
-3. **Adoption variance** — Human factors affect results
-4. **Market variance** — Costs and values change over time
+1. **Organizational variance**: Every implementation differs
+2. **Data quality variance**: Outcomes depend on input quality
+3. **Adoption variance**: Human factors affect results
+4. **Market variance**: Costs and values change over time
 
 **Conservative practice:** Use the low end of ranges for business cases.
 

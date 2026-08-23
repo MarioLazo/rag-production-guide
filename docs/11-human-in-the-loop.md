@@ -1,13 +1,13 @@
 # 👤 Human-in-the-Loop & Retraining
 
-> **AI handles the easy 80%. Humans handle the critical 20%. Knowing where to draw that line — and when to move it — is what separates production RAG from expensive demos.**
+> **AI handles the easy 80%. Humans handle the critical 20%. Knowing where to draw that line: and when to move it, is what separates production RAG from expensive demos.**
 
 <details>
 <summary>🍕 <b>Plain English: Why do we need humans in the loop?</b></summary>
 
 <br/>
 
-Imagine a pizza shop that's fully automated — robots take orders, make pizzas, and deliver them. Works great for standard orders: pepperoni, margherita, Hawaiian.
+Imagine a pizza shop that's fully automated, robots take orders, make pizzas, and deliver them. Works great for standard orders: pepperoni, margherita, Hawaiian.
 
 But what happens when:
 - A customer orders "the thing I had last time but without the stuff my kid doesn't like" (ambiguous input)
@@ -15,12 +15,12 @@ But what happens when:
 - A new menu item comes in that the robots have never seen before (novel situation)
 - The robot accidentally puts anchovies on a birthday cake (confident but catastrophically wrong)
 
-**You need a human for these moments.** Not for every pizza — that defeats the purpose of automation. But for the cases where getting it wrong is either:
+**You need a human for these moments.** Not for every pizza, that defeats the purpose of automation. But for the cases where getting it wrong is either:
 1. **Dangerous** (healthcare, legal, financial)
 2. **Confusing** (the system doesn't know what the user wants)
 3. **Novel** (the system hasn't seen this before)
 
-The goal isn't "humans check everything" — that doesn't scale. The goal is **smart routing**: let AI handle what it's good at, and bring humans in where they add the most value.
+The goal isn't "humans check everything", that doesn't scale. The goal is **smart routing**: let AI handle what it's good at, and bring humans in where they add the most value.
 
 </details>
 
@@ -46,9 +46,9 @@ quadrantChart
 
 | Scenario | Confidence | Risk | Action |
 |----------|-----------|------|--------|
-| Common FAQ, clear answer | High | Low | Auto-approve — let AI handle it |
+| Common FAQ, clear answer | High | Low | Auto-approve, let AI handle it |
 | Common FAQ, unclear answer | Low | Low | Auto-approve with "I'm not sure" caveat |
-| Medical dosage question | High | High | Spot-check — sample and review |
+| Medical dosage question | High | High | Spot-check, sample and review |
 | Medical question, uncertain answer | Low | High | **Always route to human** |
 | Novel query the system hasn't seen | Low | Unknown | Route to human, use response for training |
 
@@ -60,9 +60,9 @@ quadrantChart
 Think of your pizza shop's escalation policy:
 
 - **Robot handles it:** "I'd like a large pepperoni." (Common order, low risk)
-- **Robot handles it with a note:** "I'd like something cheesy." (Ambiguous but low risk — guess and add a note: "We made you a four-cheese pizza. Let us know if that's not right!")
+- **Robot handles it with a note:** "I'd like something cheesy." (Ambiguous but low risk, guess and add a note: "We made you a four-cheese pizza. Let us know if that's not right!")
 - **Manager reviews:** "I need 200 pizzas for a corporate event by tomorrow." (High value, complex logistics)
-- **Manager handles directly:** "I have a severe gluten allergy. What can I eat?" (High risk — getting this wrong could hurt someone)
+- **Manager handles directly:** "I have a severe gluten allergy. What can I eat?" (High risk, getting this wrong could hurt someone)
 
 The robot doesn't need to make *zero* mistakes. It needs to **know when it doesn't know** and escalate appropriately.
 
@@ -200,9 +200,9 @@ The reviewer experience matters. Poorly designed review interfaces lead to revie
 │  Risk Level: HIGH (medical dosage)                      │
 │                                                         │
 │  Retrieved Sources:                                     │
-│  [1] Drug formulary v12.pdf (p.47) — Score: 0.84       │
-│  [2] Renal dosing guidelines.pdf (p.12) — Score: 0.71  │
-│  [3] Metformin monograph.pdf (p.3) — Score: 0.68       │
+│  [1] Drug formulary v12.pdf (p.47), Score: 0.84       │
+│  [2] Renal dosing guidelines.pdf (p.12), Score: 0.71  │
+│  [3] Metformin monograph.pdf (p.3), Score: 0.68       │
 │                                                         │
 │  ┌─────────┐ ┌─────────────┐ ┌──────────┐ ┌─────────┐ │
 │  │ Approve │ │ Edit & Send │ │ Rewrite  │ │Escalate │ │
@@ -216,7 +216,7 @@ The reviewer experience matters. Poorly designed review interfaces lead to revie
 **Key design principles:**
 1. Show the query, AI response, *and* the source documents side-by-side
 2. Make approve/edit/reject equally easy (don't bias toward approval)
-3. Require a brief reason for rejections — this becomes training data
+3. Require a brief reason for rejections, this becomes training data
 4. Track reviewer agreement rates (inter-annotator agreement)
 
 ---
@@ -265,7 +265,7 @@ flowchart TD
 | **New domain/topic cluster** | Monitor query logs for topics not in the knowledge base | Medium | Add new documents, extract entities, update taxonomy. May need embedding fine-tuning if domain language is specialized. |
 | **Embedding drift** | Track mean retrieval scores over time; compare embedding distributions monthly | Medium | Re-embed corpus with updated model or fine-tune existing model on recent data. |
 | **Knowledge base grew significantly (>30%)** | Track document count and distribution | Medium | Rebuild indexes, check for semantic collapse, validate chunking still appropriate for new content types. |
-| **User trust declining** | Declining usage, increasing escalations, direct complaints | Critical | Full system audit. This is usually a lagging indicator — the root cause started weeks ago. |
+| **User trust declining** | Declining usage, increasing escalations, direct complaints | Critical | Full system audit. This is usually a lagging indicator, the root cause started weeks ago. |
 
 <details>
 <summary>🍕 <b>Pizza analogy: When to update the recipe</b></summary>
@@ -295,7 +295,7 @@ You don't rewrite your pizza recipes every day. But you do when:
 | **Search config tuning** | Medium (days) | BM25/vector weight imbalance, reranking thresholds | Requires evaluation |
 | **Knowledge graph update** | Medium (days) | New entities, changed relationships | Requires extraction pipeline run |
 | **Embedding model fine-tuning** | High (weeks) | Domain-specific vocabulary not captured | Requires training data, GPU, re-embedding entire corpus |
-| **Full pipeline rebuild** | Very High (weeks) | Architecture-level problems | Nuclear option — only when fundamentals are wrong |
+| **Full pipeline rebuild** | Very High (weeks) | Architecture-level problems | Nuclear option, only when fundamentals are wrong |
 
 ```python
 def recommend_retraining_action(diagnostics: dict) -> dict:
@@ -442,7 +442,7 @@ Different platforms offer different HITL capabilities. Here's where each shines:
 
 ### The Automation Rate Ladder
 
-The ultimate goal is to *reduce* the need for human review over time — not by lowering quality, but by making the system smarter.
+The ultimate goal is to *reduce* the need for human review over time, not by lowering quality, but by making the system smarter.
 
 ```
 Month 1:  AI handles 60%, Humans review 40%
@@ -492,13 +492,13 @@ Before going to production with HITL:
 ## References
 
 ### Academic Research
-- Settles, B., *"Active Learning Literature Survey"* — University of Wisconsin-Madison, 2009 — [PDF](http://burrsettles.com/pub/settles.activelearning.pdf)
-- Monarch, R., *"Human-in-the-Loop Machine Learning"* — Manning Publications, 2021
+- Settles, B., *"Active Learning Literature Survey"*, University of Wisconsin-Madison, 2009, [PDF](http://burrsettles.com/pub/settles.activelearning.pdf)
+- Monarch, R., *"Human-in-the-Loop Machine Learning"*, Manning Publications, 2021
 
 ### Industry
-- **UiPath** (2024), *AI Center and Action Center Documentation* — [docs.uipath.com](https://docs.uipath.com)
-- **Microsoft** (2024), *Azure AI Studio: Human Review Workflows* — [learn.microsoft.com](https://learn.microsoft.com/en-us/azure/ai-studio/)
-- **AWS** (2024), *Step Functions for ML Workflows* — [aws.amazon.com](https://aws.amazon.com/step-functions/)
+- **UiPath** (2024), *AI Center and Action Center Documentation*, [docs.uipath.com](https://docs.uipath.com)
+- **Microsoft** (2024), *Azure AI Studio: Human Review Workflows*, [learn.microsoft.com](https://learn.microsoft.com/en-us/azure/ai-studio/)
+- **AWS** (2024), *Step Functions for ML Workflows*, [aws.amazon.com](https://aws.amazon.com/step-functions/)
 
 ---
 

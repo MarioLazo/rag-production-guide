@@ -10,8 +10,8 @@ Choose your path based on your role and time available:
 
 ### ⚡ Quick Start (30 minutes)
 For a rapid overview of key concepts:
-1. [Executive Summary](01-executive-summary.md) — Why 80% fail, key insights
-2. [Danger Zones Checklist](../cheatsheets/danger-zones-checklist.md) — Pre-flight check
+1. [Executive Summary](01-executive-summary.md), Why 80% fail, key insights
+2. [Danger Zones Checklist](../cheatsheets/danger-zones-checklist.md), Pre-flight check
 3. One [Case Study](../case-studies/) of your choice
 
 ### 📖 Core Concepts (2-3 hours)

@@ -1,6 +1,6 @@
 # 💰 Cost Optimization Cheatsheet
 
-> **From $18K/month to sustainable production — lever-by-lever savings guide**
+> **From $18K/month to sustainable production: lever-by-lever savings guide**
 
 ---
 

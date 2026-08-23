@@ -15,10 +15,10 @@
 | [**microsoft/semantic-kernel**](https://github.com/microsoft/semantic-kernel) | SDK for integrating LLMs with plugins. Memory and RAG patterns included. | ~22K |
 
 ### Key Azure Services for RAG
-- **Azure AI Search** — Hybrid search with semantic ranking
-- **Azure OpenAI Service** — GPT-4, embeddings
-- **Azure AI Document Intelligence** — Document parsing
-- **Azure Blob Storage** — Document storage
+- **Azure AI Search**: Hybrid search with semantic ranking
+- **Azure OpenAI Service**: GPT-4, embeddings
+- **Azure AI Document Intelligence**: Document parsing
+- **Azure Blob Storage**: Document storage
 
 ---
 
@@ -32,11 +32,11 @@
 | [**aws-samples/generative-ai-cdk-constructs**](https://github.com/aws-samples/generative-ai-cdk-constructs) | AWS CDK constructs for deploying generative AI workloads including RAG. | ~300 |
 
 ### Key AWS Services for RAG
-- **Amazon Bedrock** — Foundation models (Claude, Llama, Titan)
-- **Bedrock Knowledge Bases** — Managed RAG
-- **Amazon Kendra** — Enterprise search
-- **Amazon OpenSearch** — Vector search
-- **Amazon S3 Vectors** — Cost-effective vector storage (new)
+- **Amazon Bedrock**: Foundation models (Claude, Llama, Titan)
+- **Bedrock Knowledge Bases**: Managed RAG
+- **Amazon Kendra**: Enterprise search
+- **Amazon OpenSearch**: Vector search
+- **Amazon S3 Vectors**: Cost-effective vector storage (new)
 
 ---
 
@@ -49,11 +49,11 @@
 | [**GoogleCloudPlatform/applied-ai-engineering-samples**](https://github.com/GoogleCloudPlatform/applied-ai-engineering-samples) | Production AI engineering patterns from Google Cloud. | ~500 |
 
 ### Key GCP Services for RAG
-- **Vertex AI Search** — Managed RAG solution
-- **Vertex AI** — Foundation models, Gemini
-- **Document AI** — Document parsing
-- **AlloyDB / Cloud SQL** — pgvector support
-- **Vertex AI Vector Search** — Scalable vector search
+- **Vertex AI Search**: Managed RAG solution
+- **Vertex AI**: Foundation models: Gemini
+- **Document AI**: Document parsing
+- **AlloyDB / Cloud SQL**: pgvector support
+- **Vertex AI Vector Search**: Scalable vector search
 
 ---
 
@@ -66,10 +66,10 @@
 | [**databricks/databricks-ml-examples**](https://github.com/databricks/databricks-ml-examples) | ML examples including embedding models and retrieval patterns. | ~300 |
 
 ### Key Databricks Services for RAG
-- **Mosaic AI Vector Search** — Managed vector search
-- **Mosaic AI Model Serving** — LLM deployment
-- **MLflow** — Experiment tracking, evaluation
-- **Unity Catalog** — Governance
+- **Mosaic AI Vector Search**: Managed vector search
+- **Mosaic AI Model Serving**: LLM deployment
+- **MLflow**: Experiment tracking, evaluation
+- **Unity Catalog**: Governance
 
 ---
 
@@ -82,10 +82,10 @@
 | [**NVIDIA/NeMo-Guardrails**](https://github.com/NVIDIA/NeMo-Guardrails) | Programmable guardrails for LLM applications including RAG. | ~4K |
 
 ### Key NVIDIA Technologies for RAG
-- **NIM (NVIDIA Inference Microservices)** — Optimized model serving
-- **TensorRT-LLM** — LLM inference optimization
-- **RAPIDS** — GPU-accelerated data processing
-- **NeMo** — LLM training and customization
+- **NIM (NVIDIA Inference Microservices)**: Optimized model serving
+- **TensorRT-LLM**: LLM inference optimization
+- **RAPIDS**: GPU-accelerated data processing
+- **NeMo**: LLM training and customization
 
 ---
 
@@ -97,10 +97,10 @@
 | [**UiPath-Services/UiPath-AIChatbot**](https://github.com/UiPath-Services) | AI chatbot integration patterns with UiPath. | - |
 
 ### Key UiPath Services for RAG
-- **AI Center** — ML model deployment and management
-- **Document Understanding** — Intelligent document processing
-- **Orchestrator** — Workflow automation
-- **Integration Service** — API connectivity
+- **AI Center**: ML model deployment and management
+- **Document Understanding**: Intelligent document processing
+- **Orchestrator**: Workflow automation
+- **Integration Service**: API connectivity
 
 ---
 

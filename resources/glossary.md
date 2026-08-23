@@ -97,9 +97,9 @@ The phenomenon where LLMs pay more attention to information at the beginning and
 
 ### RAG Triad
 The three core metrics for RAG evaluation:
-1. **Answer Relevancy** — Does the response address the question?
-2. **Faithfulness** — Is the response grounded in context?
-3. **Context Relevancy** — Is the retrieved context relevant?
+1. **Answer Relevancy**: Does the response address the question?
+2. **Faithfulness**: Is the response grounded in context?
+3. **Context Relevancy**: Is the retrieved context relevant?
 
 ### Golden Dataset
 A curated set of question-answer pairs with verified correct answers, used for evaluation.
@@ -145,7 +145,7 @@ A system that captures signals about RAG quality (explicit user feedback, implic
 A strategy for selecting which AI outputs to route to human reviewers for maximum learning value. Instead of random sampling, active learning prioritizes uncertain, novel, or high-risk cases.
 
 ### Retraining Trigger
-A measurable condition (e.g., human override rate >20%, evaluation metrics declining, new topic cluster emerging) that signals when the RAG system needs adjustment — from prompt refinement to embedding fine-tuning.
+A measurable condition (e.g., human override rate >20%, evaluation metrics declining, new topic cluster emerging) that signals when the RAG system needs adjustment, from prompt refinement to embedding fine-tuning.
 
 ---
 

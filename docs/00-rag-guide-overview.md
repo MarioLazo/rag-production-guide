@@ -8,7 +8,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/MarioLazo/rag-production-guide)](https://github.com/MarioLazo/rag-production-guide/graphs/contributors)
 
-**80%+ of AI projects fail — twice the rate of conventional IT projects.** This guide shows you how to beat those odds.
+**80%+ of AI projects fail: twice the rate of conventional IT projects.** This guide shows you how to beat those odds.
 
 [Why RAG Fails](#-why-rag-fails) •
 [Architecture](#️-architecture) •
@@ -24,9 +24,9 @@
 
 ## 📖 About This Guide
 
-Whether you're an ML engineer debugging retrieval issues, an architect evaluating platforms, or a technical leader building the business case for RAG—this guide meets you where you are.
+Whether you're an ML engineer debugging retrieval issues, an architect evaluating platforms, or a technical leader building the business case for RAG, this guide meets you where you are.
 
-This repository distills findings from **30+ authoritative sources**—including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks—combined with patterns from published case studies and industry benchmarks.
+This repository distills findings from **30+ authoritative sources**, including research from IBM, OpenAI, Anthropic, Microsoft, AWS, Google, NVIDIA, and leading open-source frameworks, combined with patterns from published case studies and industry benchmarks.
 
 > **The core insight:** The "vector DB + LLM" recipe that dominates blog posts fails in practice. Success requires **modular architecture**, **hybrid retrieval**, **rigorous evaluation**, and **deliberate cost engineering**.
 
@@ -35,8 +35,8 @@ This repository distills findings from **30+ authoritative sources**—including
 ## 🎯 How to Use This Guide
 
 ### ⚡ Quick Start (30 min)
-1. [Executive Summary](docs/01-executive-summary.md) — Why 80% fail
-2. [Danger Zones Checklist](cheatsheets/danger-zones-checklist.md) — Pre-flight check
+1. [Executive Summary](docs/01-executive-summary.md), Why 80% fail
+2. [Danger Zones Checklist](cheatsheets/danger-zones-checklist.md), Pre-flight check
 3. One [Case Study](case-studies/) of your choice
 
 ### 📖 Core Concepts (2-3 hours)
@@ -150,10 +150,10 @@ Imagine your RAG system is a pizza delivery service:
 | **Insufficient or inconsistent sources** | The menu says "gluten-free crust available" but the kitchen says they stopped carrying it last month |
 | **Missed Retrieval** | You ordered pepperoni, they have pepperoni, but the kitchen can't find it so they send you plain cheese |
 | **Context Misalignment** | You asked for "something spicy" and got a pizza with hot sauce packets on the side (technically spicy, not what you meant) |
-| **Stale Indexes** | Menu says $12, but price went up to $15 last month—now you're arguing at checkout |
+| **Stale Indexes** | Menu says $12, but price went up to $15 last month, now you're arguing at checkout |
 | **Hallucination** | You asked about gluten-free options, they confidently say "yes!" (there are none) |
 | **Context utilization failure** | They read your note but ignored half the toppings you listed |
-| **Answer Irrelevance** | You asked for pepperoni, they delivered pepperoni—plus a detailed history of Italian cheese-making |
+| **Answer Irrelevance** | You asked for pepperoni, they delivered pepperoni, plus a detailed history of Italian cheese-making |
 | **Answer Incompleteness** | You asked for a half-pepperoni half-veggie pizza, they only made the pepperoni half |
 
 </details>
@@ -240,7 +240,7 @@ Quick-reference guides for common decisions:
 
 | Cheatsheet | Description |
 |------------|-------------|
-| [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) | 5-minute health check—is something off? ⭐ NEW |
+| [👃 RAG Smell Test](cheatsheets/rag-smell-test.md) | 5-minute health check, is something off? ⭐ NEW |
 | [🌳 Chunking Decision Tree](cheatsheets/chunking-decision-tree.md) | Visual guide for chunk size selection |
 | [⚖️ Hybrid Search Weights](cheatsheets/hybrid-search-weights.md) | Domain-specific BM25/vector weights |
 | [🚨 Danger Zones Checklist](cheatsheets/danger-zones-checklist.md) | Pre-flight checklist before production |
@@ -311,7 +311,7 @@ RAG costs grow **exponentially**, not linearly. A documented case reached **$18K
 
 We welcome contributions from the community! This guide improves with diverse production experiences, and we especially value insights from **practitioners in the trenches** and **researchers pushing the boundaries**.
 
-Your personal and lived experience matters—whether you've shipped RAG systems at scale, recovered from spectacular failures, or discovered novel techniques worth sharing.
+Your personal and lived experience matters, whether you've shipped RAG systems at scale, recovered from spectacular failures, or discovered novel techniques worth sharing.
 
 ### Ways to Contribute
 
@@ -333,19 +333,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 This guide stands on the shoulders of giants. We're deeply grateful to:
 
 ### Open Source Community
-- **[RAGFlow](https://github.com/infiniflow/ragflow)** by InfiniFlow — Production-ready RAG with deep document understanding
-- **[RAGAS](https://github.com/explodinggradients/ragas)** by Exploding Gradients — Reference-free evaluation framework
-- **[DeepEval](https://github.com/confident-ai/deepeval)** by Confident AI — Production testing with 50+ metrics
-- **[AutoRAG](https://github.com/Marker-Inc-Korea/AutoRAG)** by Marker Inc — AutoML-style pipeline optimization
-- **[Athina AI Cookbooks](https://github.com/athina-ai/rag-cookbooks)** — Complete taxonomy from Naive → Agentic
+- **[RAGFlow](https://github.com/infiniflow/ragflow)** by InfiniFlow: Production-ready RAG with deep document understanding
+- **[RAGAS](https://github.com/explodinggradients/ragas)** by Exploding Gradients: Reference-free evaluation framework
+- **[DeepEval](https://github.com/confident-ai/deepeval)** by Confident AI: Production testing with 50+ metrics
+- **[AutoRAG](https://github.com/Marker-Inc-Korea/AutoRAG)** by Marker Inc: AutoML-style pipeline optimization
+- **[Athina AI Cookbooks](https://github.com/athina-ai/rag-cookbooks)**: Complete taxonomy from Naive → Agentic
 
 ### Enterprise & Research
-- **Microsoft** — Azure AI Search, GraphRAG, GPT-RAG patterns
-- **AWS** — Bedrock samples, RAG reference architectures
-- **Google** — Vertex AI, Gemini integration patterns
-- **Databricks** — GenAI Cookbook, MLflow evaluation
-- **NVIDIA** — GPU-accelerated RAG blueprints
-- **IBM** — Granite community cookbooks
+- **Microsoft**: Azure AI Search, GraphRAG, GPT-RAG patterns
+- **AWS**: Bedrock samples, RAG reference architectures
+- **Google**: Vertex AI: Gemini integration patterns
+- **Databricks**: GenAI Cookbook, MLflow evaluation
+- **NVIDIA**: GPU-accelerated RAG blueprints
+- **IBM**: Granite community cookbooks
 
 See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for the complete list.
 
@@ -372,10 +372,10 @@ This guide is provided for **educational and informational purposes only**. It d
 <summary><b>🔬 Curated Knowledge, Not Proprietary Information</b></summary>
 
 This guide is a **curated synthesis** of:
-- **Peer-reviewed academic research** — Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](resources/academic-references.md))
-- **Open-source frameworks** — Publicly available GitHub repositories from Microsoft, AWS, Google, and the community
-- **Industry benchmarks** — Published statistics from S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI, AHIMA, AHA, and other research organizations
-- **Community knowledge** — Patterns shared by practitioners in public forums, conferences, and published case studies
+- **Peer-reviewed academic research**: Published papers from EACL, ICLR, NAACL, TACL, and other venues ([see references](resources/academic-references.md))
+- **Open-source frameworks**: Publicly available GitHub repositories from Microsoft, AWS, Google, and the community
+- **Industry benchmarks**: Published statistics from S&P Global, RAND Corporation, MIT NANDA, Gartner, McKinsey, Stanford HAI, AHIMA, AHA, and other research organizations
+- **Community knowledge**: Patterns shared by practitioners in public forums, conferences, and published case studies
 
 **No proprietary or confidential information is included.** All sources are publicly available and cited.
 </details>
@@ -413,7 +413,7 @@ This content is provided "as is" without warranty of any kind, express or implie
 
 ## 📜 License
 
-This project is licensed under the MIT License—see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License, see the [LICENSE](LICENSE) file for details.
 
 ---
 

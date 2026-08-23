@@ -84,11 +84,11 @@ flowchart TD
 
 ## Best Practices (All Platforms)
 
-1. **Start with official samples** — Don't reinvent the wheel
-2. **Implement evaluation early** — Platform-agnostic tools work everywhere
-3. **Plan for hybrid search** — Check platform support upfront
-4. **Monitor costs** — Token costs compound quickly
-5. **Design for portability** — Use abstraction layers where possible
+1. **Start with official samples**: Don't reinvent the wheel
+2. **Implement evaluation early**: Platform-agnostic tools work everywhere
+3. **Plan for hybrid search**: Check platform support upfront
+4. **Monitor costs**: Token costs compound quickly
+5. **Design for portability**: Use abstraction layers where possible
 
 ---
 

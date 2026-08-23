@@ -256,7 +256,7 @@ flowchart LR
 
 ### Failure 2: Tribal Knowledge Gap
 
-**What happened:** The highest-value troubleshooting knowledge existed in unstructured case notes and the minds of senior engineers—not in official service manuals.
+**What happened:** The highest-value troubleshooting knowledge existed in unstructured case notes and the minds of senior engineers, not in official service manuals.
 
 **Business impact:** RAG retrieved manual content that was technically correct but missed practical insights that differentiated senior from junior engineers.
 

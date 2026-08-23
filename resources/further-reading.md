@@ -27,19 +27,19 @@
 ## 🎓 Learning Paths
 
 ### Beginner (Start Here)
-1. [Microsoft: Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) — 21-lesson course
-2. [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) — Hands-on introduction
-3. [Pinecone Learning Center](https://www.pinecone.io/learn/) — Vector search fundamentals
+1. [Microsoft: Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners), 21-lesson course
+2. [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/), Hands-on introduction
+3. [Pinecone Learning Center](https://www.pinecone.io/learn/), Vector search fundamentals
 
 ### Intermediate
-1. [LlamaIndex Documentation](https://docs.llamaindex.ai/) — Data framework deep dive
-2. [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) — Advanced techniques
-3. [AWS Bedrock Samples](https://github.com/aws-samples/amazon-bedrock-samples) — Production patterns
+1. [LlamaIndex Documentation](https://docs.llamaindex.ai/), Data framework deep dive
+2. [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook), Advanced techniques
+3. [AWS Bedrock Samples](https://github.com/aws-samples/amazon-bedrock-samples), Production patterns
 
 ### Advanced
-1. [GraphRAG Paper](https://arxiv.org/abs/2404.16130) — Microsoft's knowledge graph approach
-2. [Self-RAG Paper](https://arxiv.org/abs/2310.11511) — Self-reflective retrieval (ICLR 2024)
-3. [Adaptive-RAG Paper](https://arxiv.org/abs/2403.14403) — Query complexity routing (NAACL 2024)
+1. [GraphRAG Paper](https://arxiv.org/abs/2404.16130), Microsoft's knowledge graph approach
+2. [Self-RAG Paper](https://arxiv.org/abs/2310.11511), Self-reflective retrieval (ICLR 2024)
+3. [Adaptive-RAG Paper](https://arxiv.org/abs/2403.14403), Query complexity routing (NAACL 2024)
 
 ---
 
@@ -53,9 +53,9 @@
 | [Google Cloud Next AI Sessions](https://www.youtube.com/results?search_query=google+cloud+next+rag) | Google Cloud | Vertex AI RAG |
 
 ### YouTube Channels
-- **[Weights & Biases](https://www.youtube.com/@WeightsBiases)** — ML engineering content
-- **[MLOps Community](https://www.youtube.com/@MLOpscommunity)** — Production ML discussions
-- **[AI Engineer](https://www.youtube.com/@aiaboratory)** — Technical deep dives
+- **[Weights & Biases](https://www.youtube.com/@WeightsBiases)**: ML engineering content
+- **[MLOps Community](https://www.youtube.com/@MLOpscommunity)**: Production ML discussions
+- **[AI Engineer](https://www.youtube.com/@aiaboratory)**: Technical deep dives
 
 ---
 
@@ -76,10 +76,10 @@
 - [LangChain Blog](https://blog.langchain.dev/)
 
 ### Communities
-- [r/MachineLearning](https://www.reddit.com/r/MachineLearning/) — Academic ML discussion
-- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) — Open-source LLM community
-- [MLOps Community Slack](https://mlops.community/) — Production ML practitioners
-- [LangChain Discord](https://discord.gg/langchain) — Framework-specific help
+- [r/MachineLearning](https://www.reddit.com/r/MachineLearning/), Academic ML discussion
+- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/), Open-source LLM community
+- [MLOps Community Slack](https://mlops.community/), Production ML practitioners
+- [LangChain Discord](https://discord.gg/langchain), Framework-specific help
 
 ---
 
@@ -114,14 +114,14 @@
 ## 📊 Benchmark & Research Tracking
 
 ### Leaderboards
-- [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) — Embedding model rankings
-- [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) — LLM comparisons
-- [Chatbot Arena](https://chat.lmsys.org/) — Human preference rankings
+- [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard), Embedding model rankings
+- [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard), LLM comparisons
+- [Chatbot Arena](https://chat.lmsys.org/), Human preference rankings
 
 ### Research Aggregators
 - [Papers With Code - RAG](https://paperswithcode.com/task/retrieval-augmented-generation)
-- [arXiv cs.CL](https://arxiv.org/list/cs.CL/recent) — Latest NLP papers
-- [Semantic Scholar](https://www.semanticscholar.org/) — Academic paper search
+- [arXiv cs.CL](https://arxiv.org/list/cs.CL/recent), Latest NLP papers
+- [Semantic Scholar](https://www.semanticscholar.org/), Academic paper search
 
 ---
 
@@ -138,10 +138,10 @@
 ## 🔗 Quick Links
 
 ### This Guide's Key Resources
-- [Academic References](academic-references.md) — Peer-reviewed sources
-- [Official Vendor Repos](official-vendor-repos.md) — Cloud provider samples
-- [Community Repos](community-repos.md) — Open-source projects
-- [Glossary](glossary.md) — Terminology reference
+- [Academic References](academic-references.md), Peer-reviewed sources
+- [Official Vendor Repos](official-vendor-repos.md), Cloud provider samples
+- [Community Repos](community-repos.md), Open-source projects
+- [Glossary](glossary.md), Terminology reference
 
 ### External Quick Links
 - [LangChain RAG Docs](https://python.langchain.com/docs/tutorials/rag/)

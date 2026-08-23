@@ -103,11 +103,11 @@ Effort Scale (try in order):
 
 ## Active Learning: Pick the Right Reviews
 
-Don't randomly sample — pick interactions where human feedback teaches the most:
+Don't randomly sample, pick interactions where human feedback teaches the most:
 
 | Priority for Review | Why |
 |--------------------|-----|
-| System was most uncertain (confidence 0.45-0.55) | Near decision boundary — maximum information gain |
+| System was most uncertain (confidence 0.45-0.55) | Near decision boundary, maximum information gain |
 | Novel topic cluster | System hasn't learned this yet |
 | High-risk domain queries | Errors here are costly |
 | Disagreement between retrieval methods | System is confused |

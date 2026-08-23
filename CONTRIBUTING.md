@@ -17,10 +17,10 @@ First off, thank you for considering contributing to this guide! It's practition
 
 This project adheres to a simple code of conduct:
 
-- **Be respectful** — Treat all contributors with respect
-- **Be constructive** — Focus on improving the content
-- **Be inclusive** — Welcome contributors of all experience levels
-- **Be honest** — Share real experiences, including failures
+- **Be respectful**: Treat all contributors with respect
+- **Be constructive**: Focus on improving the content
+- **Be inclusive**: Welcome contributors of all experience levels
+- **Be honest**: Share real experiences, including failures
 
 ---
 
@@ -213,10 +213,10 @@ Cheatsheets should be scannable and actionable:
 
 ### Writing Style
 
-- **Be concise** — Practitioners are busy
-- **Be specific** — Include numbers, thresholds, examples
-- **Be honest** — Include limitations and trade-offs
-- **Be practical** — Focus on "how" not just "what"
+- **Be concise**: Practitioners are busy
+- **Be specific**: Include numbers, thresholds, examples
+- **Be honest**: Include limitations and trade-offs
+- **Be practical**: Focus on "how" not just "what"
 
 ### Diagrams
 
@@ -240,7 +240,7 @@ According to [Source Name](URL), finding or statistic.
 
 For academic papers:
 ```markdown
-*Paper Title* (Conference Year) — Brief description
+*Paper Title* (Conference Year): Brief description
 ```
 
 ---
@@ -249,9 +249,9 @@ For academic papers:
 
 All contributors will be recognized in:
 
-1. **ACKNOWLEDGMENTS.md** — Listed in the Contributors section
-2. **Git history** — Your commits are permanently recorded
-3. **GitHub Contributors** — Shown on the repository page
+1. **ACKNOWLEDGMENTS.md**: Listed in the Contributors section
+2. **Git history**: Your commits are permanently recorded
+3. **GitHub Contributors**: Shown on the repository page
 
 ### Becoming a Maintainer
 
@@ -266,9 +266,9 @@ May be invited to become maintainers with write access.
 
 ## ❓ Questions?
 
-- **General questions** — Open a GitHub Discussion
-- **Bug reports** — Open a GitHub Issue
-- **Private matters** — Contact the maintainers directly
+- **General questions**: Open a GitHub Discussion
+- **Bug reports**: Open a GitHub Issue
+- **Private matters**: Contact the maintainers directly
 
 ---
 

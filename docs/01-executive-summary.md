@@ -1,6 +1,6 @@
 # 📋 Executive Summary
 
-> **80%+ of AI projects fail — twice the rate of conventional IT projects (RAND 2024). RAG systems are no exception. They fail not because the technology is flawed, but because teams treat it as a plug-and-play solution rather than a precision engineering challenge.**
+> **80%+ of AI projects fail: twice the rate of conventional IT projects (RAND 2024). RAG systems are no exception. They fail not because the technology is flawed, but because teams treat it as a plug-and-play solution rather than a precision engineering challenge.**
 
 <details>
 <summary>🍕 <b>Wait, what's RAG again?</b></summary>
@@ -123,7 +123,7 @@ Imagine you have a company wiki, and somewhere in the middle of a 50-page docume
 
 > *"Revenue increased 15% year-over-year."*
 
-If someone asks "Did ACME Corp's revenue grow?", the AI might not find that sentence because it doesn't mention "ACME Corp"—it's just floating there without context.
+If someone asks "Did ACME Corp's revenue grow?", the AI might not find that sentence because it doesn't mention "ACME Corp", it's just floating there without context.
 
 **Contextual Retrieval fixes this** by adding a little intro to each chunk before storing it:
 
@@ -243,9 +243,9 @@ flowchart LR
 
 ## Next Steps
 
-1. **Assess your current state** — Use the [Danger Zones Checklist](../cheatsheets/danger-zones-checklist.md)
-2. **Identify quick wins** — Contextual Retrieval and evaluation are low-effort, high-impact
-3. **Build incrementally** — Start with hybrid search, add complexity only when metrics justify it
+1. **Assess your current state**: Use the [Danger Zones Checklist](../cheatsheets/danger-zones-checklist.md)
+2. **Identify quick wins**: Contextual Retrieval and evaluation are low-effort, high-impact
+3. **Build incrementally**: Start with hybrid search, add complexity only when metrics justify it
 
 ---
 

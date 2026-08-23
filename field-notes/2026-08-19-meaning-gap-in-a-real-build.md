@@ -1,25 +1,25 @@
 # What a Compliance RAG Capstone Taught Me About the Meaning Gap
 
 Most of what's in this repo comes from watching other people's production
-systems. This one's different — it's what broke, what I found by reviewing
+systems. This one's different, it's what broke, what I found by reviewing
 three strangers' projects, and what happened when I extended my own after
 the fact, all inside a single hands-on build: [ARIA](https://github.com/MarioLazo/llm-zoomcamp/tree/main/cohorts/2026/project-aria),
 a compliance-RAG assistant built as a capstone for DataTalks.Club's LLM
 Zoomcamp 2026. Everything below is real, dated, and linked to the actual
-commits — not a tidied-up retrospective.
+commits, not a tidied-up retrospective.
 
 **Why it belongs here:** the [Meaning Gap](../README.md#the-framework-spine)
 and the [Production Gate Question](../README.md#the-framework-spine) are
 frameworks I teach. This is what happens when you're on the other side of
-them — building the system, not auditing someone else's.
+them, building the system, not auditing someone else's.
 
 ---
 
-## Lesson 1 — Running the code beats reading the code
+## Lesson 1: Running the code beats reading the code
 
 Before ARIA's first real execution, a code review caught 4 bugs. Actually
-running it — Docker Compose, the real Streamlit UI, a real free-tier API
-key — surfaced 6 more, and every one of them was invisible to `python -c`
+running it, Docker Compose, the real Streamlit UI, a real free-tier API
+key, surfaced 6 more, and every one of them was invisible to `python -c`
 or `python -m` testing. The sharpest example: `streamlit run app/streamlit_app.py`
 crashed with `ModuleNotFoundError` on an import that worked perfectly under
 every other invocation, because Streamlit adds the *script's own directory*
@@ -27,25 +27,25 @@ to `sys.path`, not the working directory the way `-m` does. Full writeup:
 [`LESSONS_LEARNED.md`](https://github.com/MarioLazo/llm-zoomcamp/blob/main/cohorts/2026/project-aria/LESSONS_LEARNED.md#1-streamlit-doesnt-add-your-project-root-to-syspath).
 
 The generalizable version: if your test suite only exercises code via
-`-c`/`-m`/pytest, and your actual product entrypoint is something else —
-a UI, a webhook, a scheduled job — you haven't tested your product. You've
+`-c`/`-m`/pytest, and your actual product entrypoint is something else,
+a UI, a webhook, a scheduled job, you haven't tested your product. You've
 tested that it's importable.
 
-## Lesson 2 — Report the number you don't like
+## Lesson 2: Report the number you don't like
 
 Retrieval eval compared four methods; plain `hybrid` scored a higher MRR
 (0.920) than the fancier `hybrid + rerank` (0.883) that shipped in
-production. The easy move is to not mention that. The honest move — the one
-[the README actually does](https://github.com/MarioLazo/llm-zoomcamp/blob/main/cohorts/2026/project-aria/README.md#retrieval-25-cases-5-strategies) —
+production. The easy move is to not mention that. The honest move, the one
+[the README actually does](https://github.com/MarioLazo/llm-zoomcamp/blob/main/cohorts/2026/project-aria/README.md#retrieval-25-cases-5-strategies),
 is to publish the number, explain why it's plausibly noise at a small
 sample size, and say plainly that the evidence doesn't clear the bar to
 prove reranking necessary, even though it still shipped as the more
 principled default.
 
-## Lesson 3 — Your own eval tooling can be the bug
+## Lesson 3: Your own eval tooling can be the bug
 
 A citation-integrity checker flagged the Gemini-powered variant as
-"hallucinating" 4 of 10 citations — a real-looking, alarming number. It
+"hallucinating" 4 of 10 citations, a real-looking, alarming number. It
 wasn't hallucinating. Claude formats multi-source citations as separate
 brackets (`[a.md][b.md]`); Gemini joins them in one (`[a.md, b.md]`). The
 checker's regex only handled Claude's style, so Gemini's correctly-cited
@@ -53,30 +53,30 @@ answers never matched. [Fix and full story](https://github.com/MarioLazo/llm-zoo
 The lesson that generalizes furthest: eval tooling you build yourself needs
 testing against every system it's meant to judge, not just the first one
 you happened to build it against. A wrong eval result is worse than no
-eval result — it looks like evidence.
+eval result, it looks like evidence.
 
-## Lesson 4 — A self-review only counts against the same bar you'd apply to someone else
+## Lesson 4: A self-review only counts against the same bar you'd apply to someone else
 
 After finishing the graded submission, I read and scored three assigned
-peer projects with the same rigor I'd want applied to mine — cloning each
+peer projects with the same rigor I'd want applied to mine, cloning each
 repo, running what could be run, tracing code instead of trusting
-READMEs — then turned that same bar back on ARIA. That produced real
+READMEs, then turned that same bar back on ARIA. That produced real
 findings a self-congratulatory retrospective wouldn't have: a reranking
 verdict resting on a 10-question sample too small to trust either way, and
 query rewriting running on every single request while never once being
 evaluated. Full self-review: [`self-review-aria.md`](https://github.com/MarioLazo/mario-ai-lab/blob/main/concepts/llm-zoomcamp/self-review-aria.md).
 
-## Lesson 5 — What three strangers' projects taught me, before I ever touched mine again
+## Lesson 5: What three strangers' projects taught me, before I ever touched mine again
 
 The peer reviews themselves surfaced a pattern worth more than any single
 score: [full write-ups and cross-project synthesis here](https://github.com/MarioLazo/llm-zoomcamp/tree/main/cohorts/2026/project-peer-reviews).
 
 - **A feature that exists in the schema but not in the code path is worse
   than no feature.** One project had real database tables for user
-  feedback and a monitoring dashboard — and nothing that ever wrote to
+  feedback and a monitoring dashboard, and nothing that ever wrote to
   them. It looked finished on a skim. It wasn't.
 - **A test only proves something if it touches the real system.** A
-  different project's "LLM evaluation" table compared two answers —
+  different project's "LLM evaluation" table compared two answers,
   except neither answer had actually been generated by the AI. One was
   raw pasted text; the other was a template that read the correct value
   directly off the answer key. Both facts were disclosed honestly in a
@@ -91,18 +91,18 @@ score: [full write-ups and cross-project synthesis here](https://github.com/Mari
   coin flip.** A 10-question eval (mine) can make two close options look
   meaningfully different when they're within noise of each other. A
   160-question eval (one of theirs) doesn't have that problem. This
-  wasn't a course requirement — it was the single biggest driver of which
+  wasn't a course requirement, it was the single biggest driver of which
   conclusions I actually believed.
 
-## Lesson 6 — Extending the system is when the untested risk actually happens
+## Lesson 6: Extending the system is when the untested risk actually happens
 
-Post-submission, I added a second engagement to ARIA — loan underwriting
+Post-submission, I added a second engagement to ARIA, loan underwriting
 documentation review and board/regulatory reporting, for a fictional
 community bank under a regulatory enforcement action. Building it
 immediately produced the concrete version of Lesson 4's abstract warning:
 a query like "review the Dunmore Logistics loan file" got rewritten by the
-query-cleanup step into a generic "loan documentation checklist" —
-dropping the one word the search actually needed — and the system
+query-cleanup step into a generic "loan documentation checklist",
+dropping the one word the search actually needed, and the system
 confidently retrieved and analyzed the *wrong file*, with a well-formed,
 internally consistent answer.
 
@@ -111,16 +111,16 @@ made concrete: *if this agent gives the right answer to the wrong
 question, how would you know?* The honest first answer was: we wouldn't,
 unless something is built specifically to catch it. That something was a
 small eval script checking retrieval against a *known* ground truth of
-which loan file each query should hit — not just whether the output was
+which loan file each query should hit, not just whether the output was
 well-formed. [`eval/mou_eval.py`](https://github.com/MarioLazo/llm-zoomcamp/blob/main/cohorts/2026/project-aria/eval/mou_eval.py)
 is what caught it; the fix was to stop rewriting queries for that specific
 task, once it was clear rewriting was actively hurting exact-lookup
 questions rather than helping them.
 
-## Lesson 7 — Verification is cheaper than trust, and it's usually skipped anyway
+## Lesson 7: Verification is cheaper than trust, and it's usually skipped anyway
 
 The new underwriting mode doesn't just ask the model to assess loan
-documentation completeness — it requires a structured, parseable answer
+documentation completeness, it requires a structured, parseable answer
 (`PRESENT` / `EXCEPTION` / `DOCUMENTED DEVIATION` per required element,
 each cited), then runs a deterministic check
 ([`app/underwriting_check.py`](https://github.com/MarioLazo/llm-zoomcamp/blob/main/cohorts/2026/project-aria/app/underwriting_check.py))
@@ -128,14 +128,14 @@ that verifies every citation actually resolves to a retrieved source and
 that the model's own summary count matches what it reported line by line.
 A companion module ([`app/mou_tracker.py`](https://github.com/MarioLazo/llm-zoomcamp/blob/main/cohorts/2026/project-aria/app/mou_tracker.py))
 independently tracks remediation deadlines and checks whether a drafted
-board report actually mentions every item that's overdue — catching, by
+board report actually mentions every item that's overdue, catching, by
 code rather than by hope, the exact governance failure this scenario's
 MOU was issued for in the first place.
 
 Neither check is complicated. Both are the kind of thing that's easy to
 skip under a deadline, and both are exactly the layer the [Pre-Flight
 Checklist](../tools/pre-flight-checklist.md) exists to force before
-something reaches production — not "does the model sound confident," but
+something reaches production, not "does the model sound confident," but
 "can a machine independently confirm the specific claim it's making."
 
 ---
@@ -150,19 +150,19 @@ previously only stated in the abstract:
 1. **The Meaning Gap isn't a diagnostic you run once.** It shows up
    mid-build, in a single silently-mis-rewritten query, with a perfectly
    confident, perfectly wrong answer behind it. "Precise but wrong" isn't
-   a category of system — it's a state any system can drift into for one
+   a category of system, it's a state any system can drift into for one
    request, and the only defense is having something that checks against
    ground truth rather than checking that the output looks plausible.
 2. **Honesty about your own eval results is a discipline, not a
    personality trait.** I didn't publish the reranking-didn't-win number
-   because I'm virtuous about it — I published it because I'd just spent
+   because I'm virtuous about it, I published it because I'd just spent
    a week reading other builders who did and didn't, and the difference
    was visible from the outside in about thirty seconds of reading their
    code. That's a strong argument for building review into the process,
    not trusting it to show up on its own.
 3. **Verification is cheap relative to what it buys.** Every deterministic
-   check in this project — citation matching, summary-count consistency,
-   deadline coverage — took less time to build than the bug it would have
+   check in this project, citation matching, summary-count consistency,
+   deadline coverage, took less time to build than the bug it would have
    caught took to find by accident. The instinct to skip it under time
    pressure is exactly backwards from what the actual cost-benefit says.
 

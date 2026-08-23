@@ -7,7 +7,7 @@
 
 <br/>
 
-**Your RAG system doesn't crash. It doesn't throw errors. It just gives wrong answers—confidently.**
+**Your RAG system doesn't crash. It doesn't throw errors. It just gives wrong answers, confidently.**
 
 That's why these problems are "blind spots." The system keeps running, looking fine in the logs, while users get frustrated and lose trust.
 
@@ -60,11 +60,11 @@ Your users notice. Your metrics (if you have them) might show a dip. But the sys
 
 ---
 
-# 1. Insufficient or Inconsistent Sources — The Foundation Problem
+# 1. Insufficient or Inconsistent Sources: The Foundation Problem
 
 ## What's Happening
 
-The data sources themselves don't contain the information needed, or contain contradictory information. No amount of retrieval optimization can fix this — if the answer isn't in your knowledge base, or if your sources disagree, the system will fail.
+The data sources themselves don't contain the information needed, or contain contradictory information. No amount of retrieval optimization can fix this, if the answer isn't in your knowledge base, or if your sources disagree, the system will fail.
 
 ```
 You: "What's the coverage limit for dental implants?"
@@ -72,14 +72,14 @@ Source A: "Dental implants are covered up to $2,000 per year."
 Source B: "Dental implants are not covered under the standard plan."
 
 ❌ Both documents exist, both are indexed, both are retrieved
-💀 Sources contradict each other — system has no way to resolve this
+💀 Sources contradict each other, system has no way to resolve this
 ```
 
 ## Why This Goes Unnoticed
 
 - Retrieval works perfectly (documents ARE found)
 - Generation looks confident (picks one source)
-- No system error — the problem is in the data, not the pipeline
+- No system error, the problem is in the data, not the pipeline
 - Often only discovered when users cross-reference with real-world experience
 
 ## Real-World Examples
@@ -115,7 +115,7 @@ Source B: "Dental implants are not covered under the standard plan."
 
 ---
 
-# 2. Missed Retrieval — The Needle in the Haystack Problem
+# 2. Missed Retrieval: The Needle in the Haystack Problem
 
 ## What's Happening
 
@@ -131,7 +131,7 @@ RAG: "Our remote work policy allows employees to work from home..."
 
 ## Why This Goes Unnoticed
 
-- No error is thrown — retrieval "succeeded" (it returned *something*)
+- No error is thrown, retrieval "succeeded" (it returned *something*)
 - Similarity scores look fine (0.75+ on irrelevant docs)
 - The LLM generates a confident, plausible (but incomplete) answer
 
@@ -234,7 +234,7 @@ def missed_retrieval_diagnostic(query, retrieved_docs, all_docs):
 
 ---
 
-# 3. Context Misalignment — Right Ballpark, Wrong Answer
+# 3. Context Misalignment: Right Ballpark, Wrong Answer
 
 ## What's Happening
 
@@ -280,7 +280,7 @@ One of the most common causes is intent mismatch. Most queries have one of these
 | **Temporal** | "When does X?" | Dates, deadlines, timing |
 | **Eligibility** | "Can I X?" | Rules, requirements |
 
-**Intent mismatch is the most frequent cause, but not the only one — always check for granularity and coverage issues too.**
+**Intent mismatch is the most frequent cause, but not the only one: always check for granularity and coverage issues too.**
 
 ## Real-World Examples
 
@@ -369,7 +369,7 @@ def route_query(query, intent):
 
 ---
 
-# 4. Stale Indexes — The Time Traveler Problem
+# 4. Stale Indexes: The Time Traveler Problem
 
 ## What's Happening
 
@@ -536,11 +536,11 @@ flowchart LR
 
 ---
 
-# 5. Context Utilization Failure — The Attention Blindspot
+# 5. Context Utilization Failure: The Attention Blindspot
 
 ## What's Happening
 
-Critical information is present in the context but gets ignored by the LLM. The most well-studied cause is the "lost-in-the-middle" effect — LLMs pay more attention to the beginning and end of their context window — but this can also happen due to context overload, conflicting signals in the context, or the model simply failing to synthesize across multiple passages.
+Critical information is present in the context but gets ignored by the LLM. The most well-studied cause is the "lost-in-the-middle" effect, LLMs pay more attention to the beginning and end of their context window, but this can also happen due to context overload, conflicting signals in the context, or the model simply failing to synthesize across multiple passages.
 
 ```
 Context: [Doc1: intro] [Doc2: setup] [Doc3: THE ANSWER] [Doc4: related] [Doc5: summary]
@@ -673,7 +673,7 @@ def sandwich_ordering(query, retrieved_docs, scores):
 
 ---
 
-# 6. Hallucination — Confident Fabrication
+# 6. Hallucination: Confident Fabrication
 
 ## What's Happening
 
@@ -836,7 +836,7 @@ QUESTION: {query}
 
 ---
 
-# 7. Answer Irrelevance — Correct but Off-Topic
+# 7. Answer Irrelevance: Correct but Off-Topic
 
 ## What's Happening
 
@@ -882,14 +882,14 @@ RAG: "To reset your password, go to Settings > Security > Reset Password.
 
 ---
 
-# 8. Answer Incompleteness — Partial Answers
+# 8. Answer Incompleteness: Partial Answers
 
 ## What's Happening
 
 The retrieved context is correct and sufficient to answer the full question, but the response only addresses part of it. The LLM generates a partial answer, missing key aspects the user asked about.
 
 ```
-You: "Compare the Standard and Premium plans — pricing, features, and support levels."
+You: "Compare the Standard and Premium plans, pricing, features, and support levels."
 Context: Full comparison table with all three dimensions
 RAG: "The Standard plan costs $29/month while Premium is $99/month.
       Premium includes advanced analytics and custom dashboards."
@@ -927,7 +927,7 @@ RAG: "The Standard plan costs $29/month while Premium is $99/month.
 
 ---
 
-# Appendix: Semantic Collapse — When Everything Looks the Same
+# Appendix: Semantic Collapse: When Everything Looks the Same
 
 > **Note:** Semantic collapse is a common root cause of [Missed Retrieval](#2-missed-retrieval---the-needle-in-the-haystack-problem) rather than a separate blind spot. It is documented here in depth because of its prevalence and diagnostic complexity.
 
@@ -1108,7 +1108,7 @@ def mmr_retrieval(query_embedding, doc_embeddings, doc_ids, k=5, lambda_param=0.
 
 ---
 
-# Appendix: No Evaluation — The Meta-Blind Spot
+# Appendix: No Evaluation: The Meta-Blind Spot
 
 > **Note:** Lack of evaluation is a cross-cutting concern that enables all other blind spots to go undetected, rather than a blind spot in its own right. It is documented here because of its critical importance. See also [Evaluation Framework](07-evaluation-framework.md).
 
@@ -1149,7 +1149,7 @@ This is the **meta-blind spot** because it enables all other blind spots:
 | **4** | Continuous | CI/CD + automated regression | Before deployment |
 | **5** | Adversarial | Red teaming + edge case testing | Proactive discovery |
 
-**Reality:** Industry surveys suggest the **majority of production RAG systems operate at Level 0 or 1** — flying blind without systematic quality measurement.
+**Reality:** Industry surveys suggest the **majority of production RAG systems operate at Level 0 or 1**, flying blind without systematic quality measurement.
 
 ## Real-World Impact
 
@@ -1365,7 +1365,7 @@ Generic SSO overview returned instead
 - User asked about termination clause in a 50-page contract
 - System retrieved 8 relevant sections
 - Actual termination clause was in chunk 5 of 8
-- Response summarized chunks 1, 2, 7, 8 — missed the key clause
+- Response summarized chunks 1, 2, 7, 8, missed the key clause
 
 **Root Cause Analysis:**
 
@@ -1447,7 +1447,7 @@ Response: "Drug X may increase bleeding risk with blood thinners"
 - User asked: "How do I create a new project?"
 - Got instructions for "Create a new workspace" instead
 - Both docs exist, both are correct, but wrong one returned
-- Happened randomly — sometimes right, sometimes wrong
+- Happened randomly, sometimes right, sometimes wrong
 
 **Root Cause Analysis:**
 
@@ -2065,7 +2065,7 @@ flowchart TD
     style SK6 fill:#ffd93d
 ```
 
-**Key Insight:** Blind spot #1 (Insufficient Sources) is the most fundamental — no downstream fix can compensate for missing or contradictory source data. Hallucination (#6) is the most common downstream consequence of upstream failures.
+**Key Insight:** Blind spot #1 (Insufficient Sources) is the most fundamental, no downstream fix can compensate for missing or contradictory source data. Hallucination (#6) is the most common downstream consequence of upstream failures.
 
 ---
 
@@ -2089,17 +2089,17 @@ flowchart TD
 This deep dive synthesizes concepts and research from multiple sources:
 
 ### Academic Research
-- **Lost in the Middle Effect:** Liu et al., *"Lost in the Middle: How Language Models Use Long Contexts"* (TACL 2024) — [arXiv:2307.03172](https://arxiv.org/abs/2307.03172)
-- **RAG Triad Metrics:** Es et al., *"RAGAS: Automated Evaluation of Retrieval Augmented Generation"* (EACL 2024) — [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
-- **HyDE:** Gao et al., *"Precise Zero-Shot Dense Retrieval without Relevance Labels"* (ACL 2023) — [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
+- **Lost in the Middle Effect:** Liu et al., *"Lost in the Middle: How Language Models Use Long Contexts"* (TACL 2024), [arXiv:2307.03172](https://arxiv.org/abs/2307.03172)
+- **RAG Triad Metrics:** Es et al., *"RAGAS: Automated Evaluation of Retrieval Augmented Generation"* (EACL 2024), [arXiv:2309.15217](https://arxiv.org/abs/2309.15217)
+- **HyDE:** Gao et al., *"Precise Zero-Shot Dense Retrieval without Relevance Labels"* (ACL 2023), [arXiv:2212.10496](https://arxiv.org/abs/2212.10496)
 
 ### Industry Research
-- **Contextual Retrieval:** Anthropic, *"Introducing Contextual Retrieval"* (September 2024) — [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
+- **Contextual Retrieval:** Anthropic, *"Introducing Contextual Retrieval"* (September 2024), [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
 - **AI/RAG Failure Rates:** 
-  - S&P Global Market Intelligence, *Voice of the Enterprise: AI & ML, Use Cases 2025* (March 2025) — [CIO Dive](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)
-  - RAND Corporation, *The Root Causes of Failure for AI Projects* (2024) — [RAND](https://www.rand.org/pubs/research_reports/RRA2680-1.html)
-  - MIT NANDA, *The GenAI Divide: State of AI in Business 2025* (July 2025) — [Fortune](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)
-  - Gartner GenAI PoC Analysis (July 2024) — [Gartner Newsroom](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025)
+  - S&P Global Market Intelligence, *Voice of the Enterprise: AI & ML, Use Cases 2025* (March 2025), [CIO Dive](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)
+  - RAND Corporation, *The Root Causes of Failure for AI Projects* (2024), [RAND](https://www.rand.org/pubs/research_reports/RRA2680-1.html)
+  - MIT NANDA, *The GenAI Divide: State of AI in Business 2025* (July 2025), [Fortune](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)
+  - Gartner GenAI PoC Analysis (July 2024), [Gartner Newsroom](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025)
 - **Semantic Collapse Thresholds:** Practitioner experience and vector database documentation
 
 ### Original Content

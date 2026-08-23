@@ -1,6 +1,6 @@
 # 🔄 Feedback Loops & Refinement
 
-> **A RAG system without a feedback loop is like a restaurant that never reads its reviews — it can't improve and doesn't know it's failing.**
+> **A RAG system without a feedback loop is like a restaurant that never reads its reviews: it can't improve and doesn't know it's failing.**
 
 <details>
 <summary>🍕 <b>Plain English: What is a feedback loop?</b></summary>
@@ -73,15 +73,15 @@ Better answers → More user trust → More usage → More feedback data
 
 ### Explicit Feedback: Users Tell You
 
-This is the most direct signal — users actively indicate whether an answer was helpful.
+This is the most direct signal, users actively indicate whether an answer was helpful.
 
 | Mechanism | Signal Strength | Implementation Effort |
 |-----------|----------------|----------------------|
-| Thumbs up / thumbs down | Medium | Low — simple UI element |
-| Star ratings (1-5) | Medium | Low — adds granularity |
-| "Report incorrect answer" | High | Medium — needs categorization |
-| User corrections ("Actually, the answer is...") | Very High | Medium — needs capture and storage |
-| Escalation to human agent | Very High | High — needs routing infrastructure |
+| Thumbs up / thumbs down | Medium | Low, simple UI element |
+| Star ratings (1-5) | Medium | Low, adds granularity |
+| "Report incorrect answer" | High | Medium, needs categorization |
+| User corrections ("Actually, the answer is...") | Very High | Medium, needs capture and storage |
+| Escalation to human agent | Very High | High, needs routing infrastructure |
 
 ```python
 def capture_explicit_feedback(interaction_id: str, feedback: dict):
@@ -108,7 +108,7 @@ def capture_explicit_feedback(interaction_id: str, feedback: dict):
 
 <br/>
 
-Explicit feedback is the comment card on the table. Most people won't fill it out, but those who do give you gold — especially if they write *why* the pizza was bad ("crust was burnt," "wrong toppings," "arrived cold").
+Explicit feedback is the comment card on the table. Most people won't fill it out, but those who do give you gold, especially if they write *why* the pizza was bad ("crust was burnt," "wrong toppings," "arrived cold").
 
 The trick is making it easy. A single "Was this helpful? Yes / No" button gets 10x more responses than a detailed survey form.
 
@@ -116,7 +116,7 @@ The trick is making it easy. A single "Was this helpful? Yes / No" button gets 1
 
 ### Implicit Feedback: Actions Speak Louder
 
-Users constantly tell you how they feel *through behavior* — even when they don't click a feedback button.
+Users constantly tell you how they feel *through behavior*, even when they don't click a feedback button.
 
 | Signal | What It Suggests | How to Capture |
 |--------|-----------------|----------------|
@@ -143,7 +143,7 @@ def detect_implicit_signals(session: Session) -> list:
                 "severity": "medium",
                 "original_query": queries[i-1],
                 "reformulated_query": queries[i],
-                "interpretation": "User rephrased — first answer likely unhelpful"
+                "interpretation": "User rephrased, first answer likely unhelpful"
             })
 
     # Detect abandonment
@@ -199,11 +199,11 @@ When a customer says "bad pizza," you need to figure out what went wrong:
 
 | Complaint | Root Cause | Fix |
 |-----------|-----------|-----|
-| "I got the wrong pizza" | Kitchen grabbed wrong order | **Retrieval** — match orders to kitchens better |
-| "The pizza was cold" | Delivery took too long | **System** — optimize delivery routes |
-| "The toppings were weird" | Chef improvised | **Generation** — follow the recipe (prompt) |
-| "This pizza has last week's specials" | Menu wasn't updated | **Freshness** — update more frequently |
-| "You don't have my favorite topping" | Topping not available | **Coverage** — add it to inventory |
+| "I got the wrong pizza" | Kitchen grabbed wrong order | **Retrieval**, match orders to kitchens better |
+| "The pizza was cold" | Delivery took too long | **System**, optimize delivery routes |
+| "The toppings were weird" | Chef improvised | **Generation**, follow the recipe (prompt) |
+| "This pizza has last week's specials" | Menu wasn't updated | **Freshness**, update more frequently |
+| "You don't have my favorite topping" | Topping not available | **Coverage**, add it to inventory |
 
 Same negative signal ("bad pizza"), five completely different fixes. That's why categorization matters.
 
@@ -250,10 +250,10 @@ Not all feedback deserves immediate action. Prioritize by impact and frequency.
 
 | Priority | Criteria | Action |
 |----------|----------|--------|
-| **P0 — Critical** | Same wrong answer affecting many users | Fix immediately, add to golden dataset |
-| **P1 — High** | Recurring failure pattern (>5 reports/week) | Root cause analysis, scheduled fix |
-| **P2 — Medium** | Occasional failures in specific topics | Add to backlog, batch with related fixes |
-| **P3 — Low** | Edge cases, rare queries | Monitor, fix if pattern emerges |
+| **P0: Critical** | Same wrong answer affecting many users | Fix immediately, add to golden dataset |
+| **P1: High** | Recurring failure pattern (>5 reports/week) | Root cause analysis, scheduled fix |
+| **P2: Medium** | Occasional failures in specific topics | Add to backlog, batch with related fixes |
+| **P3: Low** | Edge cases, rare queries | Monitor, fix if pattern emerges |
 
 ### Step 4: Verify the Fix
 
@@ -422,12 +422,12 @@ def analyze_generation_failures(feedback_store) -> dict:
 
 | Level | Description | Characteristics |
 |-------|-------------|-----------------|
-| **0 — No Feedback** | No signal captured | "It seems to work" |
-| **1 — Basic Capture** | Thumbs up/down collected | Have data but don't act on it |
-| **2 — Categorized** | Failures classified by stage | Know *where* things break |
-| **3 — Root Cause** | Systematic analysis pipeline | Know *why* things break |
-| **4 — Closed Loop** | Feedback drives automated fixes and evaluation | Continuously improving system |
-| **5 — Predictive** | Anticipate failures before users notice | Proactive monitoring and alerting |
+| **0: No Feedback** | No signal captured | "It seems to work" |
+| **1: Basic Capture** | Thumbs up/down collected | Have data but don't act on it |
+| **2: Categorized** | Failures classified by stage | Know *where* things break |
+| **3: Root Cause** | Systematic analysis pipeline | Know *why* things break |
+| **4: Closed Loop** | Feedback drives automated fixes and evaluation | Continuously improving system |
+| **5: Predictive** | Anticipate failures before users notice | Proactive monitoring and alerting |
 
 **Most production RAG systems are at Level 0 or 1.** Getting to Level 3 is a significant competitive advantage.
 
@@ -453,12 +453,12 @@ Before considering your feedback loop production-ready:
 ## References
 
 ### Academic Research
-- Zhu et al., *"Active Learning for Natural Language Processing"* — EACL 2024
-- Gao et al., *"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"* — NeurIPS 2020 — [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
+- Zhu et al., *"Active Learning for Natural Language Processing"*, EACL 2024
+- Gao et al., *"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"*, NeurIPS 2020, [arXiv:2005.11401](https://arxiv.org/abs/2005.11401)
 
 ### Industry
-- **Anthropic** (2024), *Contextual Retrieval* — [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
-- **Databricks** (2024), *GenAI Cookbook: Evaluation-Driven Development* — [GitHub](https://github.com/databricks/genai-cookbook)
+- **Anthropic** (2024), *Contextual Retrieval*, [anthropic.com](https://www.anthropic.com/news/contextual-retrieval)
+- **Databricks** (2024), *GenAI Cookbook: Evaluation-Driven Development*, [GitHub](https://github.com/databricks/genai-cookbook)
 
 ---
 

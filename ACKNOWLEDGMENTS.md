@@ -95,14 +95,14 @@ We acknowledge the researchers and authors whose work informed this guide:
 - **Lost in the Middle: How Language Models Use Long Contexts** (TACL 2024)
 
 ### Industry Research
-- **Anthropic** — Contextual Retrieval research (September 2024)
-- **DeepMind** — Vector search bottleneck analysis
-- **S&P Global Market Intelligence** — Voice of the Enterprise: AI & ML, Use Cases 2025 (March 2025)
-- **RAND Corporation** — The Root Causes of Failure for AI Projects (2024)
-- **MIT NANDA** — The GenAI Divide: State of AI in Business 2025 (July 2025)
-- **Gartner** — AI project success rates and GenAI PoC abandonment research
-- **McKinsey** — State of AI 2025
-- **Stanford HAI** — AI Index Report 2025
+- **Anthropic**: Contextual Retrieval research (September 2024)
+- **DeepMind**: Vector search bottleneck analysis
+- **S&P Global Market Intelligence**: Voice of the Enterprise: AI & ML: Use Cases 2025 (March 2025)
+- **RAND Corporation**: The Root Causes of Failure for AI Projects (2024)
+- **MIT NANDA**: The GenAI Divide: State of AI in Business 2025 (July 2025)
+- **Gartner**: AI project success rates and GenAI PoC abandonment research
+- **McKinsey**: State of AI 2025
+- **Stanford HAI**: AI Index Report 2025
 
 ### Thought Leaders
 Special thanks to the practitioners who share their production experiences through blog posts, conference talks, and community discussions. Your willingness to share failures as well as successes helps us all build better systems.
@@ -132,6 +132,6 @@ The AI/ML community's culture of openness and knowledge sharing is what makes ra
 <div align="center">
 
 *"If I have seen further, it is by standing on the shoulders of giants."*  
-— Isaac Newton
+, Isaac Newton
 
 </div>
