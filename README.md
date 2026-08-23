@@ -8,6 +8,13 @@
 
 <br>
 
+**This is in beta and built in the open.** It is a working reference rather than a
+finished standard: sections are added and revised as engagements teach me something
+worth writing down, and anything still thin is marked rather than quietly padded.
+
+<br>
+<br>
+
 ## Most enterprise AI programs do not fail on the technology
 
 They fail because nothing around the technology is built to fund it, govern it,
