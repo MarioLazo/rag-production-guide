@@ -40,7 +40,7 @@ Before publishing, verify:
 - [ ] **No identifiable client details**: No combination of factors points to a real company
 - [ ] **Composite framing**: Explicitly stated as illustrative/composite examples
 - [ ] **Public sources cited**: Every claim traceable to published source
-- [ ] **Math shown transparently**, Teaching methodology, not claiming specific outcomes
+- [ ] **Math shown transparently**: teaching methodology, not claiming specific outcomes
 - [ ] **Ranges used**: Never point estimates for financials
 - [ ] **Disclaimers visible**: At top of README and key documents
 - [ ] **No guarantees**, "Results will vary" language included
