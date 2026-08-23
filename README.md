@@ -204,7 +204,7 @@ Two companion courses answer *how does a practitioner build one that survives.*
 
 <br>
 
-**[From Vibe Coding to Agent Engineering](https://github.com/MarioLazo/vibe-coding-to-agent-engineering)** · *Part 1, free*
+**[From Vibe Coding to Agent Engineering](https://github.com/MarioLazo/vibe-coding-to-agent-engineering)** · *Part 1 · beta*
 
 Opens on a randomised controlled trial where developers predicted they would be
 24% faster with AI, believed afterwards they had been 20% faster, and were
