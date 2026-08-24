@@ -54,8 +54,6 @@
 
 ### YouTube Channels
 - **[Weights & Biases](https://www.youtube.com/@WeightsBiases)**: ML engineering content
-- **[MLOps Community](https://www.youtube.com/@MLOpscommunity)**: Production ML discussions
-- **[AI Engineer](https://www.youtube.com/@aiaboratory)**: Technical deep dives
 
 ---
 
@@ -146,7 +144,7 @@
 ### External Quick Links
 - [LangChain RAG Docs](https://python.langchain.com/docs/tutorials/rag/)
 - [OpenAI Cookbook RAG](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models)
-- [Anthropic RAG Guide](https://docs.anthropic.com/claude/docs/retrieval-augmented-generation)
+- [Anthropic RAG Guide](https://docs.claude.com/en/docs/build-with-claude/search-results)
 
 ---
 

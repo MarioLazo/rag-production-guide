@@ -85,7 +85,7 @@ The RAG ecosystem thrives because of the generosity of open-source contributors.
 
 | Repository | Stars | Description | Best For |
 |------------|-------|-------------|----------|
-| [**sentence-transformers/sentence-transformers**](https://github.com/sentence-transformers/sentence-transformers) | ~15K | State-of-the-art sentence embeddings. Many pre-trained models available. | General embeddings |
+| [**UKPLab/sentence-transformers**](https://github.com/UKPLab/sentence-transformers) | ~15K | State-of-the-art sentence embeddings. Many pre-trained models available. | General embeddings |
 | [**FlagOpen/FlagEmbedding**](https://github.com/FlagOpen/FlagEmbedding) | ~7K | BGE embedding models. Top performers on MTEB leaderboard. | High-quality embeddings |
 | [**jina-ai/jina**](https://github.com/jina-ai/jina) | ~21K | Neural search framework with multimodal embedding support. | Multimodal search |
 
@@ -117,7 +117,7 @@ Many projects welcome contributions:
 ```bash
 # Example contribution workflow
 gh repo fork confident-ai/deepeval
-git clone https://github.com/YOUR-USERNAME/deepeval
+git clone https://github.com/confident-ai/deepeval
 cd deepeval
 git checkout -b my-feature
 # Make changes

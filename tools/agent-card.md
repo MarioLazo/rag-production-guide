@@ -38,8 +38,10 @@ Copy this into your agent registry, one per agent.
 ## Classification
 - **Application mode:**      DOING | DECIDING | DESIGNING | DIRECTING
                              <what the AI does. see note below>
-- **Pattern:**               <retrieval | classification | generation | reasoning |
-                              transactional | orchestration | research>
+- **Pattern:**               <retrieval | transactional | orchestrator | supervisor |
+                              workflow | analyst | generator | guardian>
+- **Capabilities:**          <classification | reasoning | research | none>: what it can
+                              do, as distinct from what shape it is
 - **Risk tier:**             1 (read-only) | 2 (internal write) | 3 (external/regulated) |
                               4 (irreversible or financial)
 - **Autonomy level:**        <1–5; see Seniority Ladder>

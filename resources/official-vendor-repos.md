@@ -29,7 +29,7 @@
 | [**aws-samples/amazon-bedrock-samples**](https://github.com/aws-samples/amazon-bedrock-samples) | Comprehensive Bedrock examples including Knowledge Bases, RAG patterns, and evaluation with RAGAS. | ~500 |
 | [**aws-samples/rag-using-langchain-amazon-bedrock-and-opensearch**](https://github.com/aws-samples/rag-using-langchain-amazon-bedrock-and-opensearch) | Production RAG pattern with LangChain, Bedrock, and OpenSearch. | ~200 |
 | [**aws-samples/amazon-bedrock-workshop**](https://github.com/aws-samples/amazon-bedrock-workshop) | Hands-on workshop materials for Bedrock including RAG labs. | ~1K |
-| [**aws-samples/generative-ai-cdk-constructs**](https://github.com/aws-samples/generative-ai-cdk-constructs) | AWS CDK constructs for deploying generative AI workloads including RAG. | ~300 |
+| [**awslabs/generative-ai-cdk-constructs**](https://github.com/awslabs/generative-ai-cdk-constructs) | AWS CDK constructs for deploying generative AI workloads including RAG. | ~300 |
 
 ### Key AWS Services for RAG
 - **Amazon Bedrock**: Foundation models (Claude, Llama, Titan)
@@ -62,7 +62,7 @@
 | Repository | Description | Stars |
 |------------|-------------|-------|
 | [**databricks/genai-cookbook**](https://github.com/databricks/genai-cookbook) | GenAI patterns on the Lakehouse architecture. RAG, fine-tuning, evaluation. | ~500 |
-| [**databricks-demos/llm-rag-chatbot**](https://github.com/databricks-demos/llm-rag-chatbot) | End-to-end RAG chatbot demo with MLflow evaluation and monitoring. | ~200 |
+| [**databricks-demos/dbdemos-notebooks**](https://github.com/databricks-demos/dbdemos-notebooks) | End-to-end RAG chatbot demo with MLflow evaluation and monitoring. | ~200 |
 | [**databricks/databricks-ml-examples**](https://github.com/databricks/databricks-ml-examples) | ML examples including embedding models and retrieval patterns. | ~300 |
 
 ### Key Databricks Services for RAG
