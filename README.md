@@ -107,7 +107,17 @@ placeholders.**
 
 ## The spine
 
-Nine frameworks. Each has one job. They are sequenced by where they apply.
+*One question per stage. One framework per question.* They are sequenced by
+where they apply, and each is defined in
+[the wiki](https://github.com/MarioLazo/agentic-coe/wiki/Framework-Spine),
+which is canonical.
+
+> **Corrected 2026-08-25.** This line used to open "Nine frameworks." It was
+> wrong against its own table, which names eight across seven stages, and it
+> disagreed with the wiki published on 2026-08-24, which retired the count
+> deliberately: a spine is a sequence of questions, and counting the answers
+> invites exactly the drift that produced two different frameworks sharing the
+> name "Four Modes." The count is gone rather than corrected to eight.
 
 | | The question | Framework |
 |---|---|---|
