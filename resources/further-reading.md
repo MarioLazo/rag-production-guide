@@ -63,6 +63,7 @@
 | Newsletter | Focus |
 |------------|-------|
 | [The Batch](https://www.deeplearning.ai/the-batch/) | Andrew Ng's weekly AI news |
+| [AI Weekly](https://aiweekly.co/) | Discover what AI experts are reading and sharing right now |
 | [Last Week in AI](https://lastweekin.ai/) | Comprehensive AI news roundup |
 | [Ahead of AI](https://magazine.sebastianraschka.com/) | Sebastian Raschka's ML insights |
 
